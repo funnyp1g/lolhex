@@ -1,0 +1,67 @@
+/* pages/augment-list/augment-list.wxss - 海克斯列表样式 */
+.page-augment-list {
+  min-height: 100vh;
+  background-color: var(--color-bg-page);
+  padding-bottom: calc(var(--spacing-xxl) + env(safe-area-inset-bottom));
+}
+
+/* 排序栏 */
+.sort-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background-color: var(--color-bg-card);
+  margin-bottom: var(--spacing-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.sort-btn {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+  padding: 8rpx 24rpx;
+  border-radius: var(--radius-round);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-page);
+  transition: all var(--transition-fast);
+}
+
+.sort-btn.active {
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.sort-arrow {
+  font-size: var(--font-size-xs);
+}
+
+/* 列表 */
+.augment-list {
+  padding: var(--spacing-md);
+}
+
+/* 加载更多 */
+.loading-more {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-md) 0;
+}
+
+.no-more {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-md) 0 var(--spacing-xl);
+}
+
+/* 空状态/错误状态 */
+.empty-state,
+.error-state {
+  padding: var(--spacing-xxl) 0;
+}
+
+.retry-btn {
+  margin-top: var(--spacing-md);
+}

@@ -1,0 +1,91 @@
+<!--components/loading-skeleton/loading-skeleton.wxml - 加载骨架屏-->
+<view class="sk-wrap {{animated ? 'sk-animated' : ''}}">
+
+  <!-- 默认骨架 -->
+  <block wx:if="{{type === 'default'}}">
+    <view wx:for="{{loopArr}}" wx:key="index" class="sk-card">
+      <view wx:if="{{showAvatar}}" class="sk-avatar"></view>
+      <view class="sk-body">
+        <view class="sk-line sk-title"></view>
+        <view wx:for="{{rowArr}}" wx:for-item="rowIdx" wx:key="rowIdx" class="sk-line sk-row {{rowIdx === rowArr.length - 1 ? 'sk-row-short' : ''}}"></view>
+      </view>
+    </view>
+  </block>
+
+  <!-- 英雄列表骨架 -->
+  <block wx:elif="{{type === 'champion'}}">
+    <view wx:for="{{loopArr}}" wx:key="index" class="sk-card sk-champion">
+      <view class="sk-champ-avatar"></view>
+      <view class="sk-body">
+        <view class="sk-line sk-title sk-w-40"></view>
+        <view class="sk-line sk-row sk-w-20"></view>
+        <view class="sk-line sk-row sk-w-60"></view>
+      </view>
+      <view class="sk-tier"></view>
+    </view>
+  </block>
+
+  <!-- 海克斯列表骨架 -->
+  <block wx:elif="{{type === 'augment'}}">
+    <view wx:for="{{loopArr}}" wx:key="index" class="sk-card sk-augment">
+      <view class="sk-aug-icon"></view>
+      <view class="sk-body">
+        <view class="sk-line sk-title sk-w-50"></view>
+        <view class="sk-line sk-row sk-w-30"></view>
+        <view class="sk-line sk-row sk-bar"></view>
+      </view>
+      <view class="sk-tier"></view>
+    </view>
+  </block>
+
+  <!-- 装备列表骨架 -->
+  <block wx:elif="{{type === 'item'}}">
+    <view wx:for="{{loopArr}}" wx:key="index" class="sk-card sk-item-card">
+      <view class="sk-item-icon"></view>
+      <view class="sk-body">
+        <view class="sk-line sk-title sk-w-45"></view>
+        <view class="sk-line sk-row sk-w-25"></view>
+      </view>
+      <view class="sk-tier"></view>
+    </view>
+  </block>
+
+  <!-- 详情页骨架 -->
+  <block wx:elif="{{type === 'detail'}}">
+    <view class="sk-detail">
+      <view class="sk-detail-header">
+        <view class="sk-detail-avatar"></view>
+        <view class="sk-detail-info">
+          <view class="sk-line sk-title sk-w-40"></view>
+          <view class="sk-line sk-row sk-w-60"></view>
+          <view class="sk-tags">
+            <view class="sk-tag"></view>
+            <view class="sk-tag"></view>
+          </view>
+        </view>
+      </view>
+      <view class="sk-stats-row">
+        <view class="sk-stat-box">
+          <view class="sk-line sk-w-30" style="height: 48rpx;"></view>
+          <view class="sk-line sk-w-20" style="height: 20rpx; margin-top: 8rpx;"></view>
+        </view>
+        <view class="sk-stat-box">
+          <view class="sk-line sk-w-30" style="height: 48rpx;"></view>
+          <view class="sk-line sk-w-20" style="height: 20rpx; margin-top: 8rpx;"></view>
+        </view>
+        <view class="sk-stat-box">
+          <view class="sk-line sk-w-30" style="height: 48rpx;"></view>
+          <view class="sk-line sk-w-20" style="height: 20rpx; margin-top: 8rpx;"></view>
+        </view>
+      </view>
+      <view wx:for="{{loopArr}}" wx:key="index" class="sk-card sk-augment">
+        <view class="sk-aug-icon"></view>
+        <view class="sk-body">
+          <view class="sk-line sk-title sk-w-50"></view>
+          <view class="sk-line sk-row sk-w-30"></view>
+        </view>
+      </view>
+    </view>
+  </block>
+
+</view>

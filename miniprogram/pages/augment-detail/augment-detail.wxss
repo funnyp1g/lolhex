@@ -1,0 +1,308 @@
+/* pages/augment-detail/augment-detail.wxss - 海克斯详情样式 */
+.page-augment-detail {
+  padding: var(--spacing-md);
+  padding-bottom: calc(var(--spacing-xxl) + env(safe-area-inset-bottom));
+  min-height: 100vh;
+  background-color: var(--color-bg-page);
+}
+
+/* ===== 头部 ===== */
+.aug-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.aug-icon-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.aug-icon {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-page);
+}
+
+/* 海克斯图标占位符 */
+.aug-icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.aug-icon-placeholder-text {
+  font-size: 48rpx;
+}
+
+.aug-tier {
+  position: absolute;
+  bottom: -8rpx;
+  right: -8rpx;
+}
+
+.aug-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.aug-title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  margin-bottom: 8rpx;
+}
+
+.aug-name {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.aug-rarity {
+  display: inline-block;
+  padding: 4rpx 16rpx;
+  border-radius: var(--radius-round);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.rarity-prismatic {
+  color: var(--color-prismatic);
+  background-color: var(--color-prismatic-bg);
+}
+
+.rarity-gold {
+  color: var(--color-gold);
+  background-color: var(--color-gold-bg);
+}
+
+.rarity-silver {
+  color: var(--color-silver);
+  background-color: var(--color-silver-bg);
+}
+
+.aug-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-loose);
+}
+
+/* ===== 数据概览 ===== */
+.stats-overview {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.stat-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.stat-value {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.stat-winrate {
+  color: var(--color-warning);
+}
+
+.stat-pickrate {
+  color: var(--color-primary);
+}
+
+.stat-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.stat-divider {
+  width: 1rpx;
+  height: 60rpx;
+  background-color: var(--color-border);
+}
+
+/* 进度条区域 */
+.rate-section {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ===== 通用区块 ===== */
+.section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.section-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.empty-hint {
+  padding: var(--spacing-xl) 0;
+}
+
+/* ===== 适配英雄列表 ===== */
+.champ-list {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.champ-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border-bottom: 1rpx solid var(--color-border-light);
+  transition: background-color var(--transition-fast);
+}
+
+.champ-row:last-child {
+  border-bottom: none;
+}
+
+.champ-row:active {
+  background-color: var(--color-bg-hover);
+}
+
+.champ-row-worst {
+  opacity: 0.85;
+}
+
+.champ-rank {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: var(--color-bg-page);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.champ-rank-top {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.champ-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: var(--radius-base);
+  background-color: var(--color-bg-page);
+  flex-shrink: 0;
+}
+
+.champ-name {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  flex-shrink: 0;
+  width: 100rpx;
+}
+
+.champ-rate {
+  flex: 1;
+}
+
+.champ-winrate {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-warning);
+  flex-shrink: 0;
+  min-width: 80rpx;
+  text-align: right;
+}
+
+.champ-winrate-low {
+  color: var(--color-error);
+}
+
+/* ===== 推荐装备 ===== */
+.item-grid {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  gap: var(--spacing-md);
+}
+
+.item-cell {
+  width: calc(20% - 16rpx);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.item-cell-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-page);
+}
+
+.item-cell-name {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-primary);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.item-cell-rate {
+  font-size: 18rpx;
+  color: var(--color-warning);
+  font-weight: var(--font-weight-medium);
+}
+
+/* 重试/错误 */
+.retry-btn {
+  margin-top: var(--spacing-md);
+}
+
+.error-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}

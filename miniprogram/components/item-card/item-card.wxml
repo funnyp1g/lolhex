@@ -1,0 +1,68 @@
+<!--components/item-card/item-card.wxml - 装备卡片-->
+<view class="item-card item-{{size}}" bindtap="onTap">
+  <!-- 装备图标 -->
+  <image wx:if="{{item.icon_url}}" class="item-icon" src="{{item.icon_url}}" mode="aspectFill" />
+  <!-- 信息区 -->
+  <view class="item-body">
+    <view class="item-title-row">
+      <text class="item-name">{{item.name_zh || item.item_name}}</text>
+      <!-- 槽位标签 -->
+      <view wx:if="{{showSlot && slotLabel}}" class="item-slot-tag">
+        {{slotLabel}}
+      </view>
+    </view>
+    <!-- 统计行 -->
+    <view class="item-stats">
+      <text wx:if="{{hasWinRate}}" class="item-stat-winrate">
+        胜率 {{winRateDisplay}}
+      </text>
+      <text wx:if="{{hasPickRate}}" class="item-stat-pickrate">
+        选取 {{pickRateDisplay}}
+      </text>
+    </view>
+  </view>
+  <!-- Tier 徽章 -->
+  <tier-badge wx:if="{{item.tier}}" tier="{{item.tier}}" size="{{size === 'small' ? 'small' : 'normal'}}" />
+</view>
+
+<!-- 装备详情 Popup -->
+<van-popup
+  wx:if="{{showDetail}}"
+  show="{{detailVisible}}"
+  position="bottom"
+  round
+  closeable
+  bind:close="onCloseDetail"
+  custom-style="max-height: 60vh; padding: 32rpx;"
+>
+  <view class="item-detail-popup" catchtap="preventBubble">
+    <view class="item-detail-header">
+      <image wx:if="{{item.icon_url}}" class="item-detail-icon" src="{{item.icon_url}}" mode="aspectFill" />
+      <view class="item-detail-info">
+        <text class="item-detail-name">{{item.name_zh || item.item_name}}</text>
+        <view wx:if="{{slotLabel}}" class="item-slot-tag">{{slotLabel}}</view>
+      </view>
+    </view>
+    <view wx:if="{{item.description_zh}}" class="item-detail-desc">
+      {{item.description_zh}}
+    </view>
+    <view wx:if="{{item.stats}}" class="item-detail-stats">
+      <view wx:if="{{item.stats.attack_damage}}" class="stat-line">
+        <text class="stat-label">攻击力</text>
+        <text class="stat-value">+{{item.stats.attack_damage}}</text>
+      </view>
+      <view wx:if="{{item.stats.ability_power}}" class="stat-line">
+        <text class="stat-label">法术强度</text>
+        <text class="stat-value">+{{item.stats.ability_power}}</text>
+      </view>
+      <view wx:if="{{item.stats.armor}}" class="stat-line">
+        <text class="stat-label">护甲</text>
+        <text class="stat-value">+{{item.stats.armor}}</text>
+      </view>
+      <view wx:if="{{item.stats.magic_resist}}" class="stat-line">
+        <text class="stat-label">魔抗</text>
+        <text class="stat-value">+{{item.stats.magic_resist}}</text>
+      </view>
+    </view>
+  </view>
+</van-popup>

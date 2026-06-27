@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "tier-badge": "/components/tier-badge/tier-badge",
+    "rate-bar": "/components/rate-bar/rate-bar",
+    "version-trend-chart": "/components/version-trend-chart/version-trend-chart",
+    "loading-skeleton": "/components/loading-skeleton/loading-skeleton"
+  },
+  "navigationBarTitleText": "海克斯详情",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

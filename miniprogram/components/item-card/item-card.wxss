@@ -1,0 +1,163 @@
+/* components/item-card/item-card.wxss - 装备卡片样式 */
+.item-card {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  transition: background-color var(--transition-fast);
+}
+
+.item-card:active {
+  background-color: var(--color-bg-hover);
+}
+
+/* 小尺寸 */
+.item-small {
+  padding: var(--spacing-sm);
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.item-small .item-icon {
+  width: 64rpx;
+  height: 64rpx;
+}
+
+/* 装备图标 */
+.item-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: var(--radius-base);
+  background-color: var(--color-bg-page);
+  flex-shrink: 0;
+}
+
+.item-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.item-title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.item-name {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-small .item-name {
+  font-size: var(--font-size-base);
+}
+
+/* 槽位标签 */
+.item-slot-tag {
+  display: inline-block;
+  padding: 2rpx 14rpx;
+  background-color: var(--color-gold-bg);
+  color: var(--color-gold);
+  border-radius: var(--radius-round);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  flex-shrink: 0;
+}
+
+/* 统计行 */
+.item-stats {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-top: 8rpx;
+}
+
+.item-stat-winrate {
+  font-size: var(--font-size-xs);
+  color: var(--color-warning);
+  font-weight: var(--font-weight-medium);
+}
+
+.item-stat-pickrate {
+  font-size: var(--font-size-xs);
+  color: var(--color-primary);
+}
+
+/* ===== 详情 Popup ===== */
+.item-detail-popup {
+  padding: 0 var(--spacing-md);
+}
+
+.item-detail-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.item-detail-icon {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-page);
+  flex-shrink: 0;
+}
+
+.item-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.item-detail-name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.item-detail-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-loose);
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--color-bg-page);
+  border-radius: var(--radius-base);
+}
+
+.item-detail-stats {
+  margin-top: var(--spacing-sm);
+}
+
+.stat-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1rpx solid var(--color-border-light);
+}
+
+.stat-line:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.stat-value {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}

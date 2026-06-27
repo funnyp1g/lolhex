@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tier-badge": "/components/tier-badge/tier-badge",
+    "van-popup": "@vant/weapp/popup/index"
+  }
+}

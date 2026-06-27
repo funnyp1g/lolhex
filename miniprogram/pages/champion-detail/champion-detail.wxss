@@ -1,0 +1,281 @@
+/* pages/champion-detail/champion-detail.wxss - 英雄详情样式 */
+.page-champion-detail {
+  padding: var(--spacing-md);
+  padding-bottom: calc(var(--spacing-xxl) + env(safe-area-inset-bottom));
+  min-height: 100vh;
+  background-color: var(--color-bg-page);
+}
+
+/* ===== 英雄头部 ===== */
+.hero-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.hero-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-page);
+}
+
+.hero-tier {
+  position: absolute;
+  bottom: -8rpx;
+  right: -8rpx;
+}
+
+.hero-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.hero-name {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.hero-title {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: 4rpx;
+}
+
+.hero-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+  margin-top: var(--spacing-sm);
+}
+
+.hero-role-tag {
+  padding: 4rpx 16rpx;
+  border-radius: var(--radius-round);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ===== 数据概览 ===== */
+.stats-overview {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.stat-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.stat-value {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.stat-winrate {
+  color: var(--color-warning);
+}
+
+.stat-pickrate {
+  color: var(--color-primary);
+}
+
+.stat-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.stat-divider {
+  width: 1rpx;
+  height: 60rpx;
+  background-color: var(--color-border);
+}
+
+/* 进度条区域 */
+.hero-rate-section {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ===== 通用区块 ===== */
+.section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.section-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.empty-hint {
+  padding: var(--spacing-xl) 0;
+}
+
+.aug-list {
+  /* 列表容器 */
+}
+
+/* ===== 装备区块 ===== */
+.item-group {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.item-group-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.item-group-count {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-placeholder);
+  font-weight: var(--font-weight-normal);
+}
+
+/* 装备网格 */
+.item-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.item-grid-cell {
+  width: calc(25% - 18rpx);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.item-grid-icon {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-page);
+}
+
+.item-grid-name {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-primary);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.item-grid-rate {
+  font-size: 18rpx;
+  color: var(--color-warning);
+  font-weight: var(--font-weight-medium);
+}
+
+/* 神装行 */
+.fullbuild-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.fullbuild-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1rpx solid var(--color-border-light);
+}
+
+.fullbuild-row:last-child {
+  border-bottom: none;
+}
+
+.fullbuild-items {
+  display: flex;
+  gap: 8rpx;
+}
+
+.fullbuild-item-icon {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: var(--radius-base);
+  background-color: var(--color-bg-page);
+}
+
+.fullbuild-item-icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+}
+
+.fullbuild-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.fullbuild-winrate {
+  font-size: var(--font-size-sm);
+  color: var(--color-warning);
+  font-weight: var(--font-weight-medium);
+}
+
+.fullbuild-samples {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-placeholder);
+}
+
+/* 重试按钮 */
+.retry-btn {
+  margin-top: var(--spacing-md);
+}
+
+/* 错误状态 */
+.error-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}

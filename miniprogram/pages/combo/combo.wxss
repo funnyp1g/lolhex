@@ -1,0 +1,214 @@
+/* pages/combo/combo.wxss - 组合推荐样式 */
+.page-combo {
+  min-height: 100vh;
+  background-color: var(--color-bg-page);
+  padding-bottom: calc(var(--spacing-xxl) + env(safe-area-inset-bottom));
+}
+
+/* ===== 筛选栏 ===== */
+.filter-bar {
+  background-color: var(--color-bg-card);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.filter-row:last-child {
+  margin-bottom: 0;
+}
+
+.filter-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  width: 80rpx;
+  flex-shrink: 0;
+}
+
+.picker-btn {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  padding: 8rpx 24rpx;
+  background-color: var(--color-bg-page);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+}
+
+.picker-arrow {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-placeholder);
+}
+
+.sort-btns {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.sort-btn {
+  padding: 8rpx 24rpx;
+  border-radius: var(--radius-round);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-page);
+  transition: all var(--transition-fast);
+}
+
+.sort-btn.active {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* ===== 组合列表 ===== */
+.combo-list {
+  padding: 0 var(--spacing-md);
+}
+
+.combo-card {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.combo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.combo-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.combo-rank {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.combo-header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.combo-winrate {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-warning);
+}
+
+.combo-samples {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-placeholder);
+}
+
+/* ===== 海克斯组合 ===== */
+.combo-augments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) 0 var(--spacing-md);
+}
+
+.combo-augment-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+  flex: 1;
+}
+
+.combo-aug-icon {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-page);
+}
+
+.combo-aug-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-placeholder);
+}
+
+.combo-aug-name {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-primary);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 140rpx;
+}
+
+.combo-aug-rarity {
+  display: inline-block;
+  padding: 2rpx 10rpx;
+  border-radius: var(--radius-round);
+  font-size: 18rpx;
+}
+
+.rarity-prismatic {
+  color: var(--color-prismatic);
+  background-color: var(--color-prismatic-bg);
+}
+
+.rarity-gold {
+  color: var(--color-gold);
+  background-color: var(--color-gold-bg);
+}
+
+.rarity-silver {
+  color: var(--color-silver);
+  background-color: var(--color-silver-bg);
+}
+
+.combo-plus {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-placeholder);
+  flex-shrink: 0;
+  padding: 0 8rpx;
+}
+
+.combo-rate-wrap {
+  margin-top: var(--spacing-sm);
+}
+
+/* 加载更多 */
+.loading-more {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-md) 0;
+}
+
+.no-more {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-md) 0 var(--spacing-xl);
+}
+
+/* 空状态/错误 */
+.empty-state,
+.error-state {
+  padding: var(--spacing-xxl) 0;
+}
+
+.retry-btn {
+  margin-top: var(--spacing-md);
+}

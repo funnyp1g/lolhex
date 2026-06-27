@@ -1,0 +1,8 @@
+<!--components/tier-badge/tier-badge.wxml - Tier 评级徽章-->
+<view
+  wx:if="{{tier}}"
+  class="tier-badge tier-{{tier}} tier-size-{{size}} tier-shape-{{shape}}"
+  style="background-color: {{tierConfig[tier].bg}}; color: {{tierConfig[tier].textColor || tierConfig[tier].color || '#fff'}};"
+>
+  {{tier}}
+</view>

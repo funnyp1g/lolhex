@@ -1,0 +1,8 @@
+{
+  "name": "lol-hex-miniprogram",
+  "version": "1.0.0",
+  "description": "海克斯大乱斗图鉴小程序前端",
+  "dependencies": {
+    "@vant/weapp": "^1.11.6"
+  }
+}

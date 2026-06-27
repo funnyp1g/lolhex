@@ -1,0 +1,130 @@
+<!--pages/search/search.wxml - 搜索页-->
+<view class="page-search">
+
+  <!-- 搜索栏 -->
+  <view class="search-bar">
+    <van-search
+      value="{{keyword}}"
+      shape="round"
+      placeholder="搜索英雄 / 海克斯..."
+      show-action
+      focus
+      bind:search="onConfirm"
+      bind:change="onInput"
+    />
+  </view>
+
+  <!-- 未输入关键词时：显示搜索历史 -->
+  <block wx:if="{{!keyword}}">
+    <!-- 搜索历史 -->
+    <view wx:if="{{searchHistory.length > 0}}" class="section">
+      <view class="section-header">
+        <text class="section-title">🕐 搜索历史</text>
+        <text class="clear-btn" bindtap="onClearHistory">清空</text>
+      </view>
+      <view class="history-tags">
+        <view
+          wx:for="{{searchHistory}}"
+          wx:key="*this"
+          class="history-tag"
+          data-keyword="{{item}}"
+          bindtap="onHistoryTap"
+        >
+          {{item}}
+        </view>
+      </view>
+    </view>
+
+    <!-- 热搜提示 -->
+    <view wx:if="{{searchHistory.length === 0}}" class="search-hint">
+      <text class="text-secondary">输入英雄名称或海克斯名称开始搜索</text>
+    </view>
+  </block>
+
+  <!-- 有输入关键词：显示搜索结果 -->
+  <block wx:if="{{keyword}}">
+    <!-- 搜索中 -->
+    <view wx:if="{{isSearching}}" class="search-loading">
+      <van-loading size="24px" color="var(--color-primary)">搜索中...</van-loading>
+    </view>
+
+    <!-- 搜索失败 -->
+    <view wx:elif="{{searchError}}" class="search-empty">
+      <van-empty description="搜索失败，请稍后重试" image="error" />
+    </view>
+
+    <!-- 无结果 -->
+    <view wx:elif="{{results.length === 0 && hasSearched}}" class="search-empty">
+      <van-empty description="未找到「{{keyword}}」相关结果" />
+    </view>
+
+    <!-- 搜索结果 -->
+    <view wx:elif="{{results.length > 0}}" class="search-results">
+      <!-- 结果统计 -->
+      <view class="result-count">
+        <text class="text-sm text-secondary">找到 {{results.length}} 个结果</text>
+      </view>
+
+      <!-- 英雄结果 -->
+      <view wx:if="{{championResults.length > 0}}" class="result-group">
+        <view class="result-group-title">
+          <text>🦸 英雄</text>
+          <text class="result-group-count">{{championResults.length}}</text>
+        </view>
+        <view
+          wx:for="{{championResults}}"
+          wx:key="_id"
+          class="result-item"
+          data-type="champion"
+          data-id="{{item._id || item.champion_id}}"
+          bindtap="onResultTap"
+        >
+          <image wx:if="{{item.icon_url}}" class="result-icon" src="{{item.icon_url}}" mode="aspectFill" />
+          <view class="result-info">
+            <view class="result-name-row">
+              <text class="result-name">{{item.name_zh}}</text>
+              <van-tag type="primary" plain size="medium">英雄</van-tag>
+            </view>
+            <view class="result-meta">
+              <text class="result-title">{{item.title}}</text>
+              <text wx:if="{{item.win_rate_display}}" class="result-rate">胜率 {{item.win_rate_display}}</text>
+            </view>
+          </view>
+          <text class="result-arrow">›</text>
+        </view>
+      </view>
+
+      <!-- 海克斯结果 -->
+      <view wx:if="{{augmentResults.length > 0}}" class="result-group">
+        <view class="result-group-title">
+          <text>⚡ 海克斯</text>
+          <text class="result-group-count">{{augmentResults.length}}</text>
+        </view>
+        <view
+          wx:for="{{augmentResults}}"
+          wx:key="_id"
+          class="result-item"
+          data-type="augment"
+          data-id="{{item._id || item.augment_id}}"
+          bindtap="onResultTap"
+        >
+          <image wx:if="{{item.icon_url}}" class="result-icon" src="{{item.icon_url}}" mode="aspectFill" />
+          <view class="result-info">
+            <view class="result-name-row">
+              <text class="result-name">{{item.name_zh}}</text>
+              <van-tag type="warning" plain size="medium">海克斯</van-tag>
+              <view wx:if="{{item.rarity_label}}" class="result-rarity rarity-{{item.rarity}}">
+                {{item.rarity_label}}
+              </view>
+            </view>
+            <view class="result-meta">
+              <text wx:if="{{item.win_rate_display}}" class="result-rate">胜率 {{item.win_rate_display}}</text>
+            </view>
+          </view>
+          <text class="result-arrow">›</text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+</view>

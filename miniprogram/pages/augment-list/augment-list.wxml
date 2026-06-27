@@ -1,0 +1,67 @@
+<!--pages/augment-list/augment-list.wxml - 海克斯列表-->
+<view class="page-augment-list">
+
+  <!-- 稀有度 Tabs -->
+  <van-tabs
+    active="{{activeRarity}}"
+    color="var(--color-primary)"
+    title-active-color="var(--color-primary)"
+    line-height="4rpx"
+    bind:change="onRarityChange"
+  >
+    <van-tab wx:for="{{rarityTabs}}" wx:key="key" name="{{item.key}}" title="{{item.text}}">
+    </van-tab>
+  </van-tabs>
+
+  <!-- 排序栏 -->
+  <view class="sort-bar">
+    <view
+      wx:for="{{sortOptions}}"
+      wx:key="key"
+      class="sort-btn {{sortBy === item.key ? 'active' : ''}}"
+      data-key="{{item.key}}"
+      bindtap="onSortChange"
+    >
+      {{item.text}}
+      <text wx:if="{{sortBy === item.key}}" class="sort-arrow">{{sortOrder === 'desc' ? '↓' : '↑'}}</text>
+    </view>
+  </view>
+
+  <!-- 骨架屏 -->
+  <loading-skeleton wx:if="{{loading}}" type="augment" count="{{6}}" />
+
+  <!-- 海克斯列表 -->
+  <view wx:elif="{{augments.length > 0}}" class="augment-list">
+    <augment-card
+      wx:for="{{augments}}"
+      wx:key="_id"
+      augment="{{item}}"
+      show-description="{{true}}"
+      show-rate-bar="{{true}}"
+      show-tier="{{true}}"
+      rank="{{index + 1}}"
+      data-id="{{item._id || item.augment_id}}"
+      bind:click="onAugmentTap"
+    />
+    <!-- 加载更多 -->
+    <view wx:if="{{loadingMore}}" class="loading-more">
+      <van-loading size="20px">加载中...</van-loading>
+    </view>
+    <view wx:elif="{{!hasMore && augments.length > 0}}" class="no-more">
+      <text class="text-sm text-placeholder">已加载全部海克斯</text>
+    </view>
+  </view>
+
+  <!-- 错误状态 -->
+  <view wx:elif="{{error}}" class="error-state">
+    <van-empty description="数据加载失败" image="error">
+      <van-button round type="danger" class="retry-btn" bindtap="onRetry">重新加载</van-button>
+    </van-empty>
+  </view>
+
+  <!-- 空状态 -->
+  <view wx:elif="{{!loading && augments.length === 0}}" class="empty-state">
+    <van-empty description="暂无海克斯数据" />
+  </view>
+
+</view>

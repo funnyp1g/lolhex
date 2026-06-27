@@ -1,0 +1,272 @@
+/* app.wxss - Global Styles & Design System */
+
+/* ===== Vant Icon Font (本地加载，避免CDN报错) ===== */
+@font-face {
+  font-family: 'vant-icon';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/vant-icon.woff2') format('woff2'),
+       url('./assets/fonts/vant-icon.woff') format('woff');
+}
+
+/* ===== CSS Variables (Design Tokens) ===== */
+page {
+  --color-primary: #1890ff;
+  --color-primary-light: #40a9ff;
+  --color-primary-dark: #096dd9;
+  --color-primary-bg: #e6f7ff;
+
+  --color-success: #52c41a;
+  --color-warning: #faad14;
+  --color-error: #f5222d;
+
+  /* Augment Rarity Colors */
+  --color-prismatic: #e6a817;
+  --color-prismatic-bg: #fff8e1;
+  --color-prismatic-light: #ffd54f;
+  --color-gold: #f5a623;
+  --color-gold-bg: #fff3e0;
+  --color-gold-light: #ffcc80;
+  --color-silver: #8c8c8c;
+  --color-silver-bg: #f0f0f0;
+  --color-silver-light: #bfbfbf;
+
+  /* Tier Colors */
+  --color-tier-s: #e6a817;
+  --color-tier-a: #f5a623;
+  --color-tier-b: #1890ff;
+  --color-tier-c: #52c41a;
+  --color-tier-d: #8c8c8c;
+
+  /* Text Colors */
+  --color-text-primary: #333333;
+  --color-text-secondary: #666666;
+  --color-text-placeholder: #999999;
+  --color-text-disabled: #bfbfbf;
+
+  /* Background Colors */
+  --color-bg-page: #f5f5f5;
+  --color-bg-card: #ffffff;
+  --color-bg-hover: #f0f0f0;
+
+  /* Border */
+  --color-border: #e8e8e8;
+  --color-border-light: #f0f0f0;
+
+  /* Typography */
+  --font-size-xs: 20rpx;
+  --font-size-sm: 24rpx;
+  --font-size-base: 28rpx;
+  --font-size-md: 30rpx;
+  --font-size-lg: 32rpx;
+  --font-size-xl: 36rpx;
+  --font-size-xxl: 40rpx;
+  --font-size-title: 44rpx;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.3;
+  --line-height-base: 1.5;
+  --line-height-loose: 1.8;
+
+  /* Spacing */
+  --spacing-xs: 8rpx;
+  --spacing-sm: 12rpx;
+  --spacing-base: 16rpx;
+  --spacing-md: 24rpx;
+  --spacing-lg: 32rpx;
+  --spacing-xl: 48rpx;
+  --spacing-xxl: 64rpx;
+
+  /* Border Radius */
+  --radius-sm: 4rpx;
+  --radius-base: 8rpx;
+  --radius-md: 12rpx;
+  --radius-lg: 16rpx;
+  --radius-xl: 24rpx;
+  --radius-round: 999rpx;
+
+  /* Shadows */
+  --shadow-sm: 0 2rpx 8rpx rgba(0, 0, 0, 0.06);
+  --shadow-base: 0 4rpx 16rpx rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8rpx 32rpx rgba(0, 0, 0, 0.12);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
+}
+
+/* ===== Base Reset ===== */
+page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  font-size: var(--font-size-base);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-page);
+  line-height: var(--line-height-base);
+  -webkit-font-smoothing: antialiased;
+}
+
+view, text, image {
+  box-sizing: border-box;
+}
+
+/* ===== Typography ===== */
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-md { font-size: var(--font-size-md); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-xxl { font-size: var(--font-size-xxl); }
+.text-title { font-size: var(--font-size-title); }
+
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-placeholder { color: var(--color-text-placeholder); }
+.text-bold { font-weight: var(--font-weight-bold); }
+.text-medium { font-weight: var(--font-weight-medium); }
+.text-center { text-align: center; }
+
+/* ===== Layout Utilities ===== */
+.flex { display: flex; }
+.flex-col { display: flex; flex-direction: column; }
+.flex-row { display: flex; flex-direction: row; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-1 { flex: 1; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-end { justify-content: flex-end; }
+
+/* ===== Spacing Utilities ===== */
+.p-xs { padding: var(--spacing-xs); }
+.p-sm { padding: var(--spacing-sm); }
+.p-base { padding: var(--spacing-base); }
+.p-md { padding: var(--spacing-md); }
+.p-lg { padding: var(--spacing-lg); }
+.p-xl { padding: var(--spacing-xl); }
+
+.px-md { padding-left: var(--spacing-md); padding-right: var(--spacing-md); }
+.py-sm { padding-top: var(--spacing-sm); padding-bottom: var(--spacing-sm); }
+.py-md { padding-top: var(--spacing-md); padding-bottom: var(--spacing-md); }
+
+.m-sm { margin: var(--spacing-sm); }
+.m-md { margin: var(--spacing-md); }
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.ml-sm { margin-left: var(--spacing-sm); }
+.mr-sm { margin-right: var(--spacing-sm); }
+
+/* ===== Card Styles ===== */
+.card {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.card-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* ===== Rarity Badge Styles ===== */
+.rarity-prismatic {
+  color: var(--color-prismatic);
+  background-color: var(--color-prismatic-bg);
+}
+
+.rarity-gold {
+  color: var(--color-gold);
+  background-color: var(--color-gold-bg);
+}
+
+.rarity-silver {
+  color: var(--color-silver);
+  background-color: var(--color-silver-bg);
+}
+
+.rarity-badge {
+  display: inline-block;
+  padding: 4rpx 12rpx;
+  border-radius: var(--radius-round);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ===== Tier Badge Styles ===== */
+.tier-s { color: var(--color-tier-s); font-weight: bold; }
+.tier-a { color: var(--color-tier-a); font-weight: bold; }
+.tier-b { color: var(--color-tier-b); font-weight: bold; }
+.tier-c { color: var(--color-tier-c); font-weight: bold; }
+.tier-d { color: var(--color-tier-d); font-weight: bold; }
+
+.tier-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+/* ===== Win Rate / Pick Rate Colors ===== */
+.rate-high { color: var(--color-success); }
+.rate-medium { color: var(--color-warning); }
+.rate-low { color: var(--color-error); }
+
+/* ===== Divider ===== */
+.divider {
+  height: 1rpx;
+  background-color: var(--color-border);
+  margin: var(--spacing-md) 0;
+}
+
+/* ===== Safe Area ===== */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* ===== Image Fallback ===== */
+/* When icon_url is empty, native <image> still renders — give it a styled placeholder */
+image[src=""], image:not([src]) {
+  background-color: var(--color-bg-page);
+  display: block;
+}
+
+/* ===== Ellipsis ===== */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

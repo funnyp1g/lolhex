@@ -1,0 +1,144 @@
+<!--pages/augment-detail/augment-detail.wxml - 海克斯详情-->
+
+<!-- 骨架屏 -->
+<loading-skeleton wx:if="{{loading}}" type="detail" count="{{3}}" />
+
+<!-- 错误状态 -->
+<view wx:elif="{{error}}" class="error-state">
+  <van-empty description="海克斯数据加载失败" image="error">
+    <van-button round type="danger" class="retry-btn" bindtap="onRetry">重新加载</van-button>
+  </van-empty>
+</view>
+
+<!-- 内容区 -->
+<view wx:elif="{{augment}}" class="page-augment-detail">
+
+  <!-- ===== 海克斯头部 ===== -->
+  <view class="aug-header">
+    <view class="aug-icon-wrap">
+      <image wx:if="{{augment.icon_url}}" class="aug-icon" src="{{augment.icon_url}}" mode="aspectFill" />
+      <view wx:else class="aug-icon aug-icon-placeholder">
+        <text class="aug-icon-placeholder-text">⚡</text>
+      </view>
+      <view wx:if="{{augment.tier}}" class="aug-tier">
+        <tier-badge tier="{{augment.tier}}" size="large" />
+      </view>
+    </view>
+    <view class="aug-body">
+      <view class="aug-title-row">
+        <text class="aug-name">{{augment.name_zh || augment.augment_name}}</text>
+        <view wx:if="{{augment.rarity}}" class="aug-rarity rarity-{{augment.rarity}}">
+          {{augment.rarity_icon}}{{augment.rarity_label}}
+        </view>
+      </view>
+      <text class="aug-desc">{{augment.description_zh}}</text>
+    </view>
+  </view>
+
+  <!-- ===== 数据概览 ===== -->
+  <view class="stats-overview">
+    <view class="stat-item">
+      <text class="stat-value stat-winrate">{{augment.win_rate_display}}</text>
+      <text class="stat-label">胜率</text>
+    </view>
+    <view class="stat-divider"></view>
+    <view class="stat-item">
+      <text class="stat-value stat-pickrate">{{augment.pick_rate_display}}</text>
+      <text class="stat-label">选取率</text>
+    </view>
+    <view class="stat-divider"></view>
+    <view class="stat-item">
+      <text class="stat-value">{{augment.sample_display}}</text>
+      <text class="stat-label">样本量</text>
+    </view>
+  </view>
+
+  <!-- 进度条 -->
+  <view class="rate-section">
+    <rate-bar value="{{winRateValue}}" type="win_rate" label="胜率" size="large" />
+    <view style="margin-top: 16rpx;">
+      <rate-bar value="{{pickRateValue}}" type="pick_rate" label="选取率" size="large" />
+    </view>
+  </view>
+
+  <!-- ===== 最适配英雄 TOP5 ===== -->
+  <view class="section">
+    <view class="section-header">
+      <text class="section-title">🏆 最适配英雄 TOP5</text>
+    </view>
+
+    <view wx:if="{{bestChampions.length > 0}}" class="champ-list">
+      <view
+        wx:for="{{bestChampions}}"
+        wx:key="champion_id"
+        class="champ-row"
+        data-id="{{item.champion_id}}"
+        bindtap="onChampionTap"
+      >
+        <!-- 排名 -->
+        <view class="champ-rank champ-rank-{{item.rank <= 3 ? 'top' : ''}}">{{item.rank}}</view>
+        <!-- 英雄头像 -->
+        <image wx:if="{{item.champion_icon}}" class="champ-avatar" src="{{item.champion_icon}}" mode="aspectFill" />
+        <!-- 名称 -->
+        <view class="champ-name">{{item.champion_name}}</view>
+        <!-- 胜率条 -->
+        <view class="champ-rate">
+          <rate-bar value="{{item.win_rate_value}}" type="win_rate" show-label="{{false}}" size="normal" />
+        </view>
+        <!-- 胜率数值 -->
+        <text class="champ-winrate">{{item.win_rate_display}}</text>
+      </view>
+    </view>
+    <view wx:else class="empty-hint">
+      <van-empty description="暂无适配英雄数据" image="search" />
+    </view>
+  </view>
+
+  <!-- ===== 最不适配英雄 ===== -->
+  <view wx:if="{{worstChampions.length > 0}}" class="section">
+    <view class="section-header">
+      <text class="section-title">⚠️ 最不适配英雄</text>
+    </view>
+    <view class="champ-list">
+      <view
+        wx:for="{{worstChampions}}"
+        wx:key="champion_id"
+        class="champ-row champ-row-worst"
+        data-id="{{item.champion_id}}"
+        bindtap="onChampionTap"
+      >
+        <image wx:if="{{item.champion_icon}}" class="champ-avatar" src="{{item.champion_icon}}" mode="aspectFill" />
+        <view class="champ-name">{{item.champion_name}}</view>
+        <text class="champ-winrate champ-winrate-low">{{item.win_rate_display}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- ===== 推荐装备 ===== -->
+  <view wx:if="{{recommendedItems.length > 0}}" class="section">
+    <view class="section-header">
+      <text class="section-title">🎒 推荐装备</text>
+    </view>
+    <view class="item-grid">
+      <view wx:for="{{recommendedItems}}" wx:key="_id" class="item-cell">
+        <image wx:if="{{item.icon_url}}" class="item-cell-icon" src="{{item.icon_url}}" mode="aspectFill" />
+        <text class="item-cell-name">{{item.name_zh || item.item_name}}</text>
+        <text class="item-cell-rate">{{item.win_rate_display}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- ===== 版本胜率趋势 ===== -->
+  <view class="section">
+    <view class="section-header">
+      <text class="section-title">📈 版本胜率趋势</text>
+    </view>
+    <version-trend-chart
+      chart-data="{{trendData}}"
+      title="各版本胜率变化"
+      type="win_rate"
+      height="{{300}}"
+    />
+  </view>
+
+</view>

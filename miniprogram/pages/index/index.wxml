@@ -1,0 +1,231 @@
+<!--pages/index/index.wxml - 首页-->
+<view class="page-index">
+  <!-- 搜索栏 -->
+  <view class="search-bar" bindtap="onSearchTap">
+    <van-search
+      shape="round"
+      placeholder="搜索英雄 / 海克斯..."
+      disabled
+    />
+  </view>
+
+  <!-- 加载中 -->
+  <loading-skeleton wx:if="{{loading}}" type="augment" count="{{4}}" />
+
+  <!-- 错误状态 -->
+  <view wx:elif="{{error}}" class="error-state">
+    <van-empty description="数据加载失败" image="error">
+      <van-button round type="danger" class="retry-btn" bindtap="onRetry">重新加载</van-button>
+    </van-empty>
+  </view>
+
+  <!-- 加载完成 -->
+  <block wx:elif="{{!loading}}">
+    <!-- ===== 版本信息 + 调整卡片 ===== -->
+    <view class="patch-card card" bindtap="toggleAdjustmentsDetail">
+      <view class="patch-header">
+        <view class="patch-left">
+          <view class="patch-version-row">
+            <text class="text-xs text-secondary">当前版本</text>
+            <text class="patch-version">{{currentPatch || '--'}}</text>
+          </view>
+          <!-- 调整摘要 -->
+          <view wx:if="{{patchAdjustments}}" class="patch-summary">
+            <text class="patch-buff-count">📈 {{patchAdjustments.buffs.length}}项增强</text>
+            <text class="patch-nerf-count">📉 {{patchAdjustments.nerfs.length}}项削弱</text>
+            <view wx:if="{{patchAdjustments.balance.length > 0}}" class="patch-balance-count">
+              🔄 {{patchAdjustments.balance.length}}项调整
+            </view>
+          </view>
+          <text wx:else class="patch-summary-placeholder">暂无调整数据</text>
+        </view>
+        <view class="patch-right">
+          <text class="expand-arrow {{showAdjustmentsDetail ? 'expanded' : ''}}">▼</text>
+        </view>
+      </view>
+
+      <!-- 调整详情（展开） -->
+      <view wx:if="{{showAdjustmentsDetail && patchAdjustments}}" class="patch-detail">
+        <!-- 增强 -->
+        <view wx:if="{{patchAdjustments.buffs.length > 0}}" class="detail-group">
+          <view class="detail-group-title detail-group-title-buff">
+            📈 增强
+          </view>
+          <view
+            wx:for="{{patchAdjustments.buffs}}"
+            wx:key="name"
+            class="detail-item"
+          >
+            <text class="detail-item-name">{{item.name}}</text>
+            <text class="detail-item-desc">{{item.desc}}</text>
+          </view>
+        </view>
+
+        <!-- 削弱 -->
+        <view wx:if="{{patchAdjustments.nerfs.length > 0}}" class="detail-group">
+          <view class="detail-group-title detail-group-title-nerf">
+            📉 削弱
+          </view>
+          <view
+            wx:for="{{patchAdjustments.nerfs}}"
+            wx:key="name"
+            class="detail-item"
+          >
+            <text class="detail-item-name">{{item.name}}</text>
+            <text class="detail-item-desc">{{item.desc}}</text>
+          </view>
+        </view>
+
+        <!-- 平衡 -->
+        <view wx:if="{{patchAdjustments.balance.length > 0}}" class="detail-group">
+          <view class="detail-group-title detail-group-title-balance">
+            🔄 平衡调整
+          </view>
+          <view
+            wx:for="{{patchAdjustments.balance}}"
+            wx:key="name"
+            class="detail-item"
+          >
+            <text class="detail-item-name">{{item.name}}</text>
+            <text class="detail-item-desc">{{item.desc}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- ===== 热门海克斯 TOP5（颁奖台） ===== -->
+    <view class="section">
+      <view class="section-header">
+        <text class="section-title">🔥 热门海克斯 TOP5</text>
+        <text class="section-more" bindtap="onQuickEntryTap" data-istab="{{true}}" data-path="/pages/augment-list/augment-list">查看全部 ›</text>
+      </view>
+
+      <!-- 空状态 -->
+      <view wx:if="{{hotAugments.length === 0}}" class="empty-state">
+        <van-empty description="暂无热门海克斯数据" image="search" />
+      </view>
+
+      <!-- 颁奖台 -->
+      <view wx:else class="podium">
+        <!-- TOP1-3 颁奖台 -->
+        <view class="podium-stage">
+          <!-- 银牌 (TOP2) -->
+          <view
+            wx:if="{{hotAugments.length >= 2}}"
+            class="podium-medal podium-medal-silver"
+            data-id="{{hotAugments[1]._id || hotAugments[1].augment_id}}"
+            bindtap="onAugmentTap"
+          >
+            <view class="podium-medal-crown">🥈</view>
+            <image
+              wx:if="{{hotAugments[1].icon_url}}"
+              class="podium-medal-icon"
+              src="{{hotAugments[1].icon_url}}"
+              mode="aspectFill"
+            />
+            <view wx:else class="podium-medal-icon podium-medal-icon-placeholder">
+              <text class="podium-medal-icon-text">{{hotAugments[1].name_display ? hotAugments[1].name_display[0] : '?'}}</text>
+            </view>
+            <text class="podium-medal-name">{{hotAugments[1].name_display}}</text>
+            <view class="podium-medal-step">
+              <text class="podium-medal-step-num">2</text>
+            </view>
+          </view>
+
+          <!-- 金牌 (TOP1) -->
+          <view
+            wx:if="{{hotAugments.length >= 1}}"
+            class="podium-medal podium-medal-gold"
+            data-id="{{hotAugments[0]._id || hotAugments[0].augment_id}}"
+            bindtap="onAugmentTap"
+          >
+            <view class="podium-medal-crown">👑</view>
+            <image
+              wx:if="{{hotAugments[0].icon_url}}"
+              class="podium-medal-icon"
+              src="{{hotAugments[0].icon_url}}"
+              mode="aspectFill"
+            />
+            <view wx:else class="podium-medal-icon podium-medal-icon-placeholder">
+              <text class="podium-medal-icon-text">{{hotAugments[0].name_display ? hotAugments[0].name_display[0] : '?'}}</text>
+            </view>
+            <text class="podium-medal-name">{{hotAugments[0].name_display}}</text>
+            <view class="podium-medal-step">
+              <text class="podium-medal-step-num">1</text>
+            </view>
+          </view>
+
+          <!-- 铜牌 (TOP3) -->
+          <view
+            wx:if="{{hotAugments.length >= 3}}"
+            class="podium-medal podium-medal-bronze"
+            data-id="{{hotAugments[2]._id || hotAugments[2].augment_id}}"
+            bindtap="onAugmentTap"
+          >
+            <view class="podium-medal-crown">🥉</view>
+            <image
+              wx:if="{{hotAugments[2].icon_url}}"
+              class="podium-medal-icon"
+              src="{{hotAugments[2].icon_url}}"
+              mode="aspectFill"
+            />
+            <view wx:else class="podium-medal-icon podium-medal-icon-placeholder">
+              <text class="podium-medal-icon-text">{{hotAugments[2].name_display ? hotAugments[2].name_display[0] : '?'}}</text>
+            </view>
+            <text class="podium-medal-name">{{hotAugments[2].name_display}}</text>
+            <view class="podium-medal-step">
+              <text class="podium-medal-step-num">3</text>
+            </view>
+          </view>
+        </view>
+
+        <!-- TOP4-5 普通卡片 -->
+        <view wx:if="{{hotAugments.length >= 4}}" class="podium-bottom">
+          <view
+            wx:for="{{hotAugments}}"
+            wx:for-item="item"
+            wx:for-index="idx"
+            wx:key="_id"
+            wx:if="{{idx >= 3}}"
+            class="podium-bottom-item"
+            data-id="{{item._id || item.augment_id}}"
+            bindtap="onAugmentTap"
+          >
+            <view class="podium-bottom-rank">#{{idx + 1}}</view>
+            <image
+              wx:if="{{item.icon_url}}"
+              class="podium-bottom-icon"
+              src="{{item.icon_url}}"
+              mode="aspectFill"
+            />
+            <view wx:else class="podium-bottom-icon podium-bottom-icon-placeholder">
+              <text class="podium-bottom-icon-text">{{item.name_display ? item.name_display[0] : '?'}}</text>
+            </view>
+            <text class="podium-bottom-name">{{item.name_display}}</text>
+            <text class="podium-bottom-rate">{{item.win_rate_display}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- ===== 快速入口 ===== -->
+    <view class="section">
+      <view class="section-header">
+        <text class="section-title">🚀 快速入口</text>
+      </view>
+      <view class="quick-entries">
+        <view
+          wx:for="{{quickEntries}}"
+          wx:key="path"
+          class="quick-entry"
+          data-path="{{item.path}}"
+          data-istab="{{item.isTab}}"
+          bindtap="onQuickEntryTap"
+        >
+          <text class="quick-icon">{{item.icon}}</text>
+          <text class="quick-text">{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

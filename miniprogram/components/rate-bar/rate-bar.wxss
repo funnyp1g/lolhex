@@ -1,0 +1,51 @@
+/* components/rate-bar/rate-bar.wxss - 胜率/选取率进度条样式 */
+.rate-bar {
+  padding: 4rpx 0;
+  width: 100%;
+}
+
+.rate-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rpx;
+}
+
+.rate-label-right {
+  justify-content: flex-end;
+}
+
+.rate-label-text {
+  font-size: 22rpx;
+  color: #8c8c8c;
+}
+
+.rate-value {
+  font-size: 22rpx;
+  font-weight: 500;
+  color: #595959;
+}
+
+/* 轨道 */
+.rate-track {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 999rpx;
+  overflow: hidden;
+}
+
+.rate-track-normal {
+  height: 8rpx;
+}
+
+.rate-track-large {
+  height: 12rpx;
+}
+
+/* 填充 */
+.rate-fill {
+  height: 100%;
+  border-radius: 999rpx;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 0;
+}

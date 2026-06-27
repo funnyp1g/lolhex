@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/champion-list/champion-list",
+    "pages/champion-detail/champion-detail",
+    "pages/augment-list/augment-list",
+    "pages/augment-detail/augment-detail",
+    "pages/combo/combo",
+    "pages/search/search",
+    "pages/settings/settings"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1890ff",
+    "navigationBarTitleText": "海克斯大乱斗图鉴",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#1890ff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/champion-list/champion-list",
+        "text": "英雄",
+        "iconPath": "assets/icons/friends.png",
+        "selectedIconPath": "assets/icons/friends-active.png"
+      },
+      {
+        "pagePath": "pages/augment-list/augment-list",
+        "text": "海克斯",
+        "iconPath": "assets/icons/star.png",
+        "selectedIconPath": "assets/icons/star-active.png"
+      },
+      {
+        "pagePath": "pages/combo/combo",
+        "text": "组合",
+        "iconPath": "assets/icons/label.png",
+        "selectedIconPath": "assets/icons/label-active.png"
+      },
+      {
+        "pagePath": "pages/settings/settings",
+        "text": "设置",
+        "iconPath": "assets/icons/setting.png",
+        "selectedIconPath": "assets/icons/setting-active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-divider": "@vant/weapp/divider/index"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

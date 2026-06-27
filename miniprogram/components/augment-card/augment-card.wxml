@@ -1,0 +1,50 @@
+<!--components/augment-card/augment-card.wxml - 海克斯卡片-->
+<view class="aug-card" bindtap="onTap">
+  <!-- 顶部：图标 + 名称 + 稀有度 + Tier -->
+  <view class="aug-header">
+    <!-- 序号角标 -->
+    <text wx:if="{{rank > 0}}" class="aug-rank">{{rank}}</text>
+    <!-- 海克斯图标 -->
+    <image wx:if="{{augment.icon_url}}" class="aug-icon" src="{{augment.icon_url}}" mode="aspectFill" />
+    <view wx:else class="aug-icon aug-icon-placeholder">
+      <text class="aug-icon-placeholder-text">⚡</text>
+    </view>
+    <!-- 名称与描述区域 -->
+    <view class="aug-info">
+      <view class="aug-title-row">
+        <text class="aug-name">{{augment.name_zh || augment.augment_name}}</text>
+        <view wx:if="{{augment.rarity}}" class="aug-rarity rarity-{{augment.rarity}}">
+          {{rarityLabel}}
+        </view>
+      </view>
+      <!-- 效果描述（单行截断） -->
+      <view wx:if="{{showDescription && augment.description_zh}}" class="aug-desc ellipsis">
+        {{augment.description_zh}}
+      </view>
+      <!-- 统计行：胜率 + 选取率 -->
+      <view class="aug-stats">
+        <text wx:if="{{hasWinRate}}" class="aug-stat aug-winrate">
+          胜率 {{winRateDisplay}}
+        </text>
+        <text wx:if="{{hasPickRate}}" class="aug-stat aug-pickrate">
+          选取 {{pickRateDisplay}}
+        </text>
+        <text wx:if="{{hasSample}}" class="aug-stat aug-samples">
+          {{sampleDisplay}}
+        </text>
+      </view>
+    </view>
+    <!-- Tier 徽章 -->
+    <tier-badge wx:if="{{showTier && augment.tier}}" tier="{{augment.tier}}" size="normal" />
+  </view>
+  <!-- 胜率进度条 -->
+  <view wx:if="{{showRateBar && hasWinRate}}" class="aug-rate-wrap">
+    <rate-bar
+      value="{{winRateValue}}"
+      type="win_rate"
+      show-label="{{true}}"
+      label="胜率"
+      size="normal"
+    />
+  </view>
+</view>

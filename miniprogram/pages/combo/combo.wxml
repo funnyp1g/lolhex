@@ -1,0 +1,104 @@
+<!--pages/combo/combo.wxml - 组合推荐-->
+<view class="page-combo">
+
+  <!-- 筛选栏 -->
+  <view class="filter-bar">
+    <!-- 英雄选择 -->
+    <view class="filter-row">
+      <text class="filter-label">英雄</text>
+      <picker
+        mode="selector"
+        range="{{champions}}"
+        range-key="name_zh"
+        bindchange="onChampionChange"
+      >
+        <view class="picker-btn">
+          <text>{{selectedChampionId ? champions[0].name_zh : '全部英雄'}}</text>
+          <text class="picker-arrow">▼</text>
+        </view>
+      </picker>
+    </view>
+    <!-- 排序 -->
+    <view class="filter-row">
+      <text class="filter-label">排序</text>
+      <view class="sort-btns">
+        <view
+          wx:for="{{sortOptions}}"
+          wx:key="key"
+          class="sort-btn {{sortBy === item.key ? 'active' : ''}}"
+          data-key="{{item.key}}"
+          bindtap="onSortChange"
+        >
+          {{item.text}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 骨架屏 -->
+  <loading-skeleton wx:if="{{loading}}" type="augment" count="{{4}}" />
+
+  <!-- 组合列表 -->
+  <view wx:elif="{{trios.length > 0}}" class="combo-list">
+    <view wx:for="{{trios}}" wx:key="_id" class="combo-card">
+      <!-- 头部：排名 + Tier + 胜率 -->
+      <view class="combo-header">
+        <view class="combo-header-left">
+          <text class="combo-rank">#{{index + 1}}</text>
+          <tier-badge wx:if="{{item.tier}}" tier="{{item.tier}}" size="normal" />
+        </view>
+        <view class="combo-header-right">
+          <text class="combo-winrate">{{item.win_rate_display}}</text>
+          <text class="combo-samples">{{item.sample_display}}场</text>
+        </view>
+      </view>
+
+      <!-- 海克斯组合 -->
+      <view class="combo-augments">
+        <view
+          wx:for="{{item.augments}}"
+          wx:for-item="aug"
+          wx:key="id"
+          class="combo-augment-cell"
+          data-id="{{aug.id}}"
+          bindtap="onAugmentTap"
+        >
+          <image wx:if="{{aug.icon_url}}" class="combo-aug-icon" src="{{aug.icon_url}}" mode="aspectFill" />
+          <view wx:else class="combo-aug-icon combo-aug-placeholder">?</view>
+          <text class="combo-aug-name">{{aug.name_zh}}</text>
+          <view wx:if="{{aug.rarity}}" class="combo-aug-rarity rarity-{{aug.rarity}}">
+            {{aug.rarity_label}}
+          </view>
+        </view>
+        <!-- 连接符 -->
+        <view class="combo-plus">+</view>
+      </view>
+
+      <!-- 胜率条 -->
+      <view class="combo-rate-wrap">
+        <rate-bar value="{{item.win_rate_value}}" type="win_rate" show-label="{{false}}" size="normal" />
+      </view>
+    </view>
+
+    <!-- 加载更多 -->
+    <view wx:if="{{loadingMore}}" class="loading-more">
+      <van-loading size="20px">加载中...</van-loading>
+    </view>
+    <view wx:elif="{{!hasMore && trios.length > 0}}" class="no-more">
+      <text class="text-sm text-placeholder">已加载全部组合</text>
+    </view>
+  </view>
+
+  <!-- 错误状态 -->
+  <view wx:elif="{{error}}" class="error-state">
+    <van-empty description="数据加载失败" image="error">
+      <van-button round type="danger" class="retry-btn" bindtap="onRetry">重新加载</van-button>
+    </van-empty>
+  </view>
+
+  <!-- 空状态 -->
+  <view wx:elif="{{!loading && trios.length === 0}}" class="empty-state">
+    <van-empty description="暂无组合推荐数据" />
+  </view>
+
+</view>

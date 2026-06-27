@@ -1,0 +1,20 @@
+<!--components/rate-bar/rate-bar.wxml - 胜率/选取率进度条-->
+<view class="rate-bar">
+  <!-- 标签行 -->
+  <view wx:if="{{showLabel && label}}" class="rate-label">
+    <text class="rate-label-text">{{label}}</text>
+    <text wx:if="{{showValue}}" class="rate-value">{{value}}{{suffix}}</text>
+  </view>
+  <!-- 仅显示数值（无标签时） -->
+  <view wx:elif="{{showValue && !label}}" class="rate-label rate-label-right">
+    <text class="rate-value">{{value}}{{suffix}}</text>
+  </view>
+  <!-- 进度条轨道 -->
+  <view class="rate-track rate-track-{{size}}">
+    <!-- 渐变填充 -->
+    <view
+      class="rate-fill"
+      style="width: {{value}}%; background: linear-gradient(90deg, {{barColor}}, {{barEndColor}});"
+    ></view>
+  </view>
+</view>

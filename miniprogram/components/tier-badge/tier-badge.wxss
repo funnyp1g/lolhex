@@ -1,0 +1,48 @@
+/* components/tier-badge/tier-badge.wxss - Tier 评级徽章样式 */
+.tier-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+/* 尺寸 */
+.tier-size-small {
+  width: 36rpx;
+  height: 32rpx;
+  font-size: 20rpx;
+  border-radius: 4rpx;
+}
+
+.tier-size-normal {
+  width: 48rpx;
+  height: 40rpx;
+  font-size: 24rpx;
+  border-radius: 6rpx;
+}
+
+.tier-size-large {
+  width: 64rpx;
+  height: 52rpx;
+  font-size: 32rpx;
+  border-radius: 8rpx;
+}
+
+/* 形状 */
+.tier-shape-rect {
+  border-radius: 4rpx;
+}
+
+.tier-shape-round {
+  border-radius: 999rpx;
+}
+
+/* Tier 配色 - 通过 style 动态设置，这里只设置默认值 */
+.tier-S { /* 通过 tierConfig 动态设置 */ }
+.tier-A { /* 通过 tierConfig 动态设置 */ }
+.tier-B { /* 通过 tierConfig 动态设置 */ }
+.tier-C { /* 通过 tierConfig 动态设置 */ }
+.tier-D { /* 通过 tierConfig 动态设置 */ }

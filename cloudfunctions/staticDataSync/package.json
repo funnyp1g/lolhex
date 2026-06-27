@@ -1,0 +1,10 @@
+{
+  "name": "staticDataSync",
+  "version": "1.0.0",
+  "description": "静态数据同步（每版本触发）- Community Dragon + Data Dragon",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3",
+    "axios": "^1.6.0"
+  }
+}

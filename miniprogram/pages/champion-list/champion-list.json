@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "champion-card": "/components/champion-card/champion-card",
+    "loading-skeleton": "/components/loading-skeleton/loading-skeleton"
+  },
+  "navigationBarTitleText": "英雄图鉴",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

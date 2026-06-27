@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "augment-card": "/components/augment-card/augment-card",
+    "item-card": "/components/item-card/item-card",
+    "tier-badge": "/components/tier-badge/tier-badge",
+    "rate-bar": "/components/rate-bar/rate-bar",
+    "loading-skeleton": "/components/loading-skeleton/loading-skeleton",
+    "version-trend-chart": "/components/version-trend-chart/version-trend-chart"
+  },
+  "navigationBarTitleText": "英雄详情",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

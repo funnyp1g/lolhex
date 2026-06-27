@@ -1,0 +1,72 @@
+<!--pages/settings/settings.wxml - 设置页-->
+<view class="page-settings">
+
+  <!-- 应用信息头部 -->
+  <view class="app-header">
+    <view class="app-logo">⚡</view>
+    <text class="app-name">海克斯大乱斗图鉴</text>
+    <text class="app-version">v{{version}} · 版本 {{currentPatch}}</text>
+  </view>
+
+  <!-- 数据管理 -->
+  <view class="settings-group">
+    <view class="group-title">📊 数据管理</view>
+
+    <van-cell-group inset>
+      <van-cell
+        title="数据源说明"
+        label="查看数据来源与更新频率"
+        is-link
+        bindtap="onDataInfo"
+      />
+      <van-cell
+        title="本地缓存"
+        label="{{cacheSize}}"
+      />
+      <van-cell
+        title="清除缓存"
+        label="清除本地数据缓存"
+        is-link
+        bindtap="onClearCache"
+        title-style="color: var(--color-error);"
+      />
+      <van-cell
+        title="刷新数据"
+        label="{{lastUpdateTime ? '上次更新：' + lastUpdateTime : '点击立即刷新所有数据'}}"
+        is-link
+        bindtap="onRefreshData"
+      />
+    </van-cell-group>
+  </view>
+
+  <!-- 其他 -->
+  <view class="settings-group">
+    <view class="group-title">ℹ️ 其他</view>
+
+    <van-cell-group inset>
+      <van-cell
+        title="意见反馈"
+        label="帮助我们改进产品"
+        is-link
+        bindtap="onFeedback"
+      />
+      <van-cell
+        title="关于"
+        label="版本信息与版权声明"
+        is-link
+        bindtap="onAbout"
+      />
+    </van-cell-group>
+  </view>
+
+  <!-- 底部声明 -->
+  <view class="footer">
+    <text class="footer-text">海克斯大乱斗图鉴 v{{version}}</text>
+    <text class="footer-text">数据版本 {{currentPatch}}</text>
+    <view class="footer-divider"></view>
+    <text class="footer-disclaimer">本工具非 Riot Games 官方产品</text>
+    <text class="footer-disclaimer">统计数据来源于社区对战数据聚合，仅供参考</text>
+    <text class="footer-disclaimer">英雄联盟及相关素材版权归 Riot Games 所有</text>
+  </view>
+
+</view>

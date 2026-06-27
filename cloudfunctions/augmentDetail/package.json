@@ -1,0 +1,9 @@
+{
+  "name": "augmentDetail",
+  "version": "1.0.0",
+  "description": "获取海克斯详情+适配英雄+推荐装备",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3"
+  }
+}

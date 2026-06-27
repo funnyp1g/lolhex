@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tier-badge": "/components/tier-badge/tier-badge"
+  }
+}

@@ -1,0 +1,180 @@
+<!--pages/champion-detail/champion-detail.wxml - 英雄详情-->
+
+<!-- 骨架屏 -->
+<loading-skeleton wx:if="{{loading}}" type="detail" count="{{3}}" />
+
+<!-- 错误状态 -->
+<view wx:elif="{{error}}" class="error-state">
+  <van-empty description="英雄数据加载失败" image="error">
+    <van-button round type="danger" class="retry-btn" bindtap="onRetry">重新加载</van-button>
+  </van-empty>
+</view>
+
+<!-- 内容区 -->
+<view wx:elif="{{champion}}" class="page-champion-detail">
+
+  <!-- ===== 英雄头部信息 ===== -->
+  <view class="hero-header">
+    <view class="hero-avatar-wrap">
+      <image wx:if="{{champion.icon_url}}" class="hero-avatar" src="{{champion.icon_url}}" mode="aspectFill" />
+      <view wx:if="{{champion.tier}}" class="hero-tier">
+        <tier-badge tier="{{champion.tier}}" size="large" />
+      </view>
+    </view>
+    <view class="hero-body">
+      <text class="hero-name">{{champion.name_zh}}</text>
+      <text class="hero-title">{{champion.title}}</text>
+      <!-- 角色标签 -->
+      <view class="hero-roles">
+        <text
+          wx:for="{{champion.roles_colored || champion.roles}}"
+          wx:key="name"
+          class="hero-role-tag"
+          style="color: {{item.color || '#1890ff'}}; background: {{item.color || '#1890ff'}}1a;"
+        >
+          {{item.name || item}}
+        </text>
+      </view>
+    </view>
+  </view>
+
+  <!-- ===== 数据概览卡片 ===== -->
+  <view class="stats-overview">
+    <view class="stat-item">
+      <text class="stat-value stat-winrate">{{champion.win_rate_display}}</text>
+      <text class="stat-label">胜率</text>
+    </view>
+    <view class="stat-divider"></view>
+    <view class="stat-item">
+      <text class="stat-value stat-pickrate">{{champion.pick_rate_display}}</text>
+      <text class="stat-label">选取率</text>
+    </view>
+    <view class="stat-divider"></view>
+    <view class="stat-item">
+      <text class="stat-value">{{champion.sample_display}}</text>
+      <text class="stat-label">样本量</text>
+    </view>
+  </view>
+
+  <!-- 胜率进度条 -->
+  <view class="hero-rate-section">
+    <rate-bar value="{{winRateValue}}" type="win_rate" label="胜率" size="large" />
+    <view style="margin-top: 16rpx;">
+      <rate-bar value="{{pickRateValue}}" type="pick_rate" label="选取率" size="large" />
+    </view>
+  </view>
+
+  <!-- ===== 推荐海克斯 ===== -->
+  <view class="section">
+    <view class="section-header">
+      <text class="section-title">⚡ 推荐海克斯</text>
+    </view>
+
+    <!-- 稀有度 Tabs -->
+    <van-tabs
+      active="{{activeRarity}}"
+      color="var(--color-primary)"
+      title-active-color="var(--color-primary)"
+      line-height="4rpx"
+      bind:change="onRarityChange"
+    >
+      <van-tab wx:for="{{rarityTabs}}" wx:key="key" name="{{item.key}}" title="{{item.text}}">
+      </van-tab>
+    </van-tabs>
+
+    <!-- 海克斯列表 -->
+    <view wx:if="{{filteredAugments.length > 0}}" class="aug-list">
+      <augment-card
+        wx:for="{{filteredAugments}}"
+        wx:key="_id"
+        augment="{{item}}"
+        show-description="{{true}}"
+        show-rate-bar="{{true}}"
+        show-tier="{{true}}"
+        rank="{{index + 1}}"
+        data-id="{{item._id || item.augment_id}}"
+        bind:click="onAugmentTap"
+      />
+    </view>
+    <view wx:else class="empty-hint">
+      <van-empty description="该级别暂无海克斯数据" image="search" />
+    </view>
+  </view>
+
+  <!-- ===== 推荐装备 ===== -->
+  <view class="section">
+    <view class="section-header">
+      <text class="section-title">🛡️ 推荐装备</text>
+    </view>
+
+    <!-- 核心装备 -->
+    <view wx:if="{{itemsCore.length > 0}}" class="item-group">
+      <view class="item-group-title">
+        <text>核心装</text>
+        <text class="item-group-count">{{itemsCore.length}}件</text>
+      </view>
+      <view class="item-grid">
+        <view
+          wx:for="{{itemsCore}}"
+          wx:key="_id"
+          class="item-grid-cell"
+          data-id="{{item._id || item.item_id}}"
+          bindtap="onItemTap"
+        >
+          <image wx:if="{{item.icon_url}}" class="item-grid-icon" src="{{item.icon_url}}" mode="aspectFill" />
+          <text class="item-grid-name">{{item.name_zh || item.item_name}}</text>
+          <text class="item-grid-rate">{{item.win_rate_display}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 鞋子 -->
+    <view wx:if="{{itemsBoots.length > 0}}" class="item-group">
+      <view class="item-group-title">
+        <text>鞋子</text>
+        <text class="item-group-count">{{itemsBoots.length}}件</text>
+      </view>
+      <view class="item-grid">
+        <view
+          wx:for="{{itemsBoots}}"
+          wx:key="_id"
+          class="item-grid-cell"
+          data-id="{{item._id || item.item_id}}"
+          bindtap="onItemTap"
+        >
+          <image wx:if="{{item.icon_url}}" class="item-grid-icon" src="{{item.icon_url}}" mode="aspectFill" />
+          <text class="item-grid-name">{{item.name_zh || item.item_name}}</text>
+          <text class="item-grid-rate">{{item.win_rate_display}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 神装 -->
+    <view wx:if="{{itemsFullBuild.length > 0}}" class="item-group">
+      <view class="item-group-title">
+        <text>神装</text>
+        <text class="item-group-count">{{itemsFullBuild.length}}套</text>
+      </view>
+      <view class="fullbuild-list">
+        <view wx:for="{{itemsFullBuild}}" wx:key="_id" class="fullbuild-row">
+          <view class="fullbuild-items">
+            <image wx:if="{{item.icon_url}}" class="fullbuild-item-icon" src="{{item.icon_url}}" mode="aspectFill" />
+            <view wx:else class="fullbuild-item-icon fullbuild-item-icon-placeholder">
+              <text>🎒</text>
+            </view>
+          </view>
+          <view class="fullbuild-info">
+            <text class="fullbuild-winrate">{{item.win_rate_display}}胜率</text>
+            <text class="fullbuild-samples">{{item.sample_display}}场</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 空状态 -->
+    <view wx:if="{{itemsCore.length === 0 && itemsBoots.length === 0 && itemsFullBuild.length === 0}}" class="empty-hint">
+      <van-empty description="暂无装备数据" image="search" />
+    </view>
+  </view>
+
+</view>

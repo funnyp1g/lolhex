@@ -1,0 +1,478 @@
+/* pages/index/index.wxss - 首页样式 */
+.page-index {
+  padding: var(--spacing-md);
+  padding-bottom: calc(var(--spacing-xxl) + env(safe-area-inset-bottom));
+  min-height: 100vh;
+  background-color: var(--color-bg-page);
+}
+
+.search-bar {
+  margin-bottom: var(--spacing-md);
+}
+
+/* ===== 版本信息卡片 ===== */
+.patch-card {
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: linear-gradient(135deg, var(--color-primary-bg), #ffffff);
+  border: 1rpx solid var(--color-border);
+}
+
+.patch-card:active {
+  background-color: var(--color-bg-hover);
+}
+
+.patch-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.patch-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.patch-version-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: 4rpx;
+}
+
+.patch-version {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.patch-summary {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.patch-summary-placeholder {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-placeholder);
+}
+
+.patch-buff-count {
+  font-size: var(--font-size-xs);
+  color: var(--color-success);
+  font-weight: var(--font-weight-medium);
+}
+
+.patch-nerf-count {
+  font-size: var(--font-size-xs);
+  color: var(--color-error);
+  font-weight: var(--font-weight-medium);
+}
+
+.patch-balance-count {
+  font-size: var(--font-size-xs);
+  color: var(--color-warning);
+  font-weight: var(--font-weight-medium);
+}
+
+.patch-right {
+  display: flex;
+  align-items: center;
+  padding-left: var(--spacing-sm);
+}
+
+.expand-arrow {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-placeholder);
+  transition: transform var(--transition-base);
+}
+
+.expand-arrow.expanded {
+  transform: rotate(180deg);
+}
+
+/* 版本调整详情 */
+.patch-detail {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1rpx solid var(--color-border);
+}
+
+.detail-group {
+  margin-bottom: var(--spacing-sm);
+}
+
+.detail-group:last-child {
+  margin-bottom: 0;
+}
+
+.detail-group-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 8rpx;
+  padding-left: 4rpx;
+}
+
+.detail-group-title-buff {
+  color: var(--color-success);
+}
+
+.detail-group-title-nerf {
+  color: var(--color-error);
+}
+
+.detail-group-title-balance {
+  color: var(--color-warning);
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rpx var(--spacing-sm);
+  margin-bottom: 4rpx;
+  border-radius: var(--radius-base);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-item-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.detail-item-desc {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 280rpx;
+}
+
+/* ===== 区块 ===== */
+.section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.section-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.section-more {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+}
+
+/* 空状态 */
+.empty-state {
+  padding: var(--spacing-xl) 0;
+}
+
+/* ===== 热门海克斯颁奖台 ===== */
+.podium {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* 颁奖台舞台 */
+.podium-stage {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8rpx;
+  padding: var(--spacing-md) var(--spacing-sm) 0;
+}
+
+/* 颁奖台每个位置 */
+.podium-medal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rpx;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md) var(--spacing-sm);
+  background-color: var(--color-bg-card);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast);
+  position: relative;
+}
+
+.podium-medal:active {
+  transform: scale(0.96);
+}
+
+/* 金牌 - 最高最大 */
+.podium-medal-gold {
+  order: 1;
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  background: linear-gradient(180deg, #fff9e6, #ffffff);
+  border: 2rpx solid #fadb14;
+}
+
+.podium-medal-gold .podium-medal-icon {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.podium-medal-gold .podium-medal-crown {
+  font-size: 44rpx;
+}
+
+.podium-medal-gold .podium-medal-name {
+  font-size: var(--font-size-sm);
+}
+
+.podium-medal-gold .podium-medal-step {
+  width: 56rpx;
+  height: 56rpx;
+  background: linear-gradient(180deg, #fadb14, #ffd666);
+}
+
+.podium-medal-gold .podium-medal-step-num {
+  font-size: var(--font-size-lg);
+}
+
+/* 银牌 - 中间高度 */
+.podium-medal-silver {
+  order: 0;
+  padding-top: var(--spacing-md);
+  padding-bottom: calc(var(--spacing-md) + 24rpx);
+  background: linear-gradient(180deg, #f0f0f0, #ffffff);
+  border: 2rpx solid #d9d9d9;
+}
+
+.podium-medal-silver .podium-medal-icon {
+  width: 84rpx;
+  height: 84rpx;
+}
+
+.podium-medal-silver .podium-medal-crown {
+  font-size: 36rpx;
+}
+
+.podium-medal-silver .podium-medal-name {
+  font-size: var(--font-size-xs);
+}
+
+.podium-medal-silver .podium-medal-step {
+  width: 48rpx;
+  height: 48rpx;
+  background: linear-gradient(180deg, #d9d9d9, #f0f0f0);
+}
+
+/* 铜牌 - 最矮最小 */
+.podium-medal-bronze {
+  order: 2;
+  padding-top: var(--spacing-md);
+  padding-bottom: calc(var(--spacing-md) + 12rpx);
+  background: linear-gradient(180deg, #fff0e6, #ffffff);
+  border: 2rpx solid #ffc069;
+}
+
+.podium-medal-bronze .podium-medal-icon {
+  width: 84rpx;
+  height: 84rpx;
+}
+
+.podium-medal-bronze .podium-medal-crown {
+  font-size: 36rpx;
+}
+
+.podium-medal-bronze .podium-medal-name {
+  font-size: var(--font-size-xs);
+}
+
+.podium-medal-bronze .podium-medal-step {
+  width: 48rpx;
+  height: 48rpx;
+  background: linear-gradient(180deg, #ffc069, #ffe0b2);
+}
+
+/* 皇冠 */
+.podium-medal-crown {
+  position: absolute;
+  top: -16rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1;
+}
+
+/* 图标 */
+.podium-medal-icon {
+  width: 84rpx;
+  height: 84rpx;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-page);
+}
+
+.podium-medal-icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-md);
+}
+
+.podium-medal-icon-text {
+  font-size: 36rpx;
+  font-weight: var(--font-weight-bold);
+  color: #fff;
+}
+
+/* 名称 */
+.podium-medal-name {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 140rpx;
+}
+
+/* 排名台阶 */
+.podium-medal-step {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: var(--radius-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.podium-medal-step-num {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: #fff;
+}
+
+/* TOP4-5 普通卡片 */
+.podium-bottom {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.podium-bottom-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rpx;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-card);
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.podium-bottom-item:active {
+  background-color: var(--color-bg-hover);
+}
+
+.podium-bottom-rank {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-placeholder);
+  font-weight: var(--font-weight-bold);
+}
+
+.podium-bottom-icon {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: var(--radius-base);
+  background-color: var(--color-bg-page);
+}
+
+.podium-bottom-icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-base);
+}
+
+.podium-bottom-icon-text {
+  font-size: 28rpx;
+  font-weight: var(--font-weight-bold);
+  color: #fff;
+}
+
+.podium-bottom-name {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 160rpx;
+}
+
+.podium-bottom-rate {
+  font-size: var(--font-size-xs);
+  color: var(--color-warning);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ===== 快速入口 ===== */
+.quick-entries {
+  display: flex;
+  justify-content: space-around;
+  padding: var(--spacing-md) 0;
+}
+
+.quick-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-card);
+  box-shadow: var(--shadow-sm);
+  min-width: 150rpx;
+  transition: background-color var(--transition-fast);
+}
+
+.quick-entry:active {
+  background-color: var(--color-bg-hover);
+}
+
+.quick-icon {
+  font-size: 56rpx;
+}
+
+.quick-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ===== 错误状态 ===== */
+.error-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.retry-btn {
+  margin-top: var(--spacing-md);
+}

@@ -1,0 +1,72 @@
+/* pages/settings/settings.wxss - 设置页样式 */
+.page-settings {
+  min-height: 100vh;
+  background-color: var(--color-bg-page);
+  padding-bottom: calc(var(--spacing-xxl) + env(safe-area-inset-bottom));
+}
+
+/* ===== 应用头部 ===== */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+}
+
+.app-logo {
+  font-size: 80rpx;
+  margin-bottom: var(--spacing-sm);
+}
+
+.app-name {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 8rpx;
+}
+
+.app-version {
+  font-size: var(--font-size-sm);
+  opacity: 0.8;
+}
+
+/* ===== 设置分组 ===== */
+.settings-group {
+  margin-top: var(--spacing-lg);
+  padding: 0 var(--spacing-md);
+}
+
+.group-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  padding: 0 var(--spacing-sm) var(--spacing-sm);
+}
+
+/* ===== 底部声明 ===== */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-xl) var(--spacing-md);
+  gap: 8rpx;
+}
+
+.footer-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-placeholder);
+}
+
+.footer-divider {
+  width: 120rpx;
+  height: 1rpx;
+  background-color: var(--color-border);
+  margin: var(--spacing-sm) 0;
+}
+
+.footer-disclaimer {
+  font-size: 18rpx;
+  color: var(--color-text-disabled);
+  text-align: center;
+}

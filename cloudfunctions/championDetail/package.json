@@ -1,0 +1,9 @@
+{
+  "name": "championDetail",
+  "version": "1.0.0",
+  "description": "获取英雄详情+推荐海克斯+推荐装备",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3"
+  }
+}

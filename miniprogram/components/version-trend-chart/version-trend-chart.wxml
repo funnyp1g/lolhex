@@ -1,0 +1,42 @@
+<!--components/version-trend-chart/version-trend-chart.wxml - 版本趋势图-->
+<view class="trend-chart">
+  <!-- 标题 -->
+  <view class="trend-title">{{title}}</view>
+
+  <!-- 加载中 -->
+  <view wx:if="{{!chartReady}}" class="trend-loading">
+    <van-loading size="24px" color="var(--color-primary)">加载中...</van-loading>
+  </view>
+
+  <!-- 无数据 -->
+  <view wx:elif="{{!hasData}}" class="trend-empty">
+    <van-empty description="暂无趋势数据" image="search" />
+  </view>
+
+  <!-- 图表区域：ECharts canvas（当可用时）或纯 CSS 柱状图 -->
+  <view wx:else class="trend-chart-area" style="min-height: {{height}}rpx;">
+    <!-- ec-canvas 占位：当 ECharts 库就绪后替换此处 -->
+    <!-- <ec-canvas id="trend-canvas" canvas-id="trend-canvas" ec="{{ec}}"></ec-canvas> -->
+
+    <!-- 纯 CSS 柱状图（降级方案） -->
+    <view class="bar-chart">
+      <view wx:for="{{barItems}}" wx:key="label" class="bar-item">
+        <!-- 柱体 -->
+        <view class="bar-track">
+          <view class="bar-fill" style="height: {{item.percent}}%; background-color: {{item.color}};"></view>
+        </view>
+        <!-- 数值 -->
+        <text class="bar-value" style="color: {{item.color}}">{{item.value}}</text>
+        <!-- 标签 -->
+        <text class="bar-label">{{item.label}}</text>
+      </view>
+    </view>
+
+    <!-- Y轴参考线 -->
+    <view class="y-axis">
+      <view class="y-line y-line-55">55%</view>
+      <view class="y-line y-line-50">50%</view>
+      <view class="y-line y-line-45">45%</view>
+    </view>
+  </view>
+</view>

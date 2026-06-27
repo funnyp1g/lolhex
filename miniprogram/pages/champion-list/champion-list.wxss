@@ -1,0 +1,121 @@
+/* pages/champion-list/champion-list.wxss - 英雄列表样式 */
+.page-champion-list {
+  min-height: 100vh;
+  background-color: var(--color-bg-page);
+  padding-bottom: calc(var(--spacing-xxl) + env(safe-area-inset-bottom));
+}
+
+/* 筛选栏 */
+.filter-bar {
+  background-color: var(--color-bg-card);
+  padding: var(--spacing-sm) 0;
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+/* 角色筛选滚动 */
+.role-scroll {
+  white-space: nowrap;
+  padding: 0 var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.role-list {
+  display: inline-flex;
+  gap: var(--spacing-sm);
+}
+
+.role-btn {
+  display: inline-block;
+  padding: 8rpx 24rpx;
+  border-radius: var(--radius-round);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-page);
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.role-btn.active {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* 排序栏 */
+.sort-bar {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--spacing-md);
+  gap: var(--spacing-sm);
+}
+
+.sort-btn {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+  padding: 6rpx 20rpx;
+  border-radius: var(--radius-round);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-page);
+  transition: all var(--transition-fast);
+}
+
+.sort-btn.active {
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.sort-arrow {
+  font-size: var(--font-size-xs);
+  margin-left: 2rpx;
+}
+
+.view-toggle {
+  margin-left: auto;
+  padding: 8rpx 16rpx;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+}
+
+/* 列表模式 */
+.champion-list {
+  padding: 0 var(--spacing-md);
+}
+
+/* 网格模式 */
+.champion-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 var(--spacing-sm);
+  gap: 0;
+}
+
+.grid-item {
+  width: calc(25% - 4rpx);
+  padding: 0 2rpx;
+}
+
+/* 加载更多 */
+.loading-more {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-md) 0;
+}
+
+.no-more {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-md) 0 var(--spacing-xl);
+}
+
+/* 空状态/错误状态 */
+.empty-state,
+.error-state {
+  padding: var(--spacing-xxl) 0;
+}
+
+.retry-btn {
+  margin-top: var(--spacing-md);
+}

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat)",
+      "Bash(cp /tmp/plan_header.md ~/.claude/plans/prd-agent-1-ui-2-ui-3-4-5-docs-mcp-skil-streamed-hennessy-agent-a4d2d3e964d1c646b.md)",
+      "Read(//tmp/**)"
+    ]
+  }
+}

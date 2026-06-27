@@ -1,0 +1,105 @@
+<!--pages/champion-list/champion-list.wxml - 英雄列表-->
+<view class="page-champion-list">
+  <!-- 搜索栏 -->
+  <van-search
+    value="{{keyword}}"
+    shape="round"
+    placeholder="搜索英雄..."
+    show-action
+    bind:search="onSearch"
+    bind:change="onSearchInput"
+  />
+
+  <!-- 角色筛选 + 排序 -->
+  <view class="filter-bar">
+    <!-- 角色筛选 -->
+    <scroll-view class="role-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+      <view class="role-list">
+        <view
+          wx:for="{{roleOptions}}"
+          wx:key="value"
+          class="role-btn {{roleFilter === item.value ? 'active' : ''}}"
+          data-value="{{item.value}}"
+          bindtap="onRoleChange"
+        >
+          {{item.label}}
+        </view>
+      </view>
+    </scroll-view>
+
+    <!-- 排序 + 视图切换 -->
+    <view class="sort-bar">
+      <view
+        wx:for="{{['win_rate', 'pick_rate']}}"
+        wx:key="*this"
+        class="sort-btn {{sortBy === item ? 'active' : ''}}"
+        data-key="{{item}}"
+        bindtap="onSortChange"
+      >
+        {{item === 'win_rate' ? '胜率' : '选取率'}}
+        <text wx:if="{{sortBy === item}}" class="sort-arrow">{{sortOrder === 'desc' ? '↓' : '↑'}}</text>
+      </view>
+      <view class="view-toggle" bindtap="onToggleViewMode">
+        <text>{{viewMode === 'list' ? '☷' : '☰'}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 加载中 -->
+  <loading-skeleton wx:if="{{loading}}" type="champion" count="{{6}}" />
+
+  <!-- 列表模式 -->
+  <view wx:elif="{{viewMode === 'list'}}" class="champion-list">
+    <champion-card
+      wx:for="{{champions}}"
+      wx:key="_id"
+      champion="{{item}}"
+      mode="list"
+      show-stats="{{true}}"
+      show-tier="{{true}}"
+      rank="{{index + 1}}"
+      data-id="{{item._id || item.champion_id}}"
+      bind:click="onChampionTap"
+    />
+    <!-- 加载更多 -->
+    <view wx:if="{{loadingMore}}" class="loading-more">
+      <van-loading size="20px">加载中...</van-loading>
+    </view>
+    <view wx:elif="{{!hasMore && champions.length > 0}}" class="no-more">
+      <text class="text-sm text-placeholder">已加载全部英雄</text>
+    </view>
+  </view>
+
+  <!-- 网格模式 -->
+  <view wx:elif="{{viewMode === 'grid'}}" class="champion-grid">
+    <view
+      wx:for="{{champions}}"
+      wx:key="_id"
+      class="grid-item"
+      data-id="{{item._id || item.champion_id}}"
+      bindtap="onChampionTap"
+    >
+      <champion-card
+        champion="{{item}}"
+        mode="grid"
+        show-stats="{{true}}"
+        show-tier="{{true}}"
+      />
+    </view>
+    <view wx:if="{{loadingMore}}" class="loading-more">
+      <van-loading size="20px">加载中...</van-loading>
+    </view>
+  </view>
+
+  <!-- 错误状态 -->
+  <view wx:elif="{{error}}" class="error-state">
+    <van-empty description="数据加载失败" image="error">
+      <van-button round type="danger" class="retry-btn" bindtap="onRetry">重新加载</van-button>
+    </van-empty>
+  </view>
+
+  <!-- 空状态 -->
+  <view wx:elif="{{!loading && champions.length === 0}}" class="empty-state">
+    <van-empty description="暂无英雄数据" />
+  </view>
+</view>
