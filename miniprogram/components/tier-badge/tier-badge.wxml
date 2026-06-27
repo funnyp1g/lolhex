@@ -2,7 +2,7 @@
 <view
   wx:if="{{tier}}"
   class="tier-badge tier-{{tier}} tier-size-{{size}} tier-shape-{{shape}}"
-  style="background-color: {{tierConfig[tier].bg}}; color: {{tierConfig[tier].textColor || tierConfig[tier].color || '#fff'}};"
+  style="background-color: {{currentConfig[tier].bg}}; color: {{currentConfig[tier].textColor || currentConfig[tier].color || '#fff'}};"
 >
-  {{tier}}
+  {{currentConfig[tier].label || tier}}
 </view>
