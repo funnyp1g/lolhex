@@ -97,6 +97,41 @@
   line-height: var(--line-height-loose);
 }
 
+/* ===== 全局排名卡片 ===== */
+.rank-card {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.rank-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.rank-card-title {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: var(--font-weight-medium);
+}
+
+.rank-card-value {
+  font-size: 48rpx;
+  font-weight: var(--font-weight-bold);
+  color: #FFD700;
+  letter-spacing: 2rpx;
+}
+
+.rank-card-desc {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: var(--font-weight-medium);
+}
+
 /* ===== 数据概览 ===== */
 .stats-overview {
   display: flex;

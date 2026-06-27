@@ -15,6 +15,14 @@ Page({
     hotChampions: [],
     loading: true,
     error: false,
+    // 英雄排行表
+    rankList: [],
+    rankLoading: false,
+    rankError: false,
+    rankSortBy: 'win_rate',
+    rankSortOrder: 'desc',
+    rankPage: 1,
+    rankHasMore: true,
     quickEntries: [
       { icon: '🦸', text: '英雄查询', path: '/pages/champion-list/champion-list', isTab: true, tabPath: 1 },
       { icon: '⚡', text: '海克斯查询', path: '/pages/augment-list/augment-list', isTab: true, tabPath: 2 },
@@ -47,10 +55,11 @@ Page({
     await Promise.allSettled([
       this.loadPatchVersion(),
       this.loadPatchAdjustments(),
-      this.loadHotAugments()
+      this.loadHotAugments(),
+      this.loadChampionRankTable()
     ])
 
-    const hasData = this.data.currentPatch || this.data.hotAugments.length > 0
+    const hasData = this.data.currentPatch || this.data.hotAugments.length > 0 || this.data.rankList.length > 0
     this.setData({ loading: false, error: !hasData })
   },
 
@@ -157,5 +166,61 @@ Page({
   onAugmentTap(e) {
     const { id } = e.currentTarget.dataset
     wx.navigateTo({ url: `/pages/augment-detail/augment-detail?id=${id}` })
+  },
+
+  // 加载英雄排行表
+  async loadChampionRankTable() {
+    if (this.data.rankLoading) return
+    this.setData({ rankLoading: true })
+
+    try {
+      const data = await cloud.getChampionRankTable({
+        sort_by: this.data.rankSortBy,
+        order: this.data.rankSortOrder,
+        page: this.data.rankPage,
+        page_size: 20
+      })
+
+      const list = (data.list || []).map(function (c) {
+        return {
+          ...c,
+          icon_url: image.resolveImageUrl(c.icon_url),
+          win_rate: c.win_rate < 1 ? (c.win_rate * 100).toFixed(1) : c.win_rate.toFixed(1),
+          pick_rate: c.pick_rate < 1 ? (c.pick_rate * 100).toFixed(1) : c.pick_rate.toFixed(1),
+          sample_size: formatSampleSize(c.sample_size || 0)
+        }
+      })
+
+      const newList = this.data.rankPage === 1 ? list : [...this.data.rankList, ...list]
+      this.setData({
+        rankList: newList,
+        rankLoading: false,
+        rankHasMore: list.length >= 20,
+        rankError: false
+      })
+    } catch (err) {
+      console.warn('[首页] 获取英雄排行失败:', err.message)
+      this.setData({ rankLoading: false, rankError: this.data.rankList.length === 0 })
+    }
+  },
+
+  // 排行表排序
+  onRankSort(e) {
+    const { sortBy, order } = e.detail
+    this.setData({ rankSortBy: sortBy, rankSortOrder: order, rankPage: 1, rankList: [] })
+    this.loadChampionRankTable()
+  },
+
+  // 排行表加载更多
+  onRankLoadMore() {
+    if (!this.data.rankHasMore || this.data.rankLoading) return
+    this.setData({ rankPage: this.data.rankPage + 1 })
+    this.loadChampionRankTable()
+  },
+
+  // 排行表英雄点击
+  onRankChampionTap(e) {
+    const { championId } = e.detail
+    wx.navigateTo({ url: `/pages/champion-detail/champion-detail?id=${championId}` })
   }
 })

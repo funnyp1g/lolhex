@@ -106,6 +106,13 @@
   color: var(--color-primary);
 }
 
+/* 列表模式行布局：T级徽章 + 头像 + 信息 */
+.champion-list-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* ===== 网格模式 ===== */
 .champ-grid {
   display: flex;

@@ -2,8 +2,11 @@
 <view class="aug-card" bindtap="onTap">
   <!-- 顶部：图标 + 名称 + 稀有度 + Tier -->
   <view class="aug-header">
-    <!-- 序号角标 -->
-    <text wx:if="{{rank > 0}}" class="aug-rank">{{rank}}</text>
+    <!-- 排名序号角标：TOP3 奖牌 emoji，其余数字 -->
+    <text wx:if="{{rank === 1}}" class="aug-rank aug-rank-medal">🥇</text>
+    <text wx:elif="{{rank === 2}}" class="aug-rank aug-rank-medal">🥈</text>
+    <text wx:elif="{{rank === 3}}" class="aug-rank aug-rank-medal">🥉</text>
+    <text wx:elif="{{rank > 0}}" class="aug-rank">{{rank}}</text>
     <!-- 海克斯图标 -->
     <image wx:if="{{augment.icon_url}}" class="aug-icon" src="{{augment.icon_url}}" mode="aspectFill" />
     <view wx:else class="aug-icon aug-icon-placeholder">

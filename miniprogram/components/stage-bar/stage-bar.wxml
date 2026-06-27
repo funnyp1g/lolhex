@@ -1,0 +1,29 @@
+<!--components/stage-bar/stage-bar.wxml-->
+<view class="stage-bar-container">
+  <view class="stage-bar-title">{{title}}</view>
+
+  <view class="stage-bar-chart" wx:if="{{stages}}">
+    <view
+      wx:for="{{stageOrder}}"
+      wx:key="*this"
+      class="stage-bar-column"
+    >
+      <!-- 数值 -->
+      <text class="stage-bar-value">
+        {{stages[item] ? stages[item].win_rate + '%' : '--'}}
+      </text>
+      <!-- 柱子 -->
+      <view
+        class="stage-bar-fill"
+        style="height: {{stages[item] ? stages[item].win_rate * 1.2 : 8}}px; background: {{stages[item] ? 'linear-gradient(180deg, #1890FF, #40a9ff)' : '#f0f0f0'}};"
+      ></view>
+      <!-- 标签 -->
+      <text class="stage-bar-label">{{stageLabels[item]}}</text>
+    </view>
+  </view>
+
+  <!-- 无数据降级 -->
+  <view wx:else class="stage-bar-empty">
+    <text class="stage-bar-empty-text">该维度数据采集中...</text>
+  </view>
+</view>

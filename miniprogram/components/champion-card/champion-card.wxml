@@ -9,6 +9,13 @@
   <!-- 信息区 -->
   <view class="champ-body">
     <view class="champ-title-row">
+      <!-- T级徽章（列表模式左侧） -->
+      <tier-badge
+        wx:if="{{showTierRank && (champion.tier_rank || tierRank)}}"
+        tier="{{champion.tier_rank || tierRank}}"
+        mode="T"
+        size="small"
+      />
       <text class="champ-name">{{champion.name_zh}}</text>
       <text class="champ-title-text">{{champion.title}}</text>
     </view>

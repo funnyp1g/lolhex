@@ -46,6 +46,14 @@
   flex-shrink: 0;
 }
 
+/* 排名奖牌 emoji（TOP3） */
+.aug-rank-medal {
+  background: transparent;
+  border: none;
+  font-size: 40rpx;
+  line-height: 1;
+}
+
 /* 海克斯图标占位符 */
 .aug-icon-placeholder {
   display: flex;

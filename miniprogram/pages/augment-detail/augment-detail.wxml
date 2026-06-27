@@ -35,6 +35,17 @@
     </view>
   </view>
 
+  <!-- ===== 全局排名卡片 ===== -->
+  <view class="rank-card" wx:if="{{augmentGlobalRank > 0}}">
+    <view class="rank-card-inner">
+      <text class="rank-card-title">🏆 全局排名</text>
+      <text class="rank-card-value">#{{augmentGlobalRank}} / {{augmentTotalCount}}</text>
+      <text class="rank-card-desc">
+        高于 {{augmentTotalCount > 0 ? ((1 - augmentGlobalRank / augmentTotalCount) * 100).toFixed(0) : 0}}% 的海克斯
+      </text>
+    </view>
+  </view>
+
   <!-- ===== 数据概览 ===== -->
   <view class="stats-overview">
     <view class="stat-item">
@@ -80,7 +91,7 @@
         <!-- 英雄头像 -->
         <image wx:if="{{item.champion_icon}}" class="champ-avatar" src="{{item.champion_icon}}" mode="aspectFill" />
         <!-- 名称 -->
-        <view class="champ-name">{{item.champion_name}}</view>
+        <view class="champ-name">{{item.champion_name_zh || item.champion_name}}</view>
         <!-- 胜率条 -->
         <view class="champ-rate">
           <rate-bar value="{{item.win_rate_value}}" type="win_rate" show-label="{{false}}" size="normal" />
@@ -108,7 +119,7 @@
         bindtap="onChampionTap"
       >
         <image wx:if="{{item.champion_icon}}" class="champ-avatar" src="{{item.champion_icon}}" mode="aspectFill" />
-        <view class="champ-name">{{item.champion_name}}</view>
+        <view class="champ-name">{{item.champion_name_zh || item.champion_name}}</view>
         <text class="champ-winrate champ-winrate-low">{{item.win_rate_display}}</text>
       </view>
     </view>

@@ -17,6 +17,9 @@ Page({
     recommendedItems: [],
     // 版本趋势数据
     trendData: null,
+    // 全局排名
+    augmentGlobalRank: 0,
+    augmentTotalCount: 0,
     // 状态
     loading: true,
     error: false,
@@ -105,6 +108,8 @@ Page({
       bestChampions,
       worstChampions,
       recommendedItems,
+      augmentGlobalRank: augment.global_rank || 0,
+      augmentTotalCount: augment.total_augments || 0,
       winRateValue: augment.win_rate < 1 ? augment.win_rate * 100 : augment.win_rate,
       pickRateValue: augment.pick_rate < 1 ? augment.pick_rate * 100 : augment.pick_rate
     })

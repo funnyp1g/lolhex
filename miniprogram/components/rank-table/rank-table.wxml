@@ -1,0 +1,97 @@
+<!--components/rank-table/rank-table.wxml-->
+<view class="rank-table-container">
+  <!-- 表头 -->
+  <view class="rank-table-header">
+    <view
+      wx:for="{{columns}}"
+      wx:key="key"
+      class="rank-table-th"
+      style="width: {{item.width}}; {{item.key === 'name_zh' ? 'flex:1;' : ''}}"
+      data-key="{{item.key}}"
+      bind:tap="onSortTap"
+    >
+      <text class="th-label">{{item.label}}</text>
+      <text wx:if="{{item.sortable && sortBy === item.key}}" class="th-sort-icon">
+        {{sortOrder === 'desc' ? '▼' : '▲'}}
+      </text>
+    </view>
+  </view>
+
+  <!-- 加载中 -->
+  <view wx:if="{{loading && list.length === 0}}" class="rank-table-loading">
+    <van-loading size="24px" color="#1890ff" />
+    <text class="loading-text">加载中...</text>
+  </view>
+
+  <!-- 错误状态 -->
+  <view wx:elif="{{error}}" class="rank-table-error">
+    <van-empty image="error" description="数据加载失败" />
+  </view>
+
+  <!-- 空数据 -->
+  <view wx:elif="{{!loading && list.length === 0}}" class="rank-table-empty">
+    <van-empty image="search" description="暂无数据" />
+  </view>
+
+  <!-- 数据行 -->
+  <scroll-view
+    wx:else
+    class="rank-table-body"
+    scroll-y
+    bindscrolltolower="onScrollToLower"
+  >
+    <view
+      wx:for="{{list}}"
+      wx:key="champion_id"
+      class="rank-table-row {{index % 2 === 0 ? 'row-even' : ''}}"
+      data-champion-id="{{item.champion_id}}"
+      bind:tap="onRowTap"
+    >
+      <!-- T级 -->
+      <view class="rank-table-td" style="width: 60rpx;">
+        <tier-badge
+          wx:if="{{item.tier_rank}}"
+          tier="{{item.tier_rank}}"
+          mode="T"
+          size="small"
+        />
+      </view>
+
+      <!-- 英雄名称+头像 -->
+      <view class="rank-table-td rank-table-champion" style="flex: 1;">
+        <image
+          class="rank-champion-icon"
+          src="{{item.icon_url}}"
+          mode="aspectFill"
+          lazy-load
+        />
+        <text class="rank-champion-name">{{item.name_zh || item.name}}</text>
+      </view>
+
+      <!-- 胜率 -->
+      <view class="rank-table-td rank-table-stat" style="width: 100rpx;">
+        <text class="stat-value {{item.win_rate >= 55 ? 'stat-high' : item.win_rate >= 50 ? 'stat-mid' : ''}}">
+          {{item.win_rate}}%
+        </text>
+      </view>
+
+      <!-- 选取率 -->
+      <view class="rank-table-td rank-table-stat" style="width: 100rpx;">
+        <text class="stat-value-secondary">{{item.pick_rate}}%</text>
+      </view>
+
+      <!-- 样本量 -->
+      <view class="rank-table-td rank-table-stat" style="width: 100rpx;">
+        <text class="stat-value-secondary">{{item.sample_size}}</text>
+      </view>
+    </view>
+
+    <!-- 加载更多 -->
+    <view wx:if="{{loading && list.length > 0}}" class="rank-table-more">
+      <van-loading size="20px" color="#1890ff" />
+    </view>
+    <view wx:elif="{{!hasMore && list.length > 0}}" class="rank-table-more">
+      <text class="no-more">— 已加载全部 —</text>
+    </view>
+  </scroll-view>
+</view>

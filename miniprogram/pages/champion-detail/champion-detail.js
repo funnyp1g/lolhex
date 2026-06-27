@@ -35,7 +35,16 @@ Page({
     roleColors: ROLE_COLORS,
     // 胜率进度条值
     winRateValue: 0,
-    pickRateValue: 0
+    pickRateValue: 0,
+    // T级总览卡片
+    championTierRank: '',
+    championRank: 0,
+    totalChampions: 0,
+    // 阶段表现（按 augment_id 索引）
+    stagePerformanceByAugment: {},
+    // 当前选中的海克斯（用于阶段表现联动）
+    selectedAugmentId: null,
+    selectedAugmentName: ''
   },
 
   onLoad(options) {
@@ -73,7 +82,7 @@ Page({
 
   // 处理详情数据
   _processDetail(data) {
-    const { champion, augments, items, augment_items_linkage } = data
+    const { champion, augments, items, augment_items_linkage, stage_performance } = data
 
     // 处理英雄基础数据
     const processedChampion = {
@@ -128,6 +137,19 @@ Page({
       })
     }
 
+    // 构建阶段表现映射（按 augment_id 索引，数据来自 championDetail 云函数）
+    const stageByAugment = {}
+    const stageData = stage_performance || []
+    stageData.forEach(s => {
+      if (!stageByAugment[s.augment_id]) stageByAugment[s.augment_id] = {}
+      stageByAugment[s.augment_id][s.stage] = {
+        stage: s.stage,
+        win_rate: s.win_rate,
+        pick_rate: s.pick_rate,
+        sample_size: s.sample_size
+      }
+    })
+
     // 默认排序：按胜率降序
     Object.keys(augmentsByRarity).forEach(key => {
       augmentsByRarity[key].sort((a, b) => (b.win_rate || 0) - (a.win_rate || 0))
@@ -139,8 +161,21 @@ Page({
     const activeRarity = augmentsByRarity.prismatic.length > 0 ? 'prismatic' :
       augmentsByRarity.gold.length > 0 ? 'gold' : 'silver'
 
+    // 自动选中当前稀有度下胜率最高的海克斯（用于阶段表现联动）
+    const topAugments = augmentsByRarity[activeRarity]
+    const selectedAugmentId = topAugments.length > 0 ? topAugments[0].augment_id : null
+    const selectedAugmentName = topAugments.length > 0
+      ? (topAugments[0].augment_name_zh || topAugments[0].name_zh || '')
+      : ''
+
     this.setData({
       champion: processedChampion,
+      championTierRank: champion.tier_rank || '',
+      championRank: champion.champion_rank || 0,
+      totalChampions: champion.total_champions || 0,
+      stagePerformanceByAugment: stageByAugment,
+      selectedAugmentId: selectedAugmentId,
+      selectedAugmentName: selectedAugmentName,
       augmentsPrismatic: augmentsByRarity.prismatic,
       augmentsGold: augmentsByRarity.gold,
       augmentsSilver: augmentsByRarity.silver,
@@ -168,7 +203,14 @@ Page({
       gold: this.data.augmentsGold,
       silver: this.data.augmentsSilver
     }
-    this.setData({ filteredAugments: map[rarity] || [] })
+    const filtered = map[rarity] || []
+    // 切换稀有度时自动选中胜率最高的海克斯（用于阶段表现联动）
+    const topAugment = filtered.length > 0 ? filtered[0] : null
+    this.setData({
+      filteredAugments: filtered,
+      selectedAugmentId: topAugment ? topAugment.augment_id : null,
+      selectedAugmentName: topAugment ? (topAugment.augment_name_zh || topAugment.name_zh || '') : ''
+    })
   },
 
   // 海克斯点击
@@ -182,5 +224,10 @@ Page({
     const { id } = e.currentTarget.dataset
     // 装备暂时无详情页，可以展示 popup 或 toast
     wx.showToast({ title: '装备详情开发中', icon: 'none' })
+  },
+
+  // 重试
+  onRetry() {
+    this.loadChampionDetail(Number(this.data.championId))
   }
 })

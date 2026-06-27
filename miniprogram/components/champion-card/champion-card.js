@@ -31,6 +31,14 @@ Component({
     rank: {
       type: Number,
       value: 0
+    },
+    showTierRank: {
+      type: Boolean,
+      value: false
+    },
+    tierRank: {
+      type: String,
+      value: ''
     }
   },
 

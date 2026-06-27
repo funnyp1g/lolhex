@@ -5,7 +5,8 @@
     "tier-badge": "/components/tier-badge/tier-badge",
     "rate-bar": "/components/rate-bar/rate-bar",
     "loading-skeleton": "/components/loading-skeleton/loading-skeleton",
-    "version-trend-chart": "/components/version-trend-chart/version-trend-chart"
+    "version-trend-chart": "/components/version-trend-chart/version-trend-chart",
+    "stage-bar": "/components/stage-bar/stage-bar"
   },
   "navigationBarTitleText": "英雄详情",
   "enablePullDownRefresh": true,

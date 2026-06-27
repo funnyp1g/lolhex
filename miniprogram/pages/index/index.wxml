@@ -93,6 +93,24 @@
       </view>
     </view>
 
+    <!-- 🏆 英雄强度排行（新增） -->
+    <view class="section">
+      <view class="section-header">
+        <text class="section-title">🏆 英雄强度排行</text>
+      </view>
+      <rank-table
+        list="{{rankList}}"
+        loading="{{rankLoading}}"
+        error="{{rankError}}"
+        has-more="{{rankHasMore}}"
+        sort-by="{{rankSortBy}}"
+        sort-order="{{rankSortOrder}}"
+        bind:click="onRankChampionTap"
+        bind:sort="onRankSort"
+        bind:loadmore="onRankLoadMore"
+      />
+    </view>
+
     <!-- ===== 热门海克斯 TOP5（颁奖台） ===== -->
     <view class="section">
       <view class="section-header">

@@ -78,6 +78,11 @@ exports.main = async (event) => {
       .count()
     const global_rank = higherCountRes.total + 1
 
+    // 查询当前版本海克斯总数（用于排名卡片展示 "排名 #X/171"）
+    const totalAugmentsRes = await db.collection('augments')
+      .where({ patch_version: patchVersion })
+      .count()
+
     // ---------- 批量关联查询英雄和装备的中文名/图标 ----------
     const championIds = [
       ...bestRes.data.map(a => a.champion_id),
@@ -108,7 +113,8 @@ exports.main = async (event) => {
     // ---------- 组装响应数据 ----------
     const augmentData = {
       ...augmentRes.data,
-      global_rank
+      global_rank,
+      total_augments: totalAugmentsRes.total
     }
 
     return {

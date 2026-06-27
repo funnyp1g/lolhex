@@ -1,10 +1,19 @@
 // cloudfunctions/championDetail/index.js
-// 英雄详情查询云函数（最复杂，需并行查询 4 个集合 + 关联查询）
-// 功能：获取指定英雄的完整信息，包括推荐海克斯、推荐装备、海克斯×出装联动
+// 英雄详情查询云函数（最复杂，需并行查询 5 个集合 + 关联查询）
+// 功能：获取指定英雄的完整信息，包括推荐海克斯、推荐装备、海克斯×出装联动、阶段表现
 const cloud = require('wx-server-sdk')
 cloud.init({ env: cloud.DYNAMIC_CURRENT_ENV })
 const db = cloud.database()
 const _ = db.command
+
+// Tier 等级映射函数（T1-T5）
+function mapTierToRank(winRate) {
+  if (winRate >= 55) return 'T1'
+  if (winRate >= 52) return 'T2'
+  if (winRate >= 49) return 'T3'
+  if (winRate >= 46) return 'T4'
+  return 'T5'
+}
 
 // 获取当前版本号
 async function getCurrentPatch() {
@@ -30,8 +39,8 @@ exports.main = async (event) => {
   try {
     const patchVersion = patch || await getCurrentPatch()
 
-    // ---------- 并行执行 4 个核心查询 ----------
-    const [championRes, augmentsRes, itemsRes, linkageRes] = await Promise.all([
+    // ---------- 并行执行 5 个核心查询（新增 champion_stage_performance）----------
+    const [championRes, augmentsRes, itemsRes, linkageRes, stageRes] = await Promise.all([
       // 1. 英雄基础信息
       db.collection('champions')
         .doc(String(champion_id))
@@ -66,6 +75,17 @@ exports.main = async (event) => {
         })
         .orderBy('win_rate', 'desc')
         .limit(50)
+        .get(),
+
+      // 5. 阶段表现（新增）
+      db.collection('champion_stage_performance')
+        .where({
+          champion_id: champion_id,
+          patch_version: patchVersion
+        })
+        .orderBy('augment_id', 'asc')
+        .orderBy('stage', 'asc')
+        .limit(200)
         .get()
     ])
 
@@ -73,6 +93,21 @@ exports.main = async (event) => {
     if (!championRes.data) {
       return { code: 1002, data: null, message: '英雄不存在' }
     }
+
+    // ---------- 计算 champion 排名 ----------
+    const higherCountRes = await db.collection('champions')
+      .where({
+        patch_version: patchVersion,
+        win_rate: _.gt(championRes.data.win_rate || 0)
+      })
+      .count()
+    const championRank = higherCountRes.total + 1
+
+    const totalChampionsRes = await db.collection('champions')
+      .where({ patch_version: patchVersion })
+      .count()
+
+    const tierRank = mapTierToRank(championRes.data.win_rate || 0)
 
     // ---------- 批量关联查询 augment 和 item 的中文名/稀有度 ----------
     const augmentIds = augmentsRes.data.map(a => a.augment_id)
@@ -106,6 +141,20 @@ exports.main = async (event) => {
     const itemMap = {}
     itemInfoRes.data.forEach(i => { itemMap[i.riot_id] = i })
 
+    // ---------- 组装阶段表现：按 augment_id 分组 ----------
+    const stageByAugment = {}
+    stageRes.data.forEach(s => {
+      if (!stageByAugment[s.augment_id]) {
+        stageByAugment[s.augment_id] = {}
+      }
+      stageByAugment[s.augment_id][s.stage] = {
+        stage: s.stage,
+        win_rate: s.win_rate,
+        pick_rate: s.pick_rate,
+        sample_size: s.sample_size
+      }
+    })
+
     // ---------- 组装响应数据 ----------
     const augments = augmentsRes.data.map(a => ({
       augment_id: a.augment_id,
@@ -115,7 +164,9 @@ exports.main = async (event) => {
       win_rate: a.win_rate,
       pick_rate: a.pick_rate,
       tier: a.tier,
-      sample_size: a.sample_size
+      tier_rank: mapTierToRank(a.win_rate),
+      sample_size: a.sample_size,
+      stage_performance: stageByAugment[a.augment_id] || null
     }))
 
     const items = itemsRes.data.map(i => ({
@@ -125,6 +176,7 @@ exports.main = async (event) => {
       win_rate: i.win_rate,
       pick_rate: i.pick_rate,
       tier: i.tier,
+      tier_rank: mapTierToRank(i.win_rate),
       is_core: i.is_core,
       slot: i.slot,
       sample_size: i.sample_size
@@ -138,6 +190,7 @@ exports.main = async (event) => {
       win_rate: l.win_rate,
       pick_rate: l.pick_rate,
       tier: l.tier,
+      tier_rank: mapTierToRank(l.win_rate),
       sample_size: l.sample_size
     }))
 
@@ -145,10 +198,16 @@ exports.main = async (event) => {
       code: 0,
       message: 'success',
       data: {
-        champion: championRes.data,
+        champion: {
+          ...championRes.data,
+          tier_rank: tierRank,
+          champion_rank: championRank,
+          total_champions: totalChampionsRes.total
+        },
         augments,
         items,
         augment_items_linkage: linkage,
+        stage_performance: stageRes.data,
         patch_version: patchVersion
       },
       meta: { patch_version: patchVersion, timestamp: Date.now() }

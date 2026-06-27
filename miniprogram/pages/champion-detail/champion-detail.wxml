@@ -64,6 +64,32 @@
     </view>
   </view>
 
+  <!-- 📊 T级总览卡片（新增） -->
+  <view class="tier-overview-card">
+    <view class="tier-overview-main">
+      <tier-badge tier="{{championTierRank}}" mode="T" size="large" />
+      <text class="tier-overview-label">当前层级</text>
+    </view>
+    <view class="tier-overview-stats">
+      <view class="tier-stat-item">
+        <text class="tier-stat-value">{{champion.win_rate_display}}</text>
+        <text class="tier-stat-label">胜率</text>
+      </view>
+      <view class="tier-stat-item">
+        <text class="tier-stat-value">{{champion.pick_rate_display}}</text>
+        <text class="tier-stat-label">选取率</text>
+      </view>
+      <view class="tier-stat-item">
+        <text class="tier-stat-value">#{{championRank}}/{{totalChampions}}</text>
+        <text class="tier-stat-label">排名</text>
+      </view>
+    </view>
+    <!-- 强度条 -->
+    <view class="tier-strength-bar">
+      <view class="tier-strength-fill" style="width: {{winRateValue}}%;"></view>
+    </view>
+  </view>
+
   <!-- ===== 推荐海克斯 ===== -->
   <view class="section">
     <view class="section-header">
@@ -175,6 +201,18 @@
     <view wx:if="{{itemsCore.length === 0 && itemsBoots.length === 0 && itemsFullBuild.length === 0}}" class="empty-hint">
       <van-empty description="暂无装备数据" image="search" />
     </view>
+  </view>
+
+  <!-- 📈 阶段表现（新增） -->
+  <view wx:if="{{selectedAugmentId && stagePerformanceByAugment[selectedAugmentId]}}" class="section">
+    <view class="section-header">
+      <text class="section-title">📈 阶段表现</text>
+      <text class="section-subtitle">选择「{{selectedAugmentName}}」后的各等级胜率</text>
+    </view>
+    <stage-bar
+      stages="{{stagePerformanceByAugment[selectedAugmentId]}}"
+      title=""
+    />
   </view>
 
 </view>

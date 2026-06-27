@@ -23,4 +23,5 @@ module.exports = {
   getTrioRank: (params) => callFunction('trioRank', params),
   getCurrentPatch: () => callFunction('currentPatch'),
   getItemList: (params) => callFunction('itemList', params),
+  getChampionRankTable: (params) => callFunction('championRankTable', params),
 }

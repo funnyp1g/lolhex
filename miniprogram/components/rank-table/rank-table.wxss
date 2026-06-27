@@ -1,0 +1,23 @@
+/* components/rank-table/rank-table.wxss */
+.rank-table-container { background: #fff; border-radius: 8px; overflow: hidden; }
+.rank-table-header { display: flex; align-items: center; padding: 10px 12px; background: #fafafa; border-bottom: 1px solid #f0f0f0; position: sticky; top: 0; z-index: 1; }
+.rank-table-th { display: flex; align-items: center; gap: 2px; }
+.th-label { font-size: 12px; color: #8c8c8c; font-weight: 600; }
+.th-sort-icon { font-size: 10px; color: #1890ff; }
+.rank-table-body { max-height: 600rpx; }
+.rank-table-row { display: flex; align-items: center; padding: 10px 12px; border-bottom: 1px solid #fafafa; }
+.rank-table-row.row-even { background: #fafbfc; }
+.rank-table-row:active { background: #f0f0f0; }
+.rank-table-td { display: flex; align-items: center; }
+.rank-table-champion { gap: 8px; }
+.rank-champion-icon { width: 36px; height: 36px; border-radius: 50%; }
+.rank-champion-name { font-size: 14px; color: #262626; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rank-table-stat { justify-content: center; }
+.stat-value { font-size: 14px; font-weight: 600; color: #262626; }
+.stat-value.stat-high { color: #FF4D4F; }
+.stat-value.stat-mid { color: #FA8C16; }
+.stat-value-secondary { font-size: 12px; color: #8c8c8c; }
+.rank-table-loading, .rank-table-error, .rank-table-empty { display: flex; flex-direction: column; align-items: center; padding: 40px 0; }
+.loading-text { font-size: 13px; color: #8c8c8c; margin-top: 8px; }
+.rank-table-more { display: flex; justify-content: center; padding: 12px 0; }
+.no-more { font-size: 12px; color: #bfbfbf; }

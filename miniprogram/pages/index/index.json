@@ -2,7 +2,8 @@
   "usingComponents": {
     "augment-card": "/components/augment-card/augment-card",
     "rate-bar": "/components/rate-bar/rate-bar",
-    "loading-skeleton": "/components/loading-skeleton/loading-skeleton"
+    "loading-skeleton": "/components/loading-skeleton/loading-skeleton",
+    "rank-table": "/components/rank-table/rank-table"
   },
   "navigationBarTitleText": "海克斯大乱斗图鉴",
   "enablePullDownRefresh": true,
