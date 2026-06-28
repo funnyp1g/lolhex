@@ -3,7 +3,16 @@
     "allow": [
       "Bash(cat)",
       "Bash(cp /tmp/plan_header.md ~/.claude/plans/prd-agent-1-ui-2-ui-3-4-5-docs-mcp-skil-streamed-hennessy-agent-a4d2d3e964d1c646b.md)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(node -e ' *)",
+      "Bash(wc -l data-export/champion-augments-real.csv data-export/champion-global-real.csv data-export/champion-items-real.csv data-export/augment-global-real.csv data-export/champion-stage-performance-real.csv)",
+      "Bash(du -h data-export/champion-augments-real.csv data-export/champion-global-real.csv data-export/champion-items-real.csv data-export/augment-global-real.csv data-export/champion-stage-performance-real.csv)",
+      "Bash(node C:/Users/Administrator/Desktop/lol_hex/scripts/convert_real_data.js)",
+      "Bash(git commit -m 'feat: 全功能优化与缺陷修复 *)",
+      "Bash(git push *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'docs: 更新测试报告至 v1.0.2，记录全方面审查与修复 *)",
+      "Bash(git -C \"C:\\\\Users\\\\Administrator\\\\Desktop\\\\lol_hex\" status --short)"
     ]
   }
 }

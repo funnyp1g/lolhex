@@ -1,0 +1,2922 @@
+{
+  "1": {
+    "name": "Accelerating Sorcery",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1.png"
+  },
+  "2": {
+    "name": "Apex Inventor",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2.png"
+  },
+  "3": {
+    "name": "Null Augment",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/3.png"
+  },
+  "4": {
+    "name": "Back To Basics",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/4.png"
+  },
+  "5": {
+    "name": "Banner of Command",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/5.png"
+  },
+  "6": {
+    "name": "Blade Waltz",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/6.png"
+  },
+  "7": {
+    "name": "Blunt Force",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/7.png"
+  },
+  "8": {
+    "name": "Buckle Up",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/8.png"
+  },
+  "9": {
+    "name": "Buff Buddies",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/9.png"
+  },
+  "10": {
+    "name": "Cannon Fodder",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/10.png"
+  },
+  "11": {
+    "name": "Can't Touch This",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/11.png"
+  },
+  "12": {
+    "name": "Castle",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/12.png"
+  },
+  "13": {
+    "name": "Celestial Body",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/13.png"
+  },
+  "14": {
+    "name": "Chauffeur",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/14.png"
+  },
+  "15": {
+    "name": "Circle of Death",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/15.png"
+  },
+  "16": {
+    "name": "Combo Master",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/16.png"
+  },
+  "17": {
+    "name": "Contract Killer",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/17.png"
+  },
+  "18": {
+    "name": "Courage of the Colossus",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/18.png"
+  },
+  "19": {
+    "name": "Dashing",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/19.png"
+  },
+  "20": {
+    "name": "Dawnbringer's Resolve",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/20.png"
+  },
+  "21": {
+    "name": "Defensive Maneuvers",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/21.png"
+  },
+  "22": {
+    "name": "Deft",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/22.png"
+  },
+  "23": {
+    "name": "Demon's Dance",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/23.png"
+  },
+  "24": {
+    "name": "Die Another Day",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/24.png"
+  },
+  "25": {
+    "name": "Dive Bomber",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/25.png"
+  },
+  "26": {
+    "name": "Don't Blink",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/26.png"
+  },
+  "27": {
+    "name": "Earthwake",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/27.png"
+  },
+  "28": {
+    "name": "Erosion",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/28.png"
+  },
+  "29": {
+    "name": "Ethereal Weapon",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/29.png"
+  },
+  "30": {
+    "name": "Eureka",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/30.png"
+  },
+  "31": {
+    "name": "Evocation",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/31.png"
+  },
+  "32": {
+    "name": "Executioner",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/32.png"
+  },
+  "33": {
+    "name": "Extendo-Arm",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33.png"
+  },
+  "34": {
+    "name": "Fallen Aegis",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/34.png"
+  },
+  "35": {
+    "name": "Feel the Burn",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/35.png"
+  },
+  "36": {
+    "name": "Firebrand",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/36.png"
+  },
+  "37": {
+    "name": "First-Aid Kit",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/37.png"
+  },
+  "38": {
+    "name": "From Beginning to End",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/38.png"
+  },
+  "39": {
+    "name": "Frost Wraith",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/39.png"
+  },
+  "40": {
+    "name": "Frozen Foundations",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/40.png"
+  },
+  "41": {
+    "name": "Goliath",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/41.png"
+  },
+  "42": {
+    "name": "Guilty Pleasure",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/42.png"
+  },
+  "43": {
+    "name": "Now You See Me",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/43.png"
+  },
+  "44": {
+    "name": "Ice Cold",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/44.png"
+  },
+  "45": {
+    "name": "Infernal Conduit",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/45.png"
+  },
+  "46": {
+    "name": "Infernal Soul",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/46.png"
+  },
+  "47": {
+    "name": "It's Critical",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/47.png"
+  },
+  "48": {
+    "name": "Jeweled Gauntlet",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/48.png"
+  },
+  "49": {
+    "name": "Juice Box",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/49.png"
+  },
+  "50": {
+    "name": "Keystone Conjurer",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/50.png"
+  },
+  "51": {
+    "name": "Light 'em Up!",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/51.png"
+  },
+  "52": {
+    "name": "Lightning Strikes",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/52.png"
+  },
+  "53": {
+    "name": "Mad Scientist",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/53.png"
+  },
+  "54": {
+    "name": "Master of Duality",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/54.png"
+  },
+  "55": {
+    "name": "Midnight Express",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/55.png"
+  },
+  "56": {
+    "name": "Mind to Matter",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/56.png"
+  },
+  "57": {
+    "name": "Mountain Soul",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/57.png"
+  },
+  "58": {
+    "name": "Mystic Punch",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/58.png"
+  },
+  "59": {
+    "name": "Mythical",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/59.png"
+  },
+  "60": {
+    "name": "Ocean Soul",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/60.png"
+  },
+  "61": {
+    "name": "OK Boomerang",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/61.png"
+  },
+  "62": {
+    "name": "Omni Soul",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/62.png"
+  },
+  "63": {
+    "name": "Outlaw's Grit",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/63.png"
+  },
+  "64": {
+    "name": "Perseverance",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/64.png"
+  },
+  "65": {
+    "name": "Phenomenal Evil",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/65.png"
+  },
+  "66": {
+    "name": "Quantum Computing",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/66.png"
+  },
+  "67": {
+    "name": "Rabble Rousing",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/67.png"
+  },
+  "68": {
+    "name": "Recursion",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/68.png"
+  },
+  "69": {
+    "name": "Repulsor",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/69.png"
+  },
+  "70": {
+    "name": "Restless Restoration",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/70.png"
+  },
+  "71": {
+    "name": "Scopier Weapons",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/71.png"
+  },
+  "72": {
+    "name": "Searing Dawn",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/72.png"
+  },
+  "73": {
+    "name": "Shadow Runner",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/73.png"
+  },
+  "74": {
+    "name": "Shrink Ray",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/74.png"
+  },
+  "75": {
+    "name": "Slow Cooker",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/75.png"
+  },
+  "76": {
+    "name": "Sonic Boom",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/76.png"
+  },
+  "77": {
+    "name": "Soul Siphon",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/77.png"
+  },
+  "78": {
+    "name": "Spirit Link",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/78.png"
+  },
+  "79": {
+    "name": "Symphony of War",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/79.png"
+  },
+  "80": {
+    "name": "Tank It Or Leave It",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/80.png"
+  },
+  "81": {
+    "name": "Tap Dancer",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/81.png"
+  },
+  "82": {
+    "name": "The Brutalizer",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/82.png"
+  },
+  "83": {
+    "name": "Thief's Gloves",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/83.png"
+  },
+  "84": {
+    "name": "Thread the Needle",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/84.png"
+  },
+  "85": {
+    "name": "Tormentor",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/85.png"
+  },
+  "86": {
+    "name": "Trueshot Prodigy",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/86.png"
+  },
+  "87": {
+    "name": "Typhoon",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/87.png"
+  },
+  "88": {
+    "name": "Ultimate Revolution",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/88.png"
+  },
+  "89": {
+    "name": "Vanish",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/89.png"
+  },
+  "90": {
+    "name": "Vengeance",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/90.png"
+  },
+  "91": {
+    "name": "Virtuous Cycle",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/91.png"
+  },
+  "92": {
+    "name": "Vulnerability",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/92.png"
+  },
+  "93": {
+    "name": "Warmup Routine",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/93.png"
+  },
+  "94": {
+    "name": "Willing Sacrifice",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/94.png"
+  },
+  "95": {
+    "name": "Windspeaker's Blessing",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/95.png"
+  },
+  "96": {
+    "name": "Wisdom of Ages",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/96.png"
+  },
+  "97": {
+    "name": "Witchful Thinking",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/97.png"
+  },
+  "98": {
+    "name": "With Haste",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/98.png"
+  },
+  "99": {
+    "name": "Zhonya's Epiphany",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/99.png"
+  },
+  "102": {
+    "name": "Don't Chase",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/102.png"
+  },
+  "103": {
+    "name": "Bread And Butter",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/103.png"
+  },
+  "104": {
+    "name": "Minionmancer",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/104.png"
+  },
+  "105": {
+    "name": "Homeguard",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/105.png"
+  },
+  "107": {
+    "name": "Twice Thrice",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/107.png"
+  },
+  "108": {
+    "name": "Self Destruct",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/108.png"
+  },
+  "109": {
+    "name": "Oathsworn",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/109.png"
+  },
+  "110": {
+    "name": "Clothesline",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/110.png"
+  },
+  "112": {
+    "name": "Ultimate Unstoppable",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/112.png"
+  },
+  "113": {
+    "name": "Skilled Sniper",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/113.png"
+  },
+  "115": {
+    "name": "Scopiest Weapons",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/115.png"
+  },
+  "116": {
+    "name": "Flashy",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/116.png"
+  },
+  "118": {
+    "name": "Critical Healing",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/118.png"
+  },
+  "120": {
+    "name": "Serve Beyond Death",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/120.png"
+  },
+  "123": {
+    "name": "Summoner's Roulette",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/123.png"
+  },
+  "125": {
+    "name": "Raid Boss",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/125.png"
+  },
+  "129": {
+    "name": "Marksmage",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/129.png"
+  },
+  "133": {
+    "name": "Magic Missile",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/133.png"
+  },
+  "134": {
+    "name": "Draw Your Sword",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/134.png"
+  },
+  "135": {
+    "name": "Spellwake",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/135.png"
+  },
+  "136": {
+    "name": "Slap Around",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/136.png"
+  },
+  "138": {
+    "name": "Goredrink",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/138.png"
+  },
+  "141": {
+    "name": "All For You",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/141.png"
+  },
+  "149": {
+    "name": "Impassable",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/149.png"
+  },
+  "150": {
+    "name": "Bread And Jam",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/150.png"
+  },
+  "151": {
+    "name": "Bread And Cheese",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/151.png"
+  },
+  "152": {
+    "name": "Quest: Steel Your Heart",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/152.png"
+  },
+  "154": {
+    "name": "Quest: Urf's Champion",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/154.png"
+  },
+  "156": {
+    "name": "Quest: Wooglet's Witchcap",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/156.png"
+  },
+  "165": {
+    "name": "Restart",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/165.png"
+  },
+  "166": {
+    "name": "Chain Lightning",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/166.png"
+  },
+  "170": {
+    "name": "Scoped Weapons",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/170.png"
+  },
+  "171": {
+    "name": "Dematerialize",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/171.png"
+  },
+  "172": {
+    "name": "Mirror Image",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/172.png"
+  },
+  "174": {
+    "name": "Laser Eyes",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/174.png"
+  },
+  "175": {
+    "name": "Parasitic Relationship",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/175.png"
+  },
+  "176": {
+    "name": "Snowball Fight!",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/176.png"
+  },
+  "177": {
+    "name": "Nesting Doll",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/177.png"
+  },
+  "180": {
+    "name": "Big Brain",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/180.png"
+  },
+  "181": {
+    "name": "Heavy Hitter",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/181.png"
+  },
+  "187": {
+    "name": "Flashbang",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/187.png"
+  },
+  "192": {
+    "name": "Quest: Angel of Retribution",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/192.png"
+  },
+  "193": {
+    "name": "Center of the Universe",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/193.png"
+  },
+  "194": {
+    "name": "Fey Magic",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/194.png"
+  },
+  "195": {
+    "name": "Giant Slayer",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/195.png"
+  },
+  "198": {
+    "name": "Holy Fire",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/198.png"
+  },
+  "200": {
+    "name": "Blood Brother",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/200.png"
+  },
+  "204": {
+    "name": "Stackosaurus Rex",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/204.png"
+  },
+  "205": {
+    "name": "ADAPt",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/205.png"
+  },
+  "206": {
+    "name": "escAPADe",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/206.png"
+  },
+  "207": {
+    "name": "Hold Very Still",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/207.png"
+  },
+  "208": {
+    "name": "Orbital Laser",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/208.png"
+  },
+  "211": {
+    "name": "It's Killing Time",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/211.png"
+  },
+  "213": {
+    "name": "Fully Automated",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/213.png"
+  },
+  "214": {
+    "name": "Spin To Win",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/214.png"
+  },
+  "215": {
+    "name": "Dark Blessing",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/215.png"
+  },
+  "216": {
+    "name": "Dreadbringer",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/216.png"
+  },
+  "217": {
+    "name": "Deathtouch",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/217.png"
+  },
+  "218": {
+    "name": "Desecrator",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/218.png"
+  },
+  "219": {
+    "name": "Doomsayer",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/219.png"
+  },
+  "220": {
+    "name": "Fan the Hammer",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/220.png"
+  },
+  "221": {
+    "name": "Trailblazer",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/221.png"
+  },
+  "222": {
+    "name": "Fruits of Your Labor",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/222.png"
+  },
+  "223": {
+    "name": "Summoner Revolution",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/223.png"
+  },
+  "224": {
+    "name": "Prismatic Egg",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/224.png"
+  },
+  "225": {
+    "name": "Dual Wield",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/225.png"
+  },
+  "226": {
+    "name": "Stats!",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/226.png"
+  },
+  "227": {
+    "name": "Stats on Stats!",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/227.png"
+  },
+  "228": {
+    "name": "Stats on Stats on Stats!",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/228.png"
+  },
+  "229": {
+    "name": "Fire Sale",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/229.png"
+  },
+  "230": {
+    "name": "Bullet Heaven",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/230.png"
+  },
+  "231": {
+    "name": "Light Warden",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/231.png"
+  },
+  "232": {
+    "name": "Slime Time",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/232.png"
+  },
+  "233": {
+    "name": "Ultimate Roulette",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/233.png"
+  },
+  "234": {
+    "name": "Gamba Anvil",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/234.png"
+  },
+  "236": {
+    "name": "Trickster Demon",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/236.png"
+  },
+  "237": {
+    "name": "Transmute: Gold",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/237.png"
+  },
+  "238": {
+    "name": "Transmute: Prismatic",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/238.png"
+  },
+  "239": {
+    "name": "Symbiotic Mutation",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/239.png"
+  },
+  "240": {
+    "name": "Parasitic Mutation",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/240.png"
+  },
+  "241": {
+    "name": "Hat Trick",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/241.png"
+  },
+  "242": {
+    "name": "Juice Press",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/242.png"
+  },
+  "243": {
+    "name": "Transmute: Chaos",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/243.png"
+  },
+  "250": {
+    "name": "Slow and Steady",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/250.png"
+  },
+  "251": {
+    "name": "Numb to Pain",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/251.png"
+  },
+  "301": {
+    "name": "Divine Intervention",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/301.png"
+  },
+  "302": {
+    "name": "Sacrifice: For Silver",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/302.png"
+  },
+  "303": {
+    "name": "Sacrifice: For Gold",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/303.png"
+  },
+  "304": {
+    "name": "Sacrifice: For Prismatic",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/304.png"
+  },
+  "305": {
+    "name": "Leg Day",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/305.png"
+  },
+  "306": {
+    "name": "Parry",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/306.png"
+  },
+  "307": {
+    "name": "Sleep Dart",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/307.png"
+  },
+  "308": {
+    "name": "Firefox",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/308.png"
+  },
+  "309": {
+    "name": "And My Axe!",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/309.png"
+  },
+  "310": {
+    "name": "Clown College",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/310.png"
+  },
+  "311": {
+    "name": "Overflow",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/311.png"
+  },
+  "312": {
+    "name": "We'll Be Right Back",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/312.png"
+  },
+  "313": {
+    "name": "Tank Engine",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/313.png"
+  },
+  "314": {
+    "name": "Unshackled",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/314.png"
+  },
+  "315": {
+    "name": "Energetic Caster",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/315.png"
+  },
+  "316": {
+    "name": "Grievous Venom",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/316.png"
+  },
+  "317": {
+    "name": "Pandora's Box",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/317.png"
+  },
+  "318": {
+    "name": "Quest: Mad Hatter",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/318.png"
+  },
+  "319": {
+    "name": "Quest: Three Sacred Treasures",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/319.png"
+  },
+  "320": {
+    "name": "Calculated Risk",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/320.png"
+  },
+  "321": {
+    "name": "Bodyguard",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/321.png"
+  },
+  "322": {
+    "name": "Augmented Power",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/322.png"
+  },
+  "323": {
+    "name": "Cerberus",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/323.png"
+  },
+  "324": {
+    "name": "Bravest of the Brave",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/324.png"
+  },
+  "326": {
+    "name": "Spirit Infusion",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/326.png"
+  },
+  "327": {
+    "name": "Undying Guard",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/327.png"
+  },
+  "328": {
+    "name": "Infernal Chains",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/328.png"
+  },
+  "329": {
+    "name": "Necromancer",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/329.png"
+  },
+  "330": {
+    "name": "Despoil",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/330.png"
+  },
+  "331": {
+    "name": "Multitool",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/331.png"
+  },
+  "332": {
+    "name": "Blood Mage",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/332.png"
+  },
+  "333": {
+    "name": "Quest: Rite Of The Forge God",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/333.png"
+  },
+  "334": {
+    "name": "Hallucinate",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/334.png"
+  },
+  "335": {
+    "name": "Panic Room",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/335.png"
+  },
+  "336": {
+    "name": "Aim for the Head",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/336.png"
+  },
+  "338": {
+    "name": "Hive Mind",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/338.png"
+  },
+  "343": {
+    "name": "Righteous Fury",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/343.png"
+  },
+  "344": {
+    "name": "Energetic",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/344.png"
+  },
+  "345": {
+    "name": "Magical Girl",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/345.png"
+  },
+  "346": {
+    "name": "Bread Sandwich",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/346.png"
+  },
+  "356": {
+    "name": "Silver Spoon",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/356.png"
+  },
+  "357": {
+    "name": "Hybrid",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/357.png"
+  },
+  "374": {
+    "name": "Rice and Chicken",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/374.png"
+  },
+  "375": {
+    "name": "Rice and Fish",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/375.png"
+  },
+  "376": {
+    "name": "Rice and Pork",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/376.png"
+  },
+  "377": {
+    "name": "Combination Fried Rice",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/377.png"
+  },
+  "378": {
+    "name": "Transmute: Silver",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/378.png"
+  },
+  "379": {
+    "name": "Wild Fire",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/379.png"
+  },
+  "380": {
+    "name": "Mercy",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/380.png"
+  },
+  "381": {
+    "name": "Scavenger",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/381.png"
+  },
+  "383": {
+    "name": "Demonic Clasp",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/383.png"
+  },
+  "384": {
+    "name": "Spellcraft",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/384.png"
+  },
+  "387": {
+    "name": "Big Dragon Energy",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/387.png"
+  },
+  "388": {
+    "name": "Chroma Flux",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/388.png"
+  },
+  "389": {
+    "name": "Trash To Treasure",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/389.png"
+  },
+  "390": {
+    "name": "Unstable Transmutation",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/390.png"
+  },
+  "391": {
+    "name": "Rags to Riches",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/391.png"
+  },
+  "393": {
+    "name": "Icathia's Fall",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/393.png"
+  },
+  "394": {
+    "name": "Dust To Diamonds",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/394.png"
+  },
+  "404": {
+    "name": "404 Augment Not Found",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/404.png"
+  },
+  "405": {
+    "name": "Augment 405",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/405.png"
+  },
+  "1001": {
+    "name": "Titan's Resolve",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1001.png"
+  },
+  "1002": {
+    "name": "Apex Inventor",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1002.png"
+  },
+  "1004": {
+    "name": "Back To Basics",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1004.png"
+  },
+  "1005": {
+    "name": "Wee Woo Wee Woo",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1005.png"
+  },
+  "1006": {
+    "name": "Blade Waltz",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1006.png"
+  },
+  "1007": {
+    "name": "Blunt Force",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1007.png"
+  },
+  "1009": {
+    "name": "Buff Buddies",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1009.png"
+  },
+  "1011": {
+    "name": "Can't Touch This",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1011.png"
+  },
+  "1013": {
+    "name": "Celestial Body",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1013.png"
+  },
+  "1015": {
+    "name": "Circle of Death",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1015.png"
+  },
+  "1018": {
+    "name": "Courage of the Colossus",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1018.png"
+  },
+  "1019": {
+    "name": "Dashing",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1019.png"
+  },
+  "1020": {
+    "name": "Dawnbringer's Resolve",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1020.png"
+  },
+  "1022": {
+    "name": "Deft",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1022.png"
+  },
+  "1023": {
+    "name": "Demon's Dance",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1023.png"
+  },
+  "1025": {
+    "name": "Dive Bomber",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1025.png"
+  },
+  "1026": {
+    "name": "Don't Blink",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1026.png"
+  },
+  "1027": {
+    "name": "Earthwake",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1027.png"
+  },
+  "1028": {
+    "name": "Erosion",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1028.png"
+  },
+  "1029": {
+    "name": "Ethereal Weapon",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1029.png"
+  },
+  "1030": {
+    "name": "Eureka",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1030.png"
+  },
+  "1032": {
+    "name": "Executioner",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1032.png"
+  },
+  "1034": {
+    "name": "Veil of Warding",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1034.png"
+  },
+  "1035": {
+    "name": "Feel the Burn",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1035.png"
+  },
+  "1036": {
+    "name": "Firebrand",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1036.png"
+  },
+  "1037": {
+    "name": "First-Aid Kit",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1037.png"
+  },
+  "1038": {
+    "name": "From Beginning To End",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1038.png"
+  },
+  "1039": {
+    "name": "Frost Wraith",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1039.png"
+  },
+  "1041": {
+    "name": "Goliath",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1041.png"
+  },
+  "1042": {
+    "name": "Guilty Pleasure",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1042.png"
+  },
+  "1044": {
+    "name": "Ice Cold",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1044.png"
+  },
+  "1045": {
+    "name": "Infernal Conduit",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1045.png"
+  },
+  "1046": {
+    "name": "Infernal Soul",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1046.png"
+  },
+  "1047": {
+    "name": "It's Critical",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1047.png"
+  },
+  "1048": {
+    "name": "Jeweled Gauntlet",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1048.png"
+  },
+  "1050": {
+    "name": "Keystone Conjurer",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1050.png"
+  },
+  "1051": {
+    "name": "Light 'Em Up!",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1051.png"
+  },
+  "1052": {
+    "name": "Lightning Strikes",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1052.png"
+  },
+  "1053": {
+    "name": "Mad Scientist",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1053.png"
+  },
+  "1054": {
+    "name": "Master of Duality",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1054.png"
+  },
+  "1056": {
+    "name": "Mind to Matter",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1056.png"
+  },
+  "1057": {
+    "name": "Mountain Soul",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1057.png"
+  },
+  "1058": {
+    "name": "Mystic Punch",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1058.png"
+  },
+  "1060": {
+    "name": "Ocean Soul",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1060.png"
+  },
+  "1061": {
+    "name": "Ok Boomerang",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1061.png"
+  },
+  "1062": {
+    "name": "Omni Soul",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1062.png"
+  },
+  "1063": {
+    "name": "Outlaw's Grit",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1063.png"
+  },
+  "1064": {
+    "name": "Perseverance",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1064.png"
+  },
+  "1066": {
+    "name": "Quantum Computing",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1066.png"
+  },
+  "1067": {
+    "name": "Rejuvenation",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1067.png"
+  },
+  "1068": {
+    "name": "Recursion",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1068.png"
+  },
+  "1069": {
+    "name": "Repulsor",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1069.png"
+  },
+  "1070": {
+    "name": "Restless Restoration",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1070.png"
+  },
+  "1071": {
+    "name": "Scopier Weapons",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1071.png"
+  },
+  "1072": {
+    "name": "Searing Dawn",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1072.png"
+  },
+  "1073": {
+    "name": "Shadow Runner",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1073.png"
+  },
+  "1074": {
+    "name": "Shrink Ray",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1074.png"
+  },
+  "1075": {
+    "name": "Slow Cooker",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1075.png"
+  },
+  "1076": {
+    "name": "Sonic Boom",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1076.png"
+  },
+  "1077": {
+    "name": "Soul Siphon",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1077.png"
+  },
+  "1079": {
+    "name": "Symphony of War",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1079.png"
+  },
+  "1080": {
+    "name": "Tank It Or Leave It",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1080.png"
+  },
+  "1081": {
+    "name": "Tap Dancer",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1081.png"
+  },
+  "1082": {
+    "name": "The Brutalizer",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1082.png"
+  },
+  "1084": {
+    "name": "Thread the Needle",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1084.png"
+  },
+  "1085": {
+    "name": "Tormentor",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1085.png"
+  },
+  "1086": {
+    "name": "Trueshot Prodigy",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1086.png"
+  },
+  "1087": {
+    "name": "Typhoon",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1087.png"
+  },
+  "1088": {
+    "name": "Ultimate Revolution",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1088.png"
+  },
+  "1092": {
+    "name": "Vulnerability",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1092.png"
+  },
+  "1095": {
+    "name": "Windspeaker's Blessing",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1095.png"
+  },
+  "1097": {
+    "name": "Witchful Thinking",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1097.png"
+  },
+  "1098": {
+    "name": "With Haste",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1098.png"
+  },
+  "1103": {
+    "name": "Bread And Butter",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1103.png"
+  },
+  "1104": {
+    "name": "Minionmancer",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1104.png"
+  },
+  "1105": {
+    "name": "Homeguard",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1105.png"
+  },
+  "1107": {
+    "name": "Twice Thrice",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1107.png"
+  },
+  "1108": {
+    "name": "Self Destruct",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1108.png"
+  },
+  "1112": {
+    "name": "Ultimate Unstoppable",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1112.png"
+  },
+  "1113": {
+    "name": "Skilled Sniper",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1113.png"
+  },
+  "1115": {
+    "name": "Scopiest Weapons",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1115.png"
+  },
+  "1116": {
+    "name": "Flashy",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1116.png"
+  },
+  "1118": {
+    "name": "Critical Healing",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1118.png"
+  },
+  "1129": {
+    "name": "Marksmage",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1129.png"
+  },
+  "1133": {
+    "name": "Magic Missile",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1133.png"
+  },
+  "1134": {
+    "name": "Draw Your Sword",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1134.png"
+  },
+  "1136": {
+    "name": "Slap Around",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1136.png"
+  },
+  "1138": {
+    "name": "Goredrink",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1138.png"
+  },
+  "1141": {
+    "name": "All For You",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1141.png"
+  },
+  "1149": {
+    "name": "Impassable",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1149.png"
+  },
+  "1150": {
+    "name": "Bread And Jam",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1150.png"
+  },
+  "1151": {
+    "name": "Bread and Cheese",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1151.png"
+  },
+  "1152": {
+    "name": "Steel Your Heart",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1152.png"
+  },
+  "1154": {
+    "name": "Urf's Champion",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1154.png"
+  },
+  "1156": {
+    "name": "Wooglet's Witchcap",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1156.png"
+  },
+  "1170": {
+    "name": "Scoped Weapons",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1170.png"
+  },
+  "1180": {
+    "name": "Big Brain",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1180.png"
+  },
+  "1181": {
+    "name": "Heavy Hitter",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1181.png"
+  },
+  "1187": {
+    "name": "Flashbang",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1187.png"
+  },
+  "1194": {
+    "name": "Fey Magic",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1194.png"
+  },
+  "1195": {
+    "name": "Giant Slayer",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1195.png"
+  },
+  "1198": {
+    "name": "Holy Fire",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1198.png"
+  },
+  "1204": {
+    "name": "Stackosaurus Rex",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1204.png"
+  },
+  "1205": {
+    "name": "ADAPt",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1205.png"
+  },
+  "1206": {
+    "name": "escAPADe",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1206.png"
+  },
+  "1208": {
+    "name": "Orbital Laser",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1208.png"
+  },
+  "1211": {
+    "name": "It's Killing Time",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1211.png"
+  },
+  "1214": {
+    "name": "Spin To Win",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1214.png"
+  },
+  "1220": {
+    "name": "Fan The Hammer",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1220.png"
+  },
+  "1225": {
+    "name": "Dual Wield",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1225.png"
+  },
+  "1237": {
+    "name": "Transmute: Gold",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1237.png"
+  },
+  "1238": {
+    "name": "Transmute: Prismatic",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1238.png"
+  },
+  "1243": {
+    "name": "Transmute: Chaos",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1243.png"
+  },
+  "1250": {
+    "name": "Slow And Steady",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1250.png"
+  },
+  "1301": {
+    "name": "Divine Intervention",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1301.png"
+  },
+  "1305": {
+    "name": "Leg Day",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1305.png"
+  },
+  "1308": {
+    "name": "FireFox",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1308.png"
+  },
+  "1310": {
+    "name": "Clown College",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1310.png"
+  },
+  "1311": {
+    "name": "Overflow",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1311.png"
+  },
+  "1313": {
+    "name": "Cheating",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1313.png"
+  },
+  "1314": {
+    "name": "Mighty Shield",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1314.png"
+  },
+  "1315": {
+    "name": "Swift and Safe",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1315.png"
+  },
+  "1316": {
+    "name": "Wind Beneath Blade",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1316.png"
+  },
+  "1317": {
+    "name": "Upgrade Cutlass",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1317.png"
+  },
+  "1318": {
+    "name": "Upgrade Zhonya's",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1318.png"
+  },
+  "1319": {
+    "name": "Upgrade Immolate",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1319.png"
+  },
+  "1320": {
+    "name": "Upgrade Collector",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1320.png"
+  },
+  "1321": {
+    "name": "Gash",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1321.png"
+  },
+  "1322": {
+    "name": "Get Excited!",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1322.png"
+  },
+  "1323": {
+    "name": "Cruelty",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1323.png"
+  },
+  "1324": {
+    "name": "Protein Shake",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1324.png"
+  },
+  "1325": {
+    "name": "Glass Cannon",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1325.png"
+  },
+  "1326": {
+    "name": "Nightstalking",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1326.png"
+  },
+  "1327": {
+    "name": "Adamant",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1327.png"
+  },
+  "1328": {
+    "name": "Critical Rhythm",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1328.png"
+  },
+  "1329": {
+    "name": "Biggest Snowball Ever",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1329.png"
+  },
+  "1330": {
+    "name": "ReEnergize",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1330.png"
+  },
+  "1331": {
+    "name": "Empyrean Promise",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1331.png"
+  },
+  "1332": {
+    "name": "Ominous Pact",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1332.png"
+  },
+  "1333": {
+    "name": "Escape Plan",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1333.png"
+  },
+  "1334": {
+    "name": "Snowball Upgrade",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1334.png"
+  },
+  "1335": {
+    "name": "Goldrend",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1335.png"
+  },
+  "1336": {
+    "name": "Upgrade Infinity Edge",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1336.png"
+  },
+  "1337": {
+    "name": "King Me",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1337.png"
+  },
+  "1338": {
+    "name": "Upgrade Hubris",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1338.png"
+  },
+  "1339": {
+    "name": "Laser Heal",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1339.png"
+  },
+  "1340": {
+    "name": "Upgrade Mikael's Blessing",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1340.png"
+  },
+  "1341": {
+    "name": "Hat on a Hat",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1341.png"
+  },
+  "1342": {
+    "name": "Snowball Roulette",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1342.png"
+  },
+  "1343": {
+    "name": "Sneakerhead",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1343.png"
+  },
+  "1344": {
+    "name": "Final Form",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1344.png"
+  },
+  "1345": {
+    "name": "Spiritual Purification",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1345.png"
+  },
+  "1346": {
+    "name": "Vampirism",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1346.png"
+  },
+  "1347": {
+    "name": "Poltergeist",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1347.png"
+  },
+  "1348": {
+    "name": "Flash 2",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1348.png"
+  },
+  "1349": {
+    "name": "Ultimate Awakening",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1349.png"
+  },
+  "1353": {
+    "name": "Tank Engine",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1353.png"
+  },
+  "1356": {
+    "name": "Critical Missile",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1356.png"
+  },
+  "1358": {
+    "name": "Pinball",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1358.png"
+  },
+  "1361": {
+    "name": "Icathia's Fall",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1361.png"
+  },
+  "1372": {
+    "name": "I'm a Baby Kitty Where is Mama",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1372.png"
+  },
+  "1373": {
+    "name": "Shrink Engine",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1373.png"
+  },
+  "1375": {
+    "name": "Soul Eater",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1375.png"
+  },
+  "1379": {
+    "name": "Upgrade Sword of Blossoming Dawn",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1379.png"
+  },
+  "1384": {
+    "name": "Donation",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1384.png"
+  },
+  "1386": {
+    "name": "Spin Me Right Round",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1386.png"
+  },
+  "1388": {
+    "name": "Infinite Recursion",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1388.png"
+  },
+  "1389": {
+    "name": "Hand of Baron",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1389.png"
+  },
+  "1390": {
+    "name": "Phenomenal Evil",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1390.png"
+  },
+  "1391": {
+    "name": "Red Envelopes",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1391.png"
+  },
+  "1392": {
+    "name": "Holy Snowball",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1392.png"
+  },
+  "1397": {
+    "name": "Cerberus",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1397.png"
+  },
+  "1400": {
+    "name": "Final City Transit",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1400.png"
+  },
+  "1401": {
+    "name": "Growth Spurt",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1401.png"
+  },
+  "1402": {
+    "name": "Stats on Stats on Stats!",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1402.png"
+  },
+  "1403": {
+    "name": "Stats on Stats!",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1403.png"
+  },
+  "1404": {
+    "name": "Stats!",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1404.png"
+  },
+  "1405": {
+    "name": "Speed Demon",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1405.png"
+  },
+  "1406": {
+    "name": "Grandma's Chili Oil",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1406.png"
+  },
+  "1409": {
+    "name": "Poro Blaster",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1409.png"
+  },
+  "1411": {
+    "name": "Upgrade Thornmail",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1411.png"
+  },
+  "1413": {
+    "name": "Stuck In Here With Me",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1413.png"
+  },
+  "1414": {
+    "name": "Droppybara",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1414.png"
+  },
+  "1415": {
+    "name": "Twin Fire",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1415.png"
+  },
+  "1416": {
+    "name": "Hextech Soul",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1416.png"
+  },
+  "1418": {
+    "name": "Crack Open That Egg",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1418.png"
+  },
+  "1420": {
+    "name": "Sonata",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1420.png"
+  },
+  "1421": {
+    "name": "Prom Queen",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1421.png"
+  },
+  "1424": {
+    "name": "???",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1424.png"
+  },
+  "1996": {
+    "name": "Upgrade Sheen",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/1996.png"
+  },
+  "2001": {
+    "name": "Heads Up Cupcake!",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2001.png"
+  },
+  "2002": {
+    "name": "Void Rift",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2002.png"
+  },
+  "2003": {
+    "name": "Bounce of the Poro King",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2003.png"
+  },
+  "2004": {
+    "name": "Empowered By The Faithful",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2004.png"
+  },
+  "2005": {
+    "name": "Triggered Inferno",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2005.png"
+  },
+  "2006": {
+    "name": "Dropkick",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2006.png"
+  },
+  "2007": {
+    "name": "Devil on Your Shoulder",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2007.png"
+  },
+  "2008": {
+    "name": "Weighted Popoffs",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2008.png"
+  },
+  "2009": {
+    "name": "Zealot",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2009.png"
+  },
+  "2010": {
+    "name": "Double Tap",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2010.png"
+  },
+  "2016": {
+    "name": "Juiced",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2016.png"
+  },
+  "2018": {
+    "name": "Purist - Caster",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2018.png"
+  },
+  "2024": {
+    "name": "Crit 'n Cast",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2024.png"
+  },
+  "2026": {
+    "name": "Kill Secured",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2026.png"
+  },
+  "2031": {
+    "name": "DropBear",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2031.png"
+  },
+  "2032": {
+    "name": "Shark Bait",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2032.png"
+  },
+  "2034": {
+    "name": "Shark Tempest",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2034.png"
+  },
+  "2042": {
+    "name": "Hide on Bush",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2042.png"
+  },
+  "2043": {
+    "name": "Nature is Healing",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2043.png"
+  },
+  "2046": {
+    "name": "Poro Stampede",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2046.png"
+  },
+  "2054": {
+    "name": "Tripleshot",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2054.png"
+  },
+  "2055": {
+    "name": "Multishot",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2055.png"
+  },
+  "2062": {
+    "name": "Echo Cast",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2062.png"
+  },
+  "2063": {
+    "name": "Dimension Shift",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2063.png"
+  },
+  "2064": {
+    "name": "Quickstep",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2064.png"
+  },
+  "2065": {
+    "name": "Terror",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2065.png"
+  },
+  "2072": {
+    "name": "Spell Split",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2072.png"
+  },
+  "2073": {
+    "name": "Siphon",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2073.png"
+  },
+  "2076": {
+    "name": "Stay Resolute",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2076.png"
+  },
+  "2077": {
+    "name": "Ravenous Bind",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2077.png"
+  },
+  "2078": {
+    "name": "Chain Reaction",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2078.png"
+  },
+  "2080": {
+    "name": "Snowblast",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2080.png"
+  },
+  "2082": {
+    "name": "Our Healing",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2082.png"
+  },
+  "2083": {
+    "name": "Tooth Fairy",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2083.png"
+  },
+  "2087": {
+    "name": "Archmage",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2087.png"
+  },
+  "2088": {
+    "name": "Snowday",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2088.png"
+  },
+  "2089": {
+    "name": "Yowch, My Coins!",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2089.png"
+  },
+  "2091": {
+    "name": "Endless Decimation",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2091.png"
+  },
+  "2095": {
+    "name": "High Roller",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2095.png"
+  },
+  "2096": {
+    "name": "Lil' Extra Help",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2096.png"
+  },
+  "2097": {
+    "name": "Void Dash",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2097.png"
+  },
+  "2098": {
+    "name": "En Passant",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2098.png"
+  },
+  "2099": {
+    "name": "Rite of Ascension",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2099.png"
+  },
+  "2100": {
+    "name": "Pursuit of Haste",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2100.png"
+  },
+  "2102": {
+    "name": "Pressure Cooker",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2102.png"
+  },
+  "2103": {
+    "name": "From Downtown",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2103.png"
+  },
+  "2104": {
+    "name": "Spirit Bomb",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2104.png"
+  },
+  "2107": {
+    "name": "Hellbent",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2107.png"
+  },
+  "2108": {
+    "name": "Support Main",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2108.png"
+  },
+  "2109": {
+    "name": "Snap Back",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2109.png"
+  },
+  "2111": {
+    "name": "BONK!",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2111.png"
+  },
+  "2115": {
+    "name": "Squishy Slappy Grab",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2115.png"
+  },
+  "2116": {
+    "name": "Pursuit of Power",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2116.png"
+  },
+  "2118": {
+    "name": "Ult Bot",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2118.png"
+  },
+  "2119": {
+    "name": "Overextender",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2119.png"
+  },
+  "2123": {
+    "name": "Overloaded",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2123.png"
+  },
+  "2125": {
+    "name": "It's Go Time",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2125.png"
+  },
+  "2126": {
+    "name": "Reload",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2126.png"
+  },
+  "2127": {
+    "name": "Forged By The Master",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2127.png"
+  },
+  "2128": {
+    "name": "Combusting Interest",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2128.png"
+  },
+  "2129": {
+    "name": "Terrain'd",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2129.png"
+  },
+  "2131": {
+    "name": "Don't Change the Channel",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2131.png"
+  },
+  "2132": {
+    "name": "Warlock Juicebox",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2132.png"
+  },
+  "2133": {
+    "name": "Mercy's Strike",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2133.png"
+  },
+  "2134": {
+    "name": "Surge Field",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2134.png"
+  },
+  "2135": {
+    "name": "Pin Cushion",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2135.png"
+  },
+  "2136": {
+    "name": "Trusty Weapon",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2136.png"
+  },
+  "2137": {
+    "name": "Pat On The Back",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2137.png"
+  },
+  "2138": {
+    "name": "Adaptive Ward",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2138.png"
+  },
+  "2139": {
+    "name": "Porcupine",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2139.png"
+  },
+  "2144": {
+    "name": "Bolstered",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2144.png"
+  },
+  "2148": {
+    "name": "Double Strike",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/2148.png"
+  },
+  "12317": {
+    "name": "Pandora's Box",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/12317.png"
+  },
+  "33201": {
+    "name": "Guiding Hex",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33201.png"
+  },
+  "33202": {
+    "name": "Pillory Swipe",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33202.png"
+  },
+  "33203": {
+    "name": "Tentacle Slam",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33203.png"
+  },
+  "33204": {
+    "name": "Meow Meow",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33204.png"
+  },
+  "33205": {
+    "name": "Shield Slam",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33205.png"
+  },
+  "33206": {
+    "name": "Bunny Hop",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33206.png"
+  },
+  "33207": {
+    "name": "Sound Wave",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33207.png"
+  },
+  "33208": {
+    "name": "Winged Dagger",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33208.png"
+  },
+  "33209": {
+    "name": "Steel Tempest",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33209.png"
+  },
+  "33210": {
+    "name": "Blade-o-rang",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33210.png"
+  },
+  "33211": {
+    "name": "Vortex Glove",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33211.png"
+  },
+  "33212": {
+    "name": "Gatling Bunny-Guns",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33212.png"
+  },
+  "33213": {
+    "name": "Lioness's Lament",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33213.png"
+  },
+  "33214": {
+    "name": "Anti-Shark Sea Mine",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33214.png"
+  },
+  "33215": {
+    "name": "Searing Shortbow",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33215.png"
+  },
+  "33216": {
+    "name": "Iceblast Armor",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33216.png"
+  },
+  "33217": {
+    "name": "Radiant Field",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33217.png"
+  },
+  "33218": {
+    "name": "Cyclonic Slicers",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33218.png"
+  },
+  "33219": {
+    "name": "Ani-Mines",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33219.png"
+  },
+  "33220": {
+    "name": "The Annihilator",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33220.png"
+  },
+  "33221": {
+    "name": "Battle Bunny Crossbow",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33221.png"
+  },
+  "33222": {
+    "name": "Paw Print Poisoner",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33222.png"
+  },
+  "33223": {
+    "name": "UwU Blaster",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33223.png"
+  },
+  "33224": {
+    "name": "Echoing Batblades",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33224.png"
+  },
+  "33225": {
+    "name": "Bunny Mega-Blast",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33225.png"
+  },
+  "33226": {
+    "name": "Statikk Sword",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33226.png"
+  },
+  "33227": {
+    "name": "T.I.B.B.E.R.S",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33227.png"
+  },
+  "33228": {
+    "name": "Final City Transit",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33228.png"
+  },
+  "33229": {
+    "name": "YuumiBot",
+    "rarity": "silver",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33229.png"
+  },
+  "33301": {
+    "name": "Critical Expansion",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33301.png"
+  },
+  "33302": {
+    "name": "Uptime Upgrade",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33302.png"
+  },
+  "33303": {
+    "name": "Spray and Pray",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33303.png"
+  },
+  "33304": {
+    "name": "Juggernaut",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33304.png"
+  },
+  "33305": {
+    "name": "Circle of Stats",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33305.png"
+  },
+  "33306": {
+    "name": "Cross Country",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33306.png"
+  },
+  "33307": {
+    "name": "Glass Cannon",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33307.png"
+  },
+  "33308": {
+    "name": "Bullet-Mania",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33308.png"
+  },
+  "33309": {
+    "name": "Card Collector",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33309.png"
+  },
+  "33310": {
+    "name": "Pick-Me-Up",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33310.png"
+  },
+  "33311": {
+    "name": "Experienced Fighter",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33311.png"
+  },
+  "33312": {
+    "name": "Ultimate Speed-Up",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33312.png"
+  },
+  "33313": {
+    "name": "Armor Up",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33313.png"
+  },
+  "33314": {
+    "name": "Elite Bomber",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33314.png"
+  },
+  "33315": {
+    "name": "Bite Sized",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33315.png"
+  },
+  "33316": {
+    "name": "Larger Than Life",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33316.png"
+  },
+  "33317": {
+    "name": "Celebration!",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33317.png"
+  },
+  "33318": {
+    "name": "Ebb And Flow",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33318.png"
+  },
+  "33319": {
+    "name": "Mission Critical",
+    "rarity": "gold",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33319.png"
+  },
+  "33401": {
+    "name": "Hopped-Up Hex",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33401.png"
+  },
+  "33402": {
+    "name": "Savage Slice",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33402.png"
+  },
+  "33403": {
+    "name": "Grizzly Smash",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33403.png"
+  },
+  "33404": {
+    "name": "Battle Cat Barrage",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33404.png"
+  },
+  "33405": {
+    "name": "Light of the Lion",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33405.png"
+  },
+  "33406": {
+    "name": "Carrot Crash",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33406.png"
+  },
+  "33407": {
+    "name": "Anima Echo",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33407.png"
+  },
+  "33408": {
+    "name": "Lover's Ricochet",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33408.png"
+  },
+  "33409": {
+    "name": "Wandering Storms",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33409.png"
+  },
+  "33410": {
+    "name": "Quad-o-rang",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33410.png"
+  },
+  "33411": {
+    "name": "Tempest's Gauntlet",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33411.png"
+  },
+  "33412": {
+    "name": "Double Bun-Bun Barrage",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33412.png"
+  },
+  "33413": {
+    "name": "Enveloping Light",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33413.png"
+  },
+  "33414": {
+    "name": "Neverending Mobstomper",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33414.png"
+  },
+  "33415": {
+    "name": "Evolved Embershot",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33415.png"
+  },
+  "33416": {
+    "name": "Deep Freeze",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33416.png"
+  },
+  "33417": {
+    "name": "Explosive Embrace",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33417.png"
+  },
+  "33418": {
+    "name": "Unceasing Cyclone",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33418.png"
+  },
+  "33419": {
+    "name": "Jinx's Tri-Namite ",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33419.png"
+  },
+  "33420": {
+    "name": "Animapocalypse",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33420.png"
+  },
+  "33421": {
+    "name": "Bunny Prime Ballista",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33421.png"
+  },
+  "33422": {
+    "name": "Bearfoot Chem-Dispenser",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33422.png"
+  },
+  "33423": {
+    "name": "Vayne's Chromablades",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33423.png"
+  },
+  "33424": {
+    "name": "Rapid Rabbit Raindown",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33424.png"
+  },
+  "33425": {
+    "name": "Prumbis's Electrocarver",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33425.png"
+  },
+  "33426": {
+    "name": "T.I.B.B.E.R.S (B.E.E.G Edition)",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33426.png"
+  },
+  "33427": {
+    "name": "FC Limited Express",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33427.png"
+  },
+  "33428": {
+    "name": "YuumiBot_Final_FINAL ",
+    "rarity": "prismatic",
+    "icon_url": "https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/33428.png"
+  }
+}

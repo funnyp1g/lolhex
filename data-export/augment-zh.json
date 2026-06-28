@@ -1,0 +1,665 @@
+{
+  "1001": {
+    "name_zh": "ARAM_ImTheJuggernaut"
+  },
+  "1002": {
+    "name_zh": "ARAM_ApexInventor"
+  },
+  "1004": {
+    "name_zh": "ARAM_BacktoBasics"
+  },
+  "1005": {
+    "name_zh": "ARAM_WeeWooWeeWoo"
+  },
+  "1006": {
+    "name_zh": "ARAM_BladeWaltz"
+  },
+  "1007": {
+    "name_zh": "ARAM_BluntForce"
+  },
+  "1011": {
+    "name_zh": "ARAM_CantTouchThis"
+  },
+  "1013": {
+    "name_zh": "ARAM_CelestialBody"
+  },
+  "1015": {
+    "name_zh": "ARAM_CircleofDeath"
+  },
+  "1018": {
+    "name_zh": "ARAM_CourageoftheColossus"
+  },
+  "1019": {
+    "name_zh": "ARAM_Dashing"
+  },
+  "1020": {
+    "name_zh": "ARAM_DawnbringersResolve"
+  },
+  "1022": {
+    "name_zh": "ARAM_Deft"
+  },
+  "1025": {
+    "name_zh": "ARAM_DiveBomber"
+  },
+  "1026": {
+    "name_zh": "ARAM_DontBlink"
+  },
+  "1027": {
+    "name_zh": "ARAM_Earthwake"
+  },
+  "1028": {
+    "name_zh": "ARAM_Erosion"
+  },
+  "1029": {
+    "name_zh": "ARAM_EtherealWeapon"
+  },
+  "1030": {
+    "name_zh": "ARAM_Eureka"
+  },
+  "1034": {
+    "name_zh": "VeilOfWarding"
+  },
+  "1036": {
+    "name_zh": "ARAM_Firebrand"
+  },
+  "1037": {
+    "name_zh": "ARAM_FirstAidKit"
+  },
+  "1038": {
+    "name_zh": "ARAM_FromBeginningToEnd"
+  },
+  "1041": {
+    "name_zh": "ARAM_Goliath"
+  },
+  "1044": {
+    "name_zh": "ARAM_IceCold"
+  },
+  "1045": {
+    "name_zh": "ARAM_InfernalConduit"
+  },
+  "1046": {
+    "name_zh": "ARAM_InfernalSoul"
+  },
+  "1047": {
+    "name_zh": "ARAM_ItsCritical"
+  },
+  "1048": {
+    "name_zh": "ARAM_JeweledGauntlet"
+  },
+  "1051": {
+    "name_zh": "ARAM_LightemUp"
+  },
+  "1053": {
+    "name_zh": "ARAM_MadScientist"
+  },
+  "1054": {
+    "name_zh": "ARAM_MasterofDuality"
+  },
+  "1056": {
+    "name_zh": "ARAM_MindtoMatter"
+  },
+  "1057": {
+    "name_zh": "ARAM_MountainSoul"
+  },
+  "1058": {
+    "name_zh": "ARAM_MysticPunch"
+  },
+  "1060": {
+    "name_zh": "ARAM_OceanSoul"
+  },
+  "1061": {
+    "name_zh": "ARAM_OkBoomerang"
+  },
+  "1062": {
+    "name_zh": "ARAM_OmniSoul"
+  },
+  "1063": {
+    "name_zh": "ARAM_OutlawsGrit"
+  },
+  "1064": {
+    "name_zh": "ARAM_Perseverance"
+  },
+  "1066": {
+    "name_zh": "ARAM_QuantumComputing"
+  },
+  "1067": {
+    "name_zh": "ARAM_RabbleRousing"
+  },
+  "1068": {
+    "name_zh": "ARAM_Recursion"
+  },
+  "1071": {
+    "name_zh": "ARAM_ScopierWeapons"
+  },
+  "1072": {
+    "name_zh": "ARAM_SearingDawn"
+  },
+  "1073": {
+    "name_zh": "ARAM_ShadowRunner"
+  },
+  "1074": {
+    "name_zh": "ARAM_ShrinkRay"
+  },
+  "1076": {
+    "name_zh": "ARAM_SonicBoom"
+  },
+  "1077": {
+    "name_zh": "ARAM_SoulSiphon"
+  },
+  "1079": {
+    "name_zh": "ARAM_SymphonyofWar"
+  },
+  "1080": {
+    "name_zh": "ARAM_TankItOrLeaveIt"
+  },
+  "1081": {
+    "name_zh": "ARAM_TapDancer"
+  },
+  "1084": {
+    "name_zh": "ARAM_ThreadtheNeedle"
+  },
+  "1087": {
+    "name_zh": "ARAM_Typhoon"
+  },
+  "1088": {
+    "name_zh": "ARAM_UltimateRevolution"
+  },
+  "1092": {
+    "name_zh": "ARAM_Vulnerability"
+  },
+  "1095": {
+    "name_zh": "ARAM_WindspeakersBlessing"
+  },
+  "1097": {
+    "name_zh": "ARAM_WitchfulThinking"
+  },
+  "1098": {
+    "name_zh": "ARAM_WithHaste"
+  },
+  "1103": {
+    "name_zh": "ARAM_BreadAndButter"
+  },
+  "1104": {
+    "name_zh": "ARAM_Minionmancer"
+  },
+  "1105": {
+    "name_zh": "ARAM_Homeguard"
+  },
+  "1112": {
+    "name_zh": "ARAM_UltimateUnstoppable"
+  },
+  "1113": {
+    "name_zh": "ARAM_SkilledSniper"
+  },
+  "1115": {
+    "name_zh": "ARAM_ScopiestWeapons"
+  },
+  "1116": {
+    "name_zh": "ARAM_Flashy"
+  },
+  "1118": {
+    "name_zh": "ARAM_CriticalHealing"
+  },
+  "1129": {
+    "name_zh": "ARAM_Marksmage"
+  },
+  "1133": {
+    "name_zh": "ARAM_MagicMissile"
+  },
+  "1134": {
+    "name_zh": "ARAM_DrawYourSword"
+  },
+  "1136": {
+    "name_zh": "ARAM_SlapAround"
+  },
+  "1138": {
+    "name_zh": "ARAM_Goredrink"
+  },
+  "1141": {
+    "name_zh": "ARAM_AllForYou"
+  },
+  "1149": {
+    "name_zh": "ARAM_Impassable"
+  },
+  "1150": {
+    "name_zh": "ARAM_BreadAndJam"
+  },
+  "1151": {
+    "name_zh": "ARAM_BreadAndCheese"
+  },
+  "1152": {
+    "name_zh": "ARAM_Quest_SteelYourHeart"
+  },
+  "1154": {
+    "name_zh": "ARAM_Quest_UrfsChampion"
+  },
+  "1156": {
+    "name_zh": "ARAM_Quest_WoogletsWitchcap"
+  },
+  "1170": {
+    "name_zh": "ARAM_ScopedWeapons"
+  },
+  "1180": {
+    "name_zh": "ARAM_BigBrain"
+  },
+  "1181": {
+    "name_zh": "ARAM_HeavyHitter"
+  },
+  "1187": {
+    "name_zh": "ARAM_Flashbang"
+  },
+  "1194": {
+    "name_zh": "ARAM_FeyMagic"
+  },
+  "1195": {
+    "name_zh": "ARAM_GiantSlayer"
+  },
+  "1204": {
+    "name_zh": "ARAM_StackosaurusRex"
+  },
+  "1205": {
+    "name_zh": "ARAM_ADAPt"
+  },
+  "1206": {
+    "name_zh": "ARAM_escAPADe"
+  },
+  "1211": {
+    "name_zh": "ARAM_ItsKillingTime"
+  },
+  "1214": {
+    "name_zh": "ARAM_SpinToWin"
+  },
+  "1220": {
+    "name_zh": "ARAM_FanTheHammer"
+  },
+  "1225": {
+    "name_zh": "ARAM_DualWield"
+  },
+  "1237": {
+    "name_zh": "ARAM_TransmuteGold"
+  },
+  "1238": {
+    "name_zh": "ARAM_TransmutePrismatic"
+  },
+  "1243": {
+    "name_zh": "ARAM_TransmuteChaos"
+  },
+  "1301": {
+    "name_zh": "ARAM_DivineIntervention"
+  },
+  "1305": {
+    "name_zh": "ARAM_LegDay"
+  },
+  "1308": {
+    "name_zh": "ARAM_Firefox"
+  },
+  "1310": {
+    "name_zh": "ARAM_ClownCollege"
+  },
+  "1311": {
+    "name_zh": "ARAM_Overflow"
+  },
+  "1314": {
+    "name_zh": "MightyShield"
+  },
+  "1315": {
+    "name_zh": "SwiftAndSafe"
+  },
+  "1318": {
+    "name_zh": "ARAM_Upgrade_ZH"
+  },
+  "1319": {
+    "name_zh": "ARAM_Upgrade_Immolate"
+  },
+  "1320": {
+    "name_zh": "ARAM_Upgrade_Collector"
+  },
+  "1322": {
+    "name_zh": "ARAM_GetExcited"
+  },
+  "1323": {
+    "name_zh": "ARAM_Cruelty"
+  },
+  "1324": {
+    "name_zh": "ARAM_ProteinShake"
+  },
+  "1325": {
+    "name_zh": "GlassCannon"
+  },
+  "1326": {
+    "name_zh": "Nightstalking"
+  },
+  "1327": {
+    "name_zh": "Adamant"
+  },
+  "1328": {
+    "name_zh": "CriticalRhythm"
+  },
+  "1329": {
+    "name_zh": "BiggestSnowballEver"
+  },
+  "1331": {
+    "name_zh": "EmpyreanPromise"
+  },
+  "1332": {
+    "name_zh": "OminousPact"
+  },
+  "1333": {
+    "name_zh": "EscapePlan"
+  },
+  "1334": {
+    "name_zh": "SnowballUpgrade"
+  },
+  "1335": {
+    "name_zh": "Goldrend"
+  },
+  "1336": {
+    "name_zh": "ARAM_Upgrade_IE"
+  },
+  "1337": {
+    "name_zh": "KingMe"
+  },
+  "1343": {
+    "name_zh": "Quest_Sneakerhead"
+  },
+  "1344": {
+    "name_zh": "FinalForm"
+  },
+  "1345": {
+    "name_zh": "ARAM_SpiritualPurification"
+  },
+  "1346": {
+    "name_zh": "Vampirism"
+  },
+  "1347": {
+    "name_zh": "Poltergeist"
+  },
+  "1348": {
+    "name_zh": "Flash2"
+  },
+  "1349": {
+    "name_zh": "UltimateAwakening"
+  },
+  "1353": {
+    "name_zh": "ARAM_TankEngine"
+  },
+  "1356": {
+    "name_zh": "CriticalMissile"
+  },
+  "1358": {
+    "name_zh": "PinballSnowball"
+  },
+  "1361": {
+    "name_zh": "ARAM_Quest_VoidImmolation"
+  },
+  "1373": {
+    "name_zh": "ShrinkEngine"
+  },
+  "1375": {
+    "name_zh": "SoulEater"
+  },
+  "1379": {
+    "name_zh": "Upgrade_SwordOfBlossom"
+  },
+  "1384": {
+    "name_zh": "Donation"
+  },
+  "1386": {
+    "name_zh": "YouSpinMeRightRound"
+  },
+  "1388": {
+    "name_zh": "InfiniteRecursion"
+  },
+  "1389": {
+    "name_zh": "HandOfBaron"
+  },
+  "1390": {
+    "name_zh": "ARAM_PhenomenalEvil"
+  },
+  "1392": {
+    "name_zh": "GoldenSnowball"
+  },
+  "1400": {
+    "name_zh": "TrainOfTheDead"
+  },
+  "1401": {
+    "name_zh": "GrowthSpurt"
+  },
+  "1402": {
+    "name_zh": "ARAM_StatsOnStatsOnStats"
+  },
+  "1403": {
+    "name_zh": "ARAM_StatsOnStats"
+  },
+  "1404": {
+    "name_zh": "ARAM_Stats"
+  },
+  "1413": {
+    "name_zh": "ARAM_StuckInHereWithMe"
+  },
+  "1414": {
+    "name_zh": "Dropybara_Active"
+  },
+  "1415": {
+    "name_zh": "Twinfire"
+  },
+  "1416": {
+    "name_zh": "HextechSoul"
+  },
+  "1420": {
+    "name_zh": "Sonata"
+  },
+  "1421": {
+    "name_zh": "PromQueen"
+  },
+  "1996": {
+    "name_zh": "ARAM_Upgrade_Sheen"
+  },
+  "2004": {
+    "name_zh": "ARAM_EmpoweredByTheFaithful"
+  },
+  "2005": {
+    "name_zh": "ARAM_InfernoTriggered"
+  },
+  "2006": {
+    "name_zh": "ARAM_Dropkick"
+  },
+  "2007": {
+    "name_zh": "ARAM_LittleDevil"
+  },
+  "2009": {
+    "name_zh": "ARAM_Zealot"
+  },
+  "2010": {
+    "name_zh": "ARAM_DoubleTap"
+  },
+  "2016": {
+    "name_zh": "ARAM_Juiced"
+  },
+  "2018": {
+    "name_zh": "ARAM_Purist_Caster"
+  },
+  "2024": {
+    "name_zh": "CritNCast"
+  },
+  "2026": {
+    "name_zh": "KillSecured"
+  },
+  "2031": {
+    "name_zh": "ARAM_DropBear"
+  },
+  "2032": {
+    "name_zh": "FishBait"
+  },
+  "2034": {
+    "name_zh": "SharkTempest"
+  },
+  "2042": {
+    "name_zh": "BrushPower"
+  },
+  "2043": {
+    "name_zh": "NatureIsHealing"
+  },
+  "2046": {
+    "name_zh": "PoroCharge_Active"
+  },
+  "2054": {
+    "name_zh": "SpellVolley"
+  },
+  "2055": {
+    "name_zh": "ARAM_Multishot"
+  },
+  "2062": {
+    "name_zh": "Ability_SelfAOE_DoubleCast"
+  },
+  "2063": {
+    "name_zh": "DimensionShift_Active"
+  },
+  "2064": {
+    "name_zh": "ARAM_Quickstep"
+  },
+  "2065": {
+    "name_zh": "ARAM_Terror"
+  },
+  "2072": {
+    "name_zh": "Missile_Split"
+  },
+  "2073": {
+    "name_zh": "ARAM_SustainingStrike"
+  },
+  "2076": {
+    "name_zh": "TitansPulse"
+  },
+  "2077": {
+    "name_zh": "DarkWind"
+  },
+  "2078": {
+    "name_zh": "ChainReaction"
+  },
+  "2080": {
+    "name_zh": "Snowbomb"
+  },
+  "2082": {
+    "name_zh": "Equilibrium"
+  },
+  "2083": {
+    "name_zh": "BurstingTeeth"
+  },
+  "2087": {
+    "name_zh": "ARAM_Archmage"
+  },
+  "2088": {
+    "name_zh": "ARAM_Snowday"
+  },
+  "2089": {
+    "name_zh": "ARAM_YowchMyCoins"
+  },
+  "2091": {
+    "name_zh": "EndlessDecimation"
+  },
+  "2095": {
+    "name_zh": "ARAM_HighRoller"
+  },
+  "2096": {
+    "name_zh": "LittleExtraHelp"
+  },
+  "2097": {
+    "name_zh": "VoidDash"
+  },
+  "2098": {
+    "name_zh": "ARAM_EndlessHunt"
+  },
+  "2099": {
+    "name_zh": "ARAM_DivineDomain"
+  },
+  "2100": {
+    "name_zh": "ARAM_SpecializedRecursion"
+  },
+  "2102": {
+    "name_zh": "PressureCooker"
+  },
+  "2103": {
+    "name_zh": "ARAM_BangBang"
+  },
+  "2104": {
+    "name_zh": "ARAM_SpiritBomb"
+  },
+  "2107": {
+    "name_zh": "ARAM_Hellbent"
+  },
+  "2108": {
+    "name_zh": "SupportMain"
+  },
+  "2109": {
+    "name_zh": "SnapBack"
+  },
+  "2111": {
+    "name_zh": "Bonk"
+  },
+  "2115": {
+    "name_zh": "SquishySlappyGrab"
+  },
+  "2116": {
+    "name_zh": "SpecializedEmpowerment"
+  },
+  "2118": {
+    "name_zh": "SkipTheBasics"
+  },
+  "2119": {
+    "name_zh": "Overextender"
+  },
+  "2123": {
+    "name_zh": "Overloaded"
+  },
+  "2125": {
+    "name_zh": "ItsGoTime"
+  },
+  "2126": {
+    "name_zh": "KeepGoing"
+  },
+  "2127": {
+    "name_zh": "ForgedByTheMaster"
+  },
+  "2128": {
+    "name_zh": "BloodMoneyBurn"
+  },
+  "2129": {
+    "name_zh": "Terraind"
+  },
+  "2131": {
+    "name_zh": "DontChangeTheChannel"
+  },
+  "2132": {
+    "name_zh": "WarlockJuicebox"
+  },
+  "2133": {
+    "name_zh": "MercysStrike"
+  },
+  "2134": {
+    "name_zh": "SurgeField"
+  },
+  "2135": {
+    "name_zh": "Overkill"
+  },
+  "2136": {
+    "name_zh": "TrustyWeapon"
+  },
+  "2137": {
+    "name_zh": "PatOnTheBack"
+  },
+  "2138": {
+    "name_zh": "WardingWeapon"
+  },
+  "2139": {
+    "name_zh": "PinCushion"
+  },
+  "2144": {
+    "name_zh": "DoubleDefense"
+  },
+  "2148": {
+    "name_zh": "DoubleStrike"
+  },
+  "12317": {
+    "name_zh": "ARAM_PandorasBox"
+  }
+}

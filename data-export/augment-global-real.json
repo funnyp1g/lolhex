@@ -1,0 +1,2002 @@
+[
+  {
+    "_id": "1353",
+    "riot_id": 1353,
+    "win_rate": 50.97,
+    "pick_rate": 0.92,
+    "num_games": 229260,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.367Z"
+  },
+  {
+    "_id": "1181",
+    "riot_id": 1181,
+    "win_rate": 56.35,
+    "pick_rate": 0.85,
+    "num_games": 212834,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1336",
+    "riot_id": 1336,
+    "win_rate": 50.23,
+    "pick_rate": 0.86,
+    "num_games": 215349,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1390",
+    "riot_id": 1390,
+    "win_rate": 48.84,
+    "pick_rate": 0.23,
+    "num_games": 57532,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1152",
+    "riot_id": 1152,
+    "win_rate": 50.88,
+    "pick_rate": 0.69,
+    "num_games": 172222,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1356",
+    "riot_id": 1356,
+    "win_rate": 55.26,
+    "pick_rate": 0.8,
+    "num_games": 200787,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "2132",
+    "riot_id": 2132,
+    "win_rate": 56.13,
+    "pick_rate": 0.36,
+    "num_games": 90766,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1361",
+    "riot_id": 1361,
+    "win_rate": 61.53,
+    "pick_rate": 1.89,
+    "num_games": 473240,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1133",
+    "riot_id": 1133,
+    "win_rate": 50.82,
+    "pick_rate": 0.17,
+    "num_games": 43434,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1134",
+    "riot_id": 1134,
+    "win_rate": 49.89,
+    "pick_rate": 0.18,
+    "num_games": 44996,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1030",
+    "riot_id": 1030,
+    "win_rate": 54.22,
+    "pick_rate": 0.89,
+    "num_games": 222327,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1041",
+    "riot_id": 1041,
+    "win_rate": 52.38,
+    "pick_rate": 0.48,
+    "num_games": 118822,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1071",
+    "riot_id": 1071,
+    "win_rate": 55.15,
+    "pick_rate": 0.82,
+    "num_games": 204307,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1225",
+    "riot_id": 1225,
+    "win_rate": 50.82,
+    "pick_rate": 0.25,
+    "num_games": 62581,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1388",
+    "riot_id": 1388,
+    "win_rate": 51.03,
+    "pick_rate": 0.58,
+    "num_games": 146054,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "2006",
+    "riot_id": 2006,
+    "win_rate": 54.81,
+    "pick_rate": 0.5,
+    "num_games": 123813,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1097",
+    "riot_id": 1097,
+    "win_rate": 57.76,
+    "pick_rate": 0.75,
+    "num_games": 186340,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1022",
+    "riot_id": 1022,
+    "win_rate": 61.02,
+    "pick_rate": 1.52,
+    "num_games": 381198,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1045",
+    "riot_id": 1045,
+    "win_rate": 49.58,
+    "pick_rate": 0.25,
+    "num_games": 62354,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1095",
+    "riot_id": 1095,
+    "win_rate": 47.98,
+    "pick_rate": 0.2,
+    "num_games": 49234,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "2010",
+    "riot_id": 2010,
+    "win_rate": 48.87,
+    "pick_rate": 0.59,
+    "num_games": 147388,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1195",
+    "riot_id": 1195,
+    "win_rate": 45.91,
+    "pick_rate": 0.16,
+    "num_games": 40633,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1077",
+    "riot_id": 1077,
+    "win_rate": 53.54,
+    "pick_rate": 0.16,
+    "num_games": 39242,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1156",
+    "riot_id": 1156,
+    "win_rate": 47.96,
+    "pick_rate": 0.26,
+    "num_games": 64541,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1007",
+    "riot_id": 1007,
+    "win_rate": 53.74,
+    "pick_rate": 0.65,
+    "num_games": 162357,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1115",
+    "riot_id": 1115,
+    "win_rate": 50.82,
+    "pick_rate": 0.32,
+    "num_games": 79036,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1138",
+    "riot_id": 1138,
+    "win_rate": 60.21,
+    "pick_rate": 1.11,
+    "num_games": 277752,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1319",
+    "riot_id": 1319,
+    "win_rate": 57.99,
+    "pick_rate": 0.87,
+    "num_games": 216882,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1013",
+    "riot_id": 1013,
+    "win_rate": 55.69,
+    "pick_rate": 0.45,
+    "num_games": 112567,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "2102",
+    "riot_id": 2102,
+    "win_rate": 49.47,
+    "pick_rate": 0.15,
+    "num_games": 37338,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1238",
+    "riot_id": 1238,
+    "win_rate": 52.73,
+    "pick_rate": 0.02,
+    "num_games": 5291,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1328",
+    "riot_id": 1328,
+    "win_rate": 50.71,
+    "pick_rate": 0.29,
+    "num_games": 71962,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1204",
+    "riot_id": 1204,
+    "win_rate": 46.17,
+    "pick_rate": 0.4,
+    "num_games": 99526,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1420",
+    "riot_id": 1420,
+    "win_rate": 49.88,
+    "pick_rate": 0.29,
+    "num_games": 72490,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1005",
+    "riot_id": 1005,
+    "win_rate": 46.11,
+    "pick_rate": 0.15,
+    "num_games": 38605,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1081",
+    "riot_id": 1081,
+    "win_rate": 51.6,
+    "pick_rate": 0.42,
+    "num_games": 106192,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "2127",
+    "riot_id": 2127,
+    "win_rate": 51.52,
+    "pick_rate": 0.52,
+    "num_games": 130189,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "2116",
+    "riot_id": 2116,
+    "win_rate": 46.54,
+    "pick_rate": 0.3,
+    "num_games": 75928,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1180",
+    "riot_id": 1180,
+    "win_rate": 53.77,
+    "pick_rate": 0.74,
+    "num_games": 185820,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "2096",
+    "riot_id": 2096,
+    "win_rate": 48.65,
+    "pick_rate": 0.29,
+    "num_games": 72401,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1415",
+    "riot_id": 1415,
+    "win_rate": 47.01,
+    "pick_rate": 0.03,
+    "num_games": 8726,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1004",
+    "riot_id": 1004,
+    "win_rate": 51.24,
+    "pick_rate": 0.58,
+    "num_games": 146247,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1333",
+    "riot_id": 1333,
+    "win_rate": 50.4,
+    "pick_rate": 0.52,
+    "num_games": 129494,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1051",
+    "riot_id": 1051,
+    "win_rate": 56.76,
+    "pick_rate": 1.02,
+    "num_games": 253956,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "2077",
+    "riot_id": 2077,
+    "win_rate": 52.45,
+    "pick_rate": 0.13,
+    "num_games": 32952,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "2095",
+    "riot_id": 2095,
+    "win_rate": 64.32,
+    "pick_rate": 1.58,
+    "num_games": 395241,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1080",
+    "riot_id": 1080,
+    "win_rate": 50.42,
+    "pick_rate": 0.76,
+    "num_games": 189772,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1220",
+    "riot_id": 1220,
+    "win_rate": 47.56,
+    "pick_rate": 0.26,
+    "num_games": 64974,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1029",
+    "riot_id": 1029,
+    "win_rate": 50.47,
+    "pick_rate": 0.06,
+    "num_games": 14070,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1320",
+    "riot_id": 1320,
+    "win_rate": 49.95,
+    "pick_rate": 0.46,
+    "num_games": 116129,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.368Z"
+  },
+  {
+    "_id": "1037",
+    "riot_id": 1037,
+    "win_rate": 50.87,
+    "pick_rate": 0.09,
+    "num_games": 23054,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1344",
+    "riot_id": 1344,
+    "win_rate": 53.6,
+    "pick_rate": 1.13,
+    "num_games": 281395,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1020",
+    "riot_id": 1020,
+    "win_rate": 46.98,
+    "pick_rate": 0.16,
+    "num_games": 39811,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1053",
+    "riot_id": 1053,
+    "win_rate": 52.78,
+    "pick_rate": 0.23,
+    "num_games": 57845,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2100",
+    "riot_id": 2100,
+    "win_rate": 54.3,
+    "pick_rate": 1.09,
+    "num_games": 272941,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1098",
+    "riot_id": 1098,
+    "win_rate": 50.58,
+    "pick_rate": 0.28,
+    "num_games": 70041,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1087",
+    "riot_id": 1087,
+    "win_rate": 54,
+    "pick_rate": 0.78,
+    "num_games": 195594,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1237",
+    "riot_id": 1237,
+    "win_rate": 46.83,
+    "pick_rate": 0.32,
+    "num_games": 80931,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2111",
+    "riot_id": 2111,
+    "win_rate": 56.23,
+    "pick_rate": 0.57,
+    "num_games": 142270,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1044",
+    "riot_id": 1044,
+    "win_rate": 47.17,
+    "pick_rate": 0.12,
+    "num_games": 29929,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1170",
+    "riot_id": 1170,
+    "win_rate": 54.61,
+    "pick_rate": 0.68,
+    "num_games": 171030,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1056",
+    "riot_id": 1056,
+    "win_rate": 60.38,
+    "pick_rate": 1.02,
+    "num_games": 255920,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1048",
+    "riot_id": 1048,
+    "win_rate": 50.54,
+    "pick_rate": 0.05,
+    "num_games": 11774,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1318",
+    "riot_id": 1318,
+    "win_rate": 49.47,
+    "pick_rate": 0.18,
+    "num_games": 44737,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1113",
+    "riot_id": 1113,
+    "win_rate": 53.39,
+    "pick_rate": 1.06,
+    "num_games": 266241,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2076",
+    "riot_id": 2076,
+    "win_rate": 53.7,
+    "pick_rate": 0.72,
+    "num_games": 179537,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1076",
+    "riot_id": 1076,
+    "win_rate": 64,
+    "pick_rate": 1.4,
+    "num_games": 350585,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1105",
+    "riot_id": 1105,
+    "win_rate": 48.37,
+    "pick_rate": 0.81,
+    "num_games": 203079,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1136",
+    "riot_id": 1136,
+    "win_rate": 50.21,
+    "pick_rate": 0.36,
+    "num_games": 89730,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1375",
+    "riot_id": 1375,
+    "win_rate": 53.43,
+    "pick_rate": 0.88,
+    "num_games": 220769,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1129",
+    "riot_id": 1129,
+    "win_rate": 58.84,
+    "pick_rate": 1.11,
+    "num_games": 278116,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1389",
+    "riot_id": 1389,
+    "win_rate": 49.59,
+    "pick_rate": 0.69,
+    "num_games": 173363,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1373",
+    "riot_id": 1373,
+    "win_rate": 55.44,
+    "pick_rate": 0.82,
+    "num_games": 205229,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1305",
+    "riot_id": 1305,
+    "win_rate": 51.05,
+    "pick_rate": 0.58,
+    "num_games": 145715,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1058",
+    "riot_id": 1058,
+    "win_rate": 51.63,
+    "pick_rate": 0.34,
+    "num_games": 84440,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2083",
+    "riot_id": 2083,
+    "win_rate": 49.53,
+    "pick_rate": 0.18,
+    "num_games": 43873,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1141",
+    "riot_id": 1141,
+    "win_rate": 52.5,
+    "pick_rate": 1.01,
+    "num_games": 253665,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2087",
+    "riot_id": 2087,
+    "win_rate": 47.21,
+    "pick_rate": 0.32,
+    "num_games": 81160,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1211",
+    "riot_id": 1211,
+    "win_rate": 52.39,
+    "pick_rate": 0.34,
+    "num_games": 86037,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1028",
+    "riot_id": 1028,
+    "win_rate": 44.98,
+    "pick_rate": 0.18,
+    "num_games": 45810,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2031",
+    "riot_id": 2031,
+    "win_rate": 48.4,
+    "pick_rate": 0.14,
+    "num_games": 34230,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1060",
+    "riot_id": 1060,
+    "win_rate": 52.34,
+    "pick_rate": 1.22,
+    "num_games": 305121,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1062",
+    "riot_id": 1062,
+    "win_rate": 49.62,
+    "pick_rate": 0.12,
+    "num_games": 30459,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1403",
+    "riot_id": 1403,
+    "win_rate": 49.67,
+    "pick_rate": 0.33,
+    "num_games": 83188,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1068",
+    "riot_id": 1068,
+    "win_rate": 45.66,
+    "pick_rate": 0.03,
+    "num_games": 7190,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1384",
+    "riot_id": 1384,
+    "win_rate": 52.35,
+    "pick_rate": 0.35,
+    "num_games": 88343,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2103",
+    "riot_id": 2103,
+    "win_rate": 49.57,
+    "pick_rate": 0.09,
+    "num_games": 21961,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1063",
+    "riot_id": 1063,
+    "win_rate": 46.4,
+    "pick_rate": 0.06,
+    "num_games": 15344,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1348",
+    "riot_id": 1348,
+    "win_rate": 45.47,
+    "pick_rate": 0.36,
+    "num_games": 90587,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2009",
+    "riot_id": 2009,
+    "win_rate": 47.9,
+    "pick_rate": 0.14,
+    "num_games": 34459,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2004",
+    "riot_id": 2004,
+    "win_rate": 50.09,
+    "pick_rate": 0.08,
+    "num_games": 19969,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1038",
+    "riot_id": 1038,
+    "win_rate": 54.25,
+    "pick_rate": 0.53,
+    "num_games": 132612,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1206",
+    "riot_id": 1206,
+    "win_rate": 50.97,
+    "pick_rate": 0.24,
+    "num_games": 60738,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1311",
+    "riot_id": 1311,
+    "win_rate": 48.52,
+    "pick_rate": 0.2,
+    "num_games": 50312,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1996",
+    "riot_id": 1996,
+    "win_rate": 53.81,
+    "pick_rate": 0.4,
+    "num_games": 98845,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1401",
+    "riot_id": 1401,
+    "win_rate": 53.66,
+    "pick_rate": 0.76,
+    "num_games": 190776,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1308",
+    "riot_id": 1308,
+    "win_rate": 51.51,
+    "pick_rate": 0.45,
+    "num_games": 112702,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1047",
+    "riot_id": 1047,
+    "win_rate": 59.1,
+    "pick_rate": 1.03,
+    "num_games": 258721,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1315",
+    "riot_id": 1315,
+    "win_rate": 52.67,
+    "pick_rate": 0.27,
+    "num_games": 67871,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2129",
+    "riot_id": 2129,
+    "win_rate": 51.23,
+    "pick_rate": 0.13,
+    "num_games": 33151,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1337",
+    "riot_id": 1337,
+    "win_rate": 50.1,
+    "pick_rate": 0.1,
+    "num_games": 24060,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1073",
+    "riot_id": 1073,
+    "win_rate": 60.67,
+    "pick_rate": 1.14,
+    "num_games": 284447,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1018",
+    "riot_id": 1018,
+    "win_rate": 53.48,
+    "pick_rate": 0.37,
+    "num_games": 92954,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2018",
+    "riot_id": 2018,
+    "win_rate": 50,
+    "pick_rate": 0.18,
+    "num_games": 44294,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1088",
+    "riot_id": 1088,
+    "win_rate": 47.64,
+    "pick_rate": 0.17,
+    "num_games": 43663,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1205",
+    "riot_id": 1205,
+    "win_rate": 49.5,
+    "pick_rate": 0.09,
+    "num_games": 22214,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2073",
+    "riot_id": 2073,
+    "win_rate": 46.95,
+    "pick_rate": 0.16,
+    "num_games": 39930,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1322",
+    "riot_id": 1322,
+    "win_rate": 52.89,
+    "pick_rate": 0.55,
+    "num_games": 138188,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1026",
+    "riot_id": 1026,
+    "win_rate": 58.24,
+    "pick_rate": 1.08,
+    "num_games": 269453,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1416",
+    "riot_id": 1416,
+    "win_rate": 52.97,
+    "pick_rate": 0.34,
+    "num_games": 84893,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1331",
+    "riot_id": 1331,
+    "win_rate": 50.27,
+    "pick_rate": 0.05,
+    "num_games": 12772,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1046",
+    "riot_id": 1046,
+    "win_rate": 60.38,
+    "pick_rate": 0.93,
+    "num_games": 231887,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1243",
+    "riot_id": 1243,
+    "win_rate": 54.78,
+    "pick_rate": 1.07,
+    "num_games": 267639,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1092",
+    "riot_id": 1092,
+    "win_rate": 54.21,
+    "pick_rate": 0.77,
+    "num_games": 192003,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2144",
+    "riot_id": 2144,
+    "win_rate": 46.52,
+    "pick_rate": 0.43,
+    "num_games": 107039,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1332",
+    "riot_id": 1332,
+    "win_rate": 47.74,
+    "pick_rate": 0.34,
+    "num_games": 86120,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2128",
+    "riot_id": 2128,
+    "win_rate": 61.18,
+    "pick_rate": 0.32,
+    "num_games": 81179,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1103",
+    "riot_id": 1103,
+    "win_rate": 52.89,
+    "pick_rate": 0.65,
+    "num_games": 162441,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1349",
+    "riot_id": 1349,
+    "win_rate": 56.12,
+    "pick_rate": 0.73,
+    "num_games": 183100,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1323",
+    "riot_id": 1323,
+    "win_rate": 62.33,
+    "pick_rate": 1.19,
+    "num_games": 298697,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1084",
+    "riot_id": 1084,
+    "win_rate": 48.3,
+    "pick_rate": 0.08,
+    "num_games": 19957,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2123",
+    "riot_id": 2123,
+    "win_rate": 49.63,
+    "pick_rate": 0.02,
+    "num_games": 4435,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2125",
+    "riot_id": 2125,
+    "win_rate": 51.2,
+    "pick_rate": 0.17,
+    "num_games": 41293,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2131",
+    "riot_id": 2131,
+    "win_rate": 51.33,
+    "pick_rate": 0.26,
+    "num_games": 64161,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1335",
+    "riot_id": 1335,
+    "win_rate": 54,
+    "pick_rate": 0.81,
+    "num_games": 201560,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "2119",
+    "riot_id": 2119,
+    "win_rate": 57.56,
+    "pick_rate": 1.13,
+    "num_games": 282785,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1214",
+    "riot_id": 1214,
+    "win_rate": 50.24,
+    "pick_rate": 0.31,
+    "num_games": 77072,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1151",
+    "riot_id": 1151,
+    "win_rate": 48.4,
+    "pick_rate": 0.21,
+    "num_games": 53273,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.369Z"
+  },
+  {
+    "_id": "1015",
+    "riot_id": 1015,
+    "win_rate": 54.85,
+    "pick_rate": 0.3,
+    "num_games": 74614,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1154",
+    "riot_id": 1154,
+    "win_rate": 54.27,
+    "pick_rate": 0.95,
+    "num_games": 238298,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1116",
+    "riot_id": 1116,
+    "win_rate": 45.23,
+    "pick_rate": 0.32,
+    "num_games": 80682,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1301",
+    "riot_id": 1301,
+    "win_rate": 46.26,
+    "pick_rate": 0.42,
+    "num_games": 106076,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1150",
+    "riot_id": 1150,
+    "win_rate": 53.09,
+    "pick_rate": 0.06,
+    "num_games": 14221,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1404",
+    "riot_id": 1404,
+    "win_rate": 47,
+    "pick_rate": 0.03,
+    "num_games": 7156,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1061",
+    "riot_id": 1061,
+    "win_rate": 50.5,
+    "pick_rate": 0.42,
+    "num_games": 105372,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2098",
+    "riot_id": 2098,
+    "win_rate": 60.4,
+    "pick_rate": 1.45,
+    "num_games": 363223,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1054",
+    "riot_id": 1054,
+    "win_rate": 63.59,
+    "pick_rate": 1.66,
+    "num_games": 414719,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1072",
+    "riot_id": 1072,
+    "win_rate": 49.63,
+    "pick_rate": 0.29,
+    "num_games": 73316,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2133",
+    "riot_id": 2133,
+    "win_rate": 51.75,
+    "pick_rate": 0.4,
+    "num_games": 99335,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1104",
+    "riot_id": 1104,
+    "win_rate": 50.2,
+    "pick_rate": 0.54,
+    "num_games": 134186,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2137",
+    "riot_id": 2137,
+    "win_rate": 51.63,
+    "pick_rate": 0.23,
+    "num_games": 57608,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1057",
+    "riot_id": 1057,
+    "win_rate": 48.39,
+    "pick_rate": 0.17,
+    "num_games": 43461,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1194",
+    "riot_id": 1194,
+    "win_rate": 50.65,
+    "pick_rate": 0.07,
+    "num_games": 17161,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1034",
+    "riot_id": 1034,
+    "win_rate": 55.48,
+    "pick_rate": 1.14,
+    "num_games": 284801,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1379",
+    "riot_id": 1379,
+    "win_rate": 49.46,
+    "pick_rate": 0.26,
+    "num_games": 65244,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1402",
+    "riot_id": 1402,
+    "win_rate": 48.32,
+    "pick_rate": 0.43,
+    "num_games": 106321,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1329",
+    "riot_id": 1329,
+    "win_rate": 51.1,
+    "pick_rate": 0.09,
+    "num_games": 22652,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2136",
+    "riot_id": 2136,
+    "win_rate": 54,
+    "pick_rate": 1.04,
+    "num_games": 259021,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1324",
+    "riot_id": 1324,
+    "win_rate": 47.97,
+    "pick_rate": 0.24,
+    "num_games": 59928,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1002",
+    "riot_id": 1002,
+    "win_rate": 51.29,
+    "pick_rate": 0.17,
+    "num_games": 41590,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1079",
+    "riot_id": 1079,
+    "win_rate": 61.99,
+    "pick_rate": 1.67,
+    "num_games": 416512,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1067",
+    "riot_id": 1067,
+    "win_rate": 56.92,
+    "pick_rate": 0.49,
+    "num_games": 123390,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1112",
+    "riot_id": 1112,
+    "win_rate": 54.05,
+    "pick_rate": 0.12,
+    "num_games": 29959,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2024",
+    "riot_id": 2024,
+    "win_rate": 49.9,
+    "pick_rate": 0.33,
+    "num_games": 83065,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1149",
+    "riot_id": 1149,
+    "win_rate": 49.87,
+    "pick_rate": 0.39,
+    "num_games": 98621,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1413",
+    "riot_id": 1413,
+    "win_rate": 57.52,
+    "pick_rate": 1.08,
+    "num_games": 269391,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1019",
+    "riot_id": 1019,
+    "win_rate": 46.61,
+    "pick_rate": 0.17,
+    "num_games": 43521,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1025",
+    "riot_id": 1025,
+    "win_rate": 47.37,
+    "pick_rate": 0.16,
+    "num_games": 39725,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1187",
+    "riot_id": 1187,
+    "win_rate": 53.84,
+    "pick_rate": 0.54,
+    "num_games": 135324,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2065",
+    "riot_id": 2065,
+    "win_rate": 47.29,
+    "pick_rate": 0.22,
+    "num_games": 55302,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2054",
+    "riot_id": 2054,
+    "win_rate": 48.96,
+    "pick_rate": 0.5,
+    "num_games": 123899,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1036",
+    "riot_id": 1036,
+    "win_rate": 53.44,
+    "pick_rate": 0.25,
+    "num_games": 61411,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2089",
+    "riot_id": 2089,
+    "win_rate": 52.01,
+    "pick_rate": 0.84,
+    "num_games": 209995,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2091",
+    "riot_id": 2091,
+    "win_rate": 62.56,
+    "pick_rate": 1.13,
+    "num_games": 283700,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2139",
+    "riot_id": 2139,
+    "win_rate": 53.3,
+    "pick_rate": 0.67,
+    "num_games": 167489,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1326",
+    "riot_id": 1326,
+    "win_rate": 49.13,
+    "pick_rate": 0.32,
+    "num_games": 79865,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1345",
+    "riot_id": 1345,
+    "win_rate": 54.68,
+    "pick_rate": 0.37,
+    "num_games": 91522,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1347",
+    "riot_id": 1347,
+    "win_rate": 51.04,
+    "pick_rate": 0.62,
+    "num_games": 154317,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2032",
+    "riot_id": 2032,
+    "win_rate": 48.7,
+    "pick_rate": 0.08,
+    "num_games": 20487,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2016",
+    "riot_id": 2016,
+    "win_rate": 58.65,
+    "pick_rate": 0.19,
+    "num_games": 48197,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2062",
+    "riot_id": 2062,
+    "win_rate": 52.68,
+    "pick_rate": 0.43,
+    "num_games": 108091,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2135",
+    "riot_id": 2135,
+    "win_rate": 47.54,
+    "pick_rate": 0.21,
+    "num_games": 52373,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1011",
+    "riot_id": 1011,
+    "win_rate": 56.31,
+    "pick_rate": 0.91,
+    "num_games": 228579,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1006",
+    "riot_id": 1006,
+    "win_rate": 50.77,
+    "pick_rate": 0.16,
+    "num_games": 40490,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2034",
+    "riot_id": 2034,
+    "win_rate": 44.62,
+    "pick_rate": 0.08,
+    "num_games": 20888,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2026",
+    "riot_id": 2026,
+    "win_rate": 54.98,
+    "pick_rate": 0.43,
+    "num_games": 108030,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2005",
+    "riot_id": 2005,
+    "win_rate": 50.76,
+    "pick_rate": 0.06,
+    "num_games": 14523,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2088",
+    "riot_id": 2088,
+    "win_rate": 63.29,
+    "pick_rate": 1.64,
+    "num_games": 409998,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2043",
+    "riot_id": 2043,
+    "win_rate": 49.23,
+    "pick_rate": 0.67,
+    "num_games": 168485,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2107",
+    "riot_id": 2107,
+    "win_rate": 53.02,
+    "pick_rate": 0.41,
+    "num_games": 103249,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1314",
+    "riot_id": 1314,
+    "win_rate": 58.39,
+    "pick_rate": 1.02,
+    "num_games": 254317,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2138",
+    "riot_id": 2138,
+    "win_rate": 47.74,
+    "pick_rate": 0.51,
+    "num_games": 127851,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1421",
+    "riot_id": 1421,
+    "win_rate": 50.89,
+    "pick_rate": 0.15,
+    "num_games": 37220,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1074",
+    "riot_id": 1074,
+    "win_rate": 49.63,
+    "pick_rate": 0.47,
+    "num_games": 118024,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1358",
+    "riot_id": 1358,
+    "win_rate": 49.53,
+    "pick_rate": 0.09,
+    "num_games": 22352,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2072",
+    "riot_id": 2072,
+    "win_rate": 46.22,
+    "pick_rate": 0.13,
+    "num_games": 32572,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1027",
+    "riot_id": 1027,
+    "win_rate": 45.23,
+    "pick_rate": 0.06,
+    "num_games": 14447,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2082",
+    "riot_id": 2082,
+    "win_rate": 49.78,
+    "pick_rate": 0.26,
+    "num_games": 65541,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1118",
+    "riot_id": 1118,
+    "win_rate": 51.97,
+    "pick_rate": 0.53,
+    "num_games": 133411,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1001",
+    "riot_id": 1001,
+    "win_rate": 49.28,
+    "pick_rate": 0.09,
+    "num_games": 23253,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1386",
+    "riot_id": 1386,
+    "win_rate": 56.91,
+    "pick_rate": 1,
+    "num_games": 250180,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2055",
+    "riot_id": 2055,
+    "win_rate": 61.82,
+    "pick_rate": 0.47,
+    "num_games": 116866,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "12317",
+    "riot_id": 12317,
+    "win_rate": 53.8,
+    "pick_rate": 0.78,
+    "num_games": 195703,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2042",
+    "riot_id": 2042,
+    "win_rate": 54.7,
+    "pick_rate": 0.22,
+    "num_games": 56086,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2064",
+    "riot_id": 2064,
+    "win_rate": 56.36,
+    "pick_rate": 0.08,
+    "num_games": 20387,
+    "tier": "A",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2134",
+    "riot_id": 2134,
+    "win_rate": 60.07,
+    "pick_rate": 1.53,
+    "num_games": 382569,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2080",
+    "riot_id": 2080,
+    "win_rate": 50.82,
+    "pick_rate": 0.26,
+    "num_games": 64754,
+    "tier": "B",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "2099",
+    "riot_id": 2099,
+    "win_rate": 42.72,
+    "pick_rate": 0.01,
+    "num_games": 2231,
+    "tier": "D",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1392",
+    "riot_id": 1392,
+    "win_rate": 57.2,
+    "pick_rate": 1.28,
+    "num_games": 320001,
+    "tier": "S",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  },
+  {
+    "_id": "1325",
+    "riot_id": 1325,
+    "win_rate": 48.88,
+    "pick_rate": 0.33,
+    "num_games": 81467,
+    "tier": "C",
+    "patch_version": "26.12",
+    "updated_at": "2026-06-27T10:48:15.370Z"
+  }
+]
