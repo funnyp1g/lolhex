@@ -5,6 +5,8 @@ const cloud = require('wx-server-sdk')
 cloud.init({ env: cloud.DYNAMIC_CURRENT_ENV })
 const db = cloud.database()
 const _ = db.command
+const COMPLETED_ITEM_IDS = require('./data/completed-item-ids.js')
+const CHAMPION_BUILDS = require('./data/champion-builds.js')
 
 // Tier 等级映射函数（T1-T5）
 function mapTierToRank(winRate) {
@@ -25,7 +27,7 @@ async function getCurrentPatch() {
   if (res.data.length === 0) {
     throw new Error('未找到当前版本信息')
   }
-  return res.data[0].version
+  return Number(res.data[0].version)
 }
 
 exports.main = async (event) => {
@@ -41,10 +43,12 @@ exports.main = async (event) => {
 
     // ---------- 并行执行 5 个核心查询（新增 champion_stage_performance）----------
     const [championRes, augmentsRes, itemsRes, linkageRes, stageRes] = await Promise.all([
-      // 1. 英雄基础信息
+      // 1. 英雄基础信息（兼容字符串和数字 _id）
       db.collection('champions')
-        .doc(String(champion_id))
+        .where(_.or([{ _id: String(champion_id) }, { _id: champion_id }]))
+        .limit(1)
         .get()
+        .then(res => res.data.length > 0 ? { data: res.data[0] } : { data: null })
         .catch(() => ({ data: null })),
 
       // 2. 推荐海克斯（按胜率降序，最多返回 50 条）
@@ -57,14 +61,14 @@ exports.main = async (event) => {
         .limit(50)
         .get(),
 
-      // 3. 推荐装备（按胜率降序，最多返回 30 条）
+      // 3. 推荐装备（按胜率降序，最多返回 50 条，后续过滤成装）
       db.collection('champion_items')
         .where({
           champion_id: champion_id,
           patch_version: patchVersion
         })
         .orderBy('win_rate', 'desc')
-        .limit(30)
+        .limit(50)
         .get(),
 
       // 4. 海克斯×出装联动（按胜率降序，最多返回 50 条）
@@ -159,6 +163,7 @@ exports.main = async (event) => {
     const augments = augmentsRes.data.map(a => ({
       augment_id: a.augment_id,
       augment_name_zh: augmentMap[a.augment_id]?.name_zh || '',
+      name_zh: augmentMap[a.augment_id]?.name_zh || '',
       rarity: augmentMap[a.augment_id]?.rarity || '',
       icon_url: augmentMap[a.augment_id]?.icon_url || '',
       win_rate: a.win_rate,
@@ -169,18 +174,21 @@ exports.main = async (event) => {
       stage_performance: stageByAugment[a.augment_id] || null
     }))
 
-    const items = itemsRes.data.map(i => ({
-      item_id: i.item_id,
-      item_name_zh: itemMap[i.item_id]?.name_zh || '',
-      icon_url: itemMap[i.item_id]?.icon_url || '',
-      win_rate: i.win_rate,
-      pick_rate: i.pick_rate,
-      tier: i.tier,
-      tier_rank: mapTierToRank(i.win_rate),
-      is_core: i.is_core,
-      slot: i.slot,
-      sample_size: i.sample_size
-    }))
+    const items = itemsRes.data
+      .filter(i => COMPLETED_ITEM_IDS.has(Number(i.item_id)))
+      .map(i => ({
+        item_id: i.item_id,
+        item_name_zh: itemMap[i.item_id]?.name_zh || '',
+        name_zh: itemMap[i.item_id]?.name_zh || '',
+        icon_url: itemMap[i.item_id]?.icon_url || '',
+        win_rate: i.win_rate,
+        pick_rate: i.pick_rate,
+        tier: i.tier,
+        tier_rank: mapTierToRank(i.win_rate),
+        is_core: i.is_core,
+        slot: i.slot,
+        sample_size: i.sample_size
+      }))
 
     const linkage = linkageRes.data.map(l => ({
       augment_id: l.augment_id,
@@ -206,6 +214,7 @@ exports.main = async (event) => {
         },
         augments,
         items,
+        builds: CHAMPION_BUILDS[String(champion_id)] || CHAMPION_BUILDS[champion_id] || [],
         augment_items_linkage: linkage,
         stage_performance: stageRes.data,
         patch_version: patchVersion

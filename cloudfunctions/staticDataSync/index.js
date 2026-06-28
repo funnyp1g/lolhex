@@ -22,6 +22,16 @@ const _ = db.command
 // ========== 常量 ==========
 // 图片 CDN：DDragon /img/ 端点（从微信小程序可访问，云函数 403 不影响前端）
 const DDRAGON_IMG_BASE = 'https://ddragon.leagueoflegends.com/cdn/16.13.1/img'
+
+// CDragon champion roles 英文 → 中文映射
+const ROLE_CN_MAP = {
+  'tank': '坦克',
+  'fighter': '战士',
+  'mage': '法师',
+  'assassin': '刺客',
+  'marksman': '射手',
+  'support': '辅助'
+};
 // 英文基础数据源（JSON）
 const CDRAWN_BASE = 'https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1'
 // 中文数据源（多源并行，取第一个成功的）
@@ -189,18 +199,21 @@ async function syncChampions(championSummary, ddChampion, patchVersion) {
       let ddInfo = ddMap[lookupKey]
       if (!ddInfo) ddInfo = ddMap[lookupKey.toLowerCase()]
 
-      // 优先级3: 英文名（全部失败时的降级）
+      // 从 CDragon champion.roles 映射为中文角色
+      const roles = (champ.roles || [])
+        .map(r => ROLE_CN_MAP[String(r).toLowerCase()] || null)
+        .filter(Boolean)
+
       return {
         _id: String(champ.id),
         riot_id: champ.id,
         name: champ.name,
         name_zh: embedded?.name_zh || ddInfo?.name_zh || champ.name,
         title: embedded?.title || ddInfo?.title || '',
-        roles: [],
+        roles,
         icon_url: `${DDRAGON_IMG_BASE}/champion/${champ.alias || champ.name}.png`,
-        win_rate: 0,
-        pick_rate: 0,
-        patch_version: patchVersion,
+        // 不写 win_rate/pick_rate — update 时保留已有统计值
+        patch_version: Number(patchVersion),
         updated_at: new Date()
       }
     })
@@ -248,7 +261,7 @@ async function syncItems(itemsRaw, ddItem, patchVersion) {
         from_ids: (item.from || []).map(Number),
         to_ids: (item.to || []).map(Number),
         categories: item.categories || [],
-        patch_version: patchVersion,
+        patch_version: Number(patchVersion),
         updated_at: new Date()
       }
     })
@@ -299,9 +312,8 @@ async function syncAugments(cherryAugments, zhMap, patchVersion) {
         description_zh: zhInfo.description_zh || stripHtml(augment.description || ''),
         rarity,
         icon_url: `https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/augment-icons/${augment.id}.png`,
-        win_rate: 0,
-        pick_rate: 0,
-        patch_version: patchVersion,
+        // 不写 win_rate/pick_rate — update 时保留已有统计值
+        patch_version: Number(patchVersion),
         updated_at: new Date()
       }
     })
@@ -439,9 +451,15 @@ async function batchUpsert(collectionName, docs, batchSize = 20) {
   const collection = db.collection(collectionName)
   for (let i = 0; i < docs.length; i += batchSize) {
     const batch = docs.slice(i, i + batchSize)
-    await Promise.all(batch.map(doc => {
+    await Promise.all(batch.map(async (doc) => {
       const { _id, ...data } = doc
-      return collection.doc(_id).set({ data })
+      try {
+        // 优先 update — 只更新 name_zh/icon_url 等基础字段，保留 win_rate 等统计字段
+        await collection.doc(_id).update({ data })
+      } catch (e) {
+        // 文档不存在则创建
+        await collection.doc(_id).set({ data })
+      }
     }))
   }
 }

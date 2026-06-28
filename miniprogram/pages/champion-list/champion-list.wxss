@@ -26,14 +26,17 @@
 }
 
 .role-btn {
-  display: inline-block;
-  padding: 8rpx 24rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12rpx 28rpx;
   border-radius: var(--radius-round);
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
   background-color: var(--color-bg-page);
   flex-shrink: 0;
   transition: all var(--transition-fast);
+  line-height: 1;
 }
 
 .role-btn.active {

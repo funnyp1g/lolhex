@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "augment-card": "/components/augment-card/augment-card",
-    "loading-skeleton": "/components/loading-skeleton/loading-skeleton"
+    "loading-skeleton": "/components/loading-skeleton/loading-skeleton",
+    "rate-bar": "/components/rate-bar/rate-bar"
   },
   "navigationBarTitleText": "海克斯百科",
   "enablePullDownRefresh": true,

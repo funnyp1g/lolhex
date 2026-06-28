@@ -32,9 +32,6 @@
         <text wx:if="{{hasPickRate}}" class="aug-stat aug-pickrate">
           选取 {{pickRateDisplay}}
         </text>
-        <text wx:if="{{hasSample}}" class="aug-stat aug-samples">
-          {{sampleDisplay}}
-        </text>
       </view>
     </view>
     <!-- Tier 徽章 -->

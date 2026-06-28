@@ -3,31 +3,26 @@ const cloud = require('../../utils/cloud')
 const cache = require('../../utils/cache')
 const image = require('../../utils/image')
 const { CACHE_KEYS, CACHE_TTL } = require('../../utils/constants')
-const { formatWinRate, formatSampleSize } = require('../../utils/format')
+const { formatWinRate, formatPickRate, formatNumber, formatPercent } = require('../../utils/format')
 
 Page({
   data: {
     currentPatch: '',
-    // 版本调整数据（模拟数据，后续可从 API 获取）
     patchAdjustments: null,
     showAdjustmentsDetail: false,
-    hotAugments: [],
-    hotChampions: [],
     loading: true,
     error: false,
-    // 英雄排行表
-    rankList: [],
-    rankLoading: false,
-    rankError: false,
-    rankSortBy: 'win_rate',
-    rankSortOrder: 'desc',
-    rankPage: 1,
-    rankHasMore: true,
-    quickEntries: [
-      { icon: '🦸', text: '英雄查询', path: '/pages/champion-list/champion-list', isTab: true, tabPath: 1 },
-      { icon: '⚡', text: '海克斯查询', path: '/pages/augment-list/augment-list', isTab: true, tabPath: 2 },
-      { icon: '🎯', text: '组合推荐', path: '/pages/combo/combo', isTab: true, tabPath: 3 }
-    ]
+    // 英雄排行
+    champRankList: [],
+    champRankLoading: false,
+    champRankError: false,
+    // 海克斯排行
+    augRankList: [],
+    augRankLoading: false,
+    augRankError: false,
+    // 热门搭配
+    hotCombos: [],
+    comboLoading: false
   },
 
   onLoad() {
@@ -41,29 +36,21 @@ Page({
   onPullDownRefresh() {
     cache.removeCache(CACHE_KEYS.AUGMENT_LIST)
     cache.removeCache(CACHE_KEYS.CHAMPION_LIST)
-    this.loadPageData().then(() => {
-      wx.stopPullDownRefresh()
-    }).catch(() => {
-      wx.stopPullDownRefresh()
-    })
+    this.loadPageData().then(() => wx.stopPullDownRefresh()).catch(() => wx.stopPullDownRefresh())
   },
 
-  // 加载页面数据
   async loadPageData() {
     this.setData({ loading: true, error: false })
-
     await Promise.allSettled([
       this.loadPatchVersion(),
       this.loadPatchAdjustments(),
-      this.loadHotAugments(),
-      this.loadChampionRankTable()
+      this.loadChampRank(),
+      this.loadAugRank(),
+      this.loadHotCombos()
     ])
-
-    const hasData = this.data.currentPatch || this.data.hotAugments.length > 0 || this.data.rankList.length > 0
-    this.setData({ loading: false, error: !hasData })
+    this.setData({ loading: false })
   },
 
-  // 加载版本号
   async loadPatchVersion() {
     try {
       const data = await cloud.getCurrentPatch()
@@ -72,26 +59,14 @@ Page({
         cache.setCache(CACHE_KEYS.CURRENT_PATCH, data.version, CACHE_TTL.PATCH)
       }
     } catch (err) {
-      console.warn('[首页] 获取版本失败:', err.message)
       const cached = cache.getCache(CACHE_KEYS.CURRENT_PATCH)
-      if (cached) {
-        this.setData({ currentPatch: cached })
-      }
+      if (cached) this.setData({ currentPatch: cached })
     }
   },
 
-  // 加载版本调整数据（模拟数据）
   async loadPatchAdjustments() {
-    const cached = cache.getCache('patch_adjustments')
-    if (cached) {
-      this.setData({ patchAdjustments: cached })
-      return
-    }
-
-    // 模拟数据：当前版本的海克斯调整
-    const patchVer = this.data.currentPatch || '26.12'
     const mock = {
-      version: patchVer,
+      version: this.data.currentPatch || '26.12',
       buffs: [
         { name: '毁坏仪式', icon: '📈', desc: '基础伤害提升' },
         { name: '无限循环', icon: '📈', desc: '冷却缩减加成增加' },
@@ -105,122 +80,108 @@ Page({
         { name: '适应性防御', icon: '🔄', desc: '效果重做' }
       ]
     }
-
     this.setData({ patchAdjustments: mock })
-    cache.setCache('patch_adjustments', mock, 3600)
   },
 
-  // 展开/收起版本调整详情
   toggleAdjustmentsDetail() {
-    this.setData({
-      showAdjustmentsDetail: !this.data.showAdjustmentsDetail
-    })
+    this.setData({ showAdjustmentsDetail: !this.data.showAdjustmentsDetail })
   },
 
-  // 加载热门海克斯
-  async loadHotAugments() {
+  // 加载英雄排行 TOP10
+  async loadChampRank() {
+    this.setData({ champRankLoading: true })
+    try {
+      const data = await cloud.getChampionRankTable({
+        sort_by: 'win_rate', order: 'desc', page: 1, page_size: 10
+      })
+      const list = (data.list || []).map(c => ({
+        ...c,
+        icon_url: image.resolveImageUrl(c.icon_url),
+        win_rate: c.win_rate < 1 ? (c.win_rate * 100).toFixed(1) : Number(c.win_rate).toFixed(1)
+      }))
+      this.setData({ champRankList: list, champRankLoading: false, champRankError: false })
+    } catch (err) {
+      this.setData({ champRankLoading: false, champRankError: true })
+    }
+  },
+
+  // 加载海克斯排行 TOP10
+  async loadAugRank() {
+    this.setData({ augRankLoading: true })
     try {
       const data = await cloud.getAugmentList({
-        sort_by: 'win_rate',
-        order: 'desc',
-        page_size: 5,
-        page: 1
+        sort_by: 'win_rate', order: 'desc', page: 1, page_size: 10
       })
-
-      const list = (data.list || data || []).map(a => ({
+      const list = (data.list || []).map(a => ({
         ...a,
         icon_url: image.resolveImageUrl(a.icon_url),
-        name_display: a.name_zh || a.name || '未知',
-        win_rate_display: formatWinRate(a.win_rate),
-        sample_display: formatSampleSize(a.sample_size || 0),
-        win_rate_value: a.win_rate < 1 ? a.win_rate * 100 : a.win_rate
+        win_rate: a.win_rate < 1 ? (a.win_rate * 100).toFixed(1) : Number(a.win_rate).toFixed(1)
       }))
-
-      this.setData({ hotAugments: list })
+      this.setData({ augRankList: list, augRankLoading: false, augRankError: false })
     } catch (err) {
-      console.warn('[首页] 获取热门海克斯失败:', err.message)
+      this.setData({ augRankLoading: false, augRankError: true })
     }
   },
 
-  // 重试
-  onRetry() {
-    this.loadPageData()
+  // 加载热门搭配
+  async loadHotCombos() {
+    this.setData({ comboLoading: true })
+    try {
+      const data = await cloud.getHotCombos({ page: 1, page_size: 5 })
+      const list = (data.list || []).map(c => ({
+        ...c,
+        best_win_rate: formatPercent(c.best_win_rate),
+        best_pick_rate: formatPercent(c.best_pick_rate),
+        champion_icon: image.resolveImageUrl(c.champion_icon),
+        best_augment_icon: image.resolveImageUrl(c.best_augment_icon),
+        augments: (c.augments || []).map(a => ({
+          ...a,
+          icon_url: image.resolveImageUrl(a.icon_url),
+          win_rate: formatPercent(a.win_rate),
+          pick_rate: formatPercent(a.pick_rate)
+        })),
+        items: (c.items || []).map(i => ({
+          ...i,
+          icon_url: image.resolveImageUrl(i.icon_url),
+          win_rate: formatPercent(i.win_rate)
+        }))
+      }))
+      this.setData({ hotCombos: list, comboLoading: false })
+    } catch (err) {
+      this.setData({ comboLoading: false })
+    }
   },
 
-  // 点击搜索栏
-  onSearchTap() {
-    wx.navigateTo({ url: '/pages/search/search' })
+  onRetry() { this.loadPageData() },
+  onSearchTap() { wx.navigateTo({ url: '/pages/search/search' }) },
+
+  onGoChampionList() {
+    wx.navigateTo({ url: '/pages/champion-list/champion-list' })
+  },
+  onGoAugmentList() {
+    wx.navigateTo({ url: '/pages/augment-list/augment-list' })
   },
 
-  // 快速入口跳转
   onQuickEntryTap(e) {
     const { path, istab } = e.currentTarget.dataset
-    if (istab) {
-      wx.switchTab({ url: path })
-    } else {
-      wx.navigateTo({ url: path })
-    }
+    istab ? wx.switchTab({ url: path }) : wx.navigateTo({ url: path })
   },
 
-  // 热门海克斯点击
-  onAugmentTap(e) {
-    const { id } = e.currentTarget.dataset
+  // 双栏英雄点击
+  onMiniChampionTap(e) {
+    const id = e.currentTarget.dataset.championId
+    wx.navigateTo({ url: `/pages/champion-detail/champion-detail?id=${id}` })
+  },
+
+  // 双栏海克斯点击
+  onMiniAugmentTap(e) {
+    const id = e.currentTarget.dataset.id
     wx.navigateTo({ url: `/pages/augment-detail/augment-detail?id=${id}` })
   },
 
-  // 加载英雄排行表
-  async loadChampionRankTable() {
-    if (this.data.rankLoading) return
-    this.setData({ rankLoading: true })
-
-    try {
-      const data = await cloud.getChampionRankTable({
-        sort_by: this.data.rankSortBy,
-        order: this.data.rankSortOrder,
-        page: this.data.rankPage,
-        page_size: 20
-      })
-
-      const list = (data.list || []).map(function (c) {
-        return {
-          ...c,
-          icon_url: image.resolveImageUrl(c.icon_url),
-          win_rate: c.win_rate < 1 ? (c.win_rate * 100).toFixed(1) : c.win_rate.toFixed(1),
-          pick_rate: c.pick_rate < 1 ? (c.pick_rate * 100).toFixed(1) : c.pick_rate.toFixed(1),
-          sample_size: formatSampleSize(c.sample_size || 0)
-        }
-      })
-
-      const newList = this.data.rankPage === 1 ? list : [...this.data.rankList, ...list]
-      this.setData({
-        rankList: newList,
-        rankLoading: false,
-        rankHasMore: list.length >= 20,
-        rankError: false
-      })
-    } catch (err) {
-      console.warn('[首页] 获取英雄排行失败:', err.message)
-      this.setData({ rankLoading: false, rankError: this.data.rankList.length === 0 })
-    }
-  },
-
-  // 排行表排序
-  onRankSort(e) {
-    const { sortBy, order } = e.detail
-    this.setData({ rankSortBy: sortBy, rankSortOrder: order, rankPage: 1, rankList: [] })
-    this.loadChampionRankTable()
-  },
-
-  // 排行表加载更多
-  onRankLoadMore() {
-    if (!this.data.rankHasMore || this.data.rankLoading) return
-    this.setData({ rankPage: this.data.rankPage + 1 })
-    this.loadChampionRankTable()
-  },
-
-  // 排行表英雄点击
-  onRankChampionTap(e) {
-    const { championId } = e.detail
-    wx.navigateTo({ url: `/pages/champion-detail/champion-detail?id=${championId}` })
+  // 热门搭配点击（跳转英雄详情）
+  onComboTap(e) {
+    const id = e.currentTarget.dataset.championId
+    wx.navigateTo({ url: `/pages/champion-detail/champion-detail?id=${id}` })
   }
 })

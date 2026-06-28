@@ -1,0 +1,9 @@
+{
+  "name": "patchBaseData",
+  "version": "1.0.0",
+  "description": "补全 champions/augments/items 的名称和图标",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3"
+  }
+}

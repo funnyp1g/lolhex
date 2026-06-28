@@ -80,10 +80,6 @@
         <text class="stat-value-secondary">{{item.pick_rate}}%</text>
       </view>
 
-      <!-- 样本量 -->
-      <view class="rank-table-td rank-table-stat" style="width: 100rpx;">
-        <text class="stat-value-secondary">{{item.sample_size}}</text>
-      </view>
     </view>
 
     <!-- 加载更多 -->

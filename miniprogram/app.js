@@ -6,7 +6,7 @@ App({
     } else {
       // 请将下方 env 替换为你在云开发控制台创建的实际环境 ID
       wx.cloud.init({
-        env: 'cloud1-2g93qld9789eb02d',
+        env: 'cloud1-d1g6mbvvt2b88bd8d',
         traceUser: true
       })
     }

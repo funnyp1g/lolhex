@@ -16,7 +16,7 @@ async function getCurrentPatch() {
   if (res.data.length === 0) {
     throw new Error('未找到当前版本信息，请先执行 staticDataSync')
   }
-  return res.data[0].version
+  return Number(res.data[0].version)
 }
 
 exports.main = async (event) => {

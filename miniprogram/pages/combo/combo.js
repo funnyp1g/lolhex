@@ -3,7 +3,7 @@ const cloud = require('../../utils/cloud')
 const cache = require('../../utils/cache')
 const image = require('../../utils/image')
 const { CACHE_TTL, PAGE_SIZE, RARITY_LABELS } = require('../../utils/constants')
-const { formatWinRate, formatSampleSize } = require('../../utils/format')
+const { formatWinRate } = require('../../utils/format')
 
 Page({
   data: {
@@ -12,12 +12,13 @@ Page({
     // 英雄筛选
     champions: [],
     selectedChampionId: '',
+    selectedChampionName: '',
     // 排序
     sortBy: 'win_rate',
     sortOrder: 'desc',
     sortOptions: [
       { key: 'win_rate', text: '胜率' },
-      { key: 'sample_size', text: '热度' }
+      { key: 'pick_rate', text: '选取率' }
     ],
     // 分页
     page: 1,
@@ -139,7 +140,6 @@ Page({
     return {
       ...trio,
       win_rate_display: formatWinRate(trio.win_rate),
-      sample_display: formatSampleSize(trio.sample_size || 0),
       win_rate_value: trio.win_rate < 1 ? trio.win_rate * 100 : trio.win_rate,
       augments,
       // 降级：组合名用中文，没有则用英文
@@ -156,8 +156,10 @@ Page({
   // 英雄筛选
   onChampionChange(e) {
     const idx = e.detail.value
-    const selectedChampionId = this.data.champions[idx]._id || ''
-    this.setData({ selectedChampionId, page: 1, trios: [] })
+    const champion = this.data.champions[idx]
+    const selectedChampionId = (champion && champion._id) ? champion._id : ''
+    const selectedChampionName = (champion && champion._id) ? champion.name_zh : ''
+    this.setData({ selectedChampionId, selectedChampionName, page: 1, trios: [] })
     this.loadTrios()
   },
 

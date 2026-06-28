@@ -1,7 +1,19 @@
 <!--pages/augment-list/augment-list.wxml - 海克斯列表-->
 <view class="page-augment-list">
 
-  <!-- 稀有度 Tabs -->
+  <!-- 搜索栏 -->
+  <view class="search-wrap">
+    <input
+      class="search-input"
+      placeholder="搜索海克斯..."
+      value="{{keyword}}"
+      bindinput="onSearchInput"
+      bindconfirm="onSearchConfirm"
+      confirm-type="search"
+    />
+  </view>
+
+  <!-- 稀有度 Tabs（无图标，无"全部"） -->
   <van-tabs
     active="{{activeRarity}}"
     color="var(--color-primary)"
@@ -12,20 +24,6 @@
     <van-tab wx:for="{{rarityTabs}}" wx:key="key" name="{{item.key}}" title="{{item.text}}">
     </van-tab>
   </van-tabs>
-
-  <!-- 排序栏 -->
-  <view class="sort-bar">
-    <view
-      wx:for="{{sortOptions}}"
-      wx:key="key"
-      class="sort-btn {{sortBy === item.key ? 'active' : ''}}"
-      data-key="{{item.key}}"
-      bindtap="onSortChange"
-    >
-      {{item.text}}
-      <text wx:if="{{sortBy === item.key}}" class="sort-arrow">{{sortOrder === 'desc' ? '↓' : '↑'}}</text>
-    </view>
-  </view>
 
   <!-- 骨架屏 -->
   <loading-skeleton wx:if="{{loading}}" type="augment" count="{{6}}" />
@@ -38,12 +36,11 @@
       augment="{{item}}"
       show-description="{{true}}"
       show-rate-bar="{{true}}"
-      show-tier="{{true}}"
+      show-tier="{{false}}"
       rank="{{index + 1}}"
       data-id="{{item._id || item.augment_id}}"
       bind:click="onAugmentTap"
     />
-    <!-- 加载更多 -->
     <view wx:if="{{loadingMore}}" class="loading-more">
       <van-loading size="20px">加载中...</van-loading>
     </view>

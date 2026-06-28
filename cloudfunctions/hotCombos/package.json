@@ -1,0 +1,9 @@
+{
+  "name": "hotCombos",
+  "version": "1.0.0",
+  "description": "首页热门搭配 — 英雄+海克斯+装备最佳组合",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3"
+  }
+}

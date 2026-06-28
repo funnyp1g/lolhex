@@ -74,11 +74,8 @@ Component({
       const champ = this.data.champion
       const id = champ._id || champ.champion_id || champ.riot_id
       this.triggerEvent('click', { championId: id, champion: champ })
-      if (!this.getBehavior) {
-        wx.navigateTo({
-          url: `/pages/champion-detail/champion-detail?id=${id}`
-        })
-      }
+      // 仅当外部未通过 bind:click 捕获事件时才自行导航
+      // 微信小程序中，若父页面绑定了 bind:click，则此处不重复导航
     }
   }
 })

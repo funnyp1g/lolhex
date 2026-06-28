@@ -1,6 +1,6 @@
 // components/augment-card/augment-card.js - 海克斯卡片组件
 const { RARITY_LABELS } = require('../../utils/constants')
-const { formatPercent, formatSampleSize } = require('../../utils/format')
+const { formatPercent } = require('../../utils/format')
 
 Component({
   options: {
@@ -39,11 +39,9 @@ Component({
     rarityLabel: '',
     winRateDisplay: '',
     pickRateDisplay: '',
-    sampleDisplay: '',
     winRateValue: 0,
     hasWinRate: false,
-    hasPickRate: false,
-    hasSample: false
+    hasPickRate: false
   },
 
   observers: {
@@ -65,13 +63,6 @@ Component({
         pickRateDisplay: has ? formatPercent(val) : ''
       })
     },
-    'augment.sample_size': function(val) {
-      const has = val !== null && val !== undefined && val > 0
-      this.setData({
-        hasSample: has,
-        sampleDisplay: has ? formatSampleSize(val) + '场' : ''
-      })
-    }
   },
 
   methods: {
@@ -79,11 +70,7 @@ Component({
       const aug = this.data.augment
       const id = aug._id || aug.augment_id || aug.riot_id
       this.triggerEvent('click', { augmentId: id, augment: aug })
-      if (!this.getBehavior) {
-        wx.navigateTo({
-          url: `/pages/augment-detail/augment-detail?id=${id}`
-        })
-      }
+      // 仅当外部未通过 bind:click 捕获事件时才自行导航
     }
   }
 })

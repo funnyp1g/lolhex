@@ -1,0 +1,3506 @@
+{
+  "1": {
+    "name": "Accelerating Sorcery",
+    "name_zh": "Accelerating Sorcery",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/accelerating sorcery_large.png"
+  },
+  "2": {
+    "name": "Apex Inventor",
+    "name_zh": "Apex Inventor",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/apex inventor_large.png"
+  },
+  "3": {
+    "name": "Null Augment",
+    "name_zh": "Null Augment",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/null augment_large.png"
+  },
+  "4": {
+    "name": "Back To Basics",
+    "name_zh": "Back To Basics",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/back to basics_large.png"
+  },
+  "5": {
+    "name": "Banner of Command",
+    "name_zh": "Banner of Command",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/banner of command_large.png"
+  },
+  "6": {
+    "name": "Blade Waltz",
+    "name_zh": "Blade Waltz",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/blade waltz_large.png"
+  },
+  "7": {
+    "name": "Blunt Force",
+    "name_zh": "Blunt Force",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/blunt force_large.png"
+  },
+  "8": {
+    "name": "Buckle Up",
+    "name_zh": "Buckle Up",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/buckle up_large.png"
+  },
+  "9": {
+    "name": "Buff Buddies",
+    "name_zh": "Buff Buddies",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/buff buddies_large.png"
+  },
+  "10": {
+    "name": "Cannon Fodder",
+    "name_zh": "Cannon Fodder",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/cannon fodder_large.png"
+  },
+  "11": {
+    "name": "Can't Touch This",
+    "name_zh": "Can't Touch This",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/can't touch this_large.png"
+  },
+  "12": {
+    "name": "Castle",
+    "name_zh": "Castle",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/castle_large.png"
+  },
+  "13": {
+    "name": "Celestial Body",
+    "name_zh": "Celestial Body",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/celestial body_large.png"
+  },
+  "14": {
+    "name": "Chauffeur",
+    "name_zh": "Chauffeur",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/chauffeur_large.png"
+  },
+  "15": {
+    "name": "Circle of Death",
+    "name_zh": "Circle of Death",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/circle of death_large.png"
+  },
+  "16": {
+    "name": "Combo Master",
+    "name_zh": "Combo Master",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/combo master_large.png"
+  },
+  "17": {
+    "name": "Contract Killer",
+    "name_zh": "Contract Killer",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/contract killer_large.png"
+  },
+  "18": {
+    "name": "Courage of the Colossus",
+    "name_zh": "Courage of the Colossus",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/courage of the colossus_large.png"
+  },
+  "19": {
+    "name": "Dashing",
+    "name_zh": "Dashing",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dashing_large.png"
+  },
+  "20": {
+    "name": "Dawnbringer's Resolve",
+    "name_zh": "Dawnbringer's Resolve",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dawnbringer's resolve_large.png"
+  },
+  "21": {
+    "name": "Defensive Maneuvers",
+    "name_zh": "Defensive Maneuvers",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/defensive maneuvers_large.png"
+  },
+  "22": {
+    "name": "Deft",
+    "name_zh": "Deft",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/deft_large.png"
+  },
+  "23": {
+    "name": "Demon's Dance",
+    "name_zh": "Demon's Dance",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/demon's dance_large.png"
+  },
+  "24": {
+    "name": "Die Another Day",
+    "name_zh": "Die Another Day",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/die another day_large.png"
+  },
+  "25": {
+    "name": "Dive Bomber",
+    "name_zh": "Dive Bomber",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dive bomber_large.png"
+  },
+  "26": {
+    "name": "Don't Blink",
+    "name_zh": "Don't Blink",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/don't blink_large.png"
+  },
+  "27": {
+    "name": "Earthwake",
+    "name_zh": "Earthwake",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/earthwake_large.png"
+  },
+  "28": {
+    "name": "Erosion",
+    "name_zh": "Erosion",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/erosion_large.png"
+  },
+  "29": {
+    "name": "Ethereal Weapon",
+    "name_zh": "Ethereal Weapon",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ethereal weapon_large.png"
+  },
+  "30": {
+    "name": "Eureka",
+    "name_zh": "Eureka",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/eureka_large.png"
+  },
+  "31": {
+    "name": "Evocation",
+    "name_zh": "Evocation",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/evocation_large.png"
+  },
+  "32": {
+    "name": "Executioner",
+    "name_zh": "Executioner",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/executioner_large.png"
+  },
+  "33": {
+    "name": "Extendo-Arm",
+    "name_zh": "Extendo-Arm",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/extendo-arm_large.png"
+  },
+  "34": {
+    "name": "Fallen Aegis",
+    "name_zh": "Fallen Aegis",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/fallen aegis_large.png"
+  },
+  "35": {
+    "name": "Feel the Burn",
+    "name_zh": "Feel the Burn",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/feel the burn_large.png"
+  },
+  "36": {
+    "name": "Firebrand",
+    "name_zh": "Firebrand",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/firebrand_large.png"
+  },
+  "37": {
+    "name": "First-Aid Kit",
+    "name_zh": "First-Aid Kit",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/first-aid kit_large.png"
+  },
+  "38": {
+    "name": "From Beginning to End",
+    "name_zh": "From Beginning to End",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/from beginning to end_large.png"
+  },
+  "39": {
+    "name": "Frost Wraith",
+    "name_zh": "Frost Wraith",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/frost wraith_large.png"
+  },
+  "40": {
+    "name": "Frozen Foundations",
+    "name_zh": "Frozen Foundations",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/frozen foundations_large.png"
+  },
+  "41": {
+    "name": "Goliath",
+    "name_zh": "Goliath",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/goliath_large.png"
+  },
+  "42": {
+    "name": "Guilty Pleasure",
+    "name_zh": "Guilty Pleasure",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/guilty pleasure_large.png"
+  },
+  "43": {
+    "name": "Now You See Me",
+    "name_zh": "Now You See Me",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/now you see me_large.png"
+  },
+  "44": {
+    "name": "Ice Cold",
+    "name_zh": "Ice Cold",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ice cold_large.png"
+  },
+  "45": {
+    "name": "Infernal Conduit",
+    "name_zh": "Infernal Conduit",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/infernal conduit_large.png"
+  },
+  "46": {
+    "name": "Infernal Soul",
+    "name_zh": "Infernal Soul",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/infernal soul_large.png"
+  },
+  "47": {
+    "name": "It's Critical",
+    "name_zh": "It's Critical",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/it's critical_large.png"
+  },
+  "48": {
+    "name": "Jeweled Gauntlet",
+    "name_zh": "Jeweled Gauntlet",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/jeweled gauntlet_large.png"
+  },
+  "49": {
+    "name": "Juice Box",
+    "name_zh": "Juice Box",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/juice box_large.png"
+  },
+  "50": {
+    "name": "Keystone Conjurer",
+    "name_zh": "Keystone Conjurer",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/keystone conjurer_large.png"
+  },
+  "51": {
+    "name": "Light 'em Up!",
+    "name_zh": "Light 'em Up!",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/light 'em up!_large.png"
+  },
+  "52": {
+    "name": "Lightning Strikes",
+    "name_zh": "Lightning Strikes",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/lightning strikes_large.png"
+  },
+  "53": {
+    "name": "Mad Scientist",
+    "name_zh": "Mad Scientist",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mad scientist_large.png"
+  },
+  "54": {
+    "name": "Master of Duality",
+    "name_zh": "Master of Duality",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/master of duality_large.png"
+  },
+  "55": {
+    "name": "Midnight Express",
+    "name_zh": "Midnight Express",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/midnight express_large.png"
+  },
+  "56": {
+    "name": "Mind to Matter",
+    "name_zh": "Mind to Matter",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mind to matter_large.png"
+  },
+  "57": {
+    "name": "Mountain Soul",
+    "name_zh": "Mountain Soul",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mountain soul_large.png"
+  },
+  "58": {
+    "name": "Mystic Punch",
+    "name_zh": "Mystic Punch",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mystic punch_large.png"
+  },
+  "59": {
+    "name": "Mythical",
+    "name_zh": "Mythical",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mythical_large.png"
+  },
+  "60": {
+    "name": "Ocean Soul",
+    "name_zh": "Ocean Soul",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ocean soul_large.png"
+  },
+  "61": {
+    "name": "OK Boomerang",
+    "name_zh": "OK Boomerang",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ok boomerang_large.png"
+  },
+  "62": {
+    "name": "Omni Soul",
+    "name_zh": "Omni Soul",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/omni soul_large.png"
+  },
+  "63": {
+    "name": "Outlaw's Grit",
+    "name_zh": "Outlaw's Grit",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/outlaw's grit_large.png"
+  },
+  "64": {
+    "name": "Perseverance",
+    "name_zh": "Perseverance",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/perseverance_large.png"
+  },
+  "65": {
+    "name": "Phenomenal Evil",
+    "name_zh": "Phenomenal Evil",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/phenomenal evil_large.png"
+  },
+  "66": {
+    "name": "Quantum Computing",
+    "name_zh": "Quantum Computing",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quantum computing_large.png"
+  },
+  "67": {
+    "name": "Rabble Rousing",
+    "name_zh": "Rabble Rousing",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/rabble rousing_large.png"
+  },
+  "68": {
+    "name": "Recursion",
+    "name_zh": "Recursion",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/recursion_large.png"
+  },
+  "69": {
+    "name": "Repulsor",
+    "name_zh": "Repulsor",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/repulsor_large.png"
+  },
+  "70": {
+    "name": "Restless Restoration",
+    "name_zh": "Restless Restoration",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/restless restoration_large.png"
+  },
+  "71": {
+    "name": "Scopier Weapons",
+    "name_zh": "Scopier Weapons",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/scopier weapons_large.png"
+  },
+  "72": {
+    "name": "Searing Dawn",
+    "name_zh": "Searing Dawn",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/searing dawn_large.png"
+  },
+  "73": {
+    "name": "Shadow Runner",
+    "name_zh": "Shadow Runner",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/shadow runner_large.png"
+  },
+  "74": {
+    "name": "Shrink Ray",
+    "name_zh": "Shrink Ray",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/shrink ray_large.png"
+  },
+  "75": {
+    "name": "Slow Cooker",
+    "name_zh": "Slow Cooker",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/slow cooker_large.png"
+  },
+  "76": {
+    "name": "Sonic Boom",
+    "name_zh": "Sonic Boom",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/sonic boom_large.png"
+  },
+  "77": {
+    "name": "Soul Siphon",
+    "name_zh": "Soul Siphon",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/soul siphon_large.png"
+  },
+  "78": {
+    "name": "Spirit Link",
+    "name_zh": "Spirit Link",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/spirit link_large.png"
+  },
+  "79": {
+    "name": "Symphony of War",
+    "name_zh": "Symphony of War",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/symphony of war_large.png"
+  },
+  "80": {
+    "name": "Tank It Or Leave It",
+    "name_zh": "Tank It Or Leave It",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/tank it or leave it_large.png"
+  },
+  "81": {
+    "name": "Tap Dancer",
+    "name_zh": "Tap Dancer",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/tap dancer_large.png"
+  },
+  "82": {
+    "name": "The Brutalizer",
+    "name_zh": "The Brutalizer",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/the brutalizer_large.png"
+  },
+  "83": {
+    "name": "Thief's Gloves",
+    "name_zh": "Thief's Gloves",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/thief's gloves_large.png"
+  },
+  "84": {
+    "name": "Thread the Needle",
+    "name_zh": "Thread the Needle",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/thread the needle_large.png"
+  },
+  "85": {
+    "name": "Tormentor",
+    "name_zh": "Tormentor",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/tormentor_large.png"
+  },
+  "86": {
+    "name": "Trueshot Prodigy",
+    "name_zh": "Trueshot Prodigy",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/trueshot prodigy_large.png"
+  },
+  "87": {
+    "name": "Typhoon",
+    "name_zh": "Typhoon",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/typhoon_large.png"
+  },
+  "88": {
+    "name": "Ultimate Revolution",
+    "name_zh": "Ultimate Revolution",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ultimate revolution_large.png"
+  },
+  "89": {
+    "name": "Vanish",
+    "name_zh": "Vanish",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/vanish_large.png"
+  },
+  "90": {
+    "name": "Vengeance",
+    "name_zh": "Vengeance",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/vengeance_large.png"
+  },
+  "91": {
+    "name": "Virtuous Cycle",
+    "name_zh": "Virtuous Cycle",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/virtuous cycle_large.png"
+  },
+  "92": {
+    "name": "Vulnerability",
+    "name_zh": "Vulnerability",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/vulnerability_large.png"
+  },
+  "93": {
+    "name": "Warmup Routine",
+    "name_zh": "Warmup Routine",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/warmup routine_large.png"
+  },
+  "94": {
+    "name": "Willing Sacrifice",
+    "name_zh": "Willing Sacrifice",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/willing sacrifice_large.png"
+  },
+  "95": {
+    "name": "Windspeaker's Blessing",
+    "name_zh": "Windspeaker's Blessing",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/windspeaker's blessing_large.png"
+  },
+  "96": {
+    "name": "Wisdom of Ages",
+    "name_zh": "Wisdom of Ages",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/wisdom of ages_large.png"
+  },
+  "97": {
+    "name": "Witchful Thinking",
+    "name_zh": "Witchful Thinking",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/witchful thinking_large.png"
+  },
+  "98": {
+    "name": "With Haste",
+    "name_zh": "With Haste",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/with haste_large.png"
+  },
+  "99": {
+    "name": "Zhonya's Epiphany",
+    "name_zh": "Zhonya's Epiphany",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/zhonya's epiphany_large.png"
+  },
+  "102": {
+    "name": "Don't Chase",
+    "name_zh": "Don't Chase",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/don't chase_large.png"
+  },
+  "103": {
+    "name": "Bread And Butter",
+    "name_zh": "Bread And Butter",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bread and butter_large.png"
+  },
+  "104": {
+    "name": "Minionmancer",
+    "name_zh": "Minionmancer",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/minionmancer_large.png"
+  },
+  "105": {
+    "name": "Homeguard",
+    "name_zh": "Homeguard",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/homeguard_large.png"
+  },
+  "107": {
+    "name": "Twice Thrice",
+    "name_zh": "Twice Thrice",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/twice thrice_large.png"
+  },
+  "108": {
+    "name": "Self Destruct",
+    "name_zh": "Self Destruct",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/self destruct_large.png"
+  },
+  "109": {
+    "name": "Oathsworn",
+    "name_zh": "Oathsworn",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/oathsworn_large.png"
+  },
+  "110": {
+    "name": "Clothesline",
+    "name_zh": "Clothesline",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/clothesline_large.png"
+  },
+  "112": {
+    "name": "Ultimate Unstoppable",
+    "name_zh": "Ultimate Unstoppable",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ultimate unstoppable_large.png"
+  },
+  "113": {
+    "name": "Skilled Sniper",
+    "name_zh": "Skilled Sniper",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/skilled sniper_large.png"
+  },
+  "115": {
+    "name": "Scopiest Weapons",
+    "name_zh": "Scopiest Weapons",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/scopiest weapons_large.png"
+  },
+  "116": {
+    "name": "Flashy",
+    "name_zh": "Flashy",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/flashy_large.png"
+  },
+  "118": {
+    "name": "Critical Healing",
+    "name_zh": "Critical Healing",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/critical healing_large.png"
+  },
+  "120": {
+    "name": "Serve Beyond Death",
+    "name_zh": "Serve Beyond Death",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/serve beyond death_large.png"
+  },
+  "123": {
+    "name": "Summoner's Roulette",
+    "name_zh": "Summoner's Roulette",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/summoner's roulette_large.png"
+  },
+  "125": {
+    "name": "Raid Boss",
+    "name_zh": "Raid Boss",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/raid boss_large.png"
+  },
+  "129": {
+    "name": "Marksmage",
+    "name_zh": "Marksmage",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/marksmage_large.png"
+  },
+  "133": {
+    "name": "Magic Missile",
+    "name_zh": "Magic Missile",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/magic missile_large.png"
+  },
+  "134": {
+    "name": "Draw Your Sword",
+    "name_zh": "Draw Your Sword",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/draw your sword_large.png"
+  },
+  "135": {
+    "name": "Spellwake",
+    "name_zh": "Spellwake",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/spellwake_large.png"
+  },
+  "136": {
+    "name": "Slap Around",
+    "name_zh": "Slap Around",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/slap around_large.png"
+  },
+  "138": {
+    "name": "Goredrink",
+    "name_zh": "Goredrink",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/goredrink_large.png"
+  },
+  "141": {
+    "name": "All For You",
+    "name_zh": "All For You",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/all for you_large.png"
+  },
+  "149": {
+    "name": "Impassable",
+    "name_zh": "Impassable",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/impassable_large.png"
+  },
+  "150": {
+    "name": "Bread And Jam",
+    "name_zh": "Bread And Jam",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bread and jam_large.png"
+  },
+  "151": {
+    "name": "Bread And Cheese",
+    "name_zh": "Bread And Cheese",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bread and cheese_large.png"
+  },
+  "152": {
+    "name": "Quest: Steel Your Heart",
+    "name_zh": "Quest: Steel Your Heart",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quest: steel your heart_large.png"
+  },
+  "154": {
+    "name": "Quest: Urf's Champion",
+    "name_zh": "Quest: Urf's Champion",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quest: urf's champion_large.png"
+  },
+  "156": {
+    "name": "Quest: Wooglet's Witchcap",
+    "name_zh": "Quest: Wooglet's Witchcap",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quest: wooglet's witchcap_large.png"
+  },
+  "165": {
+    "name": "Restart",
+    "name_zh": "Restart",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/restart_large.png"
+  },
+  "166": {
+    "name": "Chain Lightning",
+    "name_zh": "Chain Lightning",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/chain lightning_large.png"
+  },
+  "170": {
+    "name": "Scoped Weapons",
+    "name_zh": "Scoped Weapons",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/scoped weapons_large.png"
+  },
+  "171": {
+    "name": "Dematerialize",
+    "name_zh": "Dematerialize",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dematerialize_large.png"
+  },
+  "172": {
+    "name": "Mirror Image",
+    "name_zh": "Mirror Image",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mirror image_large.png"
+  },
+  "174": {
+    "name": "Laser Eyes",
+    "name_zh": "Laser Eyes",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/laser eyes_large.png"
+  },
+  "175": {
+    "name": "Parasitic Relationship",
+    "name_zh": "Parasitic Relationship",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/parasitic relationship_large.png"
+  },
+  "176": {
+    "name": "Snowball Fight!",
+    "name_zh": "Snowball Fight!",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/snowball fight!_large.png"
+  },
+  "177": {
+    "name": "Nesting Doll",
+    "name_zh": "Nesting Doll",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/nesting doll_large.png"
+  },
+  "180": {
+    "name": "Big Brain",
+    "name_zh": "Big Brain",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/big brain_large.png"
+  },
+  "181": {
+    "name": "Heavy Hitter",
+    "name_zh": "Heavy Hitter",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/heavy hitter_large.png"
+  },
+  "187": {
+    "name": "Flashbang",
+    "name_zh": "Flashbang",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/flashbang_large.png"
+  },
+  "192": {
+    "name": "Quest: Angel of Retribution",
+    "name_zh": "Quest: Angel of Retribution",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quest: angel of retribution_large.png"
+  },
+  "193": {
+    "name": "Center of the Universe",
+    "name_zh": "Center of the Universe",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/center of the universe_large.png"
+  },
+  "194": {
+    "name": "Fey Magic",
+    "name_zh": "Fey Magic",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/fey magic_large.png"
+  },
+  "195": {
+    "name": "Giant Slayer",
+    "name_zh": "Giant Slayer",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/giant slayer_large.png"
+  },
+  "198": {
+    "name": "Holy Fire",
+    "name_zh": "Holy Fire",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/holy fire_large.png"
+  },
+  "200": {
+    "name": "Blood Brother",
+    "name_zh": "Blood Brother",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/blood brother_large.png"
+  },
+  "204": {
+    "name": "Stackosaurus Rex",
+    "name_zh": "Stackosaurus Rex",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/stackosaurus rex_large.png"
+  },
+  "205": {
+    "name": "ADAPt",
+    "name_zh": "ADAPt",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/adapt_large.png"
+  },
+  "206": {
+    "name": "escAPADe",
+    "name_zh": "escAPADe",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/escapade_large.png"
+  },
+  "207": {
+    "name": "Hold Very Still",
+    "name_zh": "Hold Very Still",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/hold very still_large.png"
+  },
+  "208": {
+    "name": "Orbital Laser",
+    "name_zh": "Orbital Laser",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/orbital laser_large.png"
+  },
+  "211": {
+    "name": "It's Killing Time",
+    "name_zh": "It's Killing Time",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/it's killing time_large.png"
+  },
+  "213": {
+    "name": "Fully Automated",
+    "name_zh": "Fully Automated",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/fully automated_large.png"
+  },
+  "214": {
+    "name": "Spin To Win",
+    "name_zh": "Spin To Win",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/spin to win_large.png"
+  },
+  "215": {
+    "name": "Dark Blessing",
+    "name_zh": "Dark Blessing",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dark blessing_large.png"
+  },
+  "216": {
+    "name": "Dreadbringer",
+    "name_zh": "Dreadbringer",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dreadbringer_large.png"
+  },
+  "217": {
+    "name": "Deathtouch",
+    "name_zh": "Deathtouch",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/deathtouch_large.png"
+  },
+  "218": {
+    "name": "Desecrator",
+    "name_zh": "Desecrator",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/desecrator_large.png"
+  },
+  "219": {
+    "name": "Doomsayer",
+    "name_zh": "Doomsayer",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/doomsayer_large.png"
+  },
+  "220": {
+    "name": "Fan the Hammer",
+    "name_zh": "Fan the Hammer",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/fan the hammer_large.png"
+  },
+  "221": {
+    "name": "Trailblazer",
+    "name_zh": "Trailblazer",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/trailblazer_large.png"
+  },
+  "222": {
+    "name": "Fruits of Your Labor",
+    "name_zh": "Fruits of Your Labor",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/fruits of your labor_large.png"
+  },
+  "223": {
+    "name": "Summoner Revolution",
+    "name_zh": "Summoner Revolution",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/summoner revolution_large.png"
+  },
+  "224": {
+    "name": "Prismatic Egg",
+    "name_zh": "Prismatic Egg",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/prismatic egg_large.png"
+  },
+  "225": {
+    "name": "Dual Wield",
+    "name_zh": "Dual Wield",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dual wield_large.png"
+  },
+  "226": {
+    "name": "Stats!",
+    "name_zh": "Stats!",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/stats!_large.png"
+  },
+  "227": {
+    "name": "Stats on Stats!",
+    "name_zh": "Stats on Stats!",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/stats on stats!_large.png"
+  },
+  "228": {
+    "name": "Stats on Stats on Stats!",
+    "name_zh": "Stats on Stats on Stats!",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/stats on stats on stats!_large.png"
+  },
+  "229": {
+    "name": "Fire Sale",
+    "name_zh": "Fire Sale",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/fire sale_large.png"
+  },
+  "230": {
+    "name": "Bullet Heaven",
+    "name_zh": "Bullet Heaven",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bullet heaven_large.png"
+  },
+  "231": {
+    "name": "Light Warden",
+    "name_zh": "Light Warden",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/light warden_large.png"
+  },
+  "232": {
+    "name": "Slime Time",
+    "name_zh": "Slime Time",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/slime time_large.png"
+  },
+  "233": {
+    "name": "Ultimate Roulette",
+    "name_zh": "Ultimate Roulette",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ultimate roulette_large.png"
+  },
+  "234": {
+    "name": "Gamba Anvil",
+    "name_zh": "Gamba Anvil",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/gamba anvil_large.png"
+  },
+  "236": {
+    "name": "Trickster Demon",
+    "name_zh": "Trickster Demon",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/trickster demon_large.png"
+  },
+  "237": {
+    "name": "Transmute: Gold",
+    "name_zh": "Transmute: Gold",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/transmute: gold_large.png"
+  },
+  "238": {
+    "name": "Transmute: Prismatic",
+    "name_zh": "Transmute: Prismatic",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/transmute: prismatic_large.png"
+  },
+  "239": {
+    "name": "Symbiotic Mutation",
+    "name_zh": "Symbiotic Mutation",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/symbiotic mutation_large.png"
+  },
+  "240": {
+    "name": "Parasitic Mutation",
+    "name_zh": "Parasitic Mutation",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/parasitic mutation_large.png"
+  },
+  "241": {
+    "name": "Hat Trick",
+    "name_zh": "Hat Trick",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/hat trick_large.png"
+  },
+  "242": {
+    "name": "Juice Press",
+    "name_zh": "Juice Press",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/juice press_large.png"
+  },
+  "243": {
+    "name": "Transmute: Chaos",
+    "name_zh": "Transmute: Chaos",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/transmute: chaos_large.png"
+  },
+  "250": {
+    "name": "Slow and Steady",
+    "name_zh": "Slow and Steady",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/slow and steady_large.png"
+  },
+  "251": {
+    "name": "Numb to Pain",
+    "name_zh": "Numb to Pain",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/numb to pain_large.png"
+  },
+  "301": {
+    "name": "Divine Intervention",
+    "name_zh": "Divine Intervention",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/divine intervention_large.png"
+  },
+  "302": {
+    "name": "Sacrifice: For Silver",
+    "name_zh": "Sacrifice: For Silver",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/sacrifice: for silver_large.png"
+  },
+  "303": {
+    "name": "Sacrifice: For Gold",
+    "name_zh": "Sacrifice: For Gold",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/sacrifice: for gold_large.png"
+  },
+  "304": {
+    "name": "Sacrifice: For Prismatic",
+    "name_zh": "Sacrifice: For Prismatic",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/sacrifice: for prismatic_large.png"
+  },
+  "305": {
+    "name": "Leg Day",
+    "name_zh": "Leg Day",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/leg day_large.png"
+  },
+  "306": {
+    "name": "Parry",
+    "name_zh": "Parry",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/parry_large.png"
+  },
+  "307": {
+    "name": "Sleep Dart",
+    "name_zh": "Sleep Dart",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/sleep dart_large.png"
+  },
+  "308": {
+    "name": "Firefox",
+    "name_zh": "Firefox",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/firefox_large.png"
+  },
+  "309": {
+    "name": "And My Axe!",
+    "name_zh": "And My Axe!",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/and my axe!_large.png"
+  },
+  "310": {
+    "name": "Clown College",
+    "name_zh": "Clown College",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/clown college_large.png"
+  },
+  "311": {
+    "name": "Overflow",
+    "name_zh": "Overflow",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/overflow_large.png"
+  },
+  "312": {
+    "name": "We'll Be Right Back",
+    "name_zh": "We'll Be Right Back",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/we'll be right back_large.png"
+  },
+  "313": {
+    "name": "Tank Engine",
+    "name_zh": "Tank Engine",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/tank engine_large.png"
+  },
+  "314": {
+    "name": "Unshackled",
+    "name_zh": "Unshackled",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/unshackled_large.png"
+  },
+  "315": {
+    "name": "Energetic Caster",
+    "name_zh": "Energetic Caster",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/energetic caster_large.png"
+  },
+  "316": {
+    "name": "Grievous Venom",
+    "name_zh": "Grievous Venom",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/grievous venom_large.png"
+  },
+  "317": {
+    "name": "Pandora's Box",
+    "name_zh": "Pandora's Box",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/pandora's box_large.png"
+  },
+  "318": {
+    "name": "Quest: Mad Hatter",
+    "name_zh": "Quest: Mad Hatter",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quest: mad hatter_large.png"
+  },
+  "319": {
+    "name": "Quest: Three Sacred Treasures",
+    "name_zh": "Quest: Three Sacred Treasures",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quest: three sacred treasures_large.png"
+  },
+  "320": {
+    "name": "Calculated Risk",
+    "name_zh": "Calculated Risk",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/calculated risk_large.png"
+  },
+  "321": {
+    "name": "Bodyguard",
+    "name_zh": "Bodyguard",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bodyguard_large.png"
+  },
+  "322": {
+    "name": "Augmented Power",
+    "name_zh": "Augmented Power",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/augmented power_large.png"
+  },
+  "323": {
+    "name": "Cerberus",
+    "name_zh": "Cerberus",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/cerberus_large.png"
+  },
+  "324": {
+    "name": "Bravest of the Brave",
+    "name_zh": "Bravest of the Brave",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bravest of the brave_large.png"
+  },
+  "326": {
+    "name": "Spirit Infusion",
+    "name_zh": "Spirit Infusion",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/spirit infusion_large.png"
+  },
+  "327": {
+    "name": "Undying Guard",
+    "name_zh": "Undying Guard",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/undying guard_large.png"
+  },
+  "328": {
+    "name": "Infernal Chains",
+    "name_zh": "Infernal Chains",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/infernal chains_large.png"
+  },
+  "329": {
+    "name": "Necromancer",
+    "name_zh": "Necromancer",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/necromancer_large.png"
+  },
+  "330": {
+    "name": "Despoil",
+    "name_zh": "Despoil",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/despoil_large.png"
+  },
+  "331": {
+    "name": "Multitool",
+    "name_zh": "Multitool",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/multitool_large.png"
+  },
+  "332": {
+    "name": "Blood Mage",
+    "name_zh": "Blood Mage",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/blood mage_large.png"
+  },
+  "333": {
+    "name": "Quest: Rite Of The Forge God",
+    "name_zh": "Quest: Rite Of The Forge God",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quest: rite of the forge god_large.png"
+  },
+  "334": {
+    "name": "Hallucinate",
+    "name_zh": "Hallucinate",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/hallucinate_large.png"
+  },
+  "335": {
+    "name": "Panic Room",
+    "name_zh": "Panic Room",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/panic room_large.png"
+  },
+  "336": {
+    "name": "Aim for the Head",
+    "name_zh": "Aim for the Head",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/aim for the head_large.png"
+  },
+  "338": {
+    "name": "Hive Mind",
+    "name_zh": "Hive Mind",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/hive mind_large.png"
+  },
+  "343": {
+    "name": "Righteous Fury",
+    "name_zh": "Righteous Fury",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/righteous fury_large.png"
+  },
+  "344": {
+    "name": "Energetic",
+    "name_zh": "Energetic",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/energetic_large.png"
+  },
+  "345": {
+    "name": "Magical Girl",
+    "name_zh": "Magical Girl",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/magical girl_large.png"
+  },
+  "346": {
+    "name": "Bread Sandwich",
+    "name_zh": "Bread Sandwich",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bread sandwich_large.png"
+  },
+  "356": {
+    "name": "Silver Spoon",
+    "name_zh": "Silver Spoon",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/silver spoon_large.png"
+  },
+  "357": {
+    "name": "Hybrid",
+    "name_zh": "Hybrid",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/hybrid_large.png"
+  },
+  "374": {
+    "name": "Rice and Chicken",
+    "name_zh": "Rice and Chicken",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/rice and chicken_large.png"
+  },
+  "375": {
+    "name": "Rice and Fish",
+    "name_zh": "Rice and Fish",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/rice and fish_large.png"
+  },
+  "376": {
+    "name": "Rice and Pork",
+    "name_zh": "Rice and Pork",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/rice and pork_large.png"
+  },
+  "377": {
+    "name": "Combination Fried Rice",
+    "name_zh": "Combination Fried Rice",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/combination fried rice_large.png"
+  },
+  "378": {
+    "name": "Transmute: Silver",
+    "name_zh": "Transmute: Silver",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/transmute: silver_large.png"
+  },
+  "379": {
+    "name": "Wild Fire",
+    "name_zh": "Wild Fire",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/wild fire_large.png"
+  },
+  "380": {
+    "name": "Mercy",
+    "name_zh": "Mercy",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mercy_large.png"
+  },
+  "381": {
+    "name": "Scavenger",
+    "name_zh": "Scavenger",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/scavenger_large.png"
+  },
+  "383": {
+    "name": "Demonic Clasp",
+    "name_zh": "Demonic Clasp",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/demonic clasp_large.png"
+  },
+  "384": {
+    "name": "Spellcraft",
+    "name_zh": "Spellcraft",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/spellcraft_large.png"
+  },
+  "387": {
+    "name": "Big Dragon Energy",
+    "name_zh": "Big Dragon Energy",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/big dragon energy_large.png"
+  },
+  "388": {
+    "name": "Chroma Flux",
+    "name_zh": "Chroma Flux",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/chroma flux_large.png"
+  },
+  "389": {
+    "name": "Trash To Treasure",
+    "name_zh": "Trash To Treasure",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/trash to treasure_large.png"
+  },
+  "390": {
+    "name": "Unstable Transmutation",
+    "name_zh": "Unstable Transmutation",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/unstable transmutation_large.png"
+  },
+  "391": {
+    "name": "Rags to Riches",
+    "name_zh": "Rags to Riches",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/rags to riches_large.png"
+  },
+  "393": {
+    "name": "Icathia's Fall",
+    "name_zh": "Icathia's Fall",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/icathia's fall_large.png"
+  },
+  "394": {
+    "name": "Dust To Diamonds",
+    "name_zh": "Dust To Diamonds",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dust to diamonds_large.png"
+  },
+  "404": {
+    "name": "404 Augment Not Found",
+    "name_zh": "404 Augment Not Found",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/404 augment not found_large.png"
+  },
+  "405": {
+    "name": "Augment 405",
+    "name_zh": "Augment 405",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/augment 405_large.png"
+  },
+  "1001": {
+    "name": "Titan's Resolve",
+    "name_zh": "泰坦的坚决",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/iamthejuggernaut_large.png"
+  },
+  "1002": {
+    "name": "Apex Inventor",
+    "name_zh": "尖端发明家",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/apexinventor_large.png"
+  },
+  "1004": {
+    "name": "Back To Basics",
+    "name_zh": "回归基本功",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/backtobasics_large.png"
+  },
+  "1005": {
+    "name": "Wee Woo Wee Woo",
+    "name_zh": "喂呜喂呜",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/weewooweewoo_large.png"
+  },
+  "1006": {
+    "name": "Blade Waltz",
+    "name_zh": "利刃华尔兹",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bladewaltz_large.png"
+  },
+  "1007": {
+    "name": "Blunt Force",
+    "name_zh": "大力",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bluntforce_large.png"
+  },
+  "1009": {
+    "name": "Buff Buddies",
+    "name_zh": "Buff Buddies",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/buff buddies_large.png"
+  },
+  "1011": {
+    "name": "Can't Touch This",
+    "name_zh": "你摸不到",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/canttouchthis_large.png"
+  },
+  "1013": {
+    "name": "Celestial Body",
+    "name_zh": "星界躯体",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/celestialbody_large.png"
+  },
+  "1015": {
+    "name": "Circle of Death",
+    "name_zh": "死亡之环",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/circleofdeath_large.png"
+  },
+  "1018": {
+    "name": "Courage of the Colossus",
+    "name_zh": "巨像的勇气",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/courageofthecolossus_large.png"
+  },
+  "1019": {
+    "name": "Dashing",
+    "name_zh": "全凭身法",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dashing_large.png"
+  },
+  "1020": {
+    "name": "Dawnbringer's Resolve",
+    "name_zh": "黎明使者的坚决",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dawnbringersresolve_large.png"
+  },
+  "1022": {
+    "name": "Deft",
+    "name_zh": "灵巧",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/deft_large.png"
+  },
+  "1023": {
+    "name": "Demon's Dance",
+    "name_zh": "Demon's Dance",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/demon's dance_large.png"
+  },
+  "1025": {
+    "name": "Dive Bomber",
+    "name_zh": "俯冲轰炸",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/divebomber_large.png"
+  },
+  "1026": {
+    "name": "Don't Blink",
+    "name_zh": "唯快不破",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dontblink_large.png"
+  },
+  "1027": {
+    "name": "Earthwake",
+    "name_zh": "大地苏醒",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/earthwake_large.png"
+  },
+  "1028": {
+    "name": "Erosion",
+    "name_zh": "侵蚀",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/erosion_large.png"
+  },
+  "1029": {
+    "name": "Ethereal Weapon",
+    "name_zh": "虚幻武器",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/etherealweapon_large.png"
+  },
+  "1030": {
+    "name": "Eureka",
+    "name_zh": "尤里卡",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/eureka_large.png"
+  },
+  "1032": {
+    "name": "Executioner",
+    "name_zh": "Executioner",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/executioner_large.png"
+  },
+  "1034": {
+    "name": "Veil of Warding",
+    "name_zh": "防护面纱",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/poltergeist_large.png"
+  },
+  "1035": {
+    "name": "Feel the Burn",
+    "name_zh": "Feel the Burn",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/feel the burn_large.png"
+  },
+  "1036": {
+    "name": "Firebrand",
+    "name_zh": "火上浇油",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/firebrand_large.png"
+  },
+  "1037": {
+    "name": "First-Aid Kit",
+    "name_zh": "急救用具",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/firstaidkit_large.png"
+  },
+  "1038": {
+    "name": "From Beginning To End",
+    "name_zh": "有始有终",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/frombeginningtoend_large.png"
+  },
+  "1039": {
+    "name": "Frost Wraith",
+    "name_zh": "Frost Wraith",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/frost wraith_large.png"
+  },
+  "1041": {
+    "name": "Goliath",
+    "name_zh": "歌利亚巨人",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/goliath_large.png"
+  },
+  "1042": {
+    "name": "Guilty Pleasure",
+    "name_zh": "Guilty Pleasure",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/guilty pleasure_large.png"
+  },
+  "1044": {
+    "name": "Ice Cold",
+    "name_zh": "冰寒",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/icecold_large.png"
+  },
+  "1045": {
+    "name": "Infernal Conduit",
+    "name_zh": "炼狱导管",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/infernalconduit_large.png"
+  },
+  "1046": {
+    "name": "Infernal Soul",
+    "name_zh": "炼狱龙魂",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/infernalsoul_large.png"
+  },
+  "1047": {
+    "name": "It's Critical",
+    "name_zh": "关键暴击",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/itscritical_large.png"
+  },
+  "1048": {
+    "name": "Jeweled Gauntlet",
+    "name_zh": "珠光护手",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/jeweledgauntlet_large.png"
+  },
+  "1050": {
+    "name": "Keystone Conjurer",
+    "name_zh": "Keystone Conjurer",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/keystone conjurer_large.png"
+  },
+  "1051": {
+    "name": "Light 'Em Up!",
+    "name_zh": "点亮他们！",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/lightemup_large.png"
+  },
+  "1052": {
+    "name": "Lightning Strikes",
+    "name_zh": "Lightning Strikes",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/lightning strikes_large.png"
+  },
+  "1053": {
+    "name": "Mad Scientist",
+    "name_zh": "科学狂人",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/madscientist_large.png"
+  },
+  "1054": {
+    "name": "Master of Duality",
+    "name_zh": "物法皆修",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/masterofduality_large.png"
+  },
+  "1056": {
+    "name": "Mind to Matter",
+    "name_zh": "由心及物",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mindtomatter_large.png"
+  },
+  "1057": {
+    "name": "Mountain Soul",
+    "name_zh": "山脉龙魂",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mountainsoul_large.png"
+  },
+  "1058": {
+    "name": "Mystic Punch",
+    "name_zh": "秘术冲拳",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mysticpunch_large.png"
+  },
+  "1060": {
+    "name": "Ocean Soul",
+    "name_zh": "海洋龙魂",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/oceansoul_large.png"
+  },
+  "1061": {
+    "name": "Ok Boomerang",
+    "name_zh": "回力OK镖",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/okboomerang_large.png"
+  },
+  "1062": {
+    "name": "Omni Soul",
+    "name_zh": "全能龙魂",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/omnisoul_large.png"
+  },
+  "1063": {
+    "name": "Outlaw's Grit",
+    "name_zh": "狂徒豪气",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/outlawsgrit_large.png"
+  },
+  "1064": {
+    "name": "Perseverance",
+    "name_zh": "坚韧",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/perseverance_large.png"
+  },
+  "1066": {
+    "name": "Quantum Computing",
+    "name_zh": "量子计算",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quantumcomputing_large.png"
+  },
+  "1067": {
+    "name": "Rejuvenation",
+    "name_zh": "活力焕发",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/rabblerousing_large.png"
+  },
+  "1068": {
+    "name": "Recursion",
+    "name_zh": "循环往复",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/recursion_large.png"
+  },
+  "1069": {
+    "name": "Repulsor",
+    "name_zh": "Repulsor",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/repulsor_large.png"
+  },
+  "1070": {
+    "name": "Restless Restoration",
+    "name_zh": "Restless Restoration",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/restless restoration_large.png"
+  },
+  "1071": {
+    "name": "Scopier Weapons",
+    "name_zh": "更万用的瞄准镜",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/scopierweapons_large.png"
+  },
+  "1072": {
+    "name": "Searing Dawn",
+    "name_zh": "炽烈黎明",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/searingdawn_large.png"
+  },
+  "1073": {
+    "name": "Shadow Runner",
+    "name_zh": "暗影疾奔",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/shadowrunner_large.png"
+  },
+  "1074": {
+    "name": "Shrink Ray",
+    "name_zh": "缩小射线",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/shrinkray_large.png"
+  },
+  "1075": {
+    "name": "Slow Cooker",
+    "name_zh": "Slow Cooker",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/slow cooker_large.png"
+  },
+  "1076": {
+    "name": "Sonic Boom",
+    "name_zh": "天音爆",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/sonicboom_large.png"
+  },
+  "1077": {
+    "name": "Soul Siphon",
+    "name_zh": "灵魂虹吸",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/soulsiphon_large.png"
+  },
+  "1079": {
+    "name": "Symphony of War",
+    "name_zh": "战争交响乐",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/symphonyofwar_large.png"
+  },
+  "1080": {
+    "name": "Tank It Or Leave It",
+    "name_zh": "会心防御",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/tankitorleaveit_large.png"
+  },
+  "1081": {
+    "name": "Tap Dancer",
+    "name_zh": "踢踏舞",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/tapdancer_large.png"
+  },
+  "1082": {
+    "name": "The Brutalizer",
+    "name_zh": "The Brutalizer",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/the brutalizer_large.png"
+  },
+  "1084": {
+    "name": "Thread the Needle",
+    "name_zh": "穿针引线",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/threadtheneedle_large.png"
+  },
+  "1085": {
+    "name": "Tormentor",
+    "name_zh": "Tormentor",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/tormentor_large.png"
+  },
+  "1086": {
+    "name": "Trueshot Prodigy",
+    "name_zh": "Trueshot Prodigy",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/trueshot prodigy_large.png"
+  },
+  "1087": {
+    "name": "Typhoon",
+    "name_zh": "台风",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/typhoon_large.png"
+  },
+  "1088": {
+    "name": "Ultimate Revolution",
+    "name_zh": "终极刷新",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ultimaterevolution_large.png"
+  },
+  "1092": {
+    "name": "Vulnerability",
+    "name_zh": "易损",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/vulnerability_large.png"
+  },
+  "1095": {
+    "name": "Windspeaker's Blessing",
+    "name_zh": "风语者的祝福",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/windspeakersblessing_large.png"
+  },
+  "1097": {
+    "name": "Witchful Thinking",
+    "name_zh": "巫师式思考",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/witchfulthinking_large.png"
+  },
+  "1098": {
+    "name": "With Haste",
+    "name_zh": "急急小子",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/withhaste_large.png"
+  },
+  "1103": {
+    "name": "Bread And Butter",
+    "name_zh": "面包和黄油",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_gold.png"
+  },
+  "1104": {
+    "name": "Minionmancer",
+    "name_zh": "仆从大师",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/minionmancer_large.png"
+  },
+  "1105": {
+    "name": "Homeguard",
+    "name_zh": "家园卫士",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/homeguard_large.png"
+  },
+  "1107": {
+    "name": "Twice Thrice",
+    "name_zh": "Twice Thrice",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/twice thrice_large.png"
+  },
+  "1108": {
+    "name": "Self Destruct",
+    "name_zh": "Self Destruct",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/self destruct_large.png"
+  },
+  "1112": {
+    "name": "Ultimate Unstoppable",
+    "name_zh": "终极不可阻挡",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ultimateunstoppable_large.png"
+  },
+  "1113": {
+    "name": "Skilled Sniper",
+    "name_zh": "老练狙神",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/skilledsniper_large.png"
+  },
+  "1115": {
+    "name": "Scopiest Weapons",
+    "name_zh": "最万用的瞄准镜",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/scopiestweapons_large.png"
+  },
+  "1116": {
+    "name": "Flashy",
+    "name_zh": "闪现向前",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/flashy_large.png"
+  },
+  "1118": {
+    "name": "Critical Healing",
+    "name_zh": "会心治疗",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/criticalhealing_large.png"
+  },
+  "1129": {
+    "name": "Marksmage",
+    "name_zh": "神射法师",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/marksmage_large.png"
+  },
+  "1133": {
+    "name": "Magic Missile",
+    "name_zh": "魔法飞弹",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/magicmissile_large.png"
+  },
+  "1134": {
+    "name": "Draw Your Sword",
+    "name_zh": "亮出你的剑",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/drawyoursword_large.png"
+  },
+  "1136": {
+    "name": "Slap Around",
+    "name_zh": "扇巴掌",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/slaparound_large.png"
+  },
+  "1138": {
+    "name": "Goredrink",
+    "name_zh": "渴血",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/goredrink_large.png"
+  },
+  "1141": {
+    "name": "All For You",
+    "name_zh": "全心为你",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/allforyou_large.png"
+  },
+  "1149": {
+    "name": "Impassable",
+    "name_zh": "不动如山",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/impassable_large.png"
+  },
+  "1150": {
+    "name": "Bread And Jam",
+    "name_zh": "面包和果酱",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_gold.png"
+  },
+  "1151": {
+    "name": "Bread and Cheese",
+    "name_zh": "面包和奶酪",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_gold.png"
+  },
+  "1152": {
+    "name": "Steel Your Heart",
+    "name_zh": "钢化你心",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quest_steelyourheart_large.png"
+  },
+  "1154": {
+    "name": "Urf's Champion",
+    "name_zh": "海牛阿福的勇士",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quest_urfschampion_large.png"
+  },
+  "1156": {
+    "name": "Wooglet's Witchcap",
+    "name_zh": "沃格勒特的巫师帽",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quest_woogletswitchcap_large.png"
+  },
+  "1170": {
+    "name": "Scoped Weapons",
+    "name_zh": "万用瞄准镜",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/scopedweapons_large.png"
+  },
+  "1180": {
+    "name": "Big Brain",
+    "name_zh": "超强大脑",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bigbrain_large.png"
+  },
+  "1181": {
+    "name": "Heavy Hitter",
+    "name_zh": "重量级打击手",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/heavyhitter_large.png"
+  },
+  "1187": {
+    "name": "Flashbang",
+    "name_zh": "闪光弹",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/flashbang_large.png"
+  },
+  "1194": {
+    "name": "Fey Magic",
+    "name_zh": "精怪魔法",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/feymagic_large.png"
+  },
+  "1195": {
+    "name": "Giant Slayer",
+    "name_zh": "巨人杀手",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/giantslayer_large.png"
+  },
+  "1198": {
+    "name": "Holy Fire",
+    "name_zh": "Holy Fire",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/holy fire_large.png"
+  },
+  "1204": {
+    "name": "Stackosaurus Rex",
+    "name_zh": "叠角龙",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/stackosaurusrex_large.png"
+  },
+  "1205": {
+    "name": "ADAPt",
+    "name_zh": "物理转魔法",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/adapt_large.png"
+  },
+  "1206": {
+    "name": "escAPADe",
+    "name_zh": "魔法转物理",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/escapade_large.png"
+  },
+  "1208": {
+    "name": "Orbital Laser",
+    "name_zh": "Orbital Laser",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/orbital laser_large.png"
+  },
+  "1211": {
+    "name": "It's Killing Time",
+    "name_zh": "杀戮时间到了",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/itskillingtime_large.png"
+  },
+  "1214": {
+    "name": "Spin To Win",
+    "name_zh": "旋转至胜",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/spintowin_large.png"
+  },
+  "1220": {
+    "name": "Fan The Hammer",
+    "name_zh": "连拨击锤",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/fanthehammer_large.png"
+  },
+  "1225": {
+    "name": "Dual Wield",
+    "name_zh": "双刀流",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dualwield_large.png"
+  },
+  "1237": {
+    "name": "Transmute: Gold",
+    "name_zh": "质变：黄金阶",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/transmutegold_large.png"
+  },
+  "1238": {
+    "name": "Transmute: Prismatic",
+    "name_zh": "质变：棱彩阶",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/transmuteprismatic_large.png"
+  },
+  "1243": {
+    "name": "Transmute: Chaos",
+    "name_zh": "质变：混沌",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/transmutechaos_large.png"
+  },
+  "1250": {
+    "name": "Slow And Steady",
+    "name_zh": "Slow And Steady",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/slow and steady_large.png"
+  },
+  "1301": {
+    "name": "Divine Intervention",
+    "name_zh": "神圣干预",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/slowactingpainkillers_large.png"
+  },
+  "1305": {
+    "name": "Leg Day",
+    "name_zh": "练腿日",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/legday_large.png"
+  },
+  "1308": {
+    "name": "FireFox",
+    "name_zh": "火狐",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/firfox_large.png"
+  },
+  "1310": {
+    "name": "Clown College",
+    "name_zh": "小丑学院",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/clowncollege_large.png"
+  },
+  "1311": {
+    "name": "Overflow",
+    "name_zh": "溢流",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/overflow_large.png"
+  },
+  "1313": {
+    "name": "Cheating",
+    "name_zh": "Cheating",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/cheating_large.png"
+  },
+  "1314": {
+    "name": "Mighty Shield",
+    "name_zh": "强力护盾",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mightyshield_large.png"
+  },
+  "1315": {
+    "name": "Swift and Safe",
+    "name_zh": "快中求稳",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/swiftandsafe_large.png"
+  },
+  "1316": {
+    "name": "Wind Beneath Blade",
+    "name_zh": "Wind Beneath Blade",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/wind beneath blade_large.png"
+  },
+  "1317": {
+    "name": "Upgrade Cutlass",
+    "name_zh": "Upgrade Cutlass",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/upgrade cutlass_large.png"
+  },
+  "1318": {
+    "name": "Upgrade Zhonya's",
+    "name_zh": "升级：中娅",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/upgradezh_large.png"
+  },
+  "1319": {
+    "name": "Upgrade Immolate",
+    "name_zh": "升级：献祭",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/upgradeimmolate_large.png"
+  },
+  "1320": {
+    "name": "Upgrade Collector",
+    "name_zh": "升级：收集者",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/upgradecollector_large.png"
+  },
+  "1321": {
+    "name": "Gash",
+    "name_zh": "Gash",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/gash_large.png"
+  },
+  "1322": {
+    "name": "Get Excited!",
+    "name_zh": "罪恶快感",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/getexcited_large.png"
+  },
+  "1323": {
+    "name": "Cruelty",
+    "name_zh": "残忍",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/cruelty_large.png"
+  },
+  "1324": {
+    "name": "Protein Shake",
+    "name_zh": "蛋白粉奶昔",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/proteinshake_large.png"
+  },
+  "1325": {
+    "name": "Glass Cannon",
+    "name_zh": "玻璃大炮",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/glasscannon_large.png"
+  },
+  "1326": {
+    "name": "Nightstalking",
+    "name_zh": "夜狩",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/nightstalking_large.png"
+  },
+  "1327": {
+    "name": "Adamant",
+    "name_zh": "坚若磐石",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/adamant_large.png"
+  },
+  "1328": {
+    "name": "Critical Rhythm",
+    "name_zh": "暴击律动",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/criticalrhythm_large.png"
+  },
+  "1329": {
+    "name": "Biggest Snowball Ever",
+    "name_zh": "史上最大雪球",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/biggestsnowballever_large.png"
+  },
+  "1330": {
+    "name": "ReEnergize",
+    "name_zh": "ReEnergize",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/reenergize_large.png"
+  },
+  "1331": {
+    "name": "Empyrean Promise",
+    "name_zh": "至高天诺言",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/empyreampromise_large.png"
+  },
+  "1332": {
+    "name": "Ominous Pact",
+    "name_zh": "不祥契约",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/wisdomofages_large.png"
+  },
+  "1333": {
+    "name": "Escape Plan",
+    "name_zh": "逃跑计划",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/escapeplan_large.png"
+  },
+  "1334": {
+    "name": "Snowball Upgrade",
+    "name_zh": "升级：雪球",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/snowballupgrade_large.png"
+  },
+  "1335": {
+    "name": "Goldrend",
+    "name_zh": "夺金",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/goldrend_large.png"
+  },
+  "1336": {
+    "name": "Upgrade Infinity Edge",
+    "name_zh": "升级：无尽之刃",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/upgradeie_large.png"
+  },
+  "1337": {
+    "name": "King Me",
+    "name_zh": "尊我为王",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/kingme_large.png"
+  },
+  "1338": {
+    "name": "Upgrade Hubris",
+    "name_zh": "Upgrade Hubris",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/upgrade hubris_large.png"
+  },
+  "1339": {
+    "name": "Laser Heal",
+    "name_zh": "Laser Heal",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/laser heal_large.png"
+  },
+  "1340": {
+    "name": "Upgrade Mikael's Blessing",
+    "name_zh": "Upgrade Mikael's Blessing",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/upgrade mikael's blessing_large.png"
+  },
+  "1341": {
+    "name": "Hat on a Hat",
+    "name_zh": "Hat on a Hat",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/hat on a hat_large.png"
+  },
+  "1342": {
+    "name": "Snowball Roulette",
+    "name_zh": "Snowball Roulette",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/snowball roulette_large.png"
+  },
+  "1343": {
+    "name": "Sneakerhead",
+    "name_zh": "王中王，靴中靴",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/sneakerhead_large.png"
+  },
+  "1344": {
+    "name": "Final Form",
+    "name_zh": "最终形态",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/finalform_large.png"
+  },
+  "1345": {
+    "name": "Spiritual Purification",
+    "name_zh": "心灵净化",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/spiritualpurification_large.png"
+  },
+  "1346": {
+    "name": "Vampirism",
+    "name_zh": "吸血习性",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/vampired_large.png"
+  },
+  "1347": {
+    "name": "Poltergeist",
+    "name_zh": "吵闹鬼",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/poltergeist_large.png"
+  },
+  "1348": {
+    "name": "Flash 2",
+    "name_zh": "闪闪现现",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/flash2_large.png"
+  },
+  "1349": {
+    "name": "Ultimate Awakening",
+    "name_zh": "终极唤醒",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/zerohour_large.png"
+  },
+  "1353": {
+    "name": "Tank Engine",
+    "name_zh": "坦克引擎",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/tank_engine_large.png"
+  },
+  "1356": {
+    "name": "Critical Missile",
+    "name_zh": "暴击飞弹",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/criticalmissile_large.png"
+  },
+  "1358": {
+    "name": "Pinball",
+    "name_zh": "弹球",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/pinballsnowball_large.png"
+  },
+  "1361": {
+    "name": "Icathia's Fall",
+    "name_zh": "艾卡西亚的陷落",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quest_voidimmolation_large.png"
+  },
+  "1372": {
+    "name": "I'm a Baby Kitty Where is Mama",
+    "name_zh": "I'm a Baby Kitty Where is Mama",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/i'm a baby kitty where is mama_large.png"
+  },
+  "1373": {
+    "name": "Shrink Engine",
+    "name_zh": "缩小引擎",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/shrinkengine_large.png"
+  },
+  "1375": {
+    "name": "Soul Eater",
+    "name_zh": "吞噬灵魂",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/souleater_large.png"
+  },
+  "1379": {
+    "name": "Upgrade Sword of Blossoming Dawn",
+    "name_zh": "升级：花晓之剑",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/upgrademikaelsblessing_large.png"
+  },
+  "1384": {
+    "name": "Donation",
+    "name_zh": "捐赠",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/donation_large.png"
+  },
+  "1386": {
+    "name": "Spin Me Right Round",
+    "name_zh": "转得我眩晕了",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/youspinmerightround_large.png"
+  },
+  "1388": {
+    "name": "Infinite Recursion",
+    "name_zh": "无限循环往复",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/infiniterecursion_large.png"
+  },
+  "1389": {
+    "name": "Hand of Baron",
+    "name_zh": "男爵之手",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/handofbaron_large.png"
+  },
+  "1390": {
+    "name": "Phenomenal Evil",
+    "name_zh": "超凡邪恶",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/aram_phenomenalevil_large.png"
+  },
+  "1391": {
+    "name": "Red Envelopes",
+    "name_zh": "Red Envelopes",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/red envelopes_large.png"
+  },
+  "1392": {
+    "name": "Holy Snowball",
+    "name_zh": "神圣雪球",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/goldensnowball_large.png"
+  },
+  "1397": {
+    "name": "Cerberus",
+    "name_zh": "Cerberus",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/cerberus_large.png"
+  },
+  "1400": {
+    "name": "Final City Transit",
+    "name_zh": "最终都市列车",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/nightstalking_large.png"
+  },
+  "1401": {
+    "name": "Growth Spurt",
+    "name_zh": "生机迸发",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/growthspurt_large.png"
+  },
+  "1402": {
+    "name": "Stats on Stats on Stats!",
+    "name_zh": "属性叠属性叠属性！",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/statsonstatsonstats_large.png"
+  },
+  "1403": {
+    "name": "Stats on Stats!",
+    "name_zh": "属性叠属性！",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/statsonstats_large.png"
+  },
+  "1404": {
+    "name": "Stats!",
+    "name_zh": "属性！",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/stats_large.png"
+  },
+  "1405": {
+    "name": "Speed Demon",
+    "name_zh": "Speed Demon",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/speed demon_large.png"
+  },
+  "1406": {
+    "name": "Grandma's Chili Oil",
+    "name_zh": "Grandma's Chili Oil",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/grandma's chili oil_large.png"
+  },
+  "1409": {
+    "name": "Poro Blaster",
+    "name_zh": "Poro Blaster",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/poro blaster_large.png"
+  },
+  "1411": {
+    "name": "Upgrade Thornmail",
+    "name_zh": "Upgrade Thornmail",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/upgrade thornmail_large.png"
+  },
+  "1413": {
+    "name": "Stuck In Here With Me",
+    "name_zh": "和我一起困在这里",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/stuckinherewithme_large.png"
+  },
+  "1414": {
+    "name": "Droppybara",
+    "name_zh": "卡皮巴拉空投",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/orbitallaser_large.png"
+  },
+  "1415": {
+    "name": "Twin Fire",
+    "name_zh": "双生火焰",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/twinfire_large.png"
+  },
+  "1416": {
+    "name": "Hextech Soul",
+    "name_zh": "海克斯科技龙魂",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/infernalsoul_large.png"
+  },
+  "1418": {
+    "name": "Crack Open That Egg",
+    "name_zh": "Crack Open That Egg",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/crack open that egg_large.png"
+  },
+  "1420": {
+    "name": "Sonata",
+    "name_zh": "咏叹奏鸣",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/sonata_large.png"
+  },
+  "1421": {
+    "name": "Prom Queen",
+    "name_zh": "舞会女王",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/promqueen_large.png"
+  },
+  "1424": {
+    "name": "???",
+    "name_zh": "???",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/???_large.png"
+  },
+  "1996": {
+    "name": "Upgrade Sheen",
+    "name_zh": "升级：耀光",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/upgradesheen_large.png"
+  },
+  "2001": {
+    "name": "Heads Up Cupcake!",
+    "name_zh": "Heads Up Cupcake!",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/heads up cupcake!_large.png"
+  },
+  "2002": {
+    "name": "Void Rift",
+    "name_zh": "Void Rift",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/void rift_large.png"
+  },
+  "2003": {
+    "name": "Bounce of the Poro King",
+    "name_zh": "Bounce of the Poro King",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bounce of the poro king_large.png"
+  },
+  "2004": {
+    "name": "Empowered By The Faithful",
+    "name_zh": "信念者的强化",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/empoweredbythefaithful_large.png"
+  },
+  "2005": {
+    "name": "Triggered Inferno",
+    "name_zh": "扳机炼狱",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/madscientist_large.png"
+  },
+  "2006": {
+    "name": "Dropkick",
+    "name_zh": "飞身踢",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dropkick_large.png"
+  },
+  "2007": {
+    "name": "Devil on Your Shoulder",
+    "name_zh": "你肩上的恶魔",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/littledevil_large.png"
+  },
+  "2008": {
+    "name": "Weighted Popoffs",
+    "name_zh": "Weighted Popoffs",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/weighted popoffs_large.png"
+  },
+  "2009": {
+    "name": "Zealot",
+    "name_zh": "狂热者",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/zealot_large.png"
+  },
+  "2010": {
+    "name": "Double Tap",
+    "name_zh": "双发快射",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/doubletap_large.png"
+  },
+  "2016": {
+    "name": "Juiced",
+    "name_zh": "注魔",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/juiced_large.png"
+  },
+  "2018": {
+    "name": "Purist - Caster",
+    "name_zh": "纯粹主义者 - 术师",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/puristcaster_large.png"
+  },
+  "2024": {
+    "name": "Crit 'n Cast",
+    "name_zh": "由暴生急",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/critncast_large.png"
+  },
+  "2026": {
+    "name": "Kill Secured",
+    "name_zh": "杀意翻涌",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/killsecure_large.png"
+  },
+  "2031": {
+    "name": "DropBear",
+    "name_zh": "空投熊",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/drop_bear.png"
+  },
+  "2032": {
+    "name": "Shark Bait",
+    "name_zh": "鲨鱼诱饵",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/fishbait_large.png"
+  },
+  "2034": {
+    "name": "Shark Tempest",
+    "name_zh": "鲨鱼暴风",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/sharktempest_large.png"
+  },
+  "2042": {
+    "name": "Hide on Bush",
+    "name_zh": "藏身草丛",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/brushpower_large.png"
+  },
+  "2043": {
+    "name": "Nature is Healing",
+    "name_zh": "自然即是治愈",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/natureishealing_large.png"
+  },
+  "2046": {
+    "name": "Poro Stampede",
+    "name_zh": "魄罗蛮冲",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/questporocharge_large.png"
+  },
+  "2054": {
+    "name": "Tripleshot",
+    "name_zh": "三重射击",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_prismatic.png"
+  },
+  "2055": {
+    "name": "Multishot",
+    "name_zh": "多重射击",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_prismatic.png"
+  },
+  "2062": {
+    "name": "Echo Cast",
+    "name_zh": "回响施放",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_prismatic.png"
+  },
+  "2063": {
+    "name": "Dimension Shift",
+    "name_zh": "位面转移",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/whenthedarknesscomes_large.png"
+  },
+  "2064": {
+    "name": "Quickstep",
+    "name_zh": "快步",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_gold.png"
+  },
+  "2065": {
+    "name": "Terror",
+    "name_zh": "惊惧",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/desecrator_large.png"
+  },
+  "2072": {
+    "name": "Spell Split",
+    "name_zh": "咒语裂变",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_prismatic.png"
+  },
+  "2073": {
+    "name": "Siphon",
+    "name_zh": "虹吸",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_silver.png"
+  },
+  "2076": {
+    "name": "Stay Resolute",
+    "name_zh": "保持坚定",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_silver.png"
+  },
+  "2077": {
+    "name": "Ravenous Bind",
+    "name_zh": "贪欲束缚",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/upgradehubris_large.png"
+  },
+  "2078": {
+    "name": "Chain Reaction",
+    "name_zh": "连锁反应",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_prismatic.png"
+  },
+  "2080": {
+    "name": "Snowblast",
+    "name_zh": "冰雪爆裂",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/snowbomb_large.png"
+  },
+  "2082": {
+    "name": "Our Healing",
+    "name_zh": "我们的治疗",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/equillibrium_large.png"
+  },
+  "2083": {
+    "name": "Tooth Fairy",
+    "name_zh": "牙仙子",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/questburstingteeth_large.png"
+  },
+  "2087": {
+    "name": "Archmage",
+    "name_zh": "大法师",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/eureka_large.png"
+  },
+  "2088": {
+    "name": "Snowday",
+    "name_zh": "下雪天",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/snowday_large.png"
+  },
+  "2089": {
+    "name": "Yowch, My Coins!",
+    "name_zh": "哎哟，我的硬币！",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/youchmycoins_large.png"
+  },
+  "2091": {
+    "name": "Endless Decimation",
+    "name_zh": "无尽大杀四方",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/endlessdecimate_large.png"
+  },
+  "2095": {
+    "name": "High Roller",
+    "name_zh": "掷骰狂人",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/highroller_large.png"
+  },
+  "2096": {
+    "name": "Lil' Extra Help",
+    "name_zh": "小小的额外帮助",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_gold.png"
+  },
+  "2097": {
+    "name": "Void Dash",
+    "name_zh": "虚空冲刺",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_gold.png"
+  },
+  "2098": {
+    "name": "En Passant",
+    "name_zh": "吃过路兵",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dashing_large.png"
+  },
+  "2099": {
+    "name": "Rite of Ascension",
+    "name_zh": "飞升仪式",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/glasscannon_large.png"
+  },
+  "2100": {
+    "name": "Pursuit of Haste",
+    "name_zh": "急速之追求",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_gold.png"
+  },
+  "2102": {
+    "name": "Pressure Cooker",
+    "name_zh": "高压锅",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/questpressurecooker_large.png"
+  },
+  "2103": {
+    "name": "From Downtown",
+    "name_zh": "狙神飞星",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/questbangbang_large.png"
+  },
+  "2104": {
+    "name": "Spirit Bomb",
+    "name_zh": "灵魄炸弹",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/spiritbomb_large.png"
+  },
+  "2107": {
+    "name": "Hellbent",
+    "name_zh": "濒死悟道",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/hellbent_large.png"
+  },
+  "2108": {
+    "name": "Support Main",
+    "name_zh": "主玩辅助",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/questsupportmain_large.png"
+  },
+  "2109": {
+    "name": "Snap Back",
+    "name_zh": "复位",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_gold.png"
+  },
+  "2111": {
+    "name": "BONK!",
+    "name_zh": "邦！",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bonk_large.png"
+  },
+  "2115": {
+    "name": "Squishy Slappy Grab",
+    "name_zh": "软弹啪叽抓",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/squishyslappygrab_large.png"
+  },
+  "2116": {
+    "name": "Pursuit of Power",
+    "name_zh": "威能之追求",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/marksmage_large.png"
+  },
+  "2118": {
+    "name": "Ult Bot",
+    "name_zh": "大招工具人",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/skipthebasic_large.png"
+  },
+  "2119": {
+    "name": "Overextender",
+    "name_zh": "过量延伸者",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/overextender_large.png"
+  },
+  "2123": {
+    "name": "Overloaded",
+    "name_zh": "超负荷",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_prismatic.png"
+  },
+  "2125": {
+    "name": "It's Go Time",
+    "name_zh": "前进时间到",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_silver.png"
+  },
+  "2126": {
+    "name": "Reload",
+    "name_zh": "装填",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/lightningstrikes_large.png"
+  },
+  "2127": {
+    "name": "Forged By The Master",
+    "name_zh": "大师铸就",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/forgedbythemaster_large.png"
+  },
+  "2128": {
+    "name": "Combusting Interest",
+    "name_zh": "炽燃利息",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bloodmoney2_large.png"
+  },
+  "2129": {
+    "name": "Terrain'd",
+    "name_zh": "地形专家",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/lightningstrikes_large.png"
+  },
+  "2131": {
+    "name": "Don't Change the Channel",
+    "name_zh": "别停止引导",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/dontchangethechannel_large.png"
+  },
+  "2132": {
+    "name": "Warlock Juicebox",
+    "name_zh": "术士果汁盒",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/warlockjuicebox_large.png"
+  },
+  "2133": {
+    "name": "Mercy's Strike",
+    "name_zh": "仁慈打击",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_gold.png"
+  },
+  "2134": {
+    "name": "Surge Field",
+    "name_zh": "电涌力场",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/surgefield_large.png"
+  },
+  "2135": {
+    "name": "Pin Cushion",
+    "name_zh": "针插垫",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/symphonyofwar_large.png"
+  },
+  "2136": {
+    "name": "Trusty Weapon",
+    "name_zh": "可靠武器",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_silver.png"
+  },
+  "2137": {
+    "name": "Pat On The Back",
+    "name_zh": "轻拍背部",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/patontheback_large.png"
+  },
+  "2138": {
+    "name": "Adaptive Ward",
+    "name_zh": "自适应防护",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_silver.png"
+  },
+  "2139": {
+    "name": "Porcupine",
+    "name_zh": "豪猪",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/pincushion_large.png"
+  },
+  "2144": {
+    "name": "Bolstered",
+    "name_zh": "加固护盾",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/genericabilityaugmenticon_silver.png"
+  },
+  "2148": {
+    "name": "Double Strike",
+    "name_zh": "双重打击",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/adamant_large.png"
+  },
+  "12317": {
+    "name": "Pandora's Box",
+    "name_zh": "潘朵拉的盒子",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/pandoras_box_large.png"
+  },
+  "33201": {
+    "name": "Guiding Hex",
+    "name_zh": "Guiding Hex",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/guiding hex_large.png"
+  },
+  "33202": {
+    "name": "Pillory Swipe",
+    "name_zh": "Pillory Swipe",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/pillory swipe_large.png"
+  },
+  "33203": {
+    "name": "Tentacle Slam",
+    "name_zh": "Tentacle Slam",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/tentacle slam_large.png"
+  },
+  "33204": {
+    "name": "Meow Meow",
+    "name_zh": "Meow Meow",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/meow meow_large.png"
+  },
+  "33205": {
+    "name": "Shield Slam",
+    "name_zh": "Shield Slam",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/shield slam_large.png"
+  },
+  "33206": {
+    "name": "Bunny Hop",
+    "name_zh": "Bunny Hop",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bunny hop_large.png"
+  },
+  "33207": {
+    "name": "Sound Wave",
+    "name_zh": "Sound Wave",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/sound wave_large.png"
+  },
+  "33208": {
+    "name": "Winged Dagger",
+    "name_zh": "Winged Dagger",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/winged dagger_large.png"
+  },
+  "33209": {
+    "name": "Steel Tempest",
+    "name_zh": "Steel Tempest",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/steel tempest_large.png"
+  },
+  "33210": {
+    "name": "Blade-o-rang",
+    "name_zh": "Blade-o-rang",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/blade-o-rang_large.png"
+  },
+  "33211": {
+    "name": "Vortex Glove",
+    "name_zh": "Vortex Glove",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/vortex glove_large.png"
+  },
+  "33212": {
+    "name": "Gatling Bunny-Guns",
+    "name_zh": "Gatling Bunny-Guns",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/gatling bunny-guns_large.png"
+  },
+  "33213": {
+    "name": "Lioness's Lament",
+    "name_zh": "Lioness's Lament",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/lioness's lament_large.png"
+  },
+  "33214": {
+    "name": "Anti-Shark Sea Mine",
+    "name_zh": "Anti-Shark Sea Mine",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/anti-shark sea mine_large.png"
+  },
+  "33215": {
+    "name": "Searing Shortbow",
+    "name_zh": "Searing Shortbow",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/searing shortbow_large.png"
+  },
+  "33216": {
+    "name": "Iceblast Armor",
+    "name_zh": "Iceblast Armor",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/iceblast armor_large.png"
+  },
+  "33217": {
+    "name": "Radiant Field",
+    "name_zh": "Radiant Field",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/radiant field_large.png"
+  },
+  "33218": {
+    "name": "Cyclonic Slicers",
+    "name_zh": "Cyclonic Slicers",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/cyclonic slicers_large.png"
+  },
+  "33219": {
+    "name": "Ani-Mines",
+    "name_zh": "Ani-Mines",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ani-mines_large.png"
+  },
+  "33220": {
+    "name": "The Annihilator",
+    "name_zh": "The Annihilator",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/the annihilator_large.png"
+  },
+  "33221": {
+    "name": "Battle Bunny Crossbow",
+    "name_zh": "Battle Bunny Crossbow",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/battle bunny crossbow_large.png"
+  },
+  "33222": {
+    "name": "Paw Print Poisoner",
+    "name_zh": "Paw Print Poisoner",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/paw print poisoner_large.png"
+  },
+  "33223": {
+    "name": "UwU Blaster",
+    "name_zh": "UwU Blaster",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/uwu blaster_large.png"
+  },
+  "33224": {
+    "name": "Echoing Batblades",
+    "name_zh": "Echoing Batblades",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/echoing batblades_large.png"
+  },
+  "33225": {
+    "name": "Bunny Mega-Blast",
+    "name_zh": "Bunny Mega-Blast",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bunny mega-blast_large.png"
+  },
+  "33226": {
+    "name": "Statikk Sword",
+    "name_zh": "Statikk Sword",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/statikk sword_large.png"
+  },
+  "33227": {
+    "name": "T.I.B.B.E.R.S",
+    "name_zh": "T.I.B.B.E.R.S",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/t.i.b.b.e.r.s_large.png"
+  },
+  "33228": {
+    "name": "Final City Transit",
+    "name_zh": "Final City Transit",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/final city transit_large.png"
+  },
+  "33229": {
+    "name": "YuumiBot",
+    "name_zh": "YuumiBot",
+    "rarity": "silver",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/yuumibot_large.png"
+  },
+  "33301": {
+    "name": "Critical Expansion",
+    "name_zh": "Critical Expansion",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/critical expansion_large.png"
+  },
+  "33302": {
+    "name": "Uptime Upgrade",
+    "name_zh": "Uptime Upgrade",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/uptime upgrade_large.png"
+  },
+  "33303": {
+    "name": "Spray and Pray",
+    "name_zh": "Spray and Pray",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/spray and pray_large.png"
+  },
+  "33304": {
+    "name": "Juggernaut",
+    "name_zh": "Juggernaut",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/juggernaut_large.png"
+  },
+  "33305": {
+    "name": "Circle of Stats",
+    "name_zh": "Circle of Stats",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/circle of stats_large.png"
+  },
+  "33306": {
+    "name": "Cross Country",
+    "name_zh": "Cross Country",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/cross country_large.png"
+  },
+  "33307": {
+    "name": "Glass Cannon",
+    "name_zh": "Glass Cannon",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/glass cannon_large.png"
+  },
+  "33308": {
+    "name": "Bullet-Mania",
+    "name_zh": "Bullet-Mania",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bullet-mania_large.png"
+  },
+  "33309": {
+    "name": "Card Collector",
+    "name_zh": "Card Collector",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/card collector_large.png"
+  },
+  "33310": {
+    "name": "Pick-Me-Up",
+    "name_zh": "Pick-Me-Up",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/pick-me-up_large.png"
+  },
+  "33311": {
+    "name": "Experienced Fighter",
+    "name_zh": "Experienced Fighter",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/experienced fighter_large.png"
+  },
+  "33312": {
+    "name": "Ultimate Speed-Up",
+    "name_zh": "Ultimate Speed-Up",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ultimate speed-up_large.png"
+  },
+  "33313": {
+    "name": "Armor Up",
+    "name_zh": "Armor Up",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/armor up_large.png"
+  },
+  "33314": {
+    "name": "Elite Bomber",
+    "name_zh": "Elite Bomber",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/elite bomber_large.png"
+  },
+  "33315": {
+    "name": "Bite Sized",
+    "name_zh": "Bite Sized",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bite sized_large.png"
+  },
+  "33316": {
+    "name": "Larger Than Life",
+    "name_zh": "Larger Than Life",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/larger than life_large.png"
+  },
+  "33317": {
+    "name": "Celebration!",
+    "name_zh": "Celebration!",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/celebration!_large.png"
+  },
+  "33318": {
+    "name": "Ebb And Flow",
+    "name_zh": "Ebb And Flow",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/ebb and flow_large.png"
+  },
+  "33319": {
+    "name": "Mission Critical",
+    "name_zh": "Mission Critical",
+    "rarity": "gold",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/mission critical_large.png"
+  },
+  "33401": {
+    "name": "Hopped-Up Hex",
+    "name_zh": "Hopped-Up Hex",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/hopped-up hex_large.png"
+  },
+  "33402": {
+    "name": "Savage Slice",
+    "name_zh": "Savage Slice",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/savage slice_large.png"
+  },
+  "33403": {
+    "name": "Grizzly Smash",
+    "name_zh": "Grizzly Smash",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/grizzly smash_large.png"
+  },
+  "33404": {
+    "name": "Battle Cat Barrage",
+    "name_zh": "Battle Cat Barrage",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/battle cat barrage_large.png"
+  },
+  "33405": {
+    "name": "Light of the Lion",
+    "name_zh": "Light of the Lion",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/light of the lion_large.png"
+  },
+  "33406": {
+    "name": "Carrot Crash",
+    "name_zh": "Carrot Crash",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/carrot crash_large.png"
+  },
+  "33407": {
+    "name": "Anima Echo",
+    "name_zh": "Anima Echo",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/anima echo_large.png"
+  },
+  "33408": {
+    "name": "Lover's Ricochet",
+    "name_zh": "Lover's Ricochet",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/lover's ricochet_large.png"
+  },
+  "33409": {
+    "name": "Wandering Storms",
+    "name_zh": "Wandering Storms",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/wandering storms_large.png"
+  },
+  "33410": {
+    "name": "Quad-o-rang",
+    "name_zh": "Quad-o-rang",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/quad-o-rang_large.png"
+  },
+  "33411": {
+    "name": "Tempest's Gauntlet",
+    "name_zh": "Tempest's Gauntlet",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/tempest's gauntlet_large.png"
+  },
+  "33412": {
+    "name": "Double Bun-Bun Barrage",
+    "name_zh": "Double Bun-Bun Barrage",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/double bun-bun barrage_large.png"
+  },
+  "33413": {
+    "name": "Enveloping Light",
+    "name_zh": "Enveloping Light",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/enveloping light_large.png"
+  },
+  "33414": {
+    "name": "Neverending Mobstomper",
+    "name_zh": "Neverending Mobstomper",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/neverending mobstomper_large.png"
+  },
+  "33415": {
+    "name": "Evolved Embershot",
+    "name_zh": "Evolved Embershot",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/evolved embershot_large.png"
+  },
+  "33416": {
+    "name": "Deep Freeze",
+    "name_zh": "Deep Freeze",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/deep freeze_large.png"
+  },
+  "33417": {
+    "name": "Explosive Embrace",
+    "name_zh": "Explosive Embrace",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/explosive embrace_large.png"
+  },
+  "33418": {
+    "name": "Unceasing Cyclone",
+    "name_zh": "Unceasing Cyclone",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/unceasing cyclone_large.png"
+  },
+  "33419": {
+    "name": "Jinx's Tri-Namite ",
+    "name_zh": "Jinx's Tri-Namite ",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/jinx's tri-namite _large.png"
+  },
+  "33420": {
+    "name": "Animapocalypse",
+    "name_zh": "Animapocalypse",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/animapocalypse_large.png"
+  },
+  "33421": {
+    "name": "Bunny Prime Ballista",
+    "name_zh": "Bunny Prime Ballista",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bunny prime ballista_large.png"
+  },
+  "33422": {
+    "name": "Bearfoot Chem-Dispenser",
+    "name_zh": "Bearfoot Chem-Dispenser",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/bearfoot chem-dispenser_large.png"
+  },
+  "33423": {
+    "name": "Vayne's Chromablades",
+    "name_zh": "Vayne's Chromablades",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/vayne's chromablades_large.png"
+  },
+  "33424": {
+    "name": "Rapid Rabbit Raindown",
+    "name_zh": "Rapid Rabbit Raindown",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/rapid rabbit raindown_large.png"
+  },
+  "33425": {
+    "name": "Prumbis's Electrocarver",
+    "name_zh": "Prumbis's Electrocarver",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/prumbis's electrocarver_large.png"
+  },
+  "33426": {
+    "name": "T.I.B.B.E.R.S (B.E.E.G Edition)",
+    "name_zh": "T.I.B.B.E.R.S (B.E.E.G Edition)",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/t.i.b.b.e.r.s (b.e.e.g edition)_large.png"
+  },
+  "33427": {
+    "name": "FC Limited Express",
+    "name_zh": "FC Limited Express",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/fc limited express_large.png"
+  },
+  "33428": {
+    "name": "YuumiBot_Final_FINAL ",
+    "name_zh": "YuumiBot_Final_FINAL ",
+    "rarity": "prismatic",
+    "icon_url": "https://cdn.dtodo.cn/hextech/augment-icons/yuumibot_final_final _large.png"
+  }
+}

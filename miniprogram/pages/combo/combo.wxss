@@ -109,11 +109,6 @@
   color: var(--color-warning);
 }
 
-.combo-samples {
-  font-size: var(--font-size-xs);
-  color: var(--color-text-placeholder);
-}
-
 /* ===== 海克斯组合 ===== */
 .combo-augments {
   display: flex;

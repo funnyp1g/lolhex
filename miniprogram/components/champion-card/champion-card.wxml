@@ -21,11 +21,11 @@
     </view>
     <!-- 角色标签 -->
     <view class="champ-roles">
-      <text wx:for="{{champion.roles}}" wx:key="*this"
+      <view wx:for="{{champion.roles}}" wx:key="*this"
         class="champ-role-tag"
-        style="color: {{roleColors[item] || '#1890ff'}}; background: {{roleColors[item] || '#1890ff'}}1a;">
+        style="color: {{roleColors[item] || '#1890ff'}}; background-color: {{roleColors[item] || '#1890ff'}}1a;">
         {{item}}
-      </text>
+      </view>
     </view>
     <!-- 统计行 -->
     <view wx:if="{{showStats}}" class="champ-stats-row">

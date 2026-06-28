@@ -3,7 +3,7 @@ const cloud = require('../../utils/cloud')
 const cache = require('../../utils/cache')
 const image = require('../../utils/image')
 const { CACHE_TTL, RARITY_LABELS, RARITY_ICONS } = require('../../utils/constants')
-const { formatWinRate, formatPickRate, formatSampleSize, formatNumber } = require('../../utils/format')
+const { formatWinRate, formatPickRate, formatNumber } = require('../../utils/format')
 
 Page({
   data: {
@@ -20,6 +20,7 @@ Page({
     // 全局排名
     augmentGlobalRank: 0,
     augmentTotalCount: 0,
+    augmentRankPercent: 0,
     // 状态
     loading: true,
     error: false,
@@ -71,7 +72,6 @@ Page({
       icon_url: image.resolveImageUrl(augment.icon_url),
       win_rate_display: formatWinRate(augment.win_rate),
       pick_rate_display: formatPickRate(augment.pick_rate),
-      sample_display: formatSampleSize(augment.sample_size || 0),
       rarity_label: RARITY_LABELS[augment.rarity] || augment.rarity,
       rarity_icon: RARITY_ICONS[augment.rarity] || ''
     }
@@ -82,7 +82,6 @@ Page({
       champion_icon: image.resolveImageUrl(c.champion_icon || c.icon_url),
       rank: idx + 1,
       win_rate_display: formatWinRate(c.win_rate),
-      sample_display: formatSampleSize(c.sample_size || 0),
       win_rate_value: c.win_rate < 1 ? c.win_rate * 100 : c.win_rate
     }))
 
@@ -91,7 +90,6 @@ Page({
       ...c,
       champion_icon: image.resolveImageUrl(c.champion_icon || c.icon_url),
       win_rate_display: formatWinRate(c.win_rate),
-      sample_display: formatSampleSize(c.sample_size || 0),
       win_rate_value: c.win_rate < 1 ? c.win_rate * 100 : c.win_rate
     }))
 
@@ -99,8 +97,7 @@ Page({
     const recommendedItems = (items || []).map(item => ({
       ...item,
       icon_url: image.resolveImageUrl(item.icon_url),
-      win_rate_display: formatWinRate(item.win_rate),
-      sample_display: formatSampleSize(item.sample_size || 0)
+      win_rate_display: formatWinRate(item.win_rate)
     }))
 
     this.setData({
@@ -110,6 +107,9 @@ Page({
       recommendedItems,
       augmentGlobalRank: augment.global_rank || 0,
       augmentTotalCount: augment.total_augments || 0,
+      augmentRankPercent: augment.total_augments > 0
+        ? Math.round((1 - (augment.global_rank || 0) / augment.total_augments) * 100)
+        : 0,
       winRateValue: augment.win_rate < 1 ? augment.win_rate * 100 : augment.win_rate,
       pickRateValue: augment.pick_rate < 1 ? augment.pick_rate * 100 : augment.pick_rate
     })

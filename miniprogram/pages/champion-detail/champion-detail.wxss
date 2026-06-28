@@ -63,63 +63,48 @@
 }
 
 .hero-role-tag {
+  display: inline-block;
   padding: 4rpx 16rpx;
   border-radius: var(--radius-round);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  text-align: center;
+  vertical-align: middle;
 }
 
-/* ===== 数据概览 ===== */
-.stats-overview {
+/* 英雄卡片内联胜率/选取率 */
+.hero-inline-stats {
   display: flex;
   align-items: center;
-  background-color: var(--color-bg-card);
-  border-radius: var(--radius-lg);
-  padding: var(--spacing-md);
-  box-shadow: var(--shadow-sm);
-  margin-bottom: var(--spacing-md);
+  gap: 6rpx;
+  margin-top: var(--spacing-sm);
+  padding-top: var(--spacing-sm);
+  border-top: 1rpx solid var(--color-border-light, #f0f0f0);
 }
 
-.stat-item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8rpx;
-}
-
-.stat-value {
-  font-size: var(--font-size-xl);
+.hero-inline-stat {
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
-  color: var(--color-text-primary);
 }
 
-.stat-winrate {
+.hero-inline-stat.winrate {
   color: var(--color-warning);
 }
 
-.stat-pickrate {
+.hero-inline-stat.pickrate {
   color: var(--color-primary);
 }
 
-.stat-label {
+.hero-inline-stat-label {
   font-size: var(--font-size-xs);
-  color: var(--color-text-secondary);
+  color: var(--color-text-placeholder);
+  margin-right: 8rpx;
 }
 
-.stat-divider {
-  width: 1rpx;
-  height: 60rpx;
-  background-color: var(--color-border);
-}
-
-/* 进度条区域 */
-.hero-rate-section {
-  background-color: var(--color-bg-card);
-  border-radius: var(--radius-lg);
-  padding: var(--spacing-md);
-  box-shadow: var(--shadow-sm);
-  margin-bottom: var(--spacing-lg);
+.hero-inline-stat-divider {
+  color: var(--color-border);
+  margin: 0 4rpx;
 }
 
 /* ===== 通用区块 ===== */
@@ -211,6 +196,193 @@
   font-weight: var(--font-weight-medium);
 }
 
+/* ===== 装备配置-流派（aramgg 1:1 复刻） ===== */
+.build-group {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.build-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1rpx solid var(--color-border-light);
+}
+
+.build-group-tags {
+  display: flex;
+  gap: 8rpx;
+}
+
+.build-tag {
+  font-size: 20rpx;
+  font-weight: var(--font-weight-bold);
+  padding: 2rpx 14rpx;
+  border-radius: 6rpx;
+  color: #fff;
+  background: #555;
+}
+
+.build-tag-AP { background: #7c3aed; }
+.build-tag-AD { background: #dc2626; }
+.build-tag-Tank { background: #059669; }
+.build-tag-Bruiser { background: #d97706; }
+.build-tag-Crit { background: #db2777; }
+.build-tag-On-Hit { background: #0891b2; }
+.build-tag-Support { background: #4f46e5; }
+.build-tag-Assassin { background: #e11d48; }
+
+.build-group-meta {
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+}
+
+.build-meta-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.build-meta-text.winrate {
+  color: var(--color-warning);
+  font-weight: var(--font-weight-medium);
+}
+
+.build-meta-sep {
+  font-size: var(--font-size-xs);
+  color: var(--color-border);
+}
+
+/* ===== 核心装备卡片（大图+底部名称） ===== */
+.core-builds-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.core-build-card {
+  background: var(--color-bg-page);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+}
+
+.core-build-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-sm);
+}
+
+.core-build-rank {
+  font-size: 24rpx;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.core-build-winrate {
+  font-size: 22rpx;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-warning);
+}
+
+/* 大图3列布局 */
+.core-build-icons-lg {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.core-build-item-lg {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+  min-width: 0;
+}
+
+.core-build-icon-lg {
+  width: 104rpx;
+  height: 104rpx;
+  border-radius: var(--radius-md);
+  background-color: #1a1a2e;
+}
+
+.core-build-name-lg {
+  font-size: 20rpx;
+  color: var(--color-text-secondary);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+/* 出门装行 */
+.simple-item-row {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  padding: var(--spacing-xs) 0;
+}
+
+.simple-item-cell {
+  display: flex;
+  align-items: center;
+  gap: 6rpx;
+  padding: 6rpx 16rpx 6rpx 8rpx;
+  background: var(--color-bg-page);
+  border-radius: 8rpx;
+}
+
+.simple-item-icon {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 4rpx;
+  background-color: #1a1a2e;
+}
+
+.simple-item-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* 备选装备网格 */
+.item-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.item-grid-cell {
+  width: calc(25% - 18rpx);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rpx;
+}
+
+.item-grid-icon {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: var(--radius-md);
+  background-color: #1a1a2e;
+}
+
+.item-grid-name {
+  font-size: 18rpx;
+  color: var(--color-text-secondary);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
 /* 神装行 */
 .fullbuild-list {
   display: flex;
@@ -262,77 +434,41 @@
   font-weight: var(--font-weight-medium);
 }
 
-.fullbuild-samples {
+/* ===== 海克斯展开/收起按钮 ===== */
+.aug-expand-wrap {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-md) 0;
+}
+
+.aug-expand-btn {
+  display: flex;
+  align-items: center;
+  gap: 6rpx;
+  padding: 12rpx 32rpx;
+  border-radius: 32rpx;
+  background: var(--color-bg-page);
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  transition: background-color var(--transition-fast);
+}
+
+.aug-expand-btn:active {
+  background: var(--color-bg-hover);
+}
+
+.aug-expand-arrow {
   font-size: var(--font-size-xs);
-  color: var(--color-text-placeholder);
+  transition: transform var(--transition-base);
+}
+
+.aug-expand-arrow.expanded {
+  transform: rotate(180deg);
 }
 
 /* 重试按钮 */
 .retry-btn {
   margin-top: var(--spacing-md);
-}
-
-/* ===== T级总览卡片 ===== */
-.tier-overview-card {
-  background-color: var(--color-bg-card);
-  border-radius: var(--radius-lg);
-  padding: var(--spacing-lg);
-  box-shadow: var(--shadow-sm);
-  margin-bottom: var(--spacing-lg);
-}
-
-.tier-overview-main {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
-}
-
-.tier-overview-label {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-secondary);
-}
-
-.tier-overview-stats {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--spacing-md);
-}
-
-.tier-stat-item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rpx;
-}
-
-.tier-stat-value {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-primary);
-}
-
-.tier-stat-label {
-  font-size: var(--font-size-xs);
-  color: var(--color-text-placeholder);
-}
-
-/* 强度条 */
-.tier-strength-bar {
-  width: 100%;
-  height: 8rpx;
-  background-color: var(--color-bg-page);
-  border-radius: 4rpx;
-  overflow: hidden;
-}
-
-.tier-strength-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #52C41A, #FADB14, #FA8C16, #FF4D4F);
-  border-radius: 4rpx;
-  transition: width 0.6s ease;
 }
 
 /* 阶段表现副标题 */

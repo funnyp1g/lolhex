@@ -6,11 +6,10 @@
   background-color: var(--color-bg-page);
 }
 
-/* ===== 头部 ===== */
-.aug-header {
+/* ===== 头部卡片 ===== */
+.aug-header-card {
   display: flex;
-  align-items: flex-start;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-md);
   background-color: var(--color-bg-card);
   border-radius: var(--radius-lg);
   padding: var(--spacing-lg);
@@ -18,8 +17,7 @@
   margin-bottom: var(--spacing-md);
 }
 
-.aug-icon-wrap {
-  position: relative;
+.aug-header-left {
   flex-shrink: 0;
 }
 
@@ -27,10 +25,9 @@
   width: 120rpx;
   height: 120rpx;
   border-radius: var(--radius-lg);
-  background-color: var(--color-bg-page);
+  background: #2a2a2e;
 }
 
-/* 海克斯图标占位符 */
 .aug-icon-placeholder {
   display: flex;
   align-items: center;
@@ -43,10 +40,75 @@
   font-size: 48rpx;
 }
 
-.aug-tier {
-  position: absolute;
-  bottom: -8rpx;
-  right: -8rpx;
+.aug-header-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.aug-title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: 8rpx;
+}
+
+.aug-name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.aug-rarity {
+  font-size: 20rpx;
+  padding: 2rpx 12rpx;
+  border-radius: 8rpx;
+  font-weight: var(--font-weight-medium);
+  flex-shrink: 0;
+}
+
+.rarity-prismatic { background: #f0e6ff; color: #7c3aed; }
+.rarity-gold { background: #fff7e6; color: #d48806; }
+.rarity-silver { background: #f0f0f0; color: #666; }
+
+.aug-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 12rpx;
+}
+
+.aug-header-stats {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding-top: 12rpx;
+  border-top: 1rpx solid var(--color-border-light, #f0f0f0);
+}
+
+.aug-header-stat {
+  flex: 1;
+  text-align: center;
+}
+
+.aug-header-stat-value {
+  display: block;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.aug-header-stat-value.winrate { color: var(--color-primary); }
+.aug-header-stat-value.pickrate { color: var(--color-warning); }
+
+.aug-header-stat-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-placeholder);
+}
+
+.aug-header-stat-divider {
+  width: 1rpx;
+  height: 48rpx;
+  background: var(--color-border-light, #f0f0f0);
 }
 
 .aug-body {

@@ -16,7 +16,7 @@ async function getCurrentPatch() {
   const res = await db.collection('patches')
     .where({ is_current: true }).field({ version: true }).limit(1).get()
   if (res.data.length === 0) throw new Error('未找到当前版本信息')
-  return res.data[0].version
+  return Number(res.data[0].version)
 }
 
 exports.main = async (event) => {

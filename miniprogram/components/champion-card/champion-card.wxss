@@ -82,10 +82,14 @@
 }
 
 .champ-role-tag {
-  padding: 2rpx 14rpx;
+  display: inline-block;
+  padding: 4rpx 16rpx;
   border-radius: var(--radius-round);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .champ-stats-row {

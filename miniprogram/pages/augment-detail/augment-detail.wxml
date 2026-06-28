@@ -13,54 +13,33 @@
 <!-- 内容区 -->
 <view wx:elif="{{augment}}" class="page-augment-detail">
 
-  <!-- ===== 海克斯头部 ===== -->
-  <view class="aug-header">
-    <view class="aug-icon-wrap">
+  <!-- ===== 海克斯头部卡片（含胜率选取率） ===== -->
+  <view class="aug-header-card">
+    <view class="aug-header-left">
       <image wx:if="{{augment.icon_url}}" class="aug-icon" src="{{augment.icon_url}}" mode="aspectFill" />
       <view wx:else class="aug-icon aug-icon-placeholder">
         <text class="aug-icon-placeholder-text">⚡</text>
       </view>
-      <view wx:if="{{augment.tier}}" class="aug-tier">
-        <tier-badge tier="{{augment.tier}}" size="large" />
-      </view>
     </view>
-    <view class="aug-body">
+    <view class="aug-header-body">
       <view class="aug-title-row">
         <text class="aug-name">{{augment.name_zh || augment.augment_name}}</text>
         <view wx:if="{{augment.rarity}}" class="aug-rarity rarity-{{augment.rarity}}">
-          {{augment.rarity_icon}}{{augment.rarity_label}}
+          {{augment.rarity_label}}
         </view>
       </view>
-      <text class="aug-desc">{{augment.description_zh}}</text>
-    </view>
-  </view>
-
-  <!-- ===== 全局排名卡片 ===== -->
-  <view class="rank-card" wx:if="{{augmentGlobalRank > 0}}">
-    <view class="rank-card-inner">
-      <text class="rank-card-title">🏆 全局排名</text>
-      <text class="rank-card-value">#{{augmentGlobalRank}} / {{augmentTotalCount}}</text>
-      <text class="rank-card-desc">
-        高于 {{augmentTotalCount > 0 ? ((1 - augmentGlobalRank / augmentTotalCount) * 100).toFixed(0) : 0}}% 的海克斯
-      </text>
-    </view>
-  </view>
-
-  <!-- ===== 数据概览 ===== -->
-  <view class="stats-overview">
-    <view class="stat-item">
-      <text class="stat-value stat-winrate">{{augment.win_rate_display}}</text>
-      <text class="stat-label">胜率</text>
-    </view>
-    <view class="stat-divider"></view>
-    <view class="stat-item">
-      <text class="stat-value stat-pickrate">{{augment.pick_rate_display}}</text>
-      <text class="stat-label">选取率</text>
-    </view>
-    <view class="stat-divider"></view>
-    <view class="stat-item">
-      <text class="stat-value">{{augment.sample_display}}</text>
-      <text class="stat-label">样本量</text>
+      <text wx:if="{{augment.description_zh}}" class="aug-desc">{{augment.description_zh}}</text>
+      <view class="aug-header-stats">
+        <view class="aug-header-stat">
+          <text class="aug-header-stat-value winrate">{{augment.win_rate_display}}</text>
+          <text class="aug-header-stat-label">胜率</text>
+        </view>
+        <view class="aug-header-stat-divider"></view>
+        <view class="aug-header-stat">
+          <text class="aug-header-stat-value pickrate">{{augment.pick_rate_display}}</text>
+          <text class="aug-header-stat-label">选取率</text>
+        </view>
+      </view>
     </view>
   </view>
 
@@ -77,7 +56,6 @@
     <view class="section-header">
       <text class="section-title">🏆 最适配英雄 TOP5</text>
     </view>
-
     <view wx:if="{{bestChampions.length > 0}}" class="champ-list">
       <view
         wx:for="{{bestChampions}}"
@@ -86,17 +64,12 @@
         data-id="{{item.champion_id}}"
         bindtap="onChampionTap"
       >
-        <!-- 排名 -->
-        <view class="champ-rank champ-rank-{{item.rank <= 3 ? 'top' : ''}}">{{item.rank}}</view>
-        <!-- 英雄头像 -->
+        <view class="champ-rank {{item.rank <= 3 ? 'champ-rank-top' : ''}}">{{item.rank}}</view>
         <image wx:if="{{item.champion_icon}}" class="champ-avatar" src="{{item.champion_icon}}" mode="aspectFill" />
-        <!-- 名称 -->
         <view class="champ-name">{{item.champion_name_zh || item.champion_name}}</view>
-        <!-- 胜率条 -->
         <view class="champ-rate">
           <rate-bar value="{{item.win_rate_value}}" type="win_rate" show-label="{{false}}" size="normal" />
         </view>
-        <!-- 胜率数值 -->
         <text class="champ-winrate">{{item.win_rate_display}}</text>
       </view>
     </view>
@@ -137,19 +110,6 @@
         <text class="item-cell-rate">{{item.win_rate_display}}</text>
       </view>
     </view>
-  </view>
-
-  <!-- ===== 版本胜率趋势 ===== -->
-  <view class="section">
-    <view class="section-header">
-      <text class="section-title">📈 版本胜率趋势</text>
-    </view>
-    <version-trend-chart
-      chart-data="{{trendData}}"
-      title="各版本胜率变化"
-      type="win_rate"
-      height="{{300}}"
-    />
   </view>
 
 </view>

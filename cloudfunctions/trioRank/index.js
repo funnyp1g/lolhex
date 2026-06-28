@@ -16,7 +16,7 @@ async function getCurrentPatch() {
   if (res.data.length === 0) {
     throw new Error('未找到当前版本信息')
   }
-  return res.data[0].version
+  return Number(res.data[0].version)
 }
 
 exports.main = async (event) => {
@@ -78,7 +78,7 @@ exports.main = async (event) => {
     const allAugmentIds = new Set()
     listResult.data.forEach(t => {
       if (Array.isArray(t.augment_ids)) {
-        t.augment_ids.forEach(id => allAugmentIds.add(id))
+        t.augment_ids.forEach(id => allAugmentIds.add(Number(id)))
       }
     })
 
@@ -97,9 +97,9 @@ exports.main = async (event) => {
     // ---------- 组装响应数据 ----------
     const list = listResult.data.map(t => ({
       augment_ids: t.augment_ids,
-      augment_names_zh: (t.augment_ids || []).map(id => augmentMap[id]?.name_zh || ''),
-      augment_icons: (t.augment_ids || []).map(id => augmentMap[id]?.icon_url || ''),
-      augment_rarities: (t.augment_ids || []).map(id => augmentMap[id]?.rarity || ''),
+      augment_names_zh: (t.augment_ids || []).map(id => augmentMap[Number(id)]?.name_zh || ''),
+      augment_icons: (t.augment_ids || []).map(id => augmentMap[Number(id)]?.icon_url || ''),
+      augment_rarities: (t.augment_ids || []).map(id => augmentMap[Number(id)]?.rarity || ''),
       win_rate: t.win_rate,
       sample_size: t.sample_size,
       tier: t.tier

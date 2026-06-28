@@ -13,7 +13,7 @@
         bindchange="onChampionChange"
       >
         <view class="picker-btn">
-          <text>{{selectedChampionId ? champions[0].name_zh : '全部英雄'}}</text>
+          <text>{{selectedChampionName || '全部英雄'}}</text>
           <text class="picker-arrow">▼</text>
         </view>
       </picker>
@@ -49,7 +49,6 @@
         </view>
         <view class="combo-header-right">
           <text class="combo-winrate">{{item.win_rate_display}}</text>
-          <text class="combo-samples">{{item.sample_display}}场</text>
         </view>
       </view>
 
@@ -70,8 +69,6 @@
             {{aug.rarity_label}}
           </view>
         </view>
-        <!-- 连接符 -->
-        <view class="combo-plus">+</view>
       </view>
 
       <!-- 胜率条 -->

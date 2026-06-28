@@ -4,6 +4,7 @@
 const cloud = require('wx-server-sdk')
 cloud.init({ env: cloud.DYNAMIC_CURRENT_ENV })
 const db = cloud.database()
+const _ = db.command
 
 // 获取当前版本号
 async function getCurrentPatch() {
@@ -15,7 +16,7 @@ async function getCurrentPatch() {
   if (res.data.length === 0) {
     throw new Error('未找到当前版本信息')
   }
-  return res.data[0].version
+  return Number(res.data[0].version)
 }
 
 exports.main = async (event) => {
@@ -26,7 +27,8 @@ exports.main = async (event) => {
       order = 'desc',
       page = 1,
       page_size = 20,
-      patch
+      patch,
+      keyword              // 可选，搜索关键词
     } = event
 
     // ---------- 参数校验 ----------
@@ -53,8 +55,16 @@ exports.main = async (event) => {
     const safePageSize = Math.max(1, Math.min(page_size, 50))
 
     // ---------- 构建查询条件 ----------
-    const where = { patch_version: patchVersion }
+    let where = { patch_version: patchVersion }
     if (rarity) where.rarity = rarity
+    if (keyword) {
+      const trimmed = keyword.trim()
+      const escaped = trimmed.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+      const regex = db.RegExp({ regexp: escaped, options: 'i' })
+      // 微信云 DB 中 _.or + db.RegExp 兼容性差，改用单字段 name_zh 搜索
+      // name_zh 已由 patchBaseData/staticDataSync 填入了中文名（降级为英文名）
+      where.name_zh = regex
+    }
 
     // ---------- 查询总数 ----------
     const countResult = await db.collection('augments')

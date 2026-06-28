@@ -24,4 +24,5 @@ module.exports = {
   getCurrentPatch: () => callFunction('currentPatch'),
   getItemList: (params) => callFunction('itemList', params),
   getChampionRankTable: (params) => callFunction('championRankTable', params),
+  getHotCombos: (params) => callFunction('hotCombos', params),
 }

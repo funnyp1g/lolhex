@@ -13,7 +13,7 @@
 <!-- 内容区 -->
 <view wx:elif="{{champion}}" class="page-champion-detail">
 
-  <!-- ===== 英雄头部信息 ===== -->
+  <!-- ===== 英雄头部信息（含胜率/选取率） ===== -->
   <view class="hero-header">
     <view class="hero-avatar-wrap">
       <image wx:if="{{champion.icon_url}}" class="hero-avatar" src="{{champion.icon_url}}" mode="aspectFill" />
@@ -26,67 +26,23 @@
       <text class="hero-title">{{champion.title}}</text>
       <!-- 角色标签 -->
       <view class="hero-roles">
-        <text
+        <view
           wx:for="{{champion.roles_colored || champion.roles}}"
           wx:key="name"
           class="hero-role-tag"
-          style="color: {{item.color || '#1890ff'}}; background: {{item.color || '#1890ff'}}1a;"
+          style="color: {{item.color || '#1890ff'}}; background-color: {{item.color || '#1890ff'}}1a;"
         >
           {{item.name || item}}
-        </text>
+        </view>
       </view>
-    </view>
-  </view>
-
-  <!-- ===== 数据概览卡片 ===== -->
-  <view class="stats-overview">
-    <view class="stat-item">
-      <text class="stat-value stat-winrate">{{champion.win_rate_display}}</text>
-      <text class="stat-label">胜率</text>
-    </view>
-    <view class="stat-divider"></view>
-    <view class="stat-item">
-      <text class="stat-value stat-pickrate">{{champion.pick_rate_display}}</text>
-      <text class="stat-label">选取率</text>
-    </view>
-    <view class="stat-divider"></view>
-    <view class="stat-item">
-      <text class="stat-value">{{champion.sample_display}}</text>
-      <text class="stat-label">样本量</text>
-    </view>
-  </view>
-
-  <!-- 胜率进度条 -->
-  <view class="hero-rate-section">
-    <rate-bar value="{{winRateValue}}" type="win_rate" label="胜率" size="large" />
-    <view style="margin-top: 16rpx;">
-      <rate-bar value="{{pickRateValue}}" type="pick_rate" label="选取率" size="large" />
-    </view>
-  </view>
-
-  <!-- 📊 T级总览卡片（新增） -->
-  <view class="tier-overview-card">
-    <view class="tier-overview-main">
-      <tier-badge tier="{{championTierRank}}" mode="T" size="large" />
-      <text class="tier-overview-label">当前层级</text>
-    </view>
-    <view class="tier-overview-stats">
-      <view class="tier-stat-item">
-        <text class="tier-stat-value">{{champion.win_rate_display}}</text>
-        <text class="tier-stat-label">胜率</text>
+      <!-- 胜率 / 选取率（内嵌在英雄卡片中） -->
+      <view class="hero-inline-stats">
+        <text class="hero-inline-stat winrate">{{champion.win_rate_display}}</text>
+        <text class="hero-inline-stat-label">胜率</text>
+        <text class="hero-inline-stat-divider">|</text>
+        <text class="hero-inline-stat pickrate">{{champion.pick_rate_display}}</text>
+        <text class="hero-inline-stat-label">选取率</text>
       </view>
-      <view class="tier-stat-item">
-        <text class="tier-stat-value">{{champion.pick_rate_display}}</text>
-        <text class="tier-stat-label">选取率</text>
-      </view>
-      <view class="tier-stat-item">
-        <text class="tier-stat-value">#{{championRank}}/{{totalChampions}}</text>
-        <text class="tier-stat-label">排名</text>
-      </view>
-    </view>
-    <!-- 强度条 -->
-    <view class="tier-strength-bar">
-      <view class="tier-strength-fill" style="width: {{winRateValue}}%;"></view>
     </view>
   </view>
 
@@ -109,9 +65,9 @@
     </van-tabs>
 
     <!-- 海克斯列表 -->
-    <view wx:if="{{filteredAugments.length > 0}}" class="aug-list">
+    <view wx:if="{{displayedAugments.length > 0}}" class="aug-list">
       <augment-card
-        wx:for="{{filteredAugments}}"
+        wx:for="{{displayedAugments}}"
         wx:key="_id"
         augment="{{item}}"
         show-description="{{true}}"
@@ -121,89 +77,133 @@
         data-id="{{item._id || item.augment_id}}"
         bind:click="onAugmentTap"
       />
+      <!-- 展开/收起按钮 -->
+      <view wx:if="{{augmentsTotalCount > 3}}" class="aug-expand-wrap">
+        <view class="aug-expand-btn" bindtap="onToggleAugments">
+          <text>{{augmentsExpanded ? '收起' : '展开更多 (' + augmentsRemainingCount + ')'}}</text>
+          <text class="aug-expand-arrow {{augmentsExpanded ? 'expanded' : ''}}">▼</text>
+        </view>
+      </view>
     </view>
     <view wx:else class="empty-hint">
       <van-empty description="该级别暂无海克斯数据" image="search" />
     </view>
   </view>
 
-  <!-- ===== 推荐装备 ===== -->
-  <view class="section">
+  <!-- ===== 装备配置（1:1 复刻 aramgg.com 结构） ===== -->
+  <view wx:if="{{equipmentBuilds.length > 0}}" class="section">
     <view class="section-header">
-      <text class="section-title">🛡️ 推荐装备</text>
+      <text class="section-title">🛡️ 装备配置</text>
+      <text class="section-subtitle">版本 {{equipmentPatch}}</text>
     </view>
 
-    <!-- 核心装备 -->
-    <view wx:if="{{itemsCore.length > 0}}" class="item-group">
-      <view class="item-group-title">
-        <text>核心装</text>
-        <text class="item-group-count">{{itemsCore.length}}件</text>
-      </view>
-      <view class="item-grid">
-        <view
-          wx:for="{{itemsCore}}"
-          wx:key="_id"
-          class="item-grid-cell"
-          data-id="{{item._id || item.item_id}}"
-          bindtap="onItemTap"
-        >
-          <image wx:if="{{item.icon_url}}" class="item-grid-icon" src="{{item.icon_url}}" mode="aspectFill" />
-          <text class="item-grid-name">{{item.name_zh || item.item_name}}</text>
-          <text class="item-grid-rate">{{item.win_rate_display}}</text>
+    <!-- 每个流派 -->
+    <view wx:for="{{equipmentBuilds}}" wx:key="index" class="build-group">
+      <!-- 流派头部 -->
+      <view class="build-group-header">
+        <view class="build-group-tags">
+          <text wx:for="{{item.tags}}" wx:key="*this" wx:for-item="tag" class="build-tag build-tag-{{tag}}">{{tag}}</text>
+        </view>
+        <view class="build-group-meta">
+          <text class="build-meta-text">{{item.games_display}}场</text>
+          <text class="build-meta-sep">·</text>
+          <text class="build-meta-text winrate">{{item.win_rate_display}}胜率</text>
+          <text class="build-meta-sep">·</text>
+          <text class="build-meta-text">{{item.pick_rate_display}}选取率</text>
         </view>
       </view>
-    </view>
 
-    <!-- 鞋子 -->
-    <view wx:if="{{itemsBoots.length > 0}}" class="item-group">
-      <view class="item-group-title">
-        <text>鞋子</text>
-        <text class="item-group-count">{{itemsBoots.length}}件</text>
-      </view>
-      <view class="item-grid">
-        <view
-          wx:for="{{itemsBoots}}"
-          wx:key="_id"
-          class="item-grid-cell"
-          data-id="{{item._id || item.item_id}}"
-          bindtap="onItemTap"
-        >
-          <image wx:if="{{item.icon_url}}" class="item-grid-icon" src="{{item.icon_url}}" mode="aspectFill" />
-          <text class="item-grid-name">{{item.name_zh || item.item_name}}</text>
-          <text class="item-grid-rate">{{item.win_rate_display}}</text>
-        </view>
-      </view>
-    </view>
-
-    <!-- 神装 -->
-    <view wx:if="{{itemsFullBuild.length > 0}}" class="item-group">
-      <view class="item-group-title">
-        <text>神装</text>
-        <text class="item-group-count">{{itemsFullBuild.length}}套</text>
-      </view>
-      <view class="fullbuild-list">
-        <view wx:for="{{itemsFullBuild}}" wx:key="_id" class="fullbuild-row">
-          <view class="fullbuild-items">
-            <image wx:if="{{item.icon_url}}" class="fullbuild-item-icon" src="{{item.icon_url}}" mode="aspectFill" />
-            <view wx:else class="fullbuild-item-icon fullbuild-item-icon-placeholder">
-              <text>🎒</text>
+      <!-- 核心装备：TOP3 3件套组合（大图+名称） -->
+      <view wx:if="{{item.coreItems.length > 0}}" class="item-group">
+        <view class="item-group-title"><text>核心装备</text></view>
+        <view class="core-builds-list">
+          <view wx:for="{{item.coreItems}}" wx:key="index" wx:for-item="ci" class="core-build-card">
+            <view class="core-build-header">
+              <text class="core-build-rank">#{{index + 1}}</text>
+              <text class="core-build-winrate">{{ci.win_rate_display}} 胜率</text>
+            </view>
+            <view class="core-build-icons-lg">
+              <view wx:for="{{ci.items}}" wx:key="id" wx:for-item="it" class="core-build-item-lg">
+                <image class="core-build-icon-lg" src="{{it.icon_url}}" mode="aspectFill" />
+                <text class="core-build-name-lg">{{it.name}}</text>
+              </view>
             </view>
           </view>
-          <view class="fullbuild-info">
-            <text class="fullbuild-winrate">{{item.win_rate_display}}胜率</text>
-            <text class="fullbuild-samples">{{item.sample_display}}场</text>
+        </view>
+      </view>
+
+      <!-- 出门装 -->
+      <view wx:if="{{item.startingItems.length > 0}}" class="item-group">
+        <view class="item-group-title"><text>出门装</text></view>
+        <view class="simple-item-row">
+          <view wx:for="{{item.startingItems}}" wx:key="index" wx:for-item="sn" class="simple-item-cell">
+            <image wx:if="{{sn.icon_url}}" class="simple-item-icon" src="{{sn.icon_url}}" mode="aspectFill" />
+            <text class="simple-item-text">{{sn.name}}</text>
           </view>
         </view>
       </view>
-    </view>
 
-    <!-- 空状态 -->
-    <view wx:if="{{itemsCore.length === 0 && itemsBoots.length === 0 && itemsFullBuild.length === 0}}" class="empty-hint">
-      <van-empty description="暂无装备数据" image="search" />
+      <!-- 备选装备 -->
+      <view wx:if="{{item.situationalItems.length > 0}}" class="item-group">
+        <view class="item-group-title"><text>备选装备</text></view>
+        <view class="simple-item-row">
+          <view wx:for="{{item.situationalItems}}" wx:key="index" wx:for-item="si" class="simple-item-cell">
+            <image wx:if="{{si.icon_url}}" class="simple-item-icon" src="{{si.icon_url}}" mode="aspectFill" />
+            <text class="simple-item-text">{{si.name}}</text>
+          </view>
+        </view>
+      </view>
     </view>
   </view>
 
-  <!-- 📈 阶段表现（新增） -->
+  <!-- 降级：无builds数据时显示原单品推荐 -->
+  <view wx:elif="{{itemsCore.length > 0 || itemsBoots.length > 0 || itemsSituational.length > 0}}" class="section">
+    <view class="section-header">
+      <text class="section-title">🛡️ 装备配置</text>
+    </view>
+
+    <view wx:if="{{itemsCore.length > 0}}" class="item-group">
+      <view class="item-group-title"><text>核心装备</text></view>
+      <view class="core-builds-list">
+        <view wx:for="{{itemsCore}}" wx:key="_id" class="core-build-card">
+          <view class="core-build-header">
+            <text class="core-build-rank">#{{index + 1}}</text>
+            <text class="core-build-winrate">{{item.win_rate_display}}</text>
+          </view>
+          <view class="core-build-icons-lg">
+            <view class="core-build-item-lg">
+              <image wx:if="{{item.icon_url}}" class="core-build-icon-lg" src="{{item.icon_url}}" mode="aspectFill" />
+              <text class="core-build-name-lg">{{item.name_zh || item.item_name}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{itemsBoots.length > 0}}" class="item-group">
+      <view class="item-group-title"><text>鞋子</text></view>
+      <view class="item-grid">
+        <view wx:for="{{itemsBoots}}" wx:key="_id" class="item-grid-cell" data-id="{{item._id || item.item_id}}" bindtap="onItemTap">
+          <image wx:if="{{item.icon_url}}" class="item-grid-icon" src="{{item.icon_url}}" mode="aspectFill" />
+          <text class="item-grid-name">{{item.name_zh || item.item_name}}</text>
+          <text class="item-grid-rate">{{item.win_rate_display}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{itemsSituational.length > 0}}" class="item-group">
+      <view class="item-group-title"><text>备选装备</text></view>
+      <view class="item-grid">
+        <view wx:for="{{itemsSituational}}" wx:key="_id" class="item-grid-cell" data-id="{{item._id || item.item_id}}" bindtap="onItemTap">
+          <image wx:if="{{item.icon_url}}" class="item-grid-icon" src="{{item.icon_url}}" mode="aspectFill" />
+          <text class="item-grid-name">{{item.name_zh || item.item_name}}</text>
+          <text class="item-grid-rate">{{item.win_rate_display}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 📈 阶段表现 -->
   <view wx:if="{{selectedAugmentId && stagePerformanceByAugment[selectedAugmentId]}}" class="section">
     <view class="section-header">
       <text class="section-title">📈 阶段表现</text>

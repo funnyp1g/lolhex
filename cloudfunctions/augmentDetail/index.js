@@ -16,7 +16,7 @@ async function getCurrentPatch() {
   if (res.data.length === 0) {
     throw new Error('未找到当前版本信息')
   }
-  return res.data[0].version
+  return Number(res.data[0].version)
 }
 
 exports.main = async (event) => {
@@ -32,10 +32,12 @@ exports.main = async (event) => {
 
     // ---------- 并行执行 4 个核心查询 ----------
     const [augmentRes, bestRes, worstRes, itemsRes] = await Promise.all([
-      // 1. 海克斯基础信息
+      // 1. 海克斯基础信息（兼容字符串和数字 _id）
       db.collection('augments')
-        .doc(String(augment_id))
+        .where(_.or([{ _id: String(augment_id) }, { _id: augment_id }]))
+        .limit(1)
         .get()
+        .then(res => res.data.length > 0 ? { data: res.data[0] } : { data: null })
         .catch(() => ({ data: null })),
 
       // 2. 最适配英雄 TOP10（按胜率降序）

@@ -1,6 +1,6 @@
 // components/rank-table/rank-table.js
 var { ROLE_COLORS } = require('../../utils/constants')
-var { formatWinRate, formatSampleSize } = require('../../utils/format')
+var { formatWinRate } = require('../../utils/format')
 
 Component({
   options: { styleIsolation: 'apply-shared' },
@@ -20,8 +20,7 @@ Component({
       { key: 'tier_rank', label: 'T级', width: '60rpx' },
       { key: 'name_zh', label: '英雄', width: '200rpx' },
       { key: 'win_rate', label: '胜率', width: '100rpx', sortable: true },
-      { key: 'pick_rate', label: '选取率', width: '100rpx', sortable: true },
-      { key: 'sample_size', label: '样本', width: '100rpx', sortable: true }
+      { key: 'pick_rate', label: '选取率', width: '100rpx', sortable: true }
     ]
   },
 
@@ -33,7 +32,7 @@ Component({
 
     onSortTap: function (e) {
       var key = e.currentTarget.dataset.key
-      if (key === 'win_rate' || key === 'pick_rate' || key === 'sample_size') {
+      if (key === 'win_rate' || key === 'pick_rate') {
         var newOrder = this.data.sortBy === key && this.data.sortOrder === 'desc' ? 'asc' : 'desc'
         this.triggerEvent('sort', { sortBy: key, order: newOrder })
       }
@@ -45,7 +44,6 @@ Component({
       }
     },
 
-    formatWinRate: formatWinRate,
-    formatSampleSize: formatSampleSize
+    formatWinRate: formatWinRate
   }
 })

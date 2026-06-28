@@ -1,5 +1,5 @@
 {
-  "timeout": 600,  // 超时时间：600秒（10分钟），处理170英雄足够
+  "timeout": 60,
   "triggers": [
     {
       "name": "dailySync",

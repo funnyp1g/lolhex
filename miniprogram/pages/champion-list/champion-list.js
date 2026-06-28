@@ -25,7 +25,7 @@ Page({
     roleOptions: [],
     roleColors: ROLE_COLORS,
     // 显示模式：list / grid
-    viewMode: 'list',
+    viewMode: 'grid',
     // 搜索关键词
     keyword: ''
   },
@@ -116,6 +116,7 @@ Page({
       }
 
       if (this.data.roleFilter) params.role = this.data.roleFilter
+      if (this.data.keyword) params.keyword = this.data.keyword
 
       const data = await cloud.getChampionList(params)
       const newList = (data.list || data || []).map(c => ({
