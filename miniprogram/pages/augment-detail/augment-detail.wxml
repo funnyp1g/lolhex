@@ -93,6 +93,7 @@
       >
         <image wx:if="{{item.champion_icon}}" class="champ-avatar" src="{{item.champion_icon}}" mode="aspectFill" />
         <view class="champ-name">{{item.champion_name_zh || item.champion_name}}</view>
+        <view class="champ-spacer"></view>
         <text class="champ-winrate champ-winrate-low">{{item.win_rate_display}}</text>
       </view>
     </view>

@@ -337,6 +337,10 @@
   flex: 1;
 }
 
+.champ-spacer {
+  flex: 1;
+}
+
 .champ-winrate {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);

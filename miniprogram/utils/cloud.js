@@ -25,4 +25,5 @@ module.exports = {
   getItemList: (params) => callFunction('itemList', params),
   getChampionRankTable: (params) => callFunction('championRankTable', params),
   getHotCombos: (params) => callFunction('hotCombos', params),
+  getFunData: () => callFunction('getFunData'),
 }

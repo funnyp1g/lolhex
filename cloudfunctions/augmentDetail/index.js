@@ -30,8 +30,8 @@ exports.main = async (event) => {
   try {
     const patchVersion = patch || await getCurrentPatch()
 
-    // ---------- 并行执行 4 个核心查询 ----------
-    const [augmentRes, bestRes, worstRes, itemsRes] = await Promise.all([
+    // ---------- 并行执行 3 个核心查询 ----------
+    const [augmentRes, bestRes, worstRes] = await Promise.all([
       // 1. 海克斯基础信息（兼容字符串和数字 _id）
       db.collection('augments')
         .where(_.or([{ _id: String(augment_id) }, { _id: augment_id }]))
@@ -52,17 +52,6 @@ exports.main = async (event) => {
         .where({ augment_id, patch_version: patchVersion })
         .orderBy('win_rate', 'asc')
         .limit(5)
-        .get(),
-
-      // 4. 推荐装备（全局数据 champion_id = null，按胜率降序）
-      db.collection('augment_items')
-        .where({
-          augment_id,
-          champion_id: null,
-          patch_version: patchVersion
-        })
-        .orderBy('win_rate', 'desc')
-        .limit(30)
         .get()
     ])
 
@@ -85,34 +74,33 @@ exports.main = async (event) => {
       .where({ patch_version: patchVersion })
       .count()
 
-    // ---------- 批量关联查询英雄和装备的中文名/图标 ----------
+    // ---------- 批量关联查询英雄的中文名/图标 ----------
     const championIds = [
       ...bestRes.data.map(a => a.champion_id),
       ...worstRes.data.map(a => a.champion_id)
     ]
-    const itemIds = itemsRes.data.map(i => i.item_id)
 
-    const [championInfoRes, itemInfoRes] = await Promise.all([
-      championIds.length > 0
-        ? db.collection('champions')
-            .where({ riot_id: _.in(championIds) })
-            .field({ riot_id: true, name_zh: true, icon_url: true })
-            .get()
-        : { data: [] },
-      itemIds.length > 0
-        ? db.collection('items')
-            .where({ riot_id: _.in(itemIds) })
-            .field({ riot_id: true, name_zh: true, icon_url: true })
-            .get()
-        : { data: [] }
-    ])
+    const championInfoRes = championIds.length > 0
+      ? await db.collection('champions')
+          .where({ riot_id: _.in(championIds) })
+          .field({ riot_id: true, name_zh: true, icon_url: true })
+          .get()
+      : { data: [] }
 
     const championMap = {}
     championInfoRes.data.forEach(c => { championMap[c.riot_id] = c })
-    const itemMap = {}
-    itemInfoRes.data.forEach(i => { itemMap[i.riot_id] = i })
 
     // ---------- 组装响应数据 ----------
+    // 去重：同一个 champion_id 只保留一条（防止 DB 残留重复记录）
+    const bestMap = new Map()
+    bestRes.data.forEach(a => {
+      if (!bestMap.has(a.champion_id)) bestMap.set(a.champion_id, a)
+    })
+    const worstMap = new Map()
+    worstRes.data.forEach(a => {
+      if (!worstMap.has(a.champion_id)) worstMap.set(a.champion_id, a)
+    })
+
     const augmentData = {
       ...augmentRes.data,
       global_rank,
@@ -124,7 +112,7 @@ exports.main = async (event) => {
       message: 'success',
       data: {
         augment: augmentData,
-        best_champions: bestRes.data.map(a => ({
+        best_champions: [...bestMap.values()].map(a => ({
           champion_id: a.champion_id,
           champion_name_zh: championMap[a.champion_id]?.name_zh || '',
           icon_url: championMap[a.champion_id]?.icon_url || '',
@@ -133,7 +121,7 @@ exports.main = async (event) => {
           tier: a.tier,
           sample_size: a.sample_size
         })),
-        worst_champions: worstRes.data.map(a => ({
+        worst_champions: [...worstMap.values()].map(a => ({
           champion_id: a.champion_id,
           champion_name_zh: championMap[a.champion_id]?.name_zh || '',
           icon_url: championMap[a.champion_id]?.icon_url || '',
@@ -142,15 +130,7 @@ exports.main = async (event) => {
           tier: a.tier,
           sample_size: a.sample_size
         })),
-        items: itemsRes.data.map(i => ({
-          item_id: i.item_id,
-          item_name_zh: itemMap[i.item_id]?.name_zh || '',
-          icon_url: itemMap[i.item_id]?.icon_url || '',
-          win_rate: i.win_rate,
-          pick_rate: i.pick_rate,
-          tier: i.tier,
-          sample_size: i.sample_size
-        })),
+        items: [],  // augment_items 集合暂无数据源
         patch_version: patchVersion
       },
       meta: { patch_version: patchVersion, timestamp: Date.now() }

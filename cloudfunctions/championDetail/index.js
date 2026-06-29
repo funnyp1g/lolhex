@@ -1,12 +1,15 @@
 // cloudfunctions/championDetail/index.js
-// 英雄详情查询云函数（最复杂，需并行查询 5 个集合 + 关联查询）
-// 功能：获取指定英雄的完整信息，包括推荐海克斯、推荐装备、海克斯×出装联动、阶段表现
+// 英雄详情查询云函数
+// 功能：获取指定英雄的完整信息，包括推荐海克斯、推荐装备、阶段表现
+// 新增：hexdata 推荐决策模块数据
 const cloud = require('wx-server-sdk')
 cloud.init({ env: cloud.DYNAMIC_CURRENT_ENV })
 const db = cloud.database()
 const _ = db.command
+const axios = require('axios')
 const COMPLETED_ITEM_IDS = require('./data/completed-item-ids.js')
 const CHAMPION_BUILDS = require('./data/champion-builds.js')
+const FORMULA_ITEMS = require('./data/hero-formula-items.js')
 
 // Tier 等级映射函数（T1-T5）
 function mapTierToRank(winRate) {
@@ -30,6 +33,26 @@ async function getCurrentPatch() {
   return Number(res.data[0].version)
 }
 
+// hexdata 英雄详情请求（best-effort）
+async function fetchHexHeroDetail(championId) {
+  try {
+    const { data } = await axios.get(`https://hexdata.com.cn/data/heroes/${championId}.json`, {
+      timeout: 10000,
+      headers: { 'User-Agent': 'ARAM-Mayhem-Guide/1.0' }
+    })
+    const formula = FORMULA_ITEMS[String(championId)] || null
+    return {
+      augments: Array.isArray(data.augments) ? data.augments : [],
+      items: Array.isArray(data.items) ? data.items : [],
+      trios: Array.isArray(data.trios) ? data.trios : [],
+      formula
+    }
+  } catch (e) {
+    console.warn(`[championDetail] hexdata 拉取失败 (id=${championId}):`, e.message)
+    return null
+  }
+}
+
 exports.main = async (event) => {
   const { champion_id, patch } = event
 
@@ -41,8 +64,8 @@ exports.main = async (event) => {
   try {
     const patchVersion = patch || await getCurrentPatch()
 
-    // ---------- 并行执行 5 个核心查询（新增 champion_stage_performance）----------
-    const [championRes, augmentsRes, itemsRes, linkageRes, stageRes] = await Promise.all([
+    // ---------- 并行执行 5 个查询（4 DB + 1 hexdata） ----------
+    const [championRes, augmentsRes, itemsRes, stageRes, hexdataRes] = await Promise.all([
       // 1. 英雄基础信息（兼容字符串和数字 _id）
       db.collection('champions')
         .where(_.or([{ _id: String(champion_id) }, { _id: champion_id }]))
@@ -71,17 +94,7 @@ exports.main = async (event) => {
         .limit(50)
         .get(),
 
-      // 4. 海克斯×出装联动（按胜率降序，最多返回 50 条）
-      db.collection('augment_items')
-        .where({
-          champion_id: champion_id,
-          patch_version: patchVersion
-        })
-        .orderBy('win_rate', 'desc')
-        .limit(50)
-        .get(),
-
-      // 5. 阶段表现（新增）
+      // 4. 阶段表现
       db.collection('champion_stage_performance')
         .where({
           champion_id: champion_id,
@@ -90,7 +103,10 @@ exports.main = async (event) => {
         .orderBy('augment_id', 'asc')
         .orderBy('stage', 'asc')
         .limit(200)
-        .get()
+        .get(),
+
+      // 5. hexdata 推荐决策（best-effort，失败返回 null 不影响其他）
+      fetchHexHeroDetail(champion_id)
     ])
 
     // 如果英雄不存在
@@ -115,13 +131,9 @@ exports.main = async (event) => {
 
     // ---------- 批量关联查询 augment 和 item 的中文名/稀有度 ----------
     const augmentIds = augmentsRes.data.map(a => a.augment_id)
-    const linkageAugmentIds = linkageRes.data.map(l => l.augment_id)
-    const allAugmentIds = [...new Set([...augmentIds, ...linkageAugmentIds])]
+    const allAugmentIds = [...new Set(augmentIds)]
 
-    const itemIds = [
-      ...itemsRes.data.map(i => i.item_id),
-      ...linkageRes.data.map(l => l.item_id)
-    ]
+    const itemIds = itemsRes.data.map(i => i.item_id)
     const uniqueItemIds = [...new Set(itemIds)]
 
     const [augmentInfoRes, itemInfoRes] = await Promise.all([
@@ -160,19 +172,54 @@ exports.main = async (event) => {
     })
 
     // ---------- 组装响应数据 ----------
-    const augments = augmentsRes.data.map(a => ({
-      augment_id: a.augment_id,
-      augment_name_zh: augmentMap[a.augment_id]?.name_zh || '',
-      name_zh: augmentMap[a.augment_id]?.name_zh || '',
-      rarity: augmentMap[a.augment_id]?.rarity || '',
-      icon_url: augmentMap[a.augment_id]?.icon_url || '',
-      win_rate: a.win_rate,
-      pick_rate: a.pick_rate,
-      tier: a.tier,
-      tier_rank: mapTierToRank(a.win_rate),
-      sample_size: a.sample_size,
-      stage_performance: stageByAugment[a.augment_id] || null
-    }))
+    // 去重：同一个 augment_id 只取胜率最高的那条（防止 DB 残留重复记录）
+    const dedupedAugments = new Map()
+    augmentsRes.data.forEach(a => {
+      const existing = dedupedAugments.get(a.augment_id)
+      if (!existing || a.win_rate > existing.win_rate) {
+        dedupedAugments.set(a.augment_id, a)
+      }
+    })
+    let augments = [...dedupedAugments.values()]
+      .sort((a, b) => b.win_rate - a.win_rate)
+      .map(a => ({
+        augment_id: a.augment_id,
+        augment_name_zh: augmentMap[a.augment_id]?.name_zh || '',
+        name_zh: augmentMap[a.augment_id]?.name_zh || '',
+        rarity: augmentMap[a.augment_id]?.rarity || '',
+        icon_url: augmentMap[a.augment_id]?.icon_url || '',
+        win_rate: a.win_rate,
+        pick_rate: a.pick_rate,
+        tier: a.tier,
+        tier_rank: mapTierToRank(a.win_rate),
+        sample_size: a.sample_size,
+        stage_performance: stageByAugment[a.augment_id] || null
+      }))
+
+    // 降级：无 champion_augments 数据时，用 hexdata 的 top_augments
+    if (augments.length === 0 && championRes.data.top_augments) {
+      augments = championRes.data.top_augments.map(ta => ({
+        augment_id: Number(ta.id),
+        augment_name_zh: augmentMap[Number(ta.id)]?.name_zh || ta.name || '',
+        name_zh: augmentMap[Number(ta.id)]?.name_zh || ta.name || '',
+        rarity: augmentMap[Number(ta.id)]?.rarity || '',
+        icon_url: augmentMap[Number(ta.id)]?.icon_url || ta.iconUrl || '',
+        win_rate: null,
+        pick_rate: null,
+        tier: null,
+        tier_rank: null,
+        sample_size: 0,
+        stage_performance: null
+      }))
+    }
+
+    // 为 hexdata 海克斯补充稀有度（从 DB augmentMap 查找）
+    if (hexdataRes && hexdataRes.augments) {
+      hexdataRes.augments = hexdataRes.augments.map(a => ({
+        ...a,
+        rarity: augmentMap[a.augmentId]?.rarity || a.rarity || ''
+      }))
+    }
 
     const items = itemsRes.data
       .filter(i => COMPLETED_ITEM_IDS.has(Number(i.item_id)))
@@ -190,18 +237,6 @@ exports.main = async (event) => {
         sample_size: i.sample_size
       }))
 
-    const linkage = linkageRes.data.map(l => ({
-      augment_id: l.augment_id,
-      augment_name_zh: augmentMap[l.augment_id]?.name_zh || '',
-      item_id: l.item_id,
-      item_name_zh: itemMap[l.item_id]?.name_zh || '',
-      win_rate: l.win_rate,
-      pick_rate: l.pick_rate,
-      tier: l.tier,
-      tier_rank: mapTierToRank(l.win_rate),
-      sample_size: l.sample_size
-    }))
-
     return {
       code: 0,
       message: 'success',
@@ -215,8 +250,9 @@ exports.main = async (event) => {
         augments,
         items,
         builds: CHAMPION_BUILDS[String(champion_id)] || CHAMPION_BUILDS[champion_id] || [],
-        augment_items_linkage: linkage,
+        augment_items_linkage: [],
         stage_performance: stageRes.data,
+        hexdata_decisions: hexdataRes,
         patch_version: patchVersion
       },
       meta: { patch_version: patchVersion, timestamp: Date.now() }

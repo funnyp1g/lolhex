@@ -4,6 +4,7 @@ const cache = require('../../utils/cache')
 const image = require('../../utils/image')
 const { CACHE_TTL, RARITY_LABELS, RARITY_ICONS, ITEM_SLOT_LABELS, ROLE_COLORS } = require('../../utils/constants')
 const { formatWinRate, formatPickRate, formatNumber } = require('../../utils/format')
+const { getAugmentIconUrl } = require('../../utils/augment-icons')
 
 Page({
   data: {
@@ -52,7 +53,19 @@ Page({
     stagePerformanceByAugment: {},
     // 当前选中的海克斯（用于阶段表现联动）
     selectedAugmentId: null,
-    selectedAugmentName: ''
+    selectedAugmentName: '',
+    // hexdata 推荐决策模块
+    hexRecommendedAugs: [],
+    hexAugmentsPrismatic: [],
+    hexAugmentsGold: [],
+    hexAugmentsSilver: [],
+    hexAugmentsRarity: 'prismatic',
+    hexRecommendedItems: [],
+    hexBestTrios: [],
+    hexBuildFormula: null,
+    hexDecisionsTab: 'augments',
+    // 谨慎选取
+    hexCautiousAugs: []
   },
 
   onLoad(options) {
@@ -90,7 +103,12 @@ Page({
 
   // 处理详情数据
   _processDetail(data) {
-    const { champion, augments, items, augment_items_linkage, stage_performance } = data
+    const { champion, augments, items, augment_items_linkage, stage_performance, hexdata_decisions } = data
+
+    // 处理 hexdata 推荐决策数据
+    if (hexdata_decisions) {
+      this._processHexDecisions(hexdata_decisions)
+    }
 
     // 处理英雄基础数据
     const processedChampion = {
@@ -237,6 +255,151 @@ Page({
       augmentItemLinkage: augment_items_linkage || [],
       winRateValue: champion.win_rate < 1 ? champion.win_rate * 100 : champion.win_rate,
       pickRateValue: champion.pick_rate < 1 ? champion.pick_rate * 100 : champion.pick_rate
+    })
+  },
+
+  // hexdata 推荐决策数据处理
+  _processHexDecisions(d) {
+    const HEXDATA_CDN = 'https://hexdata.com.cn'
+
+    // 构建 augment ID → icon URL 映射（用于组合图标 + 缺失图标回退）
+    const augmentIconMap = {}
+    ;(d.augments || []).forEach(a => {
+      if (a.augmentId) {
+        augmentIconMap[a.augmentId] = getAugmentIconUrl(a.augmentIconUrl) || HEXDATA_CDN + (a.augmentIconUrl || '')
+      }
+    })
+
+    // 海克斯推荐：按稀有度分组，组内按 recommendationScore 降序，各取 TOP 8
+    const rarityGroups = { prismatic: [], gold: [], silver: [] }
+    ;(d.augments || []).forEach(a => {
+      const rarity = a.rarity
+      if (rarity === '棱彩' || rarity === 'prismatic') {
+        rarityGroups.prismatic.push(a)
+      } else if (rarity === '黄金' || rarity === 'gold') {
+        rarityGroups.gold.push(a)
+      } else {
+        rarityGroups.silver.push(a)
+      }
+    })
+
+    // 评级排序优先级
+    const LABEL_ORDER = { '夯': 1, '顶级': 2, '人上人': 3, 'NPC': 4, '拉完了': 5 }
+
+    const processAugmentList = (list) => list
+      .sort((a, b) => {
+        const orderA = LABEL_ORDER[a.hexLabel] || 99
+        const orderB = LABEL_ORDER[b.hexLabel] || 99
+        if (orderA !== orderB) return orderA - orderB
+        return (b.hexScore || 0) - (a.hexScore || 0)
+      })
+      .slice(0, 8)
+      .map(a => ({
+        ...a,
+        augmentIconFull: getAugmentIconUrl(a.augmentIconUrl) || HEXDATA_CDN + (a.augmentIconUrl || ''),
+        pairWinRateDisplay: formatWinRate(a.pairWinRate),
+        deltaWinRateDisplay: formatWinRate(Math.abs(a.deltaWinRate || 0)),
+        pickRateDisplay: formatPickRate(a.pickRate),
+        gamesDisplay: formatNumber(a.games)
+      }))
+
+    const hexAugmentsPrismatic = processAugmentList(rarityGroups.prismatic)
+    const hexAugmentsGold = processAugmentList(rarityGroups.gold)
+    const hexAugmentsSilver = processAugmentList(rarityGroups.silver)
+
+    // 默认显示第一个有数据的稀有度
+    const hexAugmentsRarity = hexAugmentsPrismatic.length > 0 ? 'prismatic' :
+      hexAugmentsGold.length > 0 ? 'gold' : 'silver'
+    const hexRecommendedAugs = hexAugmentsRarity === 'prismatic' ? hexAugmentsPrismatic :
+      hexAugmentsRarity === 'gold' ? hexAugmentsGold : hexAugmentsSilver
+
+    // 装备推荐：按评级排序（夯 > 顶级 > 人上人 > NPC > 拉完了），同级按 hexScore 降序，TOP 8
+    const hexRecommendedItems = (d.items || [])
+      .sort((a, b) => {
+        const orderA = LABEL_ORDER[a.hexLabel] || 99
+        const orderB = LABEL_ORDER[b.hexLabel] || 99
+        if (orderA !== orderB) return orderA - orderB
+        return (b.hexScore || 0) - (a.hexScore || 0)
+      })
+      .slice(0, 8)
+      .map(it => ({
+        ...it,
+        itemImageFull: HEXDATA_CDN + (it.itemImageUrl || ''),
+        winRateDisplay: formatWinRate(it.winRate),
+        pickRateDisplay: formatPickRate(it.pickRate),
+        gamesDisplay: formatNumber(it.games),
+        averageIndexDisplay: it.averageIndex != null ? it.averageIndex.toFixed(1) : ''
+      }))
+
+    // 海克斯组合：按 winRateTier 升序 + games 降序，TOP 5
+    const hexBestTrios = (d.trios || [])
+      .sort((a, b) => (a.winRateTier || 5) - (b.winRateTier || 5) || (b.games || 0) - (a.games || 0))
+      .slice(0, 5)
+      .map(t => {
+        const augmentIds = t.augmentIds || t.augment_ids || []
+        return {
+          ...t,
+          augmentIds,
+          gamesDisplay: formatNumber(t.games),
+          augmentIcons: augmentIds.map(id => augmentIconMap[id] || '')
+        }
+      })
+
+    // 出装公式：补全图片 URL
+    let hexBuildFormula = null
+    if (d.formula) {
+      hexBuildFormula = {
+        starterItems: (d.formula.starterItems || []).map(si => ({
+          ...si,
+          imageFull: HEXDATA_CDN + '/assets/items/16.12.1/' + si.id + '.png'
+        })),
+        coreItems: (d.formula.coreItems || []).map(ci => ({
+          ...ci,
+          imageFull: HEXDATA_CDN + '/assets/items/16.12.1/' + ci.id + '.png'
+        }))
+      }
+    }
+
+    // 谨慎选取：recommendationScore 最低的 5 个海克斯（负分最严重的）
+    const hexCautiousAugs = (d.augments || [])
+      .sort((a, b) => (a.recommendationScore || 0) - (b.recommendationScore || 0))
+      .slice(0, 5)
+      .map(a => ({
+        ...a,
+        augmentIconFull: getAugmentIconUrl(a.augmentIconUrl) || HEXDATA_CDN + (a.augmentIconUrl || ''),
+        pairWinRateDisplay: formatWinRate(a.pairWinRate),
+        deltaWinRateDisplay: formatWinRate(Math.abs(a.deltaWinRate || 0)),
+        pickRateDisplay: formatPickRate(a.pickRate),
+        gamesDisplay: formatNumber(a.games)
+      }))
+
+    this.setData({
+      hexRecommendedAugs,
+      hexAugmentsPrismatic,
+      hexAugmentsGold,
+      hexAugmentsSilver,
+      hexAugmentsRarity,
+      hexRecommendedItems,
+      hexBestTrios,
+      hexBuildFormula,
+      hexCautiousAugs
+    })
+  },
+
+  // 推荐决策 sub-tab 切换
+  onDecisionTab(e) {
+    const tab = e.currentTarget.dataset.tab
+    this.setData({ hexDecisionsTab: tab })
+  },
+
+  // 海克斯稀有度 sub-tab 切换
+  onAugmentRarityTab(e) {
+    const rarity = e.currentTarget.dataset.rarity
+    const augs = rarity === 'prismatic' ? this.data.hexAugmentsPrismatic :
+      rarity === 'gold' ? this.data.hexAugmentsGold : this.data.hexAugmentsSilver
+    this.setData({
+      hexAugmentsRarity: rarity,
+      hexRecommendedAugs: augs
     })
   },
 

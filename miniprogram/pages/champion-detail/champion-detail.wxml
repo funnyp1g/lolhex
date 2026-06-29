@@ -46,8 +46,180 @@
     </view>
   </view>
 
-  <!-- ===== 推荐海克斯 ===== -->
-  <view class="section">
+  <!-- ===== 📊 推荐决策（hexdata 复刻） ===== -->
+  <view wx:if="{{hexRecommendedAugs.length > 0 || hexRecommendedItems.length > 0}}" class="section decision-section">
+    <view class="section-header">
+      <text class="section-title">推荐决策</text>
+    </view>
+
+    <!-- Sub Tabs -->
+    <view class="decision-tabs">
+      <view class="decision-tab {{hexDecisionsTab === 'augments' ? 'active' : ''}}"
+            bindtap="onDecisionTab" data-tab="augments">海克斯推荐</view>
+      <view class="decision-tab {{hexDecisionsTab === 'items' ? 'active' : ''}}"
+            bindtap="onDecisionTab" data-tab="items">装备推荐</view>
+      <view class="decision-tab {{hexDecisionsTab === 'trios' ? 'active' : ''}}"
+            bindtap="onDecisionTab" data-tab="trios">海克斯组合</view>
+      <view wx:if="{{hexBuildFormula}}"
+            class="decision-tab {{hexDecisionsTab === 'formula' ? 'active' : ''}}"
+            bindtap="onDecisionTab" data-tab="formula">出装公式</view>
+    </view>
+
+    <!-- 海克斯推荐 -->
+    <view wx:if="{{hexDecisionsTab === 'augments'}}">
+      <!-- 稀有度 Sub Tabs -->
+      <view class="rarity-tabs">
+        <view class="rarity-tab {{hexAugmentsRarity === 'prismatic' ? 'active' : ''}}"
+              bindtap="onAugmentRarityTab" data-rarity="prismatic"
+              wx:if="{{hexAugmentsPrismatic.length > 0}}">
+          <text>棱彩</text>
+        </view>
+        <view class="rarity-tab {{hexAugmentsRarity === 'gold' ? 'active' : ''}}"
+              bindtap="onAugmentRarityTab" data-rarity="gold"
+              wx:if="{{hexAugmentsGold.length > 0}}">
+          <text>黄金</text>
+        </view>
+        <view class="rarity-tab {{hexAugmentsRarity === 'silver' ? 'active' : ''}}"
+              bindtap="onAugmentRarityTab" data-rarity="silver"
+              wx:if="{{hexAugmentsSilver.length > 0}}">
+          <text>白银</text>
+        </view>
+      </view>
+
+      <view class="decision-list">
+        <view wx:for="{{hexRecommendedAugs}}" wx:key="augmentId" class="decision-row"
+              data-id="{{item.augmentId}}" bindtap="onAugmentTap">
+          <text class="decision-rank">{{index + 1}}</text>
+          <image class="decision-icon" src="{{item.augmentIconFull}}" mode="aspectFill" />
+          <view class="decision-body">
+            <view class="decision-name-row">
+              <text class="decision-name">{{item.augmentName}}</text>
+              <view wx:if="{{item.hexLabel}}" class="decision-hex-badge" style="background:{{item.hexTierColor}}">
+                <text>{{item.hexLabel}}</text>
+              </view>
+            </view>
+            <view class="decision-meta">
+              <text class="decision-meta-value winrate">{{item.pairWinRateDisplay}}</text>
+              <text class="decision-meta-label">组合胜率</text>
+              <text class="decision-meta-divider">|</text>
+              <text class="decision-meta-value">{{item.pickRateDisplay}}</text>
+              <text class="decision-meta-label">选取率</text>
+            </view>
+          </view>
+          <text class="decision-games">{{item.gamesDisplay}}场</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 装备推荐 -->
+    <view wx:if="{{hexDecisionsTab === 'items'}}" class="decision-list">
+      <view wx:for="{{hexRecommendedItems}}" wx:key="itemId" class="decision-row">
+        <text class="decision-rank">{{index + 1}}</text>
+        <image class="decision-icon" src="{{item.itemImageFull}}" mode="aspectFill" />
+        <view class="decision-body">
+          <view class="decision-name-row">
+            <text class="decision-name">{{item.itemName}}</text>
+            <view wx:if="{{item.hexLabel}}" class="decision-hex-badge" style="background:{{item.hexTierColor}}">
+              <text>{{item.hexLabel}}</text>
+            </view>
+          </view>
+          <view class="decision-meta">
+            <text class="decision-meta-value winrate">{{item.winRateDisplay}}</text>
+            <text class="decision-meta-label">胜率</text>
+            <text class="decision-meta-divider">|</text>
+            <text class="decision-meta-value">{{item.pickRateDisplay}}</text>
+            <text class="decision-meta-label">选取率</text>
+            <text wx:if="{{item.averageIndexDisplay}}" class="decision-meta-divider">|</text>
+            <text wx:if="{{item.averageIndexDisplay}}" class="decision-meta-label">顺位</text>
+            <text wx:if="{{item.averageIndexDisplay}}" class="decision-meta-value">{{item.averageIndexDisplay}}</text>
+          </view>
+        </view>
+        <text class="decision-games">{{item.gamesDisplay}}场</text>
+      </view>
+    </view>
+
+    <!-- 海克斯组合 -->
+    <view wx:if="{{hexDecisionsTab === 'trios'}}" class="decision-trio-list">
+      <view wx:for="{{hexBestTrios}}" wx:key="trioKey" class="decision-trio-card">
+        <view class="decision-trio-header">
+          <text class="decision-rank">#{{index + 1}}</text>
+          <view class="decision-tier-tag t{{item.winRateTier}}">T{{item.winRateTier}} 胜率</view>
+          <view class="decision-tier-tag secondary t{{item.pickRateTier}}">T{{item.pickRateTier}} 选取</view>
+          <text class="decision-games">{{item.gamesDisplay}}场</text>
+        </view>
+        <view class="decision-trio-names">
+          <block wx:for="{{item.augmentIds}}" wx:key="*this" wx:for-item="aid" wx:for-index="idx">
+            <view class="decision-trio-item">
+              <image wx:if="{{item.augmentIcons[idx]}}" class="decision-trio-icon" src="{{item.augmentIcons[idx]}}" mode="aspectFill" />
+              <text class="decision-trio-name">{{item.augmentNames[idx]}}</text>
+            </view>
+            <text wx:if="{{idx < 2}}" class="decision-trio-plus">+</text>
+          </block>
+        </view>
+      </view>
+    </view>
+
+    <!-- 出装公式 -->
+    <view wx:if="{{hexDecisionsTab === 'formula' && hexBuildFormula}}" class="decision-formula">
+      <view class="formula-group">
+        <text class="formula-label">出门装</text>
+        <view class="formula-items">
+          <view wx:for="{{hexBuildFormula.starterItems}}" wx:key="id" class="formula-item">
+            <image class="formula-item-icon" src="{{item.imageFull}}" mode="aspectFill" />
+            <text class="formula-item-name">{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="formula-group">
+        <text class="formula-label">核心装备</text>
+        <view class="formula-items">
+          <view wx:for="{{hexBuildFormula.coreItems}}" wx:key="id" class="formula-item">
+            <image class="formula-item-icon" src="{{item.imageFull}}" mode="aspectFill" />
+            <text class="formula-item-name">{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 谨慎选取 -->
+    <view wx:if="{{hexDecisionsTab === 'augments' && hexCautiousAugs.length > 0}}" class="cautious-section">
+      <view class="cautious-header">
+        <text class="cautious-title">⚠️ 谨慎选取</text>
+        <text class="cautious-subtitle">这些海克斯胜率较低，建议避免</text>
+      </view>
+      <view class="decision-list">
+        <view wx:for="{{hexCautiousAugs}}" wx:key="augmentId" class="decision-row cautious-row"
+              data-id="{{item.augmentId}}" bindtap="onAugmentTap">
+          <text class="decision-rank">{{index + 1}}</text>
+          <image class="decision-icon" src="{{item.augmentIconFull}}" mode="aspectFill" />
+          <view class="decision-body">
+            <view class="decision-name-row">
+              <text class="decision-name">{{item.augmentName}}</text>
+              <view wx:if="{{item.hexLabel}}" class="decision-hex-badge" style="background:{{item.hexTierColor}}">
+                <text>{{item.hexLabel}}</text>
+              </view>
+            </view>
+            <view class="decision-meta">
+              <text class="decision-meta-value winrate">{{item.pairWinRateDisplay}}</text>
+              <text class="decision-meta-label">组合胜率</text>
+              <text class="decision-meta-divider">|</text>
+              <text class="decision-meta-value delta-neg">
+                -{{item.deltaWinRateDisplay}}
+              </text>
+              <text class="decision-meta-label">提升</text>
+              <text class="decision-meta-divider">|</text>
+              <text class="decision-meta-value">{{item.pickRateDisplay}}</text>
+              <text class="decision-meta-label">选取率</text>
+            </view>
+          </view>
+          <text class="decision-games">{{item.gamesDisplay}}场</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- ===== 推荐海克斯（暂时隐藏，由推荐决策替代） ===== -->
+  <view wx:if="{{false}}" class="section">
     <view class="section-header">
       <text class="section-title">⚡ 推荐海克斯</text>
     </view>
@@ -90,8 +262,8 @@
     </view>
   </view>
 
-  <!-- ===== 装备配置（1:1 复刻 aramgg.com 结构） ===== -->
-  <view wx:if="{{equipmentBuilds.length > 0}}" class="section">
+  <!-- ===== 装备配置（暂时隐藏，由推荐决策替代） ===== -->
+  <view wx:if="{{false}}" class="section">
     <view class="section-header">
       <text class="section-title">🛡️ 装备配置</text>
       <text class="section-subtitle">版本 {{equipmentPatch}}</text>
@@ -156,8 +328,8 @@
     </view>
   </view>
 
-  <!-- 降级：无builds数据时显示原单品推荐 -->
-  <view wx:elif="{{itemsCore.length > 0 || itemsBoots.length > 0 || itemsSituational.length > 0}}" class="section">
+  <!-- 降级：无builds数据时显示原单品推荐（暂时隐藏） -->
+  <view wx:if="{{false}}" class="section">
     <view class="section-header">
       <text class="section-title">🛡️ 装备配置</text>
     </view>

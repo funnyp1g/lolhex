@@ -12,75 +12,6 @@
 
   <!-- 加载完成 -->
   <block wx:elif="{{!loading}}">
-    <!-- ===== 版本调整卡片 ===== -->
-    <view class="patch-card card" bindtap="toggleAdjustmentsDetail">
-      <view class="patch-header">
-        <view class="patch-title-row">
-          <text class="patch-title">版本调整</text>
-          <!-- 调整摘要 -->
-          <view wx:if="{{patchAdjustments}}" class="patch-summary">
-            <text class="patch-buff-count">📈 {{patchAdjustments.buffs.length}}项增强</text>
-            <text class="patch-nerf-count">📉 {{patchAdjustments.nerfs.length}}项削弱</text>
-            <view wx:if="{{patchAdjustments.balance.length > 0}}" class="patch-balance-count">
-              🔄 {{patchAdjustments.balance.length}}项调整
-            </view>
-          </view>
-          <text wx:else class="patch-summary-placeholder">暂无调整数据</text>
-        </view>
-        <view class="patch-right">
-          <text class="expand-arrow {{showAdjustmentsDetail ? 'expanded' : ''}}">▼</text>
-        </view>
-      </view>
-
-      <!-- 调整详情（展开） -->
-      <view wx:if="{{showAdjustmentsDetail && patchAdjustments}}" class="patch-detail">
-        <!-- 增强 -->
-        <view wx:if="{{patchAdjustments.buffs.length > 0}}" class="detail-group">
-          <view class="detail-group-title detail-group-title-buff">
-            📈 增强
-          </view>
-          <view
-            wx:for="{{patchAdjustments.buffs}}"
-            wx:key="name"
-            class="detail-item"
-          >
-            <text class="detail-item-name">{{item.name}}</text>
-            <text class="detail-item-desc">{{item.desc}}</text>
-          </view>
-        </view>
-
-        <!-- 削弱 -->
-        <view wx:if="{{patchAdjustments.nerfs.length > 0}}" class="detail-group">
-          <view class="detail-group-title detail-group-title-nerf">
-            📉 削弱
-          </view>
-          <view
-            wx:for="{{patchAdjustments.nerfs}}"
-            wx:key="name"
-            class="detail-item"
-          >
-            <text class="detail-item-name">{{item.name}}</text>
-            <text class="detail-item-desc">{{item.desc}}</text>
-          </view>
-        </view>
-
-        <!-- 平衡 -->
-        <view wx:if="{{patchAdjustments.balance.length > 0}}" class="detail-group">
-          <view class="detail-group-title detail-group-title-balance">
-            🔄 平衡调整
-          </view>
-          <view
-            wx:for="{{patchAdjustments.balance}}"
-            wx:key="name"
-            class="detail-item"
-          >
-            <text class="detail-item-name">{{item.name}}</text>
-            <text class="detail-item-desc">{{item.desc}}</text>
-          </view>
-        </view>
-      </view>
-    </view>
-
     <!-- 🔍 搜索栏 -->
     <view class="home-search-wrap" bindtap="onSearchTap">
       <view class="home-search-inner">
@@ -150,72 +81,90 @@
       </view>
     </view>
 
-    <!-- 🔥 热门搭配 -->
-    <view class="section">
+    <!-- 更多资讯（hexdata 复刻） -->
+    <view wx:if="{{funDataTopHexes.length > 0 || funDataHiddenGems.length > 0}}" class="section">
       <view class="section-header">
-        <text class="section-title">🔥 热门搭配</text>
-        <text class="section-subtitle">最强英雄 + 海克斯 + 装备组合</text>
+        <text class="section-title">更多资讯</text>
+        <text class="section-subtitle">版本风向标 · 顶级海克斯 · 隐藏宝藏</text>
       </view>
-      <view wx:if="{{hotCombos.length === 0 && !comboLoading}}" class="empty-mini">
-        <text class="text-xs text-secondary">暂无数据</text>
-      </view>
-      <view wx:else class="combo-list">
-        <view
-          wx:for="{{hotCombos}}"
-          wx:key="combo_id"
-          class="combo-card"
-          data-champion-id="{{item.champion_id}}"
-          bindtap="onComboTap"
-        >
-          <!-- 排名徽章 -->
-          <view class="combo-rank-badge combo-rank-{{index < 3 ? (index === 0 ? 'gold' : index === 1 ? 'silver' : 'bronze') : 'normal'}}">
-            <text class="combo-rank-num">{{index + 1}}</text>
+
+      <!-- 版本风云 -->
+      <view wx:if="{{funDataVersionWinners.length > 0 || funDataVersionLosers.length > 0}}" class="fun-card">
+        <view class="fun-card-title">版本风云</view>
+        <view class="version-grid">
+          <view class="version-col">
+            <view class="version-label version-label-up">版本赢家</view>
+            <view wx:for="{{funDataVersionWinners}}" wx:key="championId" class="version-item"
+                  data-champion-id="{{item.championId}}" bindtap="onVersionChampionTap">
+              <image class="version-champ-icon" src="{{item.imageFull}}" mode="aspectFill" />
+              <view class="version-info">
+                <text class="version-champ-name">{{item.name}}</text>
+                <text class="version-winrate">{{item.winRateDisplay}}%</text>
+              </view>
+              <text class="version-change version-change-up">{{item.changeDisplay}}%</text>
+            </view>
           </view>
+          <view class="version-col">
+            <view class="version-label version-label-down">版本输家</view>
+            <view wx:for="{{funDataVersionLosers}}" wx:key="championId" class="version-item"
+                  data-champion-id="{{item.championId}}" bindtap="onVersionChampionTap">
+              <image class="version-champ-icon" src="{{item.imageFull}}" mode="aspectFill" />
+              <view class="version-info">
+                <text class="version-champ-name">{{item.name}}</text>
+                <text class="version-winrate">{{item.winRateDisplay}}%</text>
+              </view>
+              <text class="version-change version-change-down">{{item.changeDisplay}}%</text>
+            </view>
+          </view>
+        </view>
+      </view>
 
-          <!-- 卡片主体 -->
-          <view class="combo-card-body">
-            <!-- 英雄头部 -->
-            <view class="combo-champion-row">
-              <image wx:if="{{item.champion_icon}}" class="combo-champion-icon" src="{{item.champion_icon}}" mode="aspectFill" />
-              <view wx:else class="combo-champion-icon combo-champion-icon-empty"></view>
-              <view class="combo-champion-info">
-                <text class="combo-champion-name">{{item.champion_name_zh || item.champion_id}}</text>
-                <view class="combo-best-info">
-                  <text class="combo-best-aug-name ellipsis">{{item.best_augment_name_zh || item.best_augment_id}}</text>
-                  <text class="combo-best-winrate">胜率 {{item.best_win_rate}}</text>
-                </view>
+      <!-- 顶级海克斯 -->
+      <view wx:if="{{funDataTopHexes.length > 0}}" class="fun-card">
+        <view class="fun-card-title">顶级海克斯</view>
+        <view class="tophex-list">
+          <view wx:for="{{funDataTopHexesDisplay}}" wx:key="id" class="tophex-item">
+            <view class="tophex-header">
+              <text class="tophex-rank">#{{index + 1}}</text>
+              <text class="tophex-name">{{item.label}}</text>
+              <view class="tophex-hex-badge" style="background:{{item.hexTierColor}}">
+                <text>{{item.hexLabel}}</text>
+              </view>
+              <text class="tophex-meta">{{item.winRateDisplay}}% 胜率 · {{item.gamesDisplay}}场</text>
+            </view>
+            <view class="tophex-champions">
+              <view wx:for="{{item.topChampions}}" wx:key="championId" wx:for-item="tc" class="tophex-champ"
+                    data-champion-id="{{tc.championId}}" bindtap="onTopHexChampionTap">
+                <image class="tophex-champ-icon" src="{{tc.imageFull}}" mode="aspectFill" />
+                <text class="tophex-champ-name">{{tc.name}}</text>
+                <text class="tophex-champ-winrate">{{tc.winRateDisplay}}%</text>
               </view>
             </view>
+          </view>
+        </view>
+        <view wx:if="{{funDataTopHexes.length > 5}}" class="fun-expand-wrap">
+          <view class="fun-expand-btn" bindtap="onToggleTopHexes">
+            <text>{{topHexesExpandText}}</text>
+            <text class="fun-expand-arrow {{topHexesExpanded ? 'expanded' : ''}}">▼</text>
+          </view>
+        </view>
+      </view>
 
-            <!-- 推荐海克斯 -->
-            <view class="combo-subsection">
-              <text class="combo-subsection-label">⚡ 推荐海克斯</text>
-              <view class="combo-icon-row">
-                <view wx:for="{{item.augments}}" wx:key="augment_id" wx:for-item="aug" class="combo-icon-item">
-                  <image wx:if="{{aug.icon_url}}" class="combo-icon-sm" src="{{aug.icon_url}}" mode="aspectFill" />
-                  <view wx:else class="combo-icon-sm combo-icon-empty"></view>
-                  <text class="combo-icon-name ellipsis">{{aug.name_zh || aug.augment_id}}</text>
-                  <text class="combo-icon-rate">{{aug.win_rate}}</text>
-                </view>
-                <view wx:if="{{item.augments.length === 0}}" class="combo-empty-hint">
-                  <text class="text-xs text-placeholder">暂无数据</text>
-                </view>
-              </view>
-            </view>
-
-            <!-- 推荐装备 -->
-            <view class="combo-subsection">
-              <text class="combo-subsection-label">⚔️ 推荐装备</text>
-              <view class="combo-icon-row">
-                <view wx:for="{{item.items}}" wx:key="item_id" wx:for-item="it" class="combo-icon-item">
-                  <image wx:if="{{it.icon_url}}" class="combo-icon-sm combo-item-icon" src="{{it.icon_url}}" mode="aspectFill" />
-                  <view wx:else class="combo-icon-sm combo-icon-empty"></view>
-                  <text class="combo-icon-name ellipsis">{{it.name_zh || it.item_id}}</text>
-                  <text class="combo-icon-rate">{{it.win_rate}}</text>
-                </view>
-                <view wx:if="{{item.items.length === 0}}" class="combo-empty-hint">
-                  <text class="text-xs text-placeholder">暂无数据</text>
-                </view>
+      <!-- 隐藏宝藏 -->
+      <view wx:if="{{funDataHiddenGems.length > 0}}" class="fun-card">
+        <view class="fun-card-title">隐藏宝藏<text class="fun-card-subtitle">（低选取、高胜率）</text></view>
+        <view class="gem-list">
+          <view wx:for="{{funDataHiddenGems}}" wx:key="augmentId" class="gem-item"
+                data-augment-id="{{item.augmentId}}" bindtap="onHiddenGemTap">
+            <image class="gem-icon" src="{{item.iconFull}}" mode="aspectFill" />
+            <view class="gem-body">
+              <text class="gem-name">{{item.name}}</text>
+              <view class="gem-stats-row">
+                <text class="gem-stat">{{item.gamesDisplay}}场</text>
+                <text class="gem-stat-divider">|</text>
+                <text class="gem-stat">选取 {{item.pickRateDisplay}}%</text>
+                <text class="gem-stat-divider">|</text>
+                <text class="gem-stat gem-stat-winrate">胜率 {{item.winRateDisplay}}%</text>
               </view>
             </view>
           </view>

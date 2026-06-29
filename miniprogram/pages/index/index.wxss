@@ -70,13 +70,6 @@
   white-space: nowrap;
 }
 
-.patch-balance-count {
-  font-size: 20rpx;
-  color: var(--color-warning);
-  font-weight: var(--font-weight-medium);
-  white-space: nowrap;
-}
-
 .patch-right {
   display: flex;
   align-items: center;
@@ -125,35 +118,6 @@
 
 .detail-group-title-balance {
   color: var(--color-warning);
-}
-
-.detail-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10rpx 12rpx;
-  margin-bottom: 4rpx;
-  border-radius: 8rpx;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.detail-item:last-child {
-  margin-bottom: 0;
-}
-
-.detail-item-name {
-  font-size: 24rpx;
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-primary);
-}
-
-.detail-item-desc {
-  font-size: 22rpx;
-  color: var(--color-text-secondary);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 280rpx;
 }
 
 /* ===== 区块 ===== */
@@ -526,193 +490,318 @@
   flex-shrink: 0;
 }
 
-/* ===== 热门搭配 ===== */
+/* ===== 更多资讯（hexdata 复刻） ===== */
 .section-subtitle {
   font-size: 22rpx;
   color: var(--color-text-placeholder);
 }
 
-.combo-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16rpx;
-}
-
-/* ===== 扩展卡片布局 ===== */
-.combo-card {
-  display: flex;
-  gap: 12rpx;
-  padding: 20rpx 16rpx;
+.fun-card {
   background: var(--color-bg-card);
   border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
   box-shadow: var(--shadow-sm);
-  transition: background-color var(--transition-fast);
 }
 
-.combo-card:active {
-  background-color: var(--color-bg-hover);
+.fun-card-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-md);
 }
 
-/* 排名徽章 */
-.combo-rank-badge {
+.fun-card-subtitle {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-placeholder);
+}
+
+/* ===== 版本风云 ===== */
+.version-grid {
+  display: flex;
+  gap: 12rpx;
+}
+
+.version-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.version-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  padding: 8rpx 12rpx;
+  border-radius: 8rpx;
+  text-align: center;
+}
+
+.version-label-up {
+  background: rgba(5, 150, 105, 0.1);
+  color: #059669;
+}
+
+.version-label-down {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+.version-item {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+  padding: 10rpx 8rpx;
+  border-radius: var(--radius-base);
+  background: var(--color-bg-page);
+}
+
+.version-item:active {
+  background: var(--color-bg-hover);
+}
+
+.version-champ-icon {
   width: 52rpx;
   height: 52rpx;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: var(--color-bg-page);
   flex-shrink: 0;
-  margin-top: 4rpx;
 }
 
-.combo-rank-num {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
-  color: #fff;
-}
-
-.combo-rank-gold {
-  background: linear-gradient(135deg, #fadb14, #ffd666);
-}
-
-.combo-rank-silver {
-  background: linear-gradient(135deg, #d9d9d9, #bfbfbf);
-}
-
-.combo-rank-bronze {
-  background: linear-gradient(135deg, #ffc069, #d48806);
-}
-
-.combo-rank-normal {
-  background: linear-gradient(135deg, #b0b0b0, #8c8c8c);
-}
-
-/* 卡片主体 */
-.combo-card-body {
+.version-info {
   flex: 1;
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 16rpx;
+  gap: 2rpx;
 }
 
-/* 英雄头部 */
-.combo-champion-row {
+.version-champ-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.version-winrate {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.version-change {
+  font-size: 24rpx;
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+}
+
+.version-change-up {
+  color: #059669;
+}
+
+.version-change-down {
+  color: #dc2626;
+}
+
+/* ===== 顶级海克斯 ===== */
+.tophex-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14rpx;
+}
+
+.tophex-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+  padding: 14rpx 12rpx;
+  background: var(--color-bg-page);
+  border-radius: var(--radius-md);
+}
+
+.tophex-header {
   display: flex;
   align-items: center;
   gap: 10rpx;
 }
 
-.combo-champion-icon {
-  width: 56rpx;
-  height: 56rpx;
-  border-radius: 50%;
-  background: var(--color-bg-page);
+.tophex-rank {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  flex-shrink: 0;
+  width: 32rpx;
+}
+
+.tophex-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
   flex-shrink: 0;
 }
 
-.combo-champion-icon-empty {
-  background: var(--color-bg-page);
+.tophex-meta {
+  font-size: 20rpx;
+  color: var(--color-text-placeholder);
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
-.combo-champion-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rpx;
-  flex: 1;
-  min-width: 0;
-}
-
-.combo-champion-name {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-primary);
-}
-
-.combo-best-info {
+.tophex-hex-badge {
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
   display: flex;
   align-items: center;
-  gap: 8rpx;
+  justify-content: center;
+  min-width: 56rpx;
+  height: 34rpx;
 }
 
-.combo-best-aug-name {
-  font-size: var(--font-size-xs);
-  color: var(--color-warning);
-  font-weight: var(--font-weight-medium);
-  max-width: 180rpx;
-}
-
-.combo-best-winrate {
-  font-size: var(--font-size-xs);
-  color: var(--color-warning);
+.tophex-hex-badge text {
+  font-size: 18rpx;
   font-weight: var(--font-weight-bold);
+  color: #fff;
+  line-height: 1;
 }
 
-/* 子区域：海克斯/装备 */
-.combo-subsection {
-  display: flex;
-  flex-direction: column;
-  gap: 8rpx;
-}
-
-.combo-subsection-label {
-  font-size: var(--font-size-xs);
-  color: var(--color-text-placeholder);
-  font-weight: var(--font-weight-medium);
-}
-
-/* 横向图标行 */
-.combo-icon-row {
+.tophex-champions {
   display: flex;
   gap: 8rpx;
+  overflow-x: auto;
+  padding: 4rpx 0;
 }
 
-.combo-icon-item {
+.tophex-champ {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rpx;
-  flex: 1;
-  min-width: 0;
-  padding: 8rpx 4rpx;
-  background: var(--color-bg-page);
-  border-radius: var(--radius-base);
-}
-
-.combo-icon-sm {
-  width: 40rpx;
-  height: 40rpx;
-  border-radius: var(--radius-sm);
-  background: #2a2a2e;
   flex-shrink: 0;
+  width: 80rpx;
+  padding: 6rpx 4rpx;
+  border-radius: 8rpx;
 }
 
-.combo-item-icon {
-  border-radius: var(--radius-sm);
+.tophex-champ:active {
+  background: var(--color-bg-hover);
 }
 
-.combo-icon-empty {
+.tophex-champ-icon {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
   background: var(--color-bg-page);
 }
 
-.combo-icon-name {
-  font-size: 20rpx;
+.tophex-champ-name {
+  font-size: 18rpx;
   color: var(--color-text-primary);
-  max-width: 100%;
   text-align: center;
-  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 76rpx;
 }
 
-.combo-icon-rate {
+.tophex-champ-winrate {
   font-size: 18rpx;
   color: var(--color-warning);
   font-weight: var(--font-weight-medium);
 }
 
-.combo-empty-hint {
-  padding: 12rpx 0;
-  text-align: center;
-  width: 100%;
+.fun-expand-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--spacing-md);
+}
+
+.fun-expand-btn {
+  display: flex;
+  align-items: center;
+  gap: 6rpx;
+  padding: 12rpx 32rpx;
+  border-radius: 32rpx;
+  background: var(--color-bg-page);
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+}
+
+.fun-expand-btn:active {
+  background: var(--color-bg-hover);
+}
+
+.fun-expand-arrow {
+  font-size: var(--font-size-xs);
+  transition: transform var(--transition-base);
+}
+
+.fun-expand-arrow.expanded {
+  transform: rotate(180deg);
+}
+
+/* ===== 隐藏宝藏 ===== */
+.gem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+}
+
+.gem-item {
+  display: flex;
+  align-items: center;
+  gap: 14rpx;
+  padding: 16rpx 14rpx;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-page);
+}
+
+.gem-item:active {
+  background: var(--color-bg-hover);
+}
+
+.gem-icon {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: var(--radius-base);
+  background: #2a2a2e;
+  flex-shrink: 0;
+}
+
+.gem-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+}
+
+.gem-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.gem-stats-row {
+  display: flex;
+  align-items: center;
+  gap: 6rpx;
+}
+
+.gem-stat {
+  font-size: 22rpx;
+  color: var(--color-text-secondary);
+}
+
+.gem-stat-divider {
+  font-size: 18rpx;
+  color: var(--color-border);
+}
+
+.gem-stat-winrate {
+  color: var(--color-warning);
+  font-weight: var(--font-weight-medium);
 }
 
 /* ===== 首页搜索栏 ===== */

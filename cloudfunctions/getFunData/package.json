@@ -1,0 +1,7 @@
+{
+  "name": "getFunData",
+  "version": "1.0.0",
+  "description": "Proxy hexdata fun_data.json",
+  "main": "index.js",
+  "dependencies": {}
+}

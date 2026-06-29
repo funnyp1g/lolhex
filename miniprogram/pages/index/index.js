@@ -4,12 +4,11 @@ const cache = require('../../utils/cache')
 const image = require('../../utils/image')
 const { CACHE_KEYS, CACHE_TTL } = require('../../utils/constants')
 const { formatWinRate, formatPickRate, formatNumber, formatPercent } = require('../../utils/format')
+const { getAugmentIconUrl } = require('../../utils/augment-icons')
 
 Page({
   data: {
     currentPatch: '',
-    patchAdjustments: null,
-    showAdjustmentsDetail: false,
     loading: true,
     error: false,
     // 英雄排行
@@ -20,9 +19,15 @@ Page({
     augRankList: [],
     augRankLoading: false,
     augRankError: false,
-    // 热门搭配
-    hotCombos: [],
-    comboLoading: false
+    // 趣数据（hexdata fun_data）
+    funDataVersionWinners: [],
+    funDataVersionLosers: [],
+    funDataTopHexes: [],
+    funDataTopHexesDisplay: [],
+    funDataHiddenGems: [],
+    funDataLoading: false,
+    topHexesExpanded: false,
+    topHexesExpandText: '展开全部'
   },
 
   onLoad() {
@@ -43,10 +48,9 @@ Page({
     this.setData({ loading: true, error: false })
     await Promise.allSettled([
       this.loadPatchVersion(),
-      this.loadPatchAdjustments(),
       this.loadChampRank(),
       this.loadAugRank(),
-      this.loadHotCombos()
+      this.loadFunData()
     ])
     this.setData({ loading: false })
   },
@@ -62,29 +66,6 @@ Page({
       const cached = cache.getCache(CACHE_KEYS.CURRENT_PATCH)
       if (cached) this.setData({ currentPatch: cached })
     }
-  },
-
-  async loadPatchAdjustments() {
-    const mock = {
-      version: this.data.currentPatch || '26.12',
-      buffs: [
-        { name: '毁坏仪式', icon: '📈', desc: '基础伤害提升' },
-        { name: '无限循环', icon: '📈', desc: '冷却缩减加成增加' },
-        { name: '会心治疗', icon: '📈', desc: '治疗量提升' }
-      ],
-      nerfs: [
-        { name: '坦克引擎', icon: '📉', desc: '护甲加成降低' },
-        { name: '重量打击', icon: '📉', desc: '移速加成减少' }
-      ],
-      balance: [
-        { name: '适应性防御', icon: '🔄', desc: '效果重做' }
-      ]
-    }
-    this.setData({ patchAdjustments: mock })
-  },
-
-  toggleAdjustmentsDetail() {
-    this.setData({ showAdjustmentsDetail: !this.data.showAdjustmentsDetail })
   },
 
   // 加载英雄排行 TOP10
@@ -123,32 +104,61 @@ Page({
     }
   },
 
-  // 加载热门搭配
-  async loadHotCombos() {
-    this.setData({ comboLoading: true })
+  // 加载趣数据（hexdata fun_data.json）—— 同时填充版本调整卡片
+  async loadFunData() {
+    this.setData({ funDataLoading: true })
+    const HEXDATA_CDN = 'https://hexdata.com.cn'
+    const LABEL_COLORS = { '夯': '#dc2626', '顶级': '#d97706', '人上人': '#ca8a04', 'NPC': '#059669' }
     try {
-      const data = await cloud.getHotCombos({ page: 1, page_size: 5 })
-      const list = (data.list || []).map(c => ({
+      const data = await cloud.getFunData()
+
+      const funDataVersionWinners = (data.versionWinners || []).slice(0, 5).map(c => ({
         ...c,
-        best_win_rate: formatPercent(c.best_win_rate),
-        best_pick_rate: formatPercent(c.best_pick_rate),
-        champion_icon: image.resolveImageUrl(c.champion_icon),
-        best_augment_icon: image.resolveImageUrl(c.best_augment_icon),
-        augments: (c.augments || []).map(a => ({
-          ...a,
-          icon_url: image.resolveImageUrl(a.icon_url),
-          win_rate: formatPercent(a.win_rate),
-          pick_rate: formatPercent(a.pick_rate)
-        })),
-        items: (c.items || []).map(i => ({
-          ...i,
-          icon_url: image.resolveImageUrl(i.icon_url),
-          win_rate: formatPercent(i.win_rate)
+        imageFull: HEXDATA_CDN + (c.imageUrl || ''),
+        winRateDisplay: (c.winRate * 100).toFixed(1),
+        changeDisplay: (c.change > 0 ? '+' : '') + c.change.toFixed(1)
+      }))
+
+      const funDataVersionLosers = (data.versionLosers || []).slice(0, 5).map(c => ({
+        ...c,
+        imageFull: HEXDATA_CDN + (c.imageUrl || ''),
+        winRateDisplay: (c.winRate * 100).toFixed(1),
+        changeDisplay: (c.change > 0 ? '+' : '') + c.change.toFixed(1)
+      }))
+
+      const funDataTopHexes = (data.topHexes || []).map(h => ({
+        ...h,
+        winRateDisplay: (h.winRate * 100).toFixed(1),
+        gamesDisplay: formatNumber(h.games),
+        hexTierColor: LABEL_COLORS[h.hexLabel] || '#6b7280',
+        topChampions: (h.topChampions || []).map(tc => ({
+          ...tc,
+          imageFull: HEXDATA_CDN + (tc.imageUrl || ''),
+          winRateDisplay: (tc.winRate * 100).toFixed(1)
         }))
       }))
-      this.setData({ hotCombos: list, comboLoading: false })
+
+      const funDataHiddenGems = (data.hiddenGems || []).map(g => ({
+        ...g,
+        iconFull: getAugmentIconUrl(g.iconUrl) || HEXDATA_CDN + (g.iconUrl || ''),
+        winRateDisplay: (g.winRate * 100).toFixed(1),
+        pickRateDisplay: (g.pickRate * 100).toFixed(2),
+        gamesDisplay: formatNumber(g.games)
+      }))
+
+      this.setData({
+        funDataVersionWinners,
+        funDataVersionLosers,
+        funDataTopHexes,
+        funDataTopHexesDisplay: funDataTopHexes.slice(0, 5),
+        funDataHiddenGems,
+        funDataLoading: false,
+        topHexesExpanded: false,
+        topHexesExpandText: '展开全部 (' + funDataTopHexes.length + ')'
+      })
     } catch (err) {
-      this.setData({ comboLoading: false })
+      console.warn('[首页] 趣数据加载失败:', err)
+      this.setData({ funDataLoading: false })
     }
   },
 
@@ -179,9 +189,32 @@ Page({
     wx.navigateTo({ url: `/pages/augment-detail/augment-detail?id=${id}` })
   },
 
-  // 热门搭配点击（跳转英雄详情）
-  onComboTap(e) {
+  // 版本风云英雄点击
+  onVersionChampionTap(e) {
     const id = e.currentTarget.dataset.championId
     wx.navigateTo({ url: `/pages/champion-detail/champion-detail?id=${id}` })
+  },
+
+  // 隐藏宝藏海克斯点击
+  onHiddenGemTap(e) {
+    const id = e.currentTarget.dataset.augmentId
+    wx.navigateTo({ url: `/pages/augment-detail/augment-detail?id=${id}` })
+  },
+
+  // 顶级海克斯英雄点击
+  onTopHexChampionTap(e) {
+    const id = e.currentTarget.dataset.championId
+    wx.navigateTo({ url: `/pages/champion-detail/champion-detail?id=${id}` })
+  },
+
+  // 顶级海克斯展开/收起
+  onToggleTopHexes() {
+    const expanded = !this.data.topHexesExpanded
+    const total = this.data.funDataTopHexes.length
+    this.setData({
+      topHexesExpanded: expanded,
+      funDataTopHexesDisplay: expanded ? this.data.funDataTopHexes : this.data.funDataTopHexes.slice(0, 5),
+      topHexesExpandText: expanded ? '收起' : '展开全部 (' + total + ')'
+    })
   }
 })

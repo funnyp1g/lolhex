@@ -477,6 +477,372 @@
   color: var(--color-text-placeholder);
 }
 
+/* ===== 📊 推荐决策模块（hexdata 复刻） ===== */
+.decision-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Sub Tabs */
+.decision-tabs {
+  display: flex;
+  gap: 6rpx;
+  background-color: var(--color-bg-page);
+  border-radius: 12rpx;
+  padding: 6rpx;
+  margin-bottom: var(--spacing-lg);
+}
+
+.decision-tab {
+  flex: 1;
+  text-align: center;
+  padding: 16rpx 0;
+  line-height: 1;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  border-radius: 10rpx;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decision-tab.active {
+  background-color: var(--color-bg-card);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  box-shadow: var(--shadow-sm);
+}
+
+/* 海克斯稀有度 Sub Tabs */
+.rarity-tabs {
+  display: flex;
+  gap: 6rpx;
+  margin-bottom: var(--spacing-md);
+}
+
+.rarity-tab {
+  flex: 1;
+  text-align: center;
+  padding: 12rpx 0;
+  line-height: 1;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  border-radius: 10rpx;
+  background-color: var(--color-bg-page);
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rarity-tab.active {
+  background-color: var(--color-bg-card);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  box-shadow: var(--shadow-sm);
+}
+
+/* 推荐列表行 */
+.decision-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.decision-row {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: 18rpx var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  min-height: 96rpx;
+}
+
+.decision-rank {
+  width: 36rpx;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-placeholder);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.decision-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: var(--radius-base);
+  background-color: #2a2a2e;
+  flex-shrink: 0;
+}
+
+.decision-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+  justify-content: center;
+}
+
+.decision-name-row {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+}
+
+.decision-name {
+  font-size: 28rpx;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.decision-hex-badge {
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56rpx;
+  height: 34rpx;
+}
+
+.decision-hex-badge text {
+  font-size: 18rpx;
+  font-weight: var(--font-weight-bold);
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+}
+
+/* 元数据行 */
+.decision-meta {
+  display: flex;
+  align-items: center;
+  gap: 0rpx;
+  flex-wrap: wrap;
+}
+
+.decision-meta-value {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.decision-meta-value.winrate {
+  color: var(--color-warning);
+}
+
+.decision-meta-value.delta-pos {
+  color: #059669;
+}
+
+.decision-meta-value.delta-neg {
+  color: #dc2626;
+}
+
+.decision-meta-label {
+  font-size: 20rpx;
+  color: var(--color-text-placeholder);
+  line-height: 1;
+}
+
+.decision-meta-divider {
+  font-size: var(--font-size-xs);
+  color: var(--color-border);
+  margin: 0 8rpx;
+  line-height: 1;
+}
+
+.decision-games {
+  font-size: 20rpx;
+  color: var(--color-text-placeholder);
+  flex-shrink: 0;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+/* 海克斯组合卡片 */
+.decision-trio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.decision-trio-card {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: 18rpx var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.decision-trio-header {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  margin-bottom: 14rpx;
+}
+
+.decision-tier-tag {
+  padding: 6rpx 14rpx;
+  border-radius: 8rpx;
+  font-size: 20rpx;
+  font-weight: var(--font-weight-bold);
+  color: #fff;
+  background: #6b7280;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34rpx;
+}
+
+.decision-tier-tag.t1 { background: #dc2626; }
+.decision-tier-tag.t2 { background: #d97706; }
+.decision-tier-tag.t3 { background: #ca8a04; }
+.decision-tier-tag.t4 { background: #059669; }
+.decision-tier-tag.t5 { background: #6b7280; }
+
+.decision-tier-tag.secondary {
+  opacity: 0.75;
+}
+
+.decision-trio-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: var(--radius-base);
+  background-color: #2a2a2e;
+  flex-shrink: 0;
+}
+
+.decision-trio-names {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.decision-trio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+  width: 120rpx;
+}
+
+.decision-trio-name {
+  font-size: 20rpx;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  line-height: 1.2;
+  text-align: center;
+  word-break: break-all;
+}
+
+.decision-trio-plus {
+  font-size: 32rpx;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  margin: 0 4rpx;
+  align-self: center;
+  line-height: 80rpx;
+}
+
+/* 出装公式 */
+.decision-formula {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.formula-group {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: 20rpx var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.formula-label {
+  font-size: 28rpx;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: 16rpx;
+  display: block;
+  line-height: 1;
+}
+
+.formula-items {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: flex-start;
+}
+
+.formula-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rpx;
+  width: 140rpx;
+}
+
+.formula-item-icon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-page);
+}
+
+.formula-item-name {
+  font-size: 22rpx;
+  color: var(--color-text-secondary);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  line-height: 1.1;
+}
+
+/* ===== 谨慎选取 ===== */
+.cautious-section {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1rpx solid var(--color-border-light);
+}
+
+.cautious-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12rpx;
+  margin-bottom: var(--spacing-md);
+}
+
+.cautious-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: #dc2626;
+}
+
+.cautious-subtitle {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-placeholder);
+}
+
+.cautious-row {
+  border-left: 6rpx solid #fca5a5;
+}
+
 /* 错误状态 */
 .error-state {
   display: flex;
