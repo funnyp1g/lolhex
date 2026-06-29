@@ -172,6 +172,17 @@ cloudfunctions/
 │   ├── index.js
 │   ├── package.json
 │   └── config.json
+├── getFunData/             # hexdata 趣数据代理（真机兼容）
+│   ├── index.js
+│   └── package.json
+├── championRankTable/      # 英雄排行表查询
+│   ├── index.js
+│   ├── package.json
+│   └── config.json
+├── hotCombos/              # 热门搭配查询（已废弃）
+│   ├── index.js
+│   ├── package.json
+│   └── config.json
 └── shared/                # 共享工具模块
     ├── constants.js       # 常量定义
     ├── validators.js      # 参数校验

@@ -493,7 +493,7 @@
 
 | # | 位置 | 描述 | 影响 |
 |---|------|------|------|
-| K1 | `index.js` | `loadPatchAdjustments` 使用硬编码 Mock 数据 | 版本调整卡片始终显示 Mock，对接真实数据后可修复 |
+| K1 | `index.js` | ~~`loadPatchAdjustments` 使用硬编码 Mock 数据~~ | ✅ 已修复：版本调整卡片已移除，更多资讯改用真实 hexdata 数据 |
 | K2 | `utils/format.js` | `formatPercent` 重复格式化会二次乘 100 | 低风险，当前数据流不会触发 |
 | K3 | `utils/constants.js` | 部分常量（`API_ENDPOINTS`、`SORT_OPTIONS` 等）导出但未使用 | 死代码，后续可清理 |
 | K4 | `champion-card.wxml` | `showTierRank` vs `showTier` 属性名混淆，T1-T5 徽章仅网格模式显示 | 列表模式下 T 级徽章不显示，可后续统一 |
@@ -507,6 +507,30 @@
 | ✅ | Git 仓库 | 推送到 https://github.com/funnyp1g/lolhex |
 | 📦 | 上传部署 `augmentList` | 搜索修复 |
 | 📦 | 上传部署 `trioRank` | ID 类型修复 |
+
+---
+
+## G. v1.0.3 更新日志（2026-06-29）
+
+### 海克斯图片统一
+- 新增 `miniprogram/utils/augment-icons.js` — hexdata URL → cdn.dtodo.cn 文件名转换
+- 首页隐藏宝藏、英雄详情推荐决策/海克斯组合图标统一使用 cdn.dtodo.cn 深灰背景
+- CSS 统一：`.decision-icon`、`.decision-trio-icon`、`.gem-icon` 背景改为 `#2a2a2e`
+
+### 真机兼容
+- 新增 `cloudfunctions/getFunData/` — 代理 hexdata `fun_data.json` 请求
+- 首页 `loadFunData()` 改用云函数调用，修复真机更多资讯模块缺失
+
+### UI 修复
+- 修复 `championDetail` 云函数 hexdata 稀有度被覆盖导致分类错误
+- 修复海克斯详情最不适配英雄胜率文字堆叠（新增 `.champ-spacer`）
+- 移除稀有度标签、出装公式标签前的 emoji logo
+- 移除首页版本调整 mock 卡片
+
+### 项目清理
+- 删除 1641 个 `node_modules/` 文件（40MB）
+- 删除 12 个一次性旧爬虫脚本
+- 删除 12 个中间数据文件（已导入云函数）
 | 📦 | 上传部署 `statsDataSync` | augment_ids 类型修复 |
 | 📦 | 上传部署 `patchBaseData` | 新增 champion-roles.js + roles 写入 |
 | 📦 | 上传部署 `staticDataSync` | 角色映射逻辑 |
